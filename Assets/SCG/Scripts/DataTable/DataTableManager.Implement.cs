@@ -1,0 +1,40 @@
+﻿using System.Collections.Generic;
+
+public partial class DataTableManager
+{
+    public IReadOnlyList<IAPDataTable> GetAllIAPDataTables()
+    {
+        return GetTable<IAPDataTable>();
+    }
+
+    public IAPDataTable GetIAPDataTable(int iapId)
+    {
+        var allIAPDataTables = GetAllIAPDataTables();
+        foreach (var dataTable in allIAPDataTables)
+        {
+            if (dataTable.id == iapId)
+                return dataTable;
+        }
+
+        return null;
+    }
+
+    public IReadOnlyList<RewardGroupDataTable> GetAllRewardGroupDataTables()
+    {
+        return GetTable<RewardGroupDataTable>();
+    }
+
+    public IReadOnlyList<RewardGroupDataTable> GetTargetRewardGroupRewards(int rewardGroupId)
+    {
+        var allData = GetAllRewardGroupDataTables();
+        var targetGroups = new List<RewardGroupDataTable>();
+
+        foreach (var data in allData)
+        {
+            if(data.rewardGroupId == rewardGroupId)
+                targetGroups.Add(data);
+        }
+        
+        return targetGroups;
+    }
+}

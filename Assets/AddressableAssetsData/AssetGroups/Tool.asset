@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Tool
+  m_EditorClassIdentifier: 
+  m_GroupName: Tool
+  m_GUID: 9257608d85d735d488960091156ff52c
+  m_SerializeEntries:
+  - m_GUID: 46936639c8cb2c74e9eb13f3522ec9ae
+    m_Address: AtlasBox
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 58879ac5c3debcc4199b8028ef56aa5e
+    m_Address: SoundBox
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: ce7ba980941d80b41bfa138bcab668e3, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: c140aae1c707d5b41bb5e89120688a64, type: 2}
+    - {fileID: 11400000, guid: eb9f42bf97eec414db6bd7d5759a656d, type: 2}

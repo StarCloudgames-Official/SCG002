@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e710389bfff34650bdfc2e8ed65b0f78, type: 3}
+  m_Name: AtlasBox
+  m_EditorClassIdentifier: 
+  folders:
+  - {fileID: 102900000, guid: 4aba02f0619fdb94fa20e6610f2feec0, type: 3}
+  atlasEntries:
+  - type: 1
+    sprites:
+      m_Keys:
+      - CompanySplash
+      m_Values:
+      - {fileID: 21300000, guid: 11fcd34723562994181269cdb4d1d911, type: 3}

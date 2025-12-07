@@ -1,0 +1,65 @@
+# ---- Unity Generated ----
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+# 빌드 스크립트는 포함
+!Assets/_Project/1. Scripts/Build/
+Logs/
+UserSettings/
+MemoryCaptures/
+
+# ---- Unity Cache ----
+# Addressables Build Cache
+Assets/AddressableAssetsData/*/Build/
+Assets/AddressableAssetsData/*/Cache/
+
+# ---- Unity Crash & Backup Files ----
+sysinfo.txt
+*.stacktrace
+
+# ---- Build Results ----
+*.apk
+*.aab
+*.unitypackage
+
+# ---- Auto Generated VS/IDE Files ----
+.vs/
+*.csproj
+*.sln
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+
+# ---- Rider / JetBrains ----
+.idea/
+*.sln.iml
+
+# ---- VSCode ----
+.vscode/
+
+# ---- Python / Node / Other Local Dev ----
+node_modules/
+.env
+
+# ---- OS Specific ----
+# Windows
+Thumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+*.unitypackage
+
+*.csproj
+SCG001-MTL.sln
+.utmp
+SCG001-MTL.sln.DotSettings.user
+SCG001.sln
