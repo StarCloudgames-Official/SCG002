@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82d5c387d6bb949768b9d3b77a1c8ccb, type: 3}
+  m_Name: BuildConfigAOS
+  m_EditorClassIdentifier: 
+  keystorePath: keystore.keystore
+  keystorePassword: starcloudgames
+  keyaliasName: scg001
+  keyaliasPassword: starcloudgames
+  applicationId: com.starcloudgames.mtl
+  versionName: 1.0.1
+  versionCode: 28
+  autoVersionCodeUp: 1
+  useAppBundle: 1
+  scriptingDefineSymbols: []
+  outputDirectory: Builds/AOS

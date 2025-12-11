@@ -2,10 +2,9 @@
 [Ll]ibrary/
 [Tt]emp/
 [Oo]bj/
-[Bb]uild/
 [Bb]uilds/
 # 빌드 스크립트는 포함
-!Assets/_Project/1. Scripts/Build/
+!Assets/SCG/Build/
 Logs/
 UserSettings/
 MemoryCaptures/

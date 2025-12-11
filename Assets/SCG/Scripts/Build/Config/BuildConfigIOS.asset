@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9954f470b1f3e4ee8aa3461666f6f0a7, type: 3}
+  m_Name: BuildConfigIOS
+  m_EditorClassIdentifier: 
+  teamId: 433228PPT7
+  automaticSigning: 1
+  provisioningProfileId: c22fa507-de8d-430a-8894-14fb054dd15d
+  bundleId: com.starcloudgames.mtl
+  versionName: 1.0.0
+  buildNumber: 22
+  autoBuildNumberUp: 1
+  targetIOSVersion: 14.0
+  scriptingDefineSymbols: []
+  outputDirectory: Builds/IOS
