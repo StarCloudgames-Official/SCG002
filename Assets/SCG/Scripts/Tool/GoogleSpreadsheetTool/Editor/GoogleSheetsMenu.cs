@@ -6,7 +6,7 @@ public static class GoogleSheetsMenu
     [MenuItem("SCG/Tools/Google/Create OAuth Config Asset")]
     public static void CreateConfig()
     {
-        var path = "Assets/_Project/1. Scripts/Tool/GoogleSpreadsheetTool/GoogleOAuthConfig.asset";
+        var path = "Assets/SCG/Scripts/Tool/GoogleSpreadsheetTool/GoogleOAuthConfig.asset";
         var cfg = AssetDatabase.LoadAssetAtPath<GoogleOAuthConfig>(path);
         if (cfg == null)
         {

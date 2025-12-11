@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 411437d26c372af438ac63d21357c8fe, type: 3}
   m_Name: DataTableGenerator
   m_EditorClassIdentifier: 
-  generatedCodePath: Assets/_Project/1. Scripts/DataTable/DataTableClass
+  generatedCodePath: Assets/SCG/Scripts/DataTable/DataTableClass
