@@ -7,13 +7,19 @@ public static class UIManager
     private static List<IUI> spawnedUIList = new();
     private static int blockerCount = 0;
 
-    public static async void BlockUI()
+    public static async Awaitable BlockUI()
     {
         blockerCount++;
         if (blockerCount == 1)
         {
             await OpenUI<UIBlocker>();
         }
+    }
+
+    public static void RemoveAllBlocker()
+    {
+        blockerCount = 0;
+        RemoveBlocker();
     }
 
     public static void RemoveBlocker()
@@ -62,6 +68,8 @@ public static class UIManager
 
     public static void CloseAllUI()
     {
+        RemoveAllBlocker();
+        
         var list = new List<IUI>(spawnedUIList);
         foreach(var ui in list) ui.Close().Forget();
     }

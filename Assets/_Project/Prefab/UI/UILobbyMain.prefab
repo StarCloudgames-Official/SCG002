@@ -3203,8 +3203,47 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 214426797798218503, guid: 6ab59f04c7d504143b2d9ca567b97dd5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3837478498112773391}
   m_SourcePrefab: {fileID: 100100000, guid: 6ab59f04c7d504143b2d9ca567b97dd5, type: 3}
+--- !u!1 &3371514055434255438 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 214426797798218503, guid: 6ab59f04c7d504143b2d9ca567b97dd5, type: 3}
+  m_PrefabInstance: {fileID: 3185111612154668873}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3837478498112773391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3371514055434255438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56b099e013890154693f89dda4b78f2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactable: 1
+  useAutoRepeat: 0
+  soundId: 2
+  hapticType: 0
+  onClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: -6371972878916634745}
+        m_TargetAssemblyTypeName: UILobbyMain, Assembly-CSharp
+        m_MethodName: OnClickStartGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!224 &5890637272116019287 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 9046734675079702302, guid: 6ab59f04c7d504143b2d9ca567b97dd5, type: 3}

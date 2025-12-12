@@ -28,6 +28,8 @@ public static class SceneController
     {
         if (!CanChangeScene()) return;
         
+        await UIManager.BlockUI();
+        
         await LoadingFade.StartFadeIn();
         UIManager.CloseAllUI();
 
