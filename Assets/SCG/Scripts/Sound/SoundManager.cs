@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.Pool;
@@ -9,6 +10,7 @@ public class SoundManager : Singleton<SoundManager>
     private const string DefaultSoundBoxKey = "SoundBox";
     private const int InitialSfxPoolSize = 4;
     private const int MaxSfxPoolSize = 32;
+    private const int MaxSfxInstancesPerSound = 10;
 
     private SoundBox soundBox;
 
@@ -16,6 +18,7 @@ public class SoundManager : Singleton<SoundManager>
 
     private ObjectPool<AudioSource> sfxPool;
     private Transform sfxRoot;
+    private readonly Dictionary<SoundId, int> activeSfxCounts = new();
 
     private bool initialized;
     private bool soundBoxLoaded;
@@ -205,6 +208,8 @@ public class SoundManager : Singleton<SoundManager>
             return;
         }
 
+        if (!TryReserveSfxSlot(id)) return;
+
         var src = sfxPool.Get();
 
         src.clip = clip;
@@ -221,13 +226,49 @@ public class SoundManager : Singleton<SoundManager>
         }
 
         src.Play();
-        StartCoroutine(Co_ReleaseSfxAfterPlay(src, clip.length));
+        StartCoroutine(Co_ReleaseSfxAfterPlay(id, src, clip.length));
     }
 
-    private IEnumerator Co_ReleaseSfxAfterPlay(AudioSource src, float duration)
+    private bool TryReserveSfxSlot(SoundId id)
+    {
+        if (!activeSfxCounts.TryGetValue(id, out var count))
+        {
+            activeSfxCounts[id] = 1;
+            return true;
+        }
+
+        if (count >= MaxSfxInstancesPerSound) return false;
+
+        activeSfxCounts[id] = count + 1;
+        return true;
+    }
+
+    private void ReleaseSfxSlot(SoundId id)
+    {
+        if (!activeSfxCounts.TryGetValue(id, out var count)) return;
+
+        count--;
+        if (count <= 0)
+        {
+            activeSfxCounts.Remove(id);
+        }
+        else
+        {
+            activeSfxCounts[id] = count;
+        }
+    }
+
+    private IEnumerator Co_ReleaseSfxAfterPlay(SoundId id, AudioSource src, float duration)
     {
         yield return new WaitForSeconds(duration);
-        sfxPool?.Release(src);
+        try
+        {
+            sfxPool?.Release(src);
+        }
+        finally
+        {
+            ReleaseSfxSlot(id);
+        }
     }
 
     #endregion
