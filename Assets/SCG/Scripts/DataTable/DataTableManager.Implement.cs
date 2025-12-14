@@ -37,4 +37,9 @@ public partial class DataTableManager
         
         return targetGroups;
     }
+
+    public IReadOnlyList<SpawnChanceTable> GetAllSpawnChanceTables()
+    {
+        return GetTable<SpawnChanceTable>();
+    }
 }

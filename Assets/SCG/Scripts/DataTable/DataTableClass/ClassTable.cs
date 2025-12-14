@@ -8,7 +8,7 @@ public partial class ClassTable
 {
     public int id;
     public DataTableEnum.ClassType classType;
-    public DataTableEnum.DrawType drawType;
+    public DataTableEnum.SpawnType spawnType;
     public float attackDamage;
     public float attackSpeed;
     public float criticalChance;

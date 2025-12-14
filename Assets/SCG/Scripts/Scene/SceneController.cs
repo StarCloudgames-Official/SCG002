@@ -29,12 +29,18 @@ public static class SceneController
         if (!CanChangeScene()) return;
         
         await UIManager.BlockUI();
-        
+
         await LoadingFade.StartFadeIn();
         UIManager.CloseAllUI();
 
         var previousHandle = currentSceneHandle;
         var previousSceneName = SceneManager.GetActiveScene().name;
+
+        var temporaryScene = SceneManager.CreateScene("SceneController_Temporary");
+        SceneManager.SetActiveScene(temporaryScene);
+
+        await UnloadPreviousScene(previousHandle, previousSceneName);
+        currentSceneHandle = null;
 
         var loadHandle = Addressables.LoadSceneAsync(scene.ToString(), LoadSceneMode.Additive);
         currentSceneHandle = loadHandle;
@@ -59,8 +65,8 @@ public static class SceneController
         }
 
         SceneManager.SetActiveScene(newScene.Scene);
+        await UnloadTemporaryScene(temporaryScene);
 
-        await UnloadPreviousScene(previousHandle, previousSceneName);
         await Resources.UnloadUnusedAssets();
         GC.Collect();
 
@@ -89,6 +95,19 @@ public static class SceneController
                     await Awaitable.NextFrameAsync();
                 }
             }
+        }
+    }
+
+    private static async Awaitable UnloadTemporaryScene(UnityEngine.SceneManagement.Scene temporaryScene)
+    {
+        if (!temporaryScene.IsValid() || !temporaryScene.isLoaded) return;
+
+        var unload = SceneManager.UnloadSceneAsync(temporaryScene);
+        if (unload == null) return;
+
+        while (!unload.isDone)
+        {
+            await Awaitable.NextFrameAsync();
         }
     }
 

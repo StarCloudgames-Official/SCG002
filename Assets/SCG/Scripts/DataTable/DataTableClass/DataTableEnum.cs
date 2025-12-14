@@ -7,7 +7,7 @@ public static partial class DataTableEnum
         Gold = 0,
     }
 
-    public enum DrawType
+    public enum SpawnType
     {
         None = 0,
         Normal = 1,

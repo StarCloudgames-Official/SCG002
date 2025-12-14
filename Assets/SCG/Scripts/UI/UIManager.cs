@@ -111,9 +111,12 @@ public static class UIManager
     
     private static Transform ResolveParent(System.Type uiComponent)
     {
-        if (typeof(UIPanel).IsAssignableFrom(uiComponent) && ObjectRegister.TryGet<RectTransform>(ObjectRegister.RegisterType.UIPanel, out var panelObj)) return panelObj;
-        if (typeof(UIPopup).IsAssignableFrom(uiComponent) && ObjectRegister.TryGet<RectTransform>(ObjectRegister.RegisterType.UIPopup, out var popupObj)) return popupObj;
-        if (typeof(UIOverPopup).IsAssignableFrom(uiComponent) && ObjectRegister.TryGet<RectTransform>(ObjectRegister.RegisterType.UIOverPopup, out var overObj)) return overObj;
+        if (typeof(UIPanel).IsAssignableFrom(uiComponent) && ObjectRegister.TryGet<RectTransform>(ObjectRegister.RegisterType.UIPanel, out var panelObj))
+            return panelObj;
+        if (typeof(UIPopup).IsAssignableFrom(uiComponent) && ObjectRegister.TryGet<RectTransform>(ObjectRegister.RegisterType.UIPopup, out var popupObj))
+            return popupObj;
+        if (typeof(UIOverPopup).IsAssignableFrom(uiComponent) && ObjectRegister.TryGet<RectTransform>(ObjectRegister.RegisterType.UIOverPopup, out var overObj))
+            return overObj;
 
         return null;
     }

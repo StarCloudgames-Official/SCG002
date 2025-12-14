@@ -4,9 +4,9 @@ using UnityEngine;
 using MemoryPack;
 
 [MemoryPackable]
-public partial class DrawChanceTable
+public partial class SpawnChanceTable
 {
     public int id;
-    public DataTableEnum.DrawType drawType;
-    public string drawChance;
+    public DataTableEnum.SpawnType spawnType;
+    public float drawChance;
 }

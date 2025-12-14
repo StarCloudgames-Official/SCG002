@@ -6,9 +6,9 @@ public class InGameSceneStarter : SceneStarter
     {
         Debug.Log("Starting InGameSceneStarter");
 
-        var ingameManager = InGameManager.Create();
+        var inGameManager = InGameManager.Create();
 
-        await ingameManager.Initialize();
+        await inGameManager.Initialize();
 
         await LoadingFade.StartFadeOut();
     }
