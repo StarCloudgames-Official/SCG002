@@ -12,11 +12,9 @@ public static class InGameSession
         return true;
     }
 
-    public static bool EnterInGame(InGameEnterInfo newEnterInfo)
+    public static void EnterInGame(InGameEnterInfo newEnterInfo)
     {
         CurrentInGameEnterInfo = newEnterInfo;
         SceneController.ChangeScene(SceneController.Scene.InGame).Forget();
-
-        return true;
     }
 }

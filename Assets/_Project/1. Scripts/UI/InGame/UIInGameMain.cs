@@ -9,7 +9,7 @@ public class UIInGameMain : UIPanel
         if (!canSpawn)
             return;
 
-        SpawnManager.Instance.TryGetInGameSpawnType(() => canSpawn = true).Forget();
+        SpawnManager.Instance.TrySpawnCharacter(() => canSpawn = true).Forget();
     }
 
     public void OnClickEnhance()

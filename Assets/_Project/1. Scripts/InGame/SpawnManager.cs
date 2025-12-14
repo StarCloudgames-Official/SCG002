@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.Data;
 using StarCloudgamesLibrary;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
@@ -13,8 +12,10 @@ public class SpawnManager : Singleton<SpawnManager>
     private Dictionary<DataTableEnum.SpawnType, float> inGameSpawnChances;
     private List<DataTableEnum.ClassType> classTypes;
 
-    private readonly string characterPath = "Character";
-    
+    private const string CharacterPath = "Character";
+
+    #region Initialize
+
     public override async Awaitable Initialize()
     {
         spawnedClassesCount = new Dictionary<DataTableEnum.ClassType, Dictionary<DataTableEnum.SpawnType, int>>();
@@ -39,6 +40,10 @@ public class SpawnManager : Singleton<SpawnManager>
         await Awaitable.NextFrameAsync();
     }
 
+    #endregion
+
+    #region Random Data
+
     private DataTableEnum.SpawnType GetInGameSpawnType()
     {
         var chance = Random.value;
@@ -61,29 +66,35 @@ public class SpawnManager : Singleton<SpawnManager>
         return classTypes[Random.Range(0, classTypes.Count)];
     }
 
-    public async Awaitable TryGetInGameSpawnType(Action onEnd)
+    #endregion
+
+    #region Spawn
+
+    public async Awaitable TrySpawnCharacter(Action onEnd)
     {
         //TODO : check can spawn. onEnd?.Invoke();
         
         var spawnType = GetInGameSpawnType();
         var classType = GetInGameSpawnClassType();
         var dataTable = DataTableManager.Instance.GetClassTable(classType, spawnType);
-
-        IncreaseSpawnCount(dataTable);
         
-        var newCharacter = await Addressables.InstantiateAsync(characterPath).Task;
+        var newCharacter = await Addressables.InstantiateAsync(CharacterPath).Task;
         var characterBehaviour = newCharacter.GetComponent<CharacterBehaviour>();
 
-        //TODO : 그리드 만들어서 그리드 할당 INitialize에 넘겨줘야됨
+        //TODO : 그리드 만들어서 그리드 할당 Initialize에 넘겨줘야됨
         characterBehaviour.Initialize(dataTable).Forget();
         onEnd?.Invoke();
+        
+        IncreaseSpawnCount(classType, spawnType);
+        InGameManager.Instance.InGameContext.InGameEvent.PublishSpawn(classType, spawnType);
     }
 
-    private void IncreaseSpawnCount(ClassTable classTable)
-    {
-        var classType = classTable.classType;
-        var spawnType = classTable.spawnType;
+    #endregion
 
+    #region Extension
+
+    private void IncreaseSpawnCount(DataTableEnum.ClassType classType, DataTableEnum.SpawnType spawnType)
+    {
         if (!spawnedClassesCount.TryGetValue(classType, out var bySpawnType))
         {
             bySpawnType = new Dictionary<DataTableEnum.SpawnType, int>();
@@ -95,4 +106,6 @@ public class SpawnManager : Singleton<SpawnManager>
         else
             bySpawnType[spawnType] = 1;
     }
+
+    #endregion
 }

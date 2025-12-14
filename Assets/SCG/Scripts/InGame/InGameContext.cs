@@ -5,7 +5,7 @@ public class InGameContext
 {
     public InGameEnterInfo EnterInfo { get; set; }
 
-    public InGameEvents InGameEvent;
+    public InGameEvents InGameEvent { get; set; }
 
     public void Initialize(InGameEnterInfo enterInfo)
     {
@@ -13,13 +13,17 @@ public class InGameContext
         InGameEvent = new InGameEvents();
     }
 
+    #region InGameEvent
+
     public class InGameEvents
     {
-        public event Action<DataTableEnum.SpawnType> OnSpawn;
+        public event Action<DataTableEnum.ClassType, DataTableEnum.SpawnType> OnSpawn;
 
-        public void PublishSpawn(DataTableEnum.SpawnType spawnType)
+        public void PublishSpawn(DataTableEnum.ClassType classType, DataTableEnum.SpawnType spawnType)
         {
-            OnSpawn?.Invoke(spawnType);
+            OnSpawn?.Invoke(classType, spawnType);
         }
     }
+
+    #endregion
 }
