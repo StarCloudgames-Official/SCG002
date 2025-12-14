@@ -73,10 +73,12 @@ public class ExtensionButton : CachedMonoBehaviour, IPointerDownHandler, IPointe
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        if (!CanInteract()) return;
+        if (!CanInteract()) 
+            return;
 
-        // Guard against duplicated click events when auto-repeat is off.
-        if (!useAutoRepeat && clickInvokedThisPress) return;
+        if (!useAutoRepeat && clickInvokedThisPress) 
+            return;
+        
         clickInvokedThisPress = true;
 
         InvokeClick();
