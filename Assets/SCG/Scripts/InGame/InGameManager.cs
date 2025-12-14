@@ -8,6 +8,9 @@ public class InGameManager : Singleton<InGameManager>
 
     public override async Awaitable Initialize()
     {
+        var spawnManager = SpawnManager.Create();
+        await spawnManager.Initialize();
+        
         InGameContext = new InGameContext();
         InGameContext.Initialize(InGameSession.CurrentInGameEnterInfo);
 

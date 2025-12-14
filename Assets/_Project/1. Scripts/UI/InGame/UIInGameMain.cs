@@ -2,10 +2,14 @@ using UnityEngine;
 
 public class UIInGameMain : UIPanel
 {
+    private bool canSpawn = true;
+    
     public void OnClickSpawn()
     {
-        SpawnManager.TryGetInGameSpawnType(out var spawnType);
-        Debug.Log(spawnType);
+        if (!canSpawn)
+            return;
+
+        SpawnManager.Instance.TryGetInGameSpawnType(() => canSpawn = true).Forget();
     }
 
     public void OnClickEnhance()

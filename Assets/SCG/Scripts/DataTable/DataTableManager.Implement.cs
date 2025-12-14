@@ -42,4 +42,17 @@ public partial class DataTableManager
     {
         return GetTable<SpawnChanceTable>();
     }
+
+    public ClassTable GetClassTable(DataTableEnum.ClassType classType, DataTableEnum.SpawnType spawnType)
+    {
+        var allData = GetTable<ClassTable>();
+
+        foreach (var data in allData)
+        {
+            if(data.classType == classType && data.spawnType == spawnType)
+                return data;
+        }
+        
+        return null;
+    }
 }
