@@ -4,6 +4,7 @@ using UnityEngine;
 public class InGameContext
 {
     public InGameEnterInfo EnterInfo { get; set; }
+    public CharacterGridManager CharacterGridManager { get; set; }
 
     public InGameEvents InGameEvent { get; set; }
 

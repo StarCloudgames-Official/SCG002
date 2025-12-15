@@ -20,6 +20,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: aafef19adc62e4e73a2165404d645bf3
+    m_Address: CharacterGridManager
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: aecaabbf4aff24d418f8b4155583a827
     m_Address: Character
     m_ReadOnly: 0

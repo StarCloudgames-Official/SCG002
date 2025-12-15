@@ -84,10 +84,10 @@ public static class UIManager
         if(TryGetSpawnedUI<T>(out var spawnedUI)) return spawnedUI; 
         
         var parentCanvas = ResolveParent(typeof(T));
-        var handle = Addressables.InstantiateAsync($"Assets/_Project/Prefab/UI/{typeof(T).Name}.prefab", parentCanvas);
-        var uiObject = await handle.Task;
 
-        var ui = uiObject.GetComponent<T>();
+        var ui = await AddressableExtensions.InstantiateAndGetComponent<T>($"Assets/_Project/Prefab/UI/{typeof(T).Name}.prefab");
+        ui.transform.SetParent(parentCanvas);
+        
         if (ui == null) throw new MissingComponentException($"{typeof(T).Name} component not found on prefab.");
 
         spawnedUIList.Add(ui);

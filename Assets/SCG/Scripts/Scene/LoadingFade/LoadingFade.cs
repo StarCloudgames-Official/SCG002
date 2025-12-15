@@ -10,7 +10,7 @@ public static class LoadingFade
     public static async Awaitable StartFadeIn()
     {
         if (LoadingFadeCanvas) return;
-        LoadingFadeCanvas = await GetLoadingFadeCanvas();
+        LoadingFadeCanvas = await AddressableExtensions.InstantiateAndGetComponent<LoadingFadeCanvas>(LoadingFadeCanvasPath);
         await LoadingFadeCanvas.StartFadeIn();
     }
     
@@ -21,12 +21,5 @@ public static class LoadingFade
         
         Addressables.ReleaseInstance(LoadingFadeCanvas.gameObject);
         LoadingFadeCanvas = null;
-    }
-
-    private static async Awaitable<LoadingFadeCanvas> GetLoadingFadeCanvas()
-    {
-        var handle = Addressables.InstantiateAsync(LoadingFadeCanvasPath);
-        var gameObject = await handle.Task;
-        return gameObject.GetComponent<LoadingFadeCanvas>();
     }
 }

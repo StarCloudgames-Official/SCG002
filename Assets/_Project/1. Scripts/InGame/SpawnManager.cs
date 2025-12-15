@@ -2,15 +2,16 @@ using System;
 using System.Collections.Generic;
 using StarCloudgamesLibrary;
 using UnityEngine;
-using UnityEngine.AddressableAssets;
+using static DataTableEnum;
 using Random = UnityEngine.Random;
 
 public class SpawnManager : Singleton<SpawnManager>
 {
-    private Dictionary<DataTableEnum.ClassType, Dictionary<DataTableEnum.SpawnType, int>> spawnedClassesCount;
+    private Dictionary<ClassType, Dictionary<SpawnType, int>> spawnedClassesCount;
+    private Dictionary<SpawnType, float> inGameSpawnChances;
+    private List<ClassType> classTypes;
     
-    private Dictionary<DataTableEnum.SpawnType, float> inGameSpawnChances;
-    private List<DataTableEnum.ClassType> classTypes;
+    private InGameContext inGameContext;
 
     private const string CharacterPath = "Character";
 
@@ -18,20 +19,22 @@ public class SpawnManager : Singleton<SpawnManager>
 
     public override async Awaitable Initialize()
     {
-        spawnedClassesCount = new Dictionary<DataTableEnum.ClassType, Dictionary<DataTableEnum.SpawnType, int>>();
+        inGameContext = InGameManager.Instance.InGameContext;
+        
+        spawnedClassesCount = new Dictionary<ClassType, Dictionary<SpawnType, int>>();
         
         var dataTableList = DataTableManager.Instance.GetAllSpawnChanceTables();
         
-        inGameSpawnChances = new Dictionary<DataTableEnum.SpawnType, float>();
+        inGameSpawnChances = new Dictionary<SpawnType, float>();
         foreach (var dataTable in dataTableList)
         {
             inGameSpawnChances[dataTable.spawnType] = dataTable.drawChance;
         }
         
-        classTypes = new List<DataTableEnum.ClassType>();
-        foreach (DataTableEnum.ClassType classEnum in Enum.GetValues(typeof(DataTableEnum.ClassType)))
+        classTypes = new List<ClassType>();
+        foreach (ClassType classEnum in Enum.GetValues(typeof(ClassType)))
         {
-            if(classEnum == DataTableEnum.ClassType.None)
+            if(classEnum == ClassType.None)
                 continue;
             
             classTypes.Add(classEnum);
@@ -44,7 +47,7 @@ public class SpawnManager : Singleton<SpawnManager>
 
     #region Random Data
 
-    private DataTableEnum.SpawnType GetInGameSpawnType()
+    private SpawnType GetInGameSpawnType()
     {
         var chance = Random.value;
         var cumulativeChance = 0f;
@@ -58,10 +61,10 @@ public class SpawnManager : Singleton<SpawnManager>
             return dataTable.Key;
         }
 
-        return DataTableEnum.SpawnType.None;
+        return SpawnType.None;
     }
 
-    private DataTableEnum.ClassType GetInGameSpawnClassType()
+    private ClassType GetInGameSpawnClassType()
     {
         return classTypes[Random.Range(0, classTypes.Count)];
     }
@@ -72,17 +75,23 @@ public class SpawnManager : Singleton<SpawnManager>
 
     public async Awaitable TrySpawnCharacter(Action onEnd)
     {
-        //TODO : check can spawn. onEnd?.Invoke();
+        //TODO : Check asset(gold) or something
         
+        var emptyGrid = inGameContext.CharacterGridManager.GetRandomEmptyGrid();
+        if (!emptyGrid)
+        {
+            onEnd?.Invoke();
+            return;
+        }
+
         var spawnType = GetInGameSpawnType();
         var classType = GetInGameSpawnClassType();
         var dataTable = DataTableManager.Instance.GetClassTable(classType, spawnType);
         
-        var newCharacter = await Addressables.InstantiateAsync(CharacterPath).Task;
-        var characterBehaviour = newCharacter.GetComponent<CharacterBehaviour>();
-
-        //TODO : 그리드 만들어서 그리드 할당 Initialize에 넘겨줘야됨
+        var characterBehaviour = await AddressableExtensions.InstantiateAndGetComponent<CharacterBehaviour>(CharacterPath);
         characterBehaviour.Initialize(dataTable).Forget();
+        characterBehaviour.SetToGrid(emptyGrid);
+        
         onEnd?.Invoke();
         
         IncreaseSpawnCount(classType, spawnType);
@@ -93,11 +102,11 @@ public class SpawnManager : Singleton<SpawnManager>
 
     #region Extension
 
-    private void IncreaseSpawnCount(DataTableEnum.ClassType classType, DataTableEnum.SpawnType spawnType)
+    private void IncreaseSpawnCount(ClassType classType, SpawnType spawnType)
     {
         if (!spawnedClassesCount.TryGetValue(classType, out var bySpawnType))
         {
-            bySpawnType = new Dictionary<DataTableEnum.SpawnType, int>();
+            bySpawnType = new Dictionary<SpawnType, int>();
             spawnedClassesCount[classType] = bySpawnType;
         }
 

@@ -2,7 +2,7 @@ using Cysharp.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 
-public class CharacterBehaviour : MonoBehaviour
+public class CharacterBehaviour : CachedMonoBehaviour
 {
     [SerializeField] private Animator animator;
 
@@ -13,6 +13,12 @@ public class CharacterBehaviour : MonoBehaviour
         currentClass = dataTable;
 
         animator.runtimeAnimatorController = await GetAnimator();
+    }
+
+    public void SetToGrid(CharacterGrid characterGrid)
+    {
+        CachedTransform.position = characterGrid.transform.position;
+        characterGrid.SetCharacterBehaviour(this);
     }
 
     private async Awaitable<RuntimeAnimatorController> GetAnimator()
