@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Animation
+  m_EditorClassIdentifier: 
+  m_GroupName: Animation
+  m_GUID: 7b09ccd92f24a4b9484f10d77452479a
+  m_SerializeEntries:
+  - m_GUID: 1a9058f0463f548a79389fdf9ea1b77d
+    m_Address: Mage_Normal_Animator
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4cc587bd7f5cd4caa990c4ec94dbf418
+    m_Address: Mage_Master_Animator
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5ec5127dca228444abc944779308cb10
+    m_Address: Mage_Godlike_Animator
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 63150b5d789dc4ac088aa06ee7c6d285
+    m_Address: Mage_Advanced_Animator
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 64ed0e112293d4026b92ebceb9f75e50
+    m_Address: Mage_Elite_Animator
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c5f0acbd8a0ad47c1b7911dedbd7441f
+    m_Address: Mage_Epic_Animator
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e90a30f5667974b5bbe0a877c4eb7fb9
+    m_Address: Mage_Legendary_Animator
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: ce7ba980941d80b41bfa138bcab668e3, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: b6fc030308c4f4646806238c2114698b, type: 2}
+    - {fileID: 11400000, guid: 766c8f27f45b543d5b52a3c8d49b51e1, type: 2}

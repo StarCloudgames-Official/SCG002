@@ -11,7 +11,7 @@ public static partial class DataTableEnum
     {
         None = 0,
         Normal = 1,
-        Advaned = 2,
+        Advanced = 2,
         Elite = 3,
         Master = 4,
         Epic = 5,

@@ -1,0 +1,1477 @@
+fileFormatVersion: 2
+guid: 32ffc34cdad6141f192d0a2c25c40e4f
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 40
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Mage_Godlike_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.39, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50f67b01b732d4ba09c1ee2e3739e138
+      internalID: 514637833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage_Godlike_1
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 224
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.39, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fb88df27bb374d2586a8a88f948d64a
+      internalID: 1128013785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage_Godlike_2
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 224
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.39, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f3f00eb4c8ef40208c3800167288848
+      internalID: -2034263480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage_Godlike_3
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 224
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.39, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60b161e83451140618f2f17e5f80e522
+      internalID: -616409475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage_Godlike_4
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 224
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.39, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62caf8184c2a445c4bcabd59855de30a
+      internalID: -683497274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage_Godlike_5
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 224
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.39, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 358810117d10c4cb7a2d944788915cec
+      internalID: 1376089235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage_Godlike_6
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 224
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.39, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 564e8ad4a766646ee98220b9124f17fa
+      internalID: 56406700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage_Godlike_7
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 224
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.39, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c98b94d99a34f4451a9f318409187693
+      internalID: -2046788176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage_Godlike_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.39, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 914491c373a004797ac222b26c21066b
+      internalID: -237908913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage_Godlike_9
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 192
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.39, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 252b9b4c14ef34a6f95fbb12fbca7ac4
+      internalID: 1462075919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage_Godlike_10
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 192
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.39, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c20f7a7889ed404d9824dc8de25117c
+      internalID: -1859388981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage_Godlike_11
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 192
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.39, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e60954cb8f71f46ca814dd27e754afb7
+      internalID: 1922871314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage_Godlike_12
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 192
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.39, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c44bc42abc8c430385f086ac1d249f4
+      internalID: 60390090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage_Godlike_13
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 192
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.39, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dc6a6eaf6afb4f47a336b1f26970cc1
+      internalID: -1625012342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage_Godlike_14
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 192
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.39, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b57387b6bc2224aceb457cd42bd72219
+      internalID: 1947004544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage_Godlike_15
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 192
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.39, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de4d1e2b720c1470a9f39f5b7987f1d4
+      internalID: 1049979979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage_Godlike_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.39, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a50f8f8e5fb624d959202bc794559e16
+      internalID: 2101101855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage_Godlike_17
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 160
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.39, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb0bf488e8e6d47a1a36ffddddf3f21f
+      internalID: 1908957829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage_Godlike_18
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 160
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.39, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38f4b351146144d3e9acae6983950693
+      internalID: -440965688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage_Godlike_19
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 160
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.39, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a69de74fcd37343adb8be2540a68284d
+      internalID: -523980929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage_Godlike_20
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 160
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.39, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9b92469d128a4ebeaf5ec7ac0ee9494
+      internalID: -537087109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage_Godlike_21
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 160
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.39, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e10dc1e3a0ab45669b5577dce594510
+      internalID: 610312159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage_Godlike_22
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 160
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.39, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90765cb1d186a4b4fb9c42360c7c26a8
+      internalID: -2096207541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage_Godlike_23
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 160
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.39, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed62e63b9f90942928b2a50fcc088393
+      internalID: 192877233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage_Godlike_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.39, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86c13478670e548c4b1cc1867ea32e61
+      internalID: -1950756723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage_Godlike_25
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 128
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.39, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 367df954f84604edcac16a24a87958c1
+      internalID: 355846270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage_Godlike_26
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 128
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.39, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f4befdb043c148f895a1168960b76e3
+      internalID: 1197383692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage_Godlike_27
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 128
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.39, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b4bd3de6aa5a4a9ea5a0f6eef84586a
+      internalID: 1549478859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage_Godlike_28
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 128
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.39, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80629ade7f61f4a25b093bfd18bf824b
+      internalID: 1148833647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage_Godlike_29
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 128
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.39, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61a747aed10e84def869f8c535865adc
+      internalID: 529042523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage_Godlike_30
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 128
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.39, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d54215dff0764f91800e03cc9506352
+      internalID: 1152470156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage_Godlike_31
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 128
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.39, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea6c35028457f438d85fb287f54d5e0c
+      internalID: 1231940048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage_Godlike_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.39, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81ec94d07c0154631a213ff820383fe2
+      internalID: -1516425560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage_Godlike_33
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 96
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.39, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50158a4867caa4793af2f7ea86ef3b5c
+      internalID: 471704352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage_Godlike_34
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 96
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.39, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 963ce9da4465f4c8581bb864ec8025bb
+      internalID: -647943498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage_Godlike_35
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 96
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.39, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43f5fa6261517401a9da9f0956c4ee17
+      internalID: 1108811317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage_Godlike_36
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 96
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.39, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 633fb9f08b40747ba95036be485e8b85
+      internalID: -976666816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage_Godlike_37
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 96
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.39, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca6fbc83229224399a46f79525c383f6
+      internalID: -424271567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage_Godlike_38
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 96
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.39, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15e4c3a540cb1440c860a5db98710c40
+      internalID: -1570659780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage_Godlike_39
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 96
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.39, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9f061384d0e84b1985707121d88f4d2
+      internalID: 496907281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage_Godlike_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.39, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6226a2676399b4641871ae6ef6582958
+      internalID: 250986186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage_Godlike_41
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 64
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.39, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5efa82b925784140b3876320dc6658e
+      internalID: -2091867290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage_Godlike_42
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 64
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.39, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7637818bdd9144bb1ad95e2688a1cba5
+      internalID: -1515318453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage_Godlike_43
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 64
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.39, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf2aaa528f8824a2ea3cb37d2b5851c6
+      internalID: 191761200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage_Godlike_44
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 64
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.39, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34ac3a26014344c588e55599343c9412
+      internalID: -70059420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage_Godlike_45
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 64
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.39, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1275c4cdd4a614c6d9264e3495f0af07
+      internalID: -288285568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage_Godlike_46
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 64
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.39, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f4022b1b55cb4231b2371dbe7385482
+      internalID: -499384648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage_Godlike_47
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 64
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.39, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d07925484ff8944fba09535eecc36ede
+      internalID: 89638180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage_Godlike_48
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 32
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.39, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbb9b9167c23d40f6b11b1c5ba21eebd
+      internalID: 1092875581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage_Godlike_49
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 32
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.39, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5fd0ddd54f9d4046aeb4687be029865
+      internalID: 2058472678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage_Godlike_50
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 32
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.39, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebe580a1c7d9b45e4807ed3d845b8e76
+      internalID: -1601442090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage_Godlike_51
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 32
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.39, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d610a4932e27846518eca8eb20f3bb22
+      internalID: -1470105580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage_Godlike_52
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 32
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.39, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcd04120d674144e08e71a1fe40b6607
+      internalID: 1882528746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage_Godlike_53
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 32
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.39, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b43b6c456f18a447f94fb3a6e0e97d57
+      internalID: 980426556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage_Godlike_54
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 32
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.39, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e6af5146070c46cf940d20d0b7e069e
+      internalID: -188665465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage_Godlike_55
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.39, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 586dbeb9821d94ab2a1a7d095fd5b4a9
+      internalID: -1732601986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage_Godlike_56
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 0
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.39, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8a1f8778a2d94030a1418cb6f0a2969
+      internalID: 2137132405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage_Godlike_57
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 0
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.39, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 660cc0745866b43f1ba6b23986377d25
+      internalID: 1280374638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: f1d28fc9738394da4bde0d3a1fef8b4b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Mage_Godlike_0: 514637833
+      Mage_Godlike_1: 1128013785
+      Mage_Godlike_10: -1859388981
+      Mage_Godlike_11: 1922871314
+      Mage_Godlike_12: 60390090
+      Mage_Godlike_13: -1625012342
+      Mage_Godlike_14: 1947004544
+      Mage_Godlike_15: 1049979979
+      Mage_Godlike_16: 2101101855
+      Mage_Godlike_17: 1908957829
+      Mage_Godlike_18: -440965688
+      Mage_Godlike_19: -523980929
+      Mage_Godlike_2: -2034263480
+      Mage_Godlike_20: -537087109
+      Mage_Godlike_21: 610312159
+      Mage_Godlike_22: -2096207541
+      Mage_Godlike_23: 192877233
+      Mage_Godlike_24: -1950756723
+      Mage_Godlike_25: 355846270
+      Mage_Godlike_26: 1197383692
+      Mage_Godlike_27: 1549478859
+      Mage_Godlike_28: 1148833647
+      Mage_Godlike_29: 529042523
+      Mage_Godlike_3: -616409475
+      Mage_Godlike_30: 1152470156
+      Mage_Godlike_31: 1231940048
+      Mage_Godlike_32: -1516425560
+      Mage_Godlike_33: 471704352
+      Mage_Godlike_34: -647943498
+      Mage_Godlike_35: 1108811317
+      Mage_Godlike_36: -976666816
+      Mage_Godlike_37: -424271567
+      Mage_Godlike_38: -1570659780
+      Mage_Godlike_39: 496907281
+      Mage_Godlike_4: -683497274
+      Mage_Godlike_40: 250986186
+      Mage_Godlike_41: -2091867290
+      Mage_Godlike_42: -1515318453
+      Mage_Godlike_43: 191761200
+      Mage_Godlike_44: -70059420
+      Mage_Godlike_45: -288285568
+      Mage_Godlike_46: -499384648
+      Mage_Godlike_47: 89638180
+      Mage_Godlike_48: 1092875581
+      Mage_Godlike_49: 2058472678
+      Mage_Godlike_5: 1376089235
+      Mage_Godlike_50: -1601442090
+      Mage_Godlike_51: -1470105580
+      Mage_Godlike_52: 1882528746
+      Mage_Godlike_53: 980426556
+      Mage_Godlike_54: -188665465
+      Mage_Godlike_55: -1732601986
+      Mage_Godlike_56: 2137132405
+      Mage_Godlike_57: 1280374638
+      Mage_Godlike_6: 56406700
+      Mage_Godlike_7: -2046788176
+      Mage_Godlike_8: -237908913
+      Mage_Godlike_9: 1462075919
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

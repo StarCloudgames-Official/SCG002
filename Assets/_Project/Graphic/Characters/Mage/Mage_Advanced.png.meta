@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2a04e33d696a2498095b9f42362213ac
+guid: d7ae6e677292042a79ba76cb0e71114a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 40
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -123,1057 +123,1167 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Apprentice _0
+      name: Mage_Advanced_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 168
-        width: 35
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 192
+        width: 50
+        height: 32
+      alignment: 9
+      pivot: {x: 0.44, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 524973bbc3d684b6ab5f4de92578e467
-      internalID: -1539269771
+      spriteID: 70dc3ed9c378943cb86a0b29c89fe856
+      internalID: -1634994820
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Apprentice _1
+      name: Mage_Advanced_1
       rect:
         serializedVersion: 2
-        x: 35
-        y: 168
-        width: 35
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 50
+        y: 192
+        width: 50
+        height: 32
+      alignment: 9
+      pivot: {x: 0.44, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 20e1e2d1092f14a9cbc6bced213b9cf3
-      internalID: -1797523276
+      spriteID: 024b9deab152d4676be0716ee1a89c4c
+      internalID: -179319253
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Apprentice _2
+      name: Mage_Advanced_2
       rect:
         serializedVersion: 2
-        x: 70
-        y: 168
-        width: 35
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 100
+        y: 192
+        width: 50
+        height: 32
+      alignment: 9
+      pivot: {x: 0.44, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e1ea9ede4bd8145108e40af5deb6a656
-      internalID: -1320861585
+      spriteID: 4a1b368476631411bb14d1a866529167
+      internalID: 1770719962
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Apprentice _3
+      name: Mage_Advanced_3
       rect:
         serializedVersion: 2
-        x: 105
-        y: 168
-        width: 35
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 150
+        y: 192
+        width: 50
+        height: 32
+      alignment: 9
+      pivot: {x: 0.44, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e39595cc25693486caafdfa3d6fc3bce
-      internalID: -1627008827
+      spriteID: 2e00afbe48550431288dc3fa5dd4c13f
+      internalID: 2141755073
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Apprentice _4
+      name: Mage_Advanced_4
       rect:
         serializedVersion: 2
-        x: 140
-        y: 168
-        width: 35
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 200
+        y: 192
+        width: 50
+        height: 32
+      alignment: 9
+      pivot: {x: 0.44, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 60a5a455e57364c448ecc9c25847bbef
-      internalID: -757948223
+      spriteID: 108ba936bd65348a286ab20142dd66f2
+      internalID: -299551224
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Apprentice _5
+      name: Mage_Advanced_5
       rect:
         serializedVersion: 2
-        x: 175
-        y: 168
-        width: 35
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 250
+        y: 192
+        width: 50
+        height: 32
+      alignment: 9
+      pivot: {x: 0.44, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 25d47e30082c84c6097aa8fedaed6c26
-      internalID: -1249616601
+      spriteID: ce67b66fef1d94effa7abb8dcb15d0ae
+      internalID: 1843565325
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Apprentice _6
+      name: Mage_Advanced_6
       rect:
         serializedVersion: 2
-        x: 210
-        y: 168
-        width: 35
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 300
+        y: 192
+        width: 50
+        height: 32
+      alignment: 9
+      pivot: {x: 0.44, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 28ebc96e1d6d449b9b7d6b2d4a769c9f
-      internalID: -140454694
+      spriteID: 360fc008f07a6421888b04e8745f1b21
+      internalID: -1765158489
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Apprentice _7
+      name: Mage_Advanced_7
       rect:
         serializedVersion: 2
-        x: 245
-        y: 168
-        width: 35
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 350
+        y: 192
+        width: 50
+        height: 32
+      alignment: 9
+      pivot: {x: 0.44, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c763aa1ab473f4da680b21f393fafd82
-      internalID: 562953216
+      spriteID: 91b1c52c74aaa4e7188399f221fd24de
+      internalID: -1568476467
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Apprentice _8
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 140
-        width: 35
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 799766e68936d4e038102a6d45ee47d4
-      internalID: -1691090608
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Apprentice _9
-      rect:
-        serializedVersion: 2
-        x: 35
-        y: 140
-        width: 35
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 03b9c8c432235485dbd21f32d2d479b9
-      internalID: -492038993
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Apprentice _10
-      rect:
-        serializedVersion: 2
-        x: 70
-        y: 140
-        width: 35
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6582636ae246340af91e36040d95f6d4
-      internalID: 606672435
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Apprentice _11
-      rect:
-        serializedVersion: 2
-        x: 105
-        y: 140
-        width: 35
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 83520675214724a3ba949c51e00eb93c
-      internalID: -1604428197
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Apprentice _12
-      rect:
-        serializedVersion: 2
-        x: 140
-        y: 140
-        width: 35
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 90922778ed7ad4991b4640df8c2c3a6e
-      internalID: -216782002
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Apprentice _13
-      rect:
-        serializedVersion: 2
-        x: 175
-        y: 140
-        width: 35
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e6d207c20a802423e97b17f21cb03a18
-      internalID: -1446438559
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Apprentice _14
-      rect:
-        serializedVersion: 2
-        x: 210
-        y: 140
-        width: 35
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0497701b1ce2a4e37a50124042060253
-      internalID: -1371013498
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Apprentice _15
-      rect:
-        serializedVersion: 2
-        x: 245
-        y: 140
-        width: 35
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0a48cc0951ffb45f8b9ffd65ff5deda4
-      internalID: -417869430
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Apprentice _16
+      name: Mage_Advanced_8
       rect:
         serializedVersion: 2
         x: 0
-        y: 112
-        width: 35
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 160
+        width: 50
+        height: 32
+      alignment: 9
+      pivot: {x: 0.44, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2efce170524fd4fbc8e5ff791a50aae7
-      internalID: -2024141198
+      spriteID: 07f01fe1caa9f486193d5c2ef4800457
+      internalID: -1058978282
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Apprentice _17
+      name: Mage_Advanced_9
       rect:
         serializedVersion: 2
-        x: 35
-        y: 112
-        width: 35
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 50
+        y: 160
+        width: 50
+        height: 32
+      alignment: 9
+      pivot: {x: 0.44, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c1a9e3e531ef407286101337fb59365
-      internalID: -1709065235
+      spriteID: 3844013901571436298b74243222b4cf
+      internalID: 113938854
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Apprentice _18
+      name: Mage_Advanced_10
       rect:
         serializedVersion: 2
-        x: 70
-        y: 112
-        width: 35
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 100
+        y: 160
+        width: 50
+        height: 32
+      alignment: 9
+      pivot: {x: 0.44, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a17a84f41cee5484fb8ee07ba9622362
-      internalID: -1074240206
+      spriteID: 51c07ead4dde544c79cf83236d8b197c
+      internalID: 1011938376
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Apprentice _19
+      name: Mage_Advanced_11
       rect:
         serializedVersion: 2
-        x: 105
-        y: 112
-        width: 35
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 150
+        y: 160
+        width: 50
+        height: 32
+      alignment: 9
+      pivot: {x: 0.44, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c809ac97d78d34410ac2b5260c4f682c
-      internalID: -1869036503
+      spriteID: 95c24edd14ee645cca9352cca671d7d0
+      internalID: -945757806
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Apprentice _20
+      name: Mage_Advanced_12
       rect:
         serializedVersion: 2
-        x: 140
-        y: 112
-        width: 35
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 200
+        y: 160
+        width: 50
+        height: 32
+      alignment: 9
+      pivot: {x: 0.44, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5cb439ef0355c4ddcba0e563762af43d
-      internalID: 1528472106
+      spriteID: 06df81cb426754d94b4778769feb7605
+      internalID: 995273657
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Apprentice _21
+      name: Mage_Advanced_13
       rect:
         serializedVersion: 2
-        x: 175
-        y: 112
-        width: 35
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 250
+        y: 160
+        width: 50
+        height: 32
+      alignment: 9
+      pivot: {x: 0.44, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0a49b6da9a9004bc0aab2f30293a84bf
-      internalID: 1358241475
+      spriteID: ebb29c236e94841b283a66798a007245
+      internalID: 2013538418
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Apprentice _22
+      name: Mage_Advanced_14
       rect:
         serializedVersion: 2
-        x: 210
-        y: 112
-        width: 35
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 300
+        y: 160
+        width: 50
+        height: 32
+      alignment: 9
+      pivot: {x: 0.44, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 34f75bda5ca8246938047d4485cae12b
-      internalID: -1143693251
+      spriteID: 21ec1b999572147969f0751a670a71ea
+      internalID: 1371672059
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Apprentice _23
+      name: Mage_Advanced_15
       rect:
         serializedVersion: 2
-        x: 245
-        y: 112
-        width: 35
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 350
+        y: 160
+        width: 50
+        height: 32
+      alignment: 9
+      pivot: {x: 0.44, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4a98d885792e34d5a9c7b685f19936ca
-      internalID: 787057222
+      spriteID: 499c29c95a8844cd09972a146b167caf
+      internalID: -1994172241
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Apprentice _24
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 84
-        width: 35
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c60e9dd53461349dcb47f689ad7030de
-      internalID: -1816437095
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Apprentice _25
-      rect:
-        serializedVersion: 2
-        x: 35
-        y: 84
-        width: 35
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fe6f2af614f6e4df6ad8e6ec50087329
-      internalID: 2056724777
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Apprentice _26
-      rect:
-        serializedVersion: 2
-        x: 70
-        y: 84
-        width: 35
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7e4aeca5251e642f08b0735f0ef0d90b
-      internalID: -2018653647
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Apprentice _27
-      rect:
-        serializedVersion: 2
-        x: 105
-        y: 84
-        width: 35
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ec9fe6476f339441eb56634b0e8ad08e
-      internalID: 1190890694
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Apprentice _28
-      rect:
-        serializedVersion: 2
-        x: 140
-        y: 84
-        width: 35
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7b2ade298e878415db7c392a1372920b
-      internalID: -128418685
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Apprentice _29
-      rect:
-        serializedVersion: 2
-        x: 175
-        y: 84
-        width: 35
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 62798caecab8e413f8ea5f4036f7a010
-      internalID: 1409583922
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Apprentice _30
-      rect:
-        serializedVersion: 2
-        x: 210
-        y: 84
-        width: 35
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3e17f603f032b4e4aa5d8d8483fad715
-      internalID: -1634514718
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Apprentice _31
-      rect:
-        serializedVersion: 2
-        x: 245
-        y: 84
-        width: 35
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 98209920a22704d94b863971e85029ca
-      internalID: -213379915
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Apprentice _32
+      name: Mage_Advanced_16
       rect:
         serializedVersion: 2
         x: 0
-        y: 56
-        width: 35
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 128
+        width: 50
+        height: 32
+      alignment: 9
+      pivot: {x: 0.44, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7776059f7fadb462f8dd270ee849511b
-      internalID: 1397555945
+      spriteID: d7f7ff7d3c7a94ed68a847e82857fab0
+      internalID: -2099729338
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Apprentice _33
+      name: Mage_Advanced_17
       rect:
         serializedVersion: 2
-        x: 35
-        y: 56
-        width: 35
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 50
+        y: 128
+        width: 50
+        height: 32
+      alignment: 9
+      pivot: {x: 0.44, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e723c39e0f9d44d2d9d6325ec798b8aa
-      internalID: 1594824923
+      spriteID: 76eae2e69fbfe4141a7be7ba2c425f81
+      internalID: -1590619907
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Apprentice _34
+      name: Mage_Advanced_18
       rect:
         serializedVersion: 2
-        x: 70
-        y: 56
-        width: 35
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 100
+        y: 128
+        width: 50
+        height: 32
+      alignment: 9
+      pivot: {x: 0.44, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7063f9781b1d548e79f846e0d7cf2c00
-      internalID: 2058016140
+      spriteID: 92c22584c9bdb49209abca93761aaa4a
+      internalID: -1787730234
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Apprentice _35
+      name: Mage_Advanced_19
       rect:
         serializedVersion: 2
-        x: 105
-        y: 56
-        width: 35
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 150
+        y: 128
+        width: 50
+        height: 32
+      alignment: 9
+      pivot: {x: 0.44, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c0970dbee487c41069f6e478c67cd31f
-      internalID: -1513218208
+      spriteID: 49d9ae0c7bc0b4e1c990d0b6928e5fc1
+      internalID: -479563866
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Apprentice _36
+      name: Mage_Advanced_20
       rect:
         serializedVersion: 2
-        x: 140
-        y: 56
-        width: 35
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 200
+        y: 128
+        width: 50
+        height: 32
+      alignment: 9
+      pivot: {x: 0.44, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 047df6254606b41c89b36f8032590030
-      internalID: -1978423553
+      spriteID: aa14ff80fbe6c4ab8a3495f089593b6e
+      internalID: 1795400453
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Apprentice _37
+      name: Mage_Advanced_21
       rect:
         serializedVersion: 2
-        x: 175
-        y: 56
-        width: 35
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 250
+        y: 128
+        width: 50
+        height: 32
+      alignment: 9
+      pivot: {x: 0.44, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 322c90e2b72b643c2bc832ec1ac847ce
-      internalID: -736917241
+      spriteID: 2c2a060a9366b4ccbab0a5520203a5fa
+      internalID: -151074404
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Apprentice _38
+      name: Mage_Advanced_22
       rect:
         serializedVersion: 2
-        x: 210
-        y: 56
-        width: 35
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 300
+        y: 128
+        width: 50
+        height: 32
+      alignment: 9
+      pivot: {x: 0.44, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27dcc117fa902451bb11aec60f589a11
-      internalID: 1633158306
+      spriteID: 10ff8fae8c51e4867ad73c740c79cd8a
+      internalID: 24147374
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Apprentice _39
+      name: Mage_Advanced_23
       rect:
         serializedVersion: 2
-        x: 245
-        y: 56
-        width: 35
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 350
+        y: 128
+        width: 50
+        height: 32
+      alignment: 9
+      pivot: {x: 0.44, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 37c5335c2543c4b868d1b13e5e9de133
-      internalID: -97285122
+      spriteID: bed0c1e82fedd4c79b9ba81f1c454016
+      internalID: -475972607
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Apprentice _40
+      name: Mage_Advanced_24
       rect:
         serializedVersion: 2
         x: 0
-        y: 28
-        width: 35
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 96
+        width: 50
+        height: 32
+      alignment: 9
+      pivot: {x: 0.44, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8fcd58880495d430d8ba3fbb896f324d
-      internalID: -921579543
+      spriteID: 7ab078212cfbc4521909c4325425285f
+      internalID: -1959693791
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Apprentice _41
+      name: Mage_Advanced_25
       rect:
         serializedVersion: 2
-        x: 35
-        y: 28
-        width: 35
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 50
+        y: 96
+        width: 50
+        height: 32
+      alignment: 9
+      pivot: {x: 0.44, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ddbbda72387144a93a6b393ae9119596
-      internalID: 2117611267
+      spriteID: 1c0b73ff8e4b242888fb3e8d90c5483b
+      internalID: 278071260
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Apprentice _42
+      name: Mage_Advanced_26
       rect:
         serializedVersion: 2
-        x: 70
-        y: 28
-        width: 35
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 100
+        y: 96
+        width: 50
+        height: 32
+      alignment: 9
+      pivot: {x: 0.44, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 948baf2233a5e4656b1f260b865176fe
-      internalID: -368498448
+      spriteID: 52e264627ab8b4a2eacf26d46eed166d
+      internalID: -1552578106
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Apprentice _43
+      name: Mage_Advanced_27
       rect:
         serializedVersion: 2
-        x: 105
-        y: 28
-        width: 35
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 150
+        y: 96
+        width: 50
+        height: 32
+      alignment: 9
+      pivot: {x: 0.44, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6b588932422a84396ae438700ba4143e
-      internalID: 1226140628
+      spriteID: e538a9eb195dd42879b441c5e8f6eac3
+      internalID: 1817697218
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Apprentice _44
+      name: Mage_Advanced_28
       rect:
         serializedVersion: 2
-        x: 140
-        y: 28
-        width: 35
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 200
+        y: 96
+        width: 50
+        height: 32
+      alignment: 9
+      pivot: {x: 0.44, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 19ba308b42da84b6c86e11483aa4d679
-      internalID: 1553060534
+      spriteID: e8b3f965a0ace4970b934acbe7c3a371
+      internalID: 589166322
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Apprentice _45
+      name: Mage_Advanced_29
       rect:
         serializedVersion: 2
-        x: 175
-        y: 28
-        width: 35
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 250
+        y: 96
+        width: 50
+        height: 32
+      alignment: 9
+      pivot: {x: 0.44, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0975a1915a4c54f90b6d5fa952d1fae3
-      internalID: 1380680424
+      spriteID: c532d9159a91e4803beaf8f19132dfc0
+      internalID: -78529837
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Apprentice _46
+      name: Mage_Advanced_30
       rect:
         serializedVersion: 2
-        x: 210
-        y: 28
-        width: 35
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 300
+        y: 96
+        width: 50
+        height: 32
+      alignment: 9
+      pivot: {x: 0.44, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cf9ccbd4f07364afc83018f9e01acb6c
-      internalID: 512000097
+      spriteID: b6cf1ae6268ef4d71bdeaa4f92fc3827
+      internalID: -36593647
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Apprentice _47
+      name: Mage_Advanced_31
       rect:
         serializedVersion: 2
-        x: 245
-        y: 28
-        width: 35
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 350
+        y: 96
+        width: 50
+        height: 32
+      alignment: 9
+      pivot: {x: 0.44, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b049c4368d82b4542880ba641af878f1
-      internalID: -1084919564
+      spriteID: 8005e5540a76e4963a778dc9b54f3ed4
+      internalID: -1659730476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage_Advanced_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 50
+        height: 32
+      alignment: 9
+      pivot: {x: 0.44, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c6af777577914ad1b217922fd9789a6
+      internalID: -505392886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage_Advanced_33
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 64
+        width: 50
+        height: 32
+      alignment: 9
+      pivot: {x: 0.44, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdc2510db946841fca8294555e1f68cf
+      internalID: 212978641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage_Advanced_34
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 64
+        width: 50
+        height: 32
+      alignment: 9
+      pivot: {x: 0.44, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4a0e3d273f3045718075757f7dcf91d
+      internalID: -775762630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage_Advanced_35
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 64
+        width: 50
+        height: 32
+      alignment: 9
+      pivot: {x: 0.44, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08f0aeeee13cf433cab086e31ad7a1f0
+      internalID: 245329411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage_Advanced_36
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 64
+        width: 50
+        height: 32
+      alignment: 9
+      pivot: {x: 0.44, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f16f3b816007b4c1b88c134cdd41887a
+      internalID: 358083215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage_Advanced_37
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 64
+        width: 50
+        height: 32
+      alignment: 9
+      pivot: {x: 0.44, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f9faca7a1b424c028e207c267a28256
+      internalID: 753554262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage_Advanced_38
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 64
+        width: 50
+        height: 32
+      alignment: 9
+      pivot: {x: 0.44, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 663c29147fb91416eb15b7a1a7afb64e
+      internalID: 24628229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage_Advanced_39
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 64
+        width: 50
+        height: 32
+      alignment: 9
+      pivot: {x: 0.44, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0676e4713f1c4455bac7a169d5ee8c9
+      internalID: -1140948893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage_Advanced_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 50
+        height: 32
+      alignment: 9
+      pivot: {x: 0.44, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97a62eaab00a94a6d8af908b8cacd8bc
+      internalID: 259224535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage_Advanced_41
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 32
+        width: 50
+        height: 32
+      alignment: 9
+      pivot: {x: 0.44, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3378289c7cf84e05ae11278293655fd
+      internalID: 9841369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage_Advanced_42
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 32
+        width: 50
+        height: 32
+      alignment: 9
+      pivot: {x: 0.44, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c637ee9b1d124c48ba818c312b10b39
+      internalID: -573604286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage_Advanced_43
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 32
+        width: 50
+        height: 32
+      alignment: 9
+      pivot: {x: 0.44, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0aa7e4a4d83a40cea089e2d393a32df
+      internalID: 1905190510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage_Advanced_44
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 32
+        width: 50
+        height: 32
+      alignment: 9
+      pivot: {x: 0.44, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8da1edcee9634f8d9a8cad9365fb9cd
+      internalID: 1813951661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage_Advanced_45
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 32
+        width: 50
+        height: 32
+      alignment: 9
+      pivot: {x: 0.44, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73240e4fbb68d4d9da74dc50cb3939f4
+      internalID: -18777403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage_Advanced_46
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 32
+        width: 50
+        height: 32
+      alignment: 9
+      pivot: {x: 0.44, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a13466e4246d4d44a7cf1447aac249e
+      internalID: -688428129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage_Advanced_47
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 32
+        width: 50
+        height: 32
+      alignment: 9
+      pivot: {x: 0.44, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0c454ccc33bb41dabbbfa8bac314e82
+      internalID: -1176518766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage_Advanced_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 50
+        height: 32
+      alignment: 9
+      pivot: {x: 0.44, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27737f7b61c1945ef95e5007c5388aac
+      internalID: 1936917963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage_Advanced_49
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 0
+        width: 50
+        height: 32
+      alignment: 9
+      pivot: {x: 0.44, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17bb542a93cba49dfaf3bf703c39fe73
+      internalID: 1270833308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage_Advanced_50
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 0
+        width: 50
+        height: 32
+      alignment: 9
+      pivot: {x: 0.44, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 120b7905c758840a7b7ddc71208e9f67
+      internalID: 1151116576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage_Advanced_51
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 0
+        width: 50
+        height: 32
+      alignment: 9
+      pivot: {x: 0.44, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a8b0f6b555944e758afddcceeeee5ff
+      internalID: 590122007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mage_Advanced_52
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 50
+        height: 32
+      alignment: 9
+      pivot: {x: 0.44, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cd79490c191741da96c002333c4c16f
+      internalID: 1035292724
       vertices: []
       indices: 
       edges: []
@@ -1182,7 +1292,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 1b5e8735d01f244b6b2158fabe8a9e44
+    spriteID: 4df293eb42ee74f39a44701a8ea36fa0
     internalID: 0
     vertices: []
     indices: 
@@ -1192,54 +1302,59 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Apprentice _0: -1539269771
-      Apprentice _1: -1797523276
-      Apprentice _10: 606672435
-      Apprentice _11: -1604428197
-      Apprentice _12: -216782002
-      Apprentice _13: -1446438559
-      Apprentice _14: -1371013498
-      Apprentice _15: -417869430
-      Apprentice _16: -2024141198
-      Apprentice _17: -1709065235
-      Apprentice _18: -1074240206
-      Apprentice _19: -1869036503
-      Apprentice _2: -1320861585
-      Apprentice _20: 1528472106
-      Apprentice _21: 1358241475
-      Apprentice _22: -1143693251
-      Apprentice _23: 787057222
-      Apprentice _24: -1816437095
-      Apprentice _25: 2056724777
-      Apprentice _26: -2018653647
-      Apprentice _27: 1190890694
-      Apprentice _28: -128418685
-      Apprentice _29: 1409583922
-      Apprentice _3: -1627008827
-      Apprentice _30: -1634514718
-      Apprentice _31: -213379915
-      Apprentice _32: 1397555945
-      Apprentice _33: 1594824923
-      Apprentice _34: 2058016140
-      Apprentice _35: -1513218208
-      Apprentice _36: -1978423553
-      Apprentice _37: -736917241
-      Apprentice _38: 1633158306
-      Apprentice _39: -97285122
-      Apprentice _4: -757948223
-      Apprentice _40: -921579543
-      Apprentice _41: 2117611267
-      Apprentice _42: -368498448
-      Apprentice _43: 1226140628
-      Apprentice _44: 1553060534
-      Apprentice _45: 1380680424
-      Apprentice _46: 512000097
-      Apprentice _47: -1084919564
-      Apprentice _5: -1249616601
-      Apprentice _6: -140454694
-      Apprentice _7: 562953216
-      Apprentice _8: -1691090608
-      Apprentice _9: -492038993
+      Mage_Advanced_0: -1634994820
+      Mage_Advanced_1: -179319253
+      Mage_Advanced_10: 1011938376
+      Mage_Advanced_11: -945757806
+      Mage_Advanced_12: 995273657
+      Mage_Advanced_13: 2013538418
+      Mage_Advanced_14: 1371672059
+      Mage_Advanced_15: -1994172241
+      Mage_Advanced_16: -2099729338
+      Mage_Advanced_17: -1590619907
+      Mage_Advanced_18: -1787730234
+      Mage_Advanced_19: -479563866
+      Mage_Advanced_2: 1770719962
+      Mage_Advanced_20: 1795400453
+      Mage_Advanced_21: -151074404
+      Mage_Advanced_22: 24147374
+      Mage_Advanced_23: -475972607
+      Mage_Advanced_24: -1959693791
+      Mage_Advanced_25: 278071260
+      Mage_Advanced_26: -1552578106
+      Mage_Advanced_27: 1817697218
+      Mage_Advanced_28: 589166322
+      Mage_Advanced_29: -78529837
+      Mage_Advanced_3: 2141755073
+      Mage_Advanced_30: -36593647
+      Mage_Advanced_31: -1659730476
+      Mage_Advanced_32: -505392886
+      Mage_Advanced_33: 212978641
+      Mage_Advanced_34: -775762630
+      Mage_Advanced_35: 245329411
+      Mage_Advanced_36: 358083215
+      Mage_Advanced_37: 753554262
+      Mage_Advanced_38: 24628229
+      Mage_Advanced_39: -1140948893
+      Mage_Advanced_4: -299551224
+      Mage_Advanced_40: 259224535
+      Mage_Advanced_41: 9841369
+      Mage_Advanced_42: -573604286
+      Mage_Advanced_43: 1905190510
+      Mage_Advanced_44: 1813951661
+      Mage_Advanced_45: -18777403
+      Mage_Advanced_46: -688428129
+      Mage_Advanced_47: -1176518766
+      Mage_Advanced_48: 1936917963
+      Mage_Advanced_49: 1270833308
+      Mage_Advanced_5: 1843565325
+      Mage_Advanced_50: 1151116576
+      Mage_Advanced_51: 590122007
+      Mage_Advanced_52: 1035292724
+      Mage_Advanced_6: -1765158489
+      Mage_Advanced_7: -1568476467
+      Mage_Advanced_8: -1058978282
+      Mage_Advanced_9: 113938854
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
