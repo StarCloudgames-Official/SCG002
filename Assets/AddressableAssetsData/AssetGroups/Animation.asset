@@ -25,6 +25,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 58136a80de9554256913f5a229e70ce9
+    m_Address: Rogue_Epic_Animator
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 5ec5127dca228444abc944779308cb10
     m_Address: Mage_Godlike_Animator
     m_ReadOnly: 0
@@ -40,13 +45,43 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8ffbd4b0f524647f59c77c9341dcb230
+    m_Address: Rogue_Elite_Animator
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b8b6f471bab804c21b6e207a50d9c607
+    m_Address: Rogue_Legendary_Animator
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bc7e214ead927494f9005c72daefa1a2
+    m_Address: Rogue_Normal_Animator
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: c5f0acbd8a0ad47c1b7911dedbd7441f
     m_Address: Mage_Epic_Animator
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c6cf954ed3d654db1a26752e7fc9f7ab
+    m_Address: Rogue_Godlike_Animator
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: e90a30f5667974b5bbe0a877c4eb7fb9
     m_Address: Mage_Legendary_Animator
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f7613cda481b148e69ea0647b6dc7a05
+    m_Address: Rogue_Master_Animator
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f7d6b2d4732924396b9cce09e35b1bf1
+    m_Address: Rogue_Advanced_Animator
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

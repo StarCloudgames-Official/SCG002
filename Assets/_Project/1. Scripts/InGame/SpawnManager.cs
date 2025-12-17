@@ -86,7 +86,7 @@ public class SpawnManager : Singleton<SpawnManager>
 
         var spawnType = GetInGameSpawnType();
         //var classType = GetInGameSpawnClassType();
-        var classType = ClassType.Mage; //애니 작업 끝나면 다시 제거해야 됨
+        var classType = ClassType.Rogue; //애니 작업 끝나면 다시 제거해야 됨
         var dataTable = DataTableManager.Instance.GetClassTable(classType, spawnType);
         
         var characterBehaviour = await AddressableExtensions.InstantiateAndGetComponent<CharacterBehaviour>(CharacterPath);

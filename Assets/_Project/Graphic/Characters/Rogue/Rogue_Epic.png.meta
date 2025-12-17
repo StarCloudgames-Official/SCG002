@@ -1,0 +1,902 @@
+fileFormatVersion: 2
+guid: a411f64af0fec4d01b693ee6c2576ea6
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 40
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Rogue_Epic_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.415, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bec486378e0cc4960b2dbedc7d88d422
+      internalID: -432417864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Epic_1
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 128
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.415, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcb6100b5b4bf4184b09ef913879b162
+      internalID: -1653560755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Epic_2
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 128
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.415, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 142f3fb9cd3b441199a8fb843c88faf8
+      internalID: -2095973321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Epic_3
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 128
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.415, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff76c3cef9fce41af9cd28ee1a8de70c
+      internalID: 1884841766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Epic_4
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 128
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.415, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44a4b9563f3134ea3a55aadb5954621e
+      internalID: 1789397261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Epic_5
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 128
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.415, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3dcf734de86c4c70af219a62ac7bfca
+      internalID: 1800221398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Epic_6
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 128
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.415, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21f52799fc97f4c53b56613ec3217a02
+      internalID: 1125073046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Epic_7
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 128
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.415, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c55ff5b7e76b34f8db894d1e83ad667d
+      internalID: -713111661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Epic_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.415, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a5c6b204c1e343899399ec45fbcc59b
+      internalID: -1898304301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Epic_9
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 96
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.415, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3f7dcdff8c5d42e695faf6ad9a411ea
+      internalID: 1941750814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Epic_10
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 96
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.415, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 261a992384dcb48169493e691141be74
+      internalID: -497746179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Epic_11
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 96
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.415, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb4f4c47a64c340bc9a57258a2b2756d
+      internalID: 778444399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Epic_12
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 96
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.415, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78329d983da3944e9a892abea45f18f5
+      internalID: 2035457415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Epic_13
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 96
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.415, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bed1906888534d8585aa507269c6028
+      internalID: 1537264386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Epic_14
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 96
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.415, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca611e13e24d241c0999dc7442416cb8
+      internalID: -211494250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Epic_15
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 96
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.415, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c232ddf92824426b87c83b1fe6fb986
+      internalID: -2024476106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Epic_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.415, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81edd7532f05d4df6bc6d29b92ca9eca
+      internalID: -949841331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Epic_17
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 64
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.415, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c66509a65cfb541518644ddb145bdc9a
+      internalID: 207998037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Epic_18
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 64
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.415, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3db67b3413b2a412b869b428edb3823f
+      internalID: -2081124769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Epic_19
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 64
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.415, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ae325d7c79ca46df90655c4b6c06666
+      internalID: -2069202529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Epic_20
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 64
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.415, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85df5f212250c407ebd8531b26fd6bd0
+      internalID: -1998163618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Epic_21
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 64
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.415, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b0feb802f1a9436c831ccfb346e2c85
+      internalID: 176625686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Epic_22
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 64
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.415, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aa3f16cd2ec141a1ba84ea558ed99c8
+      internalID: -293442667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Epic_23
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 64
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.415, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acb63d40474fd4e89b04ddf77ccad691
+      internalID: -279768804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Epic_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.415, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7efad276255d64e31958ae3be019997a
+      internalID: 1899063674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Epic_25
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 32
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.415, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b454efedd3da4fa9b41c4875880a95c
+      internalID: 636118319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Epic_26
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 32
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.415, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59864585d25254d439bb87a387f5122b
+      internalID: -715958805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Epic_27
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 32
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.415, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 791d583d7431f4b0d88d057bc9eb47cb
+      internalID: -2079100383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Epic_28
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 32
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.415, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08d226d4751fc44a7b1eadd7a8fbce37
+      internalID: -434192218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Epic_29
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 32
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.415, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb93a944c0e6845daa43610a3b9ade22
+      internalID: -1091032943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Epic_30
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 32
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.415, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d55b65bfb9e9466795fdc1a5cc85470
+      internalID: 652227272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Epic_31
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 32
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.415, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccc0600bf7f1d4df59990d075f4012ac
+      internalID: 665971039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Epic_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.415, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c6b46171bfd24fa9ac06c4715b3cf41
+      internalID: -1622343696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 43e33ba14ae5d4a0e879708c830d8264
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Rogue_Epic_0: -432417864
+      Rogue_Epic_1: -1653560755
+      Rogue_Epic_10: -497746179
+      Rogue_Epic_11: 778444399
+      Rogue_Epic_12: 2035457415
+      Rogue_Epic_13: 1537264386
+      Rogue_Epic_14: -211494250
+      Rogue_Epic_15: -2024476106
+      Rogue_Epic_16: -949841331
+      Rogue_Epic_17: 207998037
+      Rogue_Epic_18: -2081124769
+      Rogue_Epic_19: -2069202529
+      Rogue_Epic_2: -2095973321
+      Rogue_Epic_20: -1998163618
+      Rogue_Epic_21: 176625686
+      Rogue_Epic_22: -293442667
+      Rogue_Epic_23: -279768804
+      Rogue_Epic_24: 1899063674
+      Rogue_Epic_25: 636118319
+      Rogue_Epic_26: -715958805
+      Rogue_Epic_27: -2079100383
+      Rogue_Epic_28: -434192218
+      Rogue_Epic_29: -1091032943
+      Rogue_Epic_3: 1884841766
+      Rogue_Epic_30: 652227272
+      Rogue_Epic_31: 665971039
+      Rogue_Epic_32: -1622343696
+      Rogue_Epic_4: 1789397261
+      Rogue_Epic_5: 1800221398
+      Rogue_Epic_6: 1125073046
+      Rogue_Epic_7: -713111661
+      Rogue_Epic_8: -1898304301
+      Rogue_Epic_9: 1941750814
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

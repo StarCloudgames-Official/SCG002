@@ -1,0 +1,948 @@
+fileFormatVersion: 2
+guid: 027478f66a3784cefac24a2330341008
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 40
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Rogue_Elite_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 47
+        height: 32
+      alignment: 9
+      pivot: {x: 0.38, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c56234cd5d32499293a0e93df000023
+      internalID: -1661844133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Elite_1
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 128
+        width: 47
+        height: 32
+      alignment: 9
+      pivot: {x: 0.38, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be06dc7086d194fb4a6467e49377fcd2
+      internalID: -1190541622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Elite_2
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 128
+        width: 47
+        height: 32
+      alignment: 9
+      pivot: {x: 0.38, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc863ded1a49d4cf3b13b2bda94884a8
+      internalID: -1273119880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Elite_3
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 128
+        width: 47
+        height: 32
+      alignment: 9
+      pivot: {x: 0.38, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36c1fc3cf95be4e8b91e0c140cfdbea9
+      internalID: -2033533177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Elite_4
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 128
+        width: 47
+        height: 32
+      alignment: 9
+      pivot: {x: 0.38, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c6667f24ddc2453d968783b8786c82b
+      internalID: -1162849823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Elite_5
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 128
+        width: 47
+        height: 32
+      alignment: 9
+      pivot: {x: 0.38, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d386da7f664204f55aeae1b189e7c6db
+      internalID: 1598268486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Elite_6
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 128
+        width: 47
+        height: 32
+      alignment: 9
+      pivot: {x: 0.38, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bf72736657354d00bb0344f41c56e18
+      internalID: -2090534801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Elite_7
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 128
+        width: 47
+        height: 32
+      alignment: 9
+      pivot: {x: 0.38, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2ea29105763c4922add54a017c17a40
+      internalID: 1390819965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Elite_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 47
+        height: 32
+      alignment: 9
+      pivot: {x: 0.38, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0436ee6acf6e14966890a1f9c852e417
+      internalID: -1317050354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Elite_9
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 96
+        width: 47
+        height: 32
+      alignment: 9
+      pivot: {x: 0.38, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6671587a7cc242ab8810a3874ed41a3
+      internalID: 393224817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Elite_10
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 96
+        width: 47
+        height: 32
+      alignment: 9
+      pivot: {x: 0.38, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 783f0b9caf13b4574a8db0d3d2206c26
+      internalID: 2062399960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Elite_11
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 96
+        width: 47
+        height: 32
+      alignment: 9
+      pivot: {x: 0.38, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d5d0e51fc36f4d18915dd4ef9cf498d
+      internalID: 1818130115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Elite_12
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 96
+        width: 47
+        height: 32
+      alignment: 9
+      pivot: {x: 0.38, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f9d4749465de4db79903c7f71cab7df
+      internalID: 1459604101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Elite_13
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 96
+        width: 47
+        height: 32
+      alignment: 9
+      pivot: {x: 0.38, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cba44b159d034b988fbff1399ec11fb
+      internalID: -1997064292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Elite_14
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 96
+        width: 47
+        height: 32
+      alignment: 9
+      pivot: {x: 0.38, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7bb7a84e46be4a66988a8a454e23761
+      internalID: 2077730649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Elite_15
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 96
+        width: 47
+        height: 32
+      alignment: 9
+      pivot: {x: 0.38, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31f9529c4cdb34dbf8fc4384096bc3e6
+      internalID: -1174252376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Elite_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 47
+        height: 32
+      alignment: 9
+      pivot: {x: 0.38, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57c7177785cb444d4a3da8259aa34e9f
+      internalID: 926212180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Elite_17
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 64
+        width: 47
+        height: 32
+      alignment: 9
+      pivot: {x: 0.38, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19f94c2fe9ca14a8da87937465fd4680
+      internalID: 746787732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Elite_18
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 64
+        width: 47
+        height: 32
+      alignment: 9
+      pivot: {x: 0.38, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba1f1f252e61a4812af843ffc12605a3
+      internalID: 566406227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Elite_19
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 64
+        width: 47
+        height: 32
+      alignment: 9
+      pivot: {x: 0.38, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b57edcb58c9ad443e88ba7731f22cd92
+      internalID: 1292853200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Elite_20
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 64
+        width: 47
+        height: 32
+      alignment: 9
+      pivot: {x: 0.38, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73c239d331ce3433e82b546b6343d181
+      internalID: 1573290056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Elite_21
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 64
+        width: 47
+        height: 32
+      alignment: 9
+      pivot: {x: 0.38, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 728b3dcceda1d4faa82683d3457c9c0c
+      internalID: 1049647035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Elite_22
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 64
+        width: 47
+        height: 32
+      alignment: 9
+      pivot: {x: 0.38, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d14c51ea5f6c4480ba344d4223b455d9
+      internalID: 1130182521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Elite_23
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 64
+        width: 47
+        height: 32
+      alignment: 9
+      pivot: {x: 0.38, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a0b23c39f0a6448b8053fe204077b4e
+      internalID: 207293507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Elite_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 47
+        height: 32
+      alignment: 9
+      pivot: {x: 0.38, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 228ddf4c9a37a4caabfaae0e6d68e491
+      internalID: 1255708223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Elite_25
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 32
+        width: 47
+        height: 32
+      alignment: 9
+      pivot: {x: 0.38, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2da60eb850e34224ac751afbb66db27
+      internalID: -662921256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Elite_26
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 32
+        width: 47
+        height: 32
+      alignment: 9
+      pivot: {x: 0.38, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4edd02bd53374173baee4dad217626b
+      internalID: -1583212351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Elite_27
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 32
+        width: 47
+        height: 32
+      alignment: 9
+      pivot: {x: 0.38, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35ccb969d384240bab7e9bf55ef85eb7
+      internalID: 506837437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Elite_28
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 32
+        width: 47
+        height: 32
+      alignment: 9
+      pivot: {x: 0.38, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f21a10f0dd4b44a11bea5bf85a027108
+      internalID: -1713819250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Elite_29
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 32
+        width: 47
+        height: 32
+      alignment: 9
+      pivot: {x: 0.38, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed5f7d770385f44b0b717f83b5ddf14e
+      internalID: -454266451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Elite_30
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 32
+        width: 47
+        height: 32
+      alignment: 9
+      pivot: {x: 0.38, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f8612d1abe854e2abcc761ae45b1efe
+      internalID: 481782806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Elite_31
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 32
+        width: 47
+        height: 32
+      alignment: 9
+      pivot: {x: 0.38, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12aa8b75b051c434f94c204563433340
+      internalID: 464118027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Elite_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 47
+        height: 32
+      alignment: 9
+      pivot: {x: 0.38, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c859c0a171094448cb38052875fe23e5
+      internalID: 1939880640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Elite_33
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 0
+        width: 47
+        height: 32
+      alignment: 9
+      pivot: {x: 0.38, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43dbdc854196a42139632a290d72b9b0
+      internalID: 1312661591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Elite_34
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 0
+        width: 47
+        height: 32
+      alignment: 9
+      pivot: {x: 0.38, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb74cdcfdd15d4da2b2de6fe87e5fe8e
+      internalID: 1437224091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: ba8753d2c1b4a4153add18d6c6ac48bb
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Rogue_Elite_0: -1661844133
+      Rogue_Elite_1: -1190541622
+      Rogue_Elite_10: 2062399960
+      Rogue_Elite_11: 1818130115
+      Rogue_Elite_12: 1459604101
+      Rogue_Elite_13: -1997064292
+      Rogue_Elite_14: 2077730649
+      Rogue_Elite_15: -1174252376
+      Rogue_Elite_16: 926212180
+      Rogue_Elite_17: 746787732
+      Rogue_Elite_18: 566406227
+      Rogue_Elite_19: 1292853200
+      Rogue_Elite_2: -1273119880
+      Rogue_Elite_20: 1573290056
+      Rogue_Elite_21: 1049647035
+      Rogue_Elite_22: 1130182521
+      Rogue_Elite_23: 207293507
+      Rogue_Elite_24: 1255708223
+      Rogue_Elite_25: -662921256
+      Rogue_Elite_26: -1583212351
+      Rogue_Elite_27: 506837437
+      Rogue_Elite_28: -1713819250
+      Rogue_Elite_29: -454266451
+      Rogue_Elite_3: -2033533177
+      Rogue_Elite_30: 481782806
+      Rogue_Elite_31: 464118027
+      Rogue_Elite_32: 1939880640
+      Rogue_Elite_33: 1312661591
+      Rogue_Elite_34: 1437224091
+      Rogue_Elite_4: -1162849823
+      Rogue_Elite_5: 1598268486
+      Rogue_Elite_6: -2090534801
+      Rogue_Elite_7: 1390819965
+      Rogue_Elite_8: -1317050354
+      Rogue_Elite_9: 393224817
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,994 @@
+fileFormatVersion: 2
+guid: 1447df5928a6144f9878fbc3ef71fb5b
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 40
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Rogue_Legendary_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 42
+        height: 32
+      alignment: 9
+      pivot: {x: 0.43, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abe5a6db1f97d405c95cd8287c41e50e
+      internalID: 1087411256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Legendary_1
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 128
+        width: 42
+        height: 32
+      alignment: 9
+      pivot: {x: 0.43, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d12f260d1518456d895a16eba086bfc
+      internalID: 639993983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Legendary_2
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 128
+        width: 42
+        height: 32
+      alignment: 9
+      pivot: {x: 0.43, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 020748bb078c8463690c4b40b69b9fdf
+      internalID: 2053704997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Legendary_3
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 128
+        width: 42
+        height: 32
+      alignment: 9
+      pivot: {x: 0.43, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ef463fb6e79a4188a243239fda7ced1
+      internalID: 1179335460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Legendary_4
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 128
+        width: 42
+        height: 32
+      alignment: 9
+      pivot: {x: 0.43, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b53ef202169b6464e9d786ff83efa408
+      internalID: -1395604576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Legendary_5
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 128
+        width: 42
+        height: 32
+      alignment: 9
+      pivot: {x: 0.43, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0062fd90c60284bcfa6bb0f23e98ae4a
+      internalID: 304545748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Legendary_6
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 128
+        width: 42
+        height: 32
+      alignment: 9
+      pivot: {x: 0.43, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe6e8aa9fc1f743e699f261d729cc9db
+      internalID: 809749189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Legendary_7
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 128
+        width: 42
+        height: 32
+      alignment: 9
+      pivot: {x: 0.43, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29f80099e88784d3a980789cf9f7fe42
+      internalID: -206077911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Legendary_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 42
+        height: 32
+      alignment: 9
+      pivot: {x: 0.43, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc511c81a52004beaafd2e8cac0b671c
+      internalID: -1992457133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Legendary_9
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 96
+        width: 42
+        height: 32
+      alignment: 9
+      pivot: {x: 0.43, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20a2208d8f94b4a1a9bac1142f2eb7ef
+      internalID: 1220508306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Legendary_10
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 96
+        width: 42
+        height: 32
+      alignment: 9
+      pivot: {x: 0.43, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c9a24c0e531e4462a1a277c0d2502cb
+      internalID: -699050790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Legendary_11
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 96
+        width: 42
+        height: 32
+      alignment: 9
+      pivot: {x: 0.43, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3365e3f08c17f4b5388155fc231a4baf
+      internalID: -1601022942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Legendary_12
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 96
+        width: 42
+        height: 32
+      alignment: 9
+      pivot: {x: 0.43, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ffa68dc6dcf24ad999adf373d2afeec
+      internalID: 438702498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Legendary_13
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 96
+        width: 42
+        height: 32
+      alignment: 9
+      pivot: {x: 0.43, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b44820a0b3e747c08f39d8e3843027c
+      internalID: -977419081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Legendary_14
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 96
+        width: 42
+        height: 32
+      alignment: 9
+      pivot: {x: 0.43, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f763ab1359e64d48abbed0bb6b12073
+      internalID: -98593587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Legendary_15
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 96
+        width: 42
+        height: 32
+      alignment: 9
+      pivot: {x: 0.43, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0f53246735db41b1be0f8bae5b4da6a
+      internalID: -199796715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Legendary_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 42
+        height: 32
+      alignment: 9
+      pivot: {x: 0.43, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f694769bd17a4a078342a3be4ea5ad2
+      internalID: -573633701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Legendary_17
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 64
+        width: 42
+        height: 32
+      alignment: 9
+      pivot: {x: 0.43, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2b1d1bc0eabf41589e86f99e737d36e
+      internalID: -796701747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Legendary_18
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 64
+        width: 42
+        height: 32
+      alignment: 9
+      pivot: {x: 0.43, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe9fbdbc2fcd5468baa9be5b86797657
+      internalID: 639510230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Legendary_19
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 64
+        width: 42
+        height: 32
+      alignment: 9
+      pivot: {x: 0.43, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e4ec6677c8924b69b46b0b37c87169f
+      internalID: -838455877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Legendary_20
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 64
+        width: 42
+        height: 32
+      alignment: 9
+      pivot: {x: 0.43, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8677ae31187fe45908e5b37693c59e28
+      internalID: -265263608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Legendary_21
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 64
+        width: 42
+        height: 32
+      alignment: 9
+      pivot: {x: 0.43, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 282a9a25a66e2478d84862d099331fa7
+      internalID: 1027977600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Legendary_22
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 64
+        width: 42
+        height: 32
+      alignment: 9
+      pivot: {x: 0.43, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 657016c9fb698423f9831f11e5749cf0
+      internalID: 1555787156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Legendary_23
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 64
+        width: 42
+        height: 32
+      alignment: 9
+      pivot: {x: 0.43, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e50b784b0a794564afec7e674e5862e
+      internalID: 913727941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Legendary_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 42
+        height: 32
+      alignment: 9
+      pivot: {x: 0.43, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 192f4111d12804a968b5b3fe3cc32a66
+      internalID: 640643661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Legendary_25
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 32
+        width: 42
+        height: 32
+      alignment: 9
+      pivot: {x: 0.43, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eee1a4dd525634e3a8b6dc6f0f425293
+      internalID: -766068343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Legendary_26
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 32
+        width: 42
+        height: 32
+      alignment: 9
+      pivot: {x: 0.43, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3ed73d9242904ae99d1600f0f447d3c
+      internalID: -430099931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Legendary_27
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 32
+        width: 42
+        height: 32
+      alignment: 9
+      pivot: {x: 0.43, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a29b72c12d5864ba2be8029fff93f557
+      internalID: -255573147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Legendary_28
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 32
+        width: 42
+        height: 32
+      alignment: 9
+      pivot: {x: 0.43, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56a1fcfa96b2548bc809ee17a0733696
+      internalID: 4738654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Legendary_29
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 32
+        width: 42
+        height: 32
+      alignment: 9
+      pivot: {x: 0.43, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b0281d64589a48909ef33ee1fe167b3
+      internalID: 1640792751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Legendary_30
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 32
+        width: 42
+        height: 32
+      alignment: 9
+      pivot: {x: 0.43, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d06f2f686efc49f5b1f9327bd471031
+      internalID: -2057429510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Legendary_31
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 32
+        width: 42
+        height: 32
+      alignment: 9
+      pivot: {x: 0.43, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b581fbf123764ee799bcdeff1d08177
+      internalID: -1972579157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Legendary_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 42
+        height: 32
+      alignment: 9
+      pivot: {x: 0.43, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 179e8007205ce4dc58ce9411160cbb51
+      internalID: -1986564641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Legendary_33
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 0
+        width: 42
+        height: 32
+      alignment: 9
+      pivot: {x: 0.43, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce99aae432142407893201205bb43dc7
+      internalID: 1058185466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Legendary_34
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 0
+        width: 42
+        height: 32
+      alignment: 9
+      pivot: {x: 0.43, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d61cc1c89fada4b60a49ddf826cd3cdf
+      internalID: -574853326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Legendary_35
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 0
+        width: 42
+        height: 32
+      alignment: 9
+      pivot: {x: 0.43, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 573e99b84f77e447690200a91c8bf958
+      internalID: 626515626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Legendary_36
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 0
+        width: 42
+        height: 32
+      alignment: 9
+      pivot: {x: 0.43, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ca2c22c3aca84d85990e32f752a43c8
+      internalID: -411070597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 096933da8d73948c2bf949367e6f8eaf
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Rogue_Legendary_0: 1087411256
+      Rogue_Legendary_1: 639993983
+      Rogue_Legendary_10: -699050790
+      Rogue_Legendary_11: -1601022942
+      Rogue_Legendary_12: 438702498
+      Rogue_Legendary_13: -977419081
+      Rogue_Legendary_14: -98593587
+      Rogue_Legendary_15: -199796715
+      Rogue_Legendary_16: -573633701
+      Rogue_Legendary_17: -796701747
+      Rogue_Legendary_18: 639510230
+      Rogue_Legendary_19: -838455877
+      Rogue_Legendary_2: 2053704997
+      Rogue_Legendary_20: -265263608
+      Rogue_Legendary_21: 1027977600
+      Rogue_Legendary_22: 1555787156
+      Rogue_Legendary_23: 913727941
+      Rogue_Legendary_24: 640643661
+      Rogue_Legendary_25: -766068343
+      Rogue_Legendary_26: -430099931
+      Rogue_Legendary_27: -255573147
+      Rogue_Legendary_28: 4738654
+      Rogue_Legendary_29: 1640792751
+      Rogue_Legendary_3: 1179335460
+      Rogue_Legendary_30: -2057429510
+      Rogue_Legendary_31: -1972579157
+      Rogue_Legendary_32: -1986564641
+      Rogue_Legendary_33: 1058185466
+      Rogue_Legendary_34: -574853326
+      Rogue_Legendary_35: 626515626
+      Rogue_Legendary_36: -411070597
+      Rogue_Legendary_4: -1395604576
+      Rogue_Legendary_5: 304545748
+      Rogue_Legendary_6: 809749189
+      Rogue_Legendary_7: -206077911
+      Rogue_Legendary_8: -1992457133
+      Rogue_Legendary_9: 1220508306
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

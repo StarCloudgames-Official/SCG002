@@ -1,0 +1,1293 @@
+fileFormatVersion: 2
+guid: 6503529a2203b447f82e4ada51d95aed
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 40
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Rogue_Master_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.56, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59120797f5ee44c6e81612cf5044e4b9
+      internalID: 1324895517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Master_1
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 192
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.56, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 707e5258432354d4c9459bb5cc94c19b
+      internalID: 468991871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Master_2
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 192
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.56, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84cde5d1039e24ae980d025ce001418d
+      internalID: 439287027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Master_3
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 192
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.56, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c4a4a8fce3684c338a49ef8c8d28173
+      internalID: 2000913855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Master_4
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 192
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.56, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f9f2ea31497f4e858c944763958bebb
+      internalID: 1221210082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Master_5
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 192
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.56, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71c636f10fa9d41fca3cd9e2427fe1ab
+      internalID: -1311028813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Master_6
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 192
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.56, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77da6830a63334c12a36e46b2df7dbce
+      internalID: -1781808047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Master_7
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 192
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.56, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 322d6574bc2d14b359ba14dd362bb058
+      internalID: -610251242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Master_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.56, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4a2e62d26f3c47958e91ef0d08dda10
+      internalID: -1205436854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Master_9
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 160
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.56, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64263372dafb8482787bb2cb7c67c237
+      internalID: 1109373703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Master_10
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 160
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.56, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c772a3626cd14f1b82ee58a5aa1db55
+      internalID: -1212797337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Master_11
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 160
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.56, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c4adc75848f54e559f3893acd58c018
+      internalID: -937017704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Master_12
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 160
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.56, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2348dca9ed6c4c53b8a77ad033fe866
+      internalID: 1525836749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Master_13
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 160
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.56, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e81b6f38907254169aa42f29799b5625
+      internalID: 1261332677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Master_14
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 160
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.56, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 513d4239ac9844abba37a3e86d0cec96
+      internalID: 1880684530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Master_15
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 160
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.56, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cd6bdf6fd3fa4c0f94dc0f8ba52eeef
+      internalID: 1777848750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Master_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.56, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a56c013d720b84786811cb879253c47a
+      internalID: -713632670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Master_17
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 128
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.56, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e3ccced96af24fcc8b72789cba56007
+      internalID: -1490213678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Master_18
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 128
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.56, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7335c7a52bc6e482f96ba1310aac637c
+      internalID: -579719470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Master_19
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 128
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.56, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee2dbd354673943f1a2af1d0dac6072c
+      internalID: 2107766594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Master_20
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 128
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.56, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db0ca7773c8b94e19ac36ea59b4b0b94
+      internalID: -962570170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Master_21
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 128
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.56, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30800b9ba07c345529993fc67753d416
+      internalID: -1069565720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Master_22
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 128
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.56, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f877d080e17f64b2db9c80528094ea48
+      internalID: -273223876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Master_23
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 128
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.56, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c999f4bc25b7b4d95a41c7ffa33f2c97
+      internalID: 1825345693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Master_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.56, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fadca536380c04ee1ae7ae9248ffbeda
+      internalID: 1849256905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Master_25
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 96
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.56, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e5d6e5a8203f41e087ff3478f7019da
+      internalID: -388086285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Master_26
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 96
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.56, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29006486c39d64263b3dd2452fa87b45
+      internalID: 332681339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Master_27
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 96
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.56, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b883a2558850249ac8ffe24cb649c372
+      internalID: -1087002240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Master_28
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 96
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.56, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f617de9e3318f4c178ba9af5e6c72a7d
+      internalID: -337761915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Master_29
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 96
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.56, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e30f9d025e249422c8eb6d324e24048f
+      internalID: 1170200715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Master_30
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 96
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.56, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a6e87d7cb8444c9fbe8fecaa57bc69d
+      internalID: -1630363951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Master_31
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 96
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.56, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 586b58d8239544839a67e30a669107f9
+      internalID: -748199040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Master_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.56, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c7e756fd34c24db9974f89ddd4afa86
+      internalID: -1103315221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Master_33
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 64
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.56, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2aa5f5cdd0c804ce39a985a5c39aea05
+      internalID: 414830532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Master_34
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 64
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.56, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1d1bfcfd09654e7385fdbb2dd1c7a12
+      internalID: 1548364609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Master_35
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 64
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.56, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65da3c22e408e44d08070d879726fe58
+      internalID: 678592617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Master_36
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 64
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.56, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c382595fbef964da8ac4116d8c893443
+      internalID: 808566591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Master_37
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 64
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.56, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c86d93eb253ec4567865c205fbcdb4a2
+      internalID: 675106178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Master_38
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 64
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.56, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0b395019422a4b7087249d1a00d2a4e
+      internalID: 244008841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Master_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.56, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81c77bb50342e45ffabcfa6bf7ef22fd
+      internalID: 1349561572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Master_40
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 32
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.56, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b16b60707b764901a5394645b9dcc8a
+      internalID: 1080380775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Master_41
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 32
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.56, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94a6a6ff00c7b496fb0189e320dd7087
+      internalID: -1821941708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Master_42
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 32
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.56, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c940ed589612640fe8d5fb472ccc823c
+      internalID: -1283368767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Master_43
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 32
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.56, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a1c9dc3b5e954780a455939ec318d38
+      internalID: 985241224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Master_44
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 32
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.56, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84ef4966644134a7c92f329cdf0686e5
+      internalID: 2018595583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Master_45
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 32
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.56, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 684dbd207b0864ff79f59384bba8a94b
+      internalID: -871834575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Master_46
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.56, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f68f120356e4046a5aae7bd2cc9a5d93
+      internalID: 1772478307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Master_47
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 0
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.56, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a461ab5f6dcbe429a8ee6ad288592b5a
+      internalID: 486217918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Master_48
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 0
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.56, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d298f95368424ed98e776d3711f265f
+      internalID: 558649008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rogue_Master_49
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 0
+        width: 41
+        height: 32
+      alignment: 9
+      pivot: {x: 0.56, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f00ec5a2a81344f87aa88163536c19a7
+      internalID: -1144563489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 42916472531944671bc32e3762c7b927
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Rogue_Master_0: 1324895517
+      Rogue_Master_1: 468991871
+      Rogue_Master_10: -1212797337
+      Rogue_Master_11: -937017704
+      Rogue_Master_12: 1525836749
+      Rogue_Master_13: 1261332677
+      Rogue_Master_14: 1880684530
+      Rogue_Master_15: 1777848750
+      Rogue_Master_16: -713632670
+      Rogue_Master_17: -1490213678
+      Rogue_Master_18: -579719470
+      Rogue_Master_19: 2107766594
+      Rogue_Master_2: 439287027
+      Rogue_Master_20: -962570170
+      Rogue_Master_21: -1069565720
+      Rogue_Master_22: -273223876
+      Rogue_Master_23: 1825345693
+      Rogue_Master_24: 1849256905
+      Rogue_Master_25: -388086285
+      Rogue_Master_26: 332681339
+      Rogue_Master_27: -1087002240
+      Rogue_Master_28: -337761915
+      Rogue_Master_29: 1170200715
+      Rogue_Master_3: 2000913855
+      Rogue_Master_30: -1630363951
+      Rogue_Master_31: -748199040
+      Rogue_Master_32: -1103315221
+      Rogue_Master_33: 414830532
+      Rogue_Master_34: 1548364609
+      Rogue_Master_35: 678592617
+      Rogue_Master_36: 808566591
+      Rogue_Master_37: 675106178
+      Rogue_Master_38: 244008841
+      Rogue_Master_39: 1349561572
+      Rogue_Master_4: 1221210082
+      Rogue_Master_40: 1080380775
+      Rogue_Master_41: -1821941708
+      Rogue_Master_42: -1283368767
+      Rogue_Master_43: 985241224
+      Rogue_Master_44: 2018595583
+      Rogue_Master_45: -871834575
+      Rogue_Master_46: 1772478307
+      Rogue_Master_47: 486217918
+      Rogue_Master_48: 558649008
+      Rogue_Master_49: -1144563489
+      Rogue_Master_5: -1311028813
+      Rogue_Master_6: -1781808047
+      Rogue_Master_7: -610251242
+      Rogue_Master_8: -1205436854
+      Rogue_Master_9: 1109373703
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
