@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 32ffc34cdad6141f192d0a2c25c40e4f
+guid: 26f57b2deea0f4cffb4bca78322f029d
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,1277 +123,925 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Mage_Godlike_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 224
-        width: 41
-        height: 32
-      alignment: 9
-      pivot: {x: 0.39, y: 0.41}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 50f67b01b732d4ba09c1ee2e3739e138
-      internalID: 514637833
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage_Godlike_1
-      rect:
-        serializedVersion: 2
-        x: 41
-        y: 224
-        width: 41
-        height: 32
-      alignment: 9
-      pivot: {x: 0.39, y: 0.41}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0fb88df27bb374d2586a8a88f948d64a
-      internalID: 1128013785
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage_Godlike_2
-      rect:
-        serializedVersion: 2
-        x: 82
-        y: 224
-        width: 41
-        height: 32
-      alignment: 9
-      pivot: {x: 0.39, y: 0.41}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2f3f00eb4c8ef40208c3800167288848
-      internalID: -2034263480
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage_Godlike_3
-      rect:
-        serializedVersion: 2
-        x: 123
-        y: 224
-        width: 41
-        height: 32
-      alignment: 9
-      pivot: {x: 0.39, y: 0.41}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 60b161e83451140618f2f17e5f80e522
-      internalID: -616409475
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage_Godlike_4
-      rect:
-        serializedVersion: 2
-        x: 164
-        y: 224
-        width: 41
-        height: 32
-      alignment: 9
-      pivot: {x: 0.39, y: 0.41}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 62caf8184c2a445c4bcabd59855de30a
-      internalID: -683497274
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage_Godlike_5
-      rect:
-        serializedVersion: 2
-        x: 205
-        y: 224
-        width: 41
-        height: 32
-      alignment: 9
-      pivot: {x: 0.39, y: 0.41}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 358810117d10c4cb7a2d944788915cec
-      internalID: 1376089235
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage_Godlike_6
-      rect:
-        serializedVersion: 2
-        x: 246
-        y: 224
-        width: 41
-        height: 32
-      alignment: 9
-      pivot: {x: 0.39, y: 0.41}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 564e8ad4a766646ee98220b9124f17fa
-      internalID: 56406700
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage_Godlike_7
-      rect:
-        serializedVersion: 2
-        x: 287
-        y: 224
-        width: 41
-        height: 32
-      alignment: 9
-      pivot: {x: 0.39, y: 0.41}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c98b94d99a34f4451a9f318409187693
-      internalID: -2046788176
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage_Godlike_8
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 192
-        width: 41
-        height: 32
-      alignment: 9
-      pivot: {x: 0.39, y: 0.41}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 914491c373a004797ac222b26c21066b
-      internalID: -237908913
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage_Godlike_9
-      rect:
-        serializedVersion: 2
-        x: 41
-        y: 192
-        width: 41
-        height: 32
-      alignment: 9
-      pivot: {x: 0.39, y: 0.41}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 252b9b4c14ef34a6f95fbb12fbca7ac4
-      internalID: 1462075919
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage_Godlike_10
-      rect:
-        serializedVersion: 2
-        x: 82
-        y: 192
-        width: 41
-        height: 32
-      alignment: 9
-      pivot: {x: 0.39, y: 0.41}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3c20f7a7889ed404d9824dc8de25117c
-      internalID: -1859388981
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage_Godlike_11
-      rect:
-        serializedVersion: 2
-        x: 123
-        y: 192
-        width: 41
-        height: 32
-      alignment: 9
-      pivot: {x: 0.39, y: 0.41}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e60954cb8f71f46ca814dd27e754afb7
-      internalID: 1922871314
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage_Godlike_12
-      rect:
-        serializedVersion: 2
-        x: 164
-        y: 192
-        width: 41
-        height: 32
-      alignment: 9
-      pivot: {x: 0.39, y: 0.41}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7c44bc42abc8c430385f086ac1d249f4
-      internalID: 60390090
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage_Godlike_13
-      rect:
-        serializedVersion: 2
-        x: 205
-        y: 192
-        width: 41
-        height: 32
-      alignment: 9
-      pivot: {x: 0.39, y: 0.41}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4dc6a6eaf6afb4f47a336b1f26970cc1
-      internalID: -1625012342
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage_Godlike_14
-      rect:
-        serializedVersion: 2
-        x: 246
-        y: 192
-        width: 41
-        height: 32
-      alignment: 9
-      pivot: {x: 0.39, y: 0.41}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b57387b6bc2224aceb457cd42bd72219
-      internalID: 1947004544
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage_Godlike_15
-      rect:
-        serializedVersion: 2
-        x: 287
-        y: 192
-        width: 41
-        height: 32
-      alignment: 9
-      pivot: {x: 0.39, y: 0.41}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: de4d1e2b720c1470a9f39f5b7987f1d4
-      internalID: 1049979979
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage_Godlike_16
+      name: Warrior_Elite_0
       rect:
         serializedVersion: 2
         x: 0
         y: 160
-        width: 41
+        width: 51
         height: 32
       alignment: 9
-      pivot: {x: 0.39, y: 0.41}
+      pivot: {x: 0.355, y: 0.38}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a50f8f8e5fb624d959202bc794559e16
-      internalID: 2101101855
+      spriteID: d738507f779294fbca76813b52893ab9
+      internalID: -910963177
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage_Godlike_17
+      name: Warrior_Elite_1
       rect:
         serializedVersion: 2
-        x: 41
+        x: 51
         y: 160
-        width: 41
+        width: 51
         height: 32
       alignment: 9
-      pivot: {x: 0.39, y: 0.41}
+      pivot: {x: 0.355, y: 0.38}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fb0bf488e8e6d47a1a36ffddddf3f21f
-      internalID: 1908957829
+      spriteID: 26aea66948a754e57822bef15fd1028e
+      internalID: 631183640
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage_Godlike_18
+      name: Warrior_Elite_2
       rect:
         serializedVersion: 2
-        x: 82
+        x: 102
         y: 160
-        width: 41
+        width: 51
         height: 32
       alignment: 9
-      pivot: {x: 0.39, y: 0.41}
+      pivot: {x: 0.355, y: 0.38}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 38f4b351146144d3e9acae6983950693
-      internalID: -440965688
+      spriteID: 8cb21e52bb6564ed493428b502f1bb31
+      internalID: 1548607911
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage_Godlike_19
+      name: Warrior_Elite_3
       rect:
         serializedVersion: 2
-        x: 123
+        x: 153
         y: 160
-        width: 41
+        width: 51
         height: 32
       alignment: 9
-      pivot: {x: 0.39, y: 0.41}
+      pivot: {x: 0.355, y: 0.38}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a69de74fcd37343adb8be2540a68284d
-      internalID: -523980929
+      spriteID: 33ea256c4a31e47638b18520dc208762
+      internalID: -524270135
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage_Godlike_20
+      name: Warrior_Elite_4
       rect:
         serializedVersion: 2
-        x: 164
+        x: 204
         y: 160
-        width: 41
+        width: 51
         height: 32
       alignment: 9
-      pivot: {x: 0.39, y: 0.41}
+      pivot: {x: 0.355, y: 0.38}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c9b92469d128a4ebeaf5ec7ac0ee9494
-      internalID: -537087109
+      spriteID: 92ddb45155bbe4504a77615cb68775aa
+      internalID: -1270796673
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage_Godlike_21
+      name: Warrior_Elite_5
       rect:
         serializedVersion: 2
-        x: 205
+        x: 255
         y: 160
-        width: 41
+        width: 51
         height: 32
       alignment: 9
-      pivot: {x: 0.39, y: 0.41}
+      pivot: {x: 0.355, y: 0.38}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6e10dc1e3a0ab45669b5577dce594510
-      internalID: 610312159
+      spriteID: d70b65d3ae54d4451b9fb19f29886544
+      internalID: -788509700
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage_Godlike_22
+      name: Warrior_Elite_6
       rect:
         serializedVersion: 2
-        x: 246
+        x: 306
         y: 160
-        width: 41
+        width: 51
         height: 32
       alignment: 9
-      pivot: {x: 0.39, y: 0.41}
+      pivot: {x: 0.355, y: 0.38}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 90765cb1d186a4b4fb9c42360c7c26a8
-      internalID: -2096207541
+      spriteID: 8c3db4e0846f8482495f36cadb66b27e
+      internalID: -1509857447
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage_Godlike_23
+      name: Warrior_Elite_7
       rect:
         serializedVersion: 2
-        x: 287
+        x: 357
         y: 160
-        width: 41
+        width: 51
         height: 32
       alignment: 9
-      pivot: {x: 0.39, y: 0.41}
+      pivot: {x: 0.355, y: 0.38}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed62e63b9f90942928b2a50fcc088393
-      internalID: 192877233
+      spriteID: 4f29d95e1c4ec47928420d8ecbf679ec
+      internalID: 1573082939
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage_Godlike_24
+      name: Warrior_Elite_8
       rect:
         serializedVersion: 2
         x: 0
         y: 128
-        width: 41
+        width: 51
         height: 32
       alignment: 9
-      pivot: {x: 0.39, y: 0.41}
+      pivot: {x: 0.355, y: 0.38}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 86c13478670e548c4b1cc1867ea32e61
-      internalID: -1950756723
+      spriteID: a625b21eb7261400cb36fda7fa6a1adc
+      internalID: -21795318
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage_Godlike_25
+      name: Warrior_Elite_9
       rect:
         serializedVersion: 2
-        x: 41
+        x: 51
         y: 128
-        width: 41
+        width: 51
         height: 32
       alignment: 9
-      pivot: {x: 0.39, y: 0.41}
+      pivot: {x: 0.355, y: 0.38}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 367df954f84604edcac16a24a87958c1
-      internalID: 355846270
+      spriteID: a9f9656b3e4784184b637e903ac5f9cf
+      internalID: 753315734
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage_Godlike_26
+      name: Warrior_Elite_10
       rect:
         serializedVersion: 2
-        x: 82
+        x: 102
         y: 128
-        width: 41
+        width: 51
         height: 32
       alignment: 9
-      pivot: {x: 0.39, y: 0.41}
+      pivot: {x: 0.355, y: 0.38}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f4befdb043c148f895a1168960b76e3
-      internalID: 1197383692
+      spriteID: 59acf7e9b1e2649ed81f2c95fa06af7d
+      internalID: 2035455724
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage_Godlike_27
+      name: Warrior_Elite_11
       rect:
         serializedVersion: 2
-        x: 123
+        x: 153
         y: 128
-        width: 41
+        width: 51
         height: 32
       alignment: 9
-      pivot: {x: 0.39, y: 0.41}
+      pivot: {x: 0.355, y: 0.38}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9b4bd3de6aa5a4a9ea5a0f6eef84586a
-      internalID: 1549478859
+      spriteID: cc758e797d8e84ba589a79be02c8ad6f
+      internalID: -200086878
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage_Godlike_28
+      name: Warrior_Elite_12
       rect:
         serializedVersion: 2
-        x: 164
+        x: 204
         y: 128
-        width: 41
+        width: 51
         height: 32
       alignment: 9
-      pivot: {x: 0.39, y: 0.41}
+      pivot: {x: 0.355, y: 0.38}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 80629ade7f61f4a25b093bfd18bf824b
-      internalID: 1148833647
+      spriteID: ec646f9d413114d7e90e1f304aa73ea8
+      internalID: 596463280
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage_Godlike_29
+      name: Warrior_Elite_13
       rect:
         serializedVersion: 2
-        x: 205
+        x: 255
         y: 128
-        width: 41
+        width: 51
         height: 32
       alignment: 9
-      pivot: {x: 0.39, y: 0.41}
+      pivot: {x: 0.355, y: 0.38}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 61a747aed10e84def869f8c535865adc
-      internalID: 529042523
+      spriteID: d2e9a20ebf473416096ad17376a77a6f
+      internalID: -1616384971
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage_Godlike_30
+      name: Warrior_Elite_14
       rect:
         serializedVersion: 2
-        x: 246
+        x: 306
         y: 128
-        width: 41
+        width: 51
         height: 32
       alignment: 9
-      pivot: {x: 0.39, y: 0.41}
+      pivot: {x: 0.355, y: 0.38}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2d54215dff0764f91800e03cc9506352
-      internalID: 1152470156
+      spriteID: b5e15a3b32ca44404a553b355cff97bb
+      internalID: 1266448973
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage_Godlike_31
+      name: Warrior_Elite_15
       rect:
         serializedVersion: 2
-        x: 287
+        x: 357
         y: 128
-        width: 41
+        width: 51
         height: 32
       alignment: 9
-      pivot: {x: 0.39, y: 0.41}
+      pivot: {x: 0.355, y: 0.38}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea6c35028457f438d85fb287f54d5e0c
-      internalID: 1231940048
+      spriteID: 29be2b62d1a3947bd9adab1f93e9d1c7
+      internalID: 1419928871
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage_Godlike_32
+      name: Warrior_Elite_16
       rect:
         serializedVersion: 2
         x: 0
         y: 96
-        width: 41
+        width: 51
         height: 32
       alignment: 9
-      pivot: {x: 0.39, y: 0.41}
+      pivot: {x: 0.355, y: 0.38}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 81ec94d07c0154631a213ff820383fe2
-      internalID: -1516425560
+      spriteID: 0c6d8ff343bf94cf1a0d1d70c13508ed
+      internalID: 544906397
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage_Godlike_33
+      name: Warrior_Elite_17
       rect:
         serializedVersion: 2
-        x: 41
+        x: 51
         y: 96
-        width: 41
+        width: 51
         height: 32
       alignment: 9
-      pivot: {x: 0.39, y: 0.41}
+      pivot: {x: 0.355, y: 0.38}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 50158a4867caa4793af2f7ea86ef3b5c
-      internalID: 471704352
+      spriteID: 7ce4aef740e7a4b889acf8952404c740
+      internalID: 1857421645
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage_Godlike_34
+      name: Warrior_Elite_18
       rect:
         serializedVersion: 2
-        x: 82
+        x: 102
         y: 96
-        width: 41
+        width: 51
         height: 32
       alignment: 9
-      pivot: {x: 0.39, y: 0.41}
+      pivot: {x: 0.355, y: 0.38}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 963ce9da4465f4c8581bb864ec8025bb
-      internalID: -647943498
+      spriteID: 58aa33000939d44e6a1fe134b6f38c6c
+      internalID: -436556652
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage_Godlike_35
+      name: Warrior_Elite_19
       rect:
         serializedVersion: 2
-        x: 123
+        x: 153
         y: 96
-        width: 41
+        width: 51
         height: 32
       alignment: 9
-      pivot: {x: 0.39, y: 0.41}
+      pivot: {x: 0.355, y: 0.38}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 43f5fa6261517401a9da9f0956c4ee17
-      internalID: 1108811317
+      spriteID: d4c1852af3056449e8bd6f004e88dbff
+      internalID: -113289868
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage_Godlike_36
+      name: Warrior_Elite_20
       rect:
         serializedVersion: 2
-        x: 164
+        x: 204
         y: 96
-        width: 41
+        width: 51
         height: 32
       alignment: 9
-      pivot: {x: 0.39, y: 0.41}
+      pivot: {x: 0.355, y: 0.38}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 633fb9f08b40747ba95036be485e8b85
-      internalID: -976666816
+      spriteID: af445ebe474f14ab0b808147145b4547
+      internalID: -238197273
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage_Godlike_37
+      name: Warrior_Elite_21
       rect:
         serializedVersion: 2
-        x: 205
+        x: 255
         y: 96
-        width: 41
+        width: 51
         height: 32
       alignment: 9
-      pivot: {x: 0.39, y: 0.41}
+      pivot: {x: 0.355, y: 0.38}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca6fbc83229224399a46f79525c383f6
-      internalID: -424271567
+      spriteID: 44bcde24192b14818aa4aae51cb86821
+      internalID: -1646969676
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage_Godlike_38
+      name: Warrior_Elite_22
       rect:
         serializedVersion: 2
-        x: 246
+        x: 306
         y: 96
-        width: 41
+        width: 51
         height: 32
       alignment: 9
-      pivot: {x: 0.39, y: 0.41}
+      pivot: {x: 0.355, y: 0.38}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 15e4c3a540cb1440c860a5db98710c40
-      internalID: -1570659780
+      spriteID: e40c109a47bc04490b023cc5e76020cf
+      internalID: 1373882204
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage_Godlike_39
+      name: Warrior_Elite_23
       rect:
         serializedVersion: 2
-        x: 287
+        x: 357
         y: 96
-        width: 41
+        width: 51
         height: 32
       alignment: 9
-      pivot: {x: 0.39, y: 0.41}
+      pivot: {x: 0.355, y: 0.38}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d9f061384d0e84b1985707121d88f4d2
-      internalID: 496907281
+      spriteID: 0340a695326254b288e2d0cf09b5636e
+      internalID: 500065315
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage_Godlike_40
+      name: Warrior_Elite_24
       rect:
         serializedVersion: 2
         x: 0
         y: 64
-        width: 41
+        width: 51
         height: 32
       alignment: 9
-      pivot: {x: 0.39, y: 0.41}
+      pivot: {x: 0.355, y: 0.38}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6226a2676399b4641871ae6ef6582958
-      internalID: 250986186
+      spriteID: 80c749bdd889643dd97be5517adc96e0
+      internalID: -1146328533
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage_Godlike_41
+      name: Warrior_Elite_25
       rect:
         serializedVersion: 2
-        x: 41
+        x: 51
         y: 64
-        width: 41
+        width: 51
         height: 32
       alignment: 9
-      pivot: {x: 0.39, y: 0.41}
+      pivot: {x: 0.355, y: 0.38}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b5efa82b925784140b3876320dc6658e
-      internalID: -2091867290
+      spriteID: a99fdd320eb484c8b9a853dc534dd06b
+      internalID: -1905112728
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage_Godlike_42
+      name: Warrior_Elite_26
       rect:
         serializedVersion: 2
-        x: 82
+        x: 102
         y: 64
-        width: 41
+        width: 51
         height: 32
       alignment: 9
-      pivot: {x: 0.39, y: 0.41}
+      pivot: {x: 0.355, y: 0.38}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7637818bdd9144bb1ad95e2688a1cba5
-      internalID: -1515318453
+      spriteID: 9f9fb486ce11d49ceb23ac55dcd778d7
+      internalID: -1408937534
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage_Godlike_43
+      name: Warrior_Elite_27
       rect:
         serializedVersion: 2
-        x: 123
+        x: 153
         y: 64
-        width: 41
+        width: 51
         height: 32
       alignment: 9
-      pivot: {x: 0.39, y: 0.41}
+      pivot: {x: 0.355, y: 0.38}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cf2aaa528f8824a2ea3cb37d2b5851c6
-      internalID: 191761200
+      spriteID: a3cdf76b37f364045b57f4ef3f30a33b
+      internalID: 1661576107
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage_Godlike_44
+      name: Warrior_Elite_28
       rect:
         serializedVersion: 2
-        x: 164
+        x: 204
         y: 64
-        width: 41
+        width: 51
         height: 32
       alignment: 9
-      pivot: {x: 0.39, y: 0.41}
+      pivot: {x: 0.355, y: 0.38}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 34ac3a26014344c588e55599343c9412
-      internalID: -70059420
+      spriteID: 0272045c646a24116b50ece33ffa9a52
+      internalID: -2125364277
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage_Godlike_45
+      name: Warrior_Elite_29
       rect:
         serializedVersion: 2
-        x: 205
+        x: 255
         y: 64
-        width: 41
+        width: 51
         height: 32
       alignment: 9
-      pivot: {x: 0.39, y: 0.41}
+      pivot: {x: 0.355, y: 0.38}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1275c4cdd4a614c6d9264e3495f0af07
-      internalID: -288285568
+      spriteID: c37ecda26cd24423e8d817d632aa203a
+      internalID: -194224769
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage_Godlike_46
+      name: Warrior_Elite_30
       rect:
         serializedVersion: 2
-        x: 246
+        x: 306
         y: 64
-        width: 41
+        width: 51
         height: 32
       alignment: 9
-      pivot: {x: 0.39, y: 0.41}
+      pivot: {x: 0.355, y: 0.38}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0f4022b1b55cb4231b2371dbe7385482
-      internalID: -499384648
+      spriteID: 4786377ef48df466594fa9089a7186bf
+      internalID: 1625252827
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage_Godlike_47
+      name: Warrior_Elite_31
       rect:
         serializedVersion: 2
-        x: 287
+        x: 357
         y: 64
-        width: 41
+        width: 51
         height: 32
       alignment: 9
-      pivot: {x: 0.39, y: 0.41}
+      pivot: {x: 0.355, y: 0.38}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d07925484ff8944fba09535eecc36ede
-      internalID: 89638180
+      spriteID: 7d5e1b96cb922444dac6aa9a33d36fa4
+      internalID: -1962583491
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage_Godlike_48
+      name: Warrior_Elite_32
       rect:
         serializedVersion: 2
-        x: 41
+        x: 0
         y: 32
-        width: 41
+        width: 51
         height: 32
       alignment: 9
-      pivot: {x: 0.39, y: 0.41}
+      pivot: {x: 0.355, y: 0.38}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bbb9b9167c23d40f6b11b1c5ba21eebd
-      internalID: 1092875581
+      spriteID: e701f71fa48da4adfbf3c90c5165ae56
+      internalID: 855363890
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage_Godlike_49
+      name: Warrior_Elite_33
       rect:
         serializedVersion: 2
-        x: 82
+        x: 51
         y: 32
-        width: 41
+        width: 51
         height: 32
       alignment: 9
-      pivot: {x: 0.39, y: 0.41}
+      pivot: {x: 0.355, y: 0.38}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e5fd0ddd54f9d4046aeb4687be029865
-      internalID: 2058472678
+      spriteID: 3174075a59d3c48a5813b031bff3cfa3
+      internalID: -1763910008
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage_Godlike_50
+      name: Warrior_Elite_34
       rect:
         serializedVersion: 2
-        x: 123
+        x: 102
         y: 32
-        width: 41
+        width: 51
         height: 32
       alignment: 9
-      pivot: {x: 0.39, y: 0.41}
+      pivot: {x: 0.355, y: 0.38}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ebe580a1c7d9b45e4807ed3d845b8e76
-      internalID: -1601442090
+      spriteID: 8b9381973e94a4a23a63cbfa0915dd28
+      internalID: -54735556
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage_Godlike_51
+      name: Warrior_Elite_35
       rect:
         serializedVersion: 2
-        x: 164
+        x: 153
         y: 32
-        width: 41
+        width: 51
         height: 32
       alignment: 9
-      pivot: {x: 0.39, y: 0.41}
+      pivot: {x: 0.355, y: 0.38}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d610a4932e27846518eca8eb20f3bb22
-      internalID: -1470105580
+      spriteID: 1425687fc886a46eeada46937f40f266
+      internalID: 1121175664
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage_Godlike_52
+      name: Warrior_Elite_36
       rect:
         serializedVersion: 2
-        x: 205
+        x: 204
         y: 32
-        width: 41
+        width: 51
         height: 32
       alignment: 9
-      pivot: {x: 0.39, y: 0.41}
+      pivot: {x: 0.355, y: 0.38}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dcd04120d674144e08e71a1fe40b6607
-      internalID: 1882528746
+      spriteID: 2230ef79b31a14a1e8d817d1726b3862
+      internalID: -390995968
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage_Godlike_53
+      name: Warrior_Elite_37
       rect:
         serializedVersion: 2
-        x: 246
+        x: 255
         y: 32
-        width: 41
+        width: 51
         height: 32
       alignment: 9
-      pivot: {x: 0.39, y: 0.41}
+      pivot: {x: 0.355, y: 0.38}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b43b6c456f18a447f94fb3a6e0e97d57
-      internalID: 980426556
+      spriteID: b49a9cbd0b21048c1af4d0e0e9929c89
+      internalID: 307433268
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage_Godlike_54
+      name: Warrior_Elite_38
       rect:
         serializedVersion: 2
-        x: 287
+        x: 306
         y: 32
-        width: 41
+        width: 51
         height: 32
       alignment: 9
-      pivot: {x: 0.39, y: 0.41}
+      pivot: {x: 0.355, y: 0.38}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e6af5146070c46cf940d20d0b7e069e
-      internalID: -188665465
+      spriteID: 4f24298ac37a943448eb59e407283713
+      internalID: -1099337284
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage_Godlike_55
+      name: Warrior_Elite_39
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 32
+        width: 51
+        height: 32
+      alignment: 9
+      pivot: {x: 0.355, y: 0.38}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c29be6221dbbb4d708d0b21e292d3931
+      internalID: -1252981913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_Elite_40
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 41
+        width: 51
         height: 32
       alignment: 9
-      pivot: {x: 0.39, y: 0.41}
+      pivot: {x: 0.355, y: 0.38}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 586dbeb9821d94ab2a1a7d095fd5b4a9
-      internalID: -1732601986
+      spriteID: 864fffee800284f8d9dde11520bf101f
+      internalID: -1894981445
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage_Godlike_56
+      name: Warrior_Elite_41
       rect:
         serializedVersion: 2
-        x: 41
+        x: 51
         y: 0
-        width: 41
+        width: 51
         height: 32
       alignment: 9
-      pivot: {x: 0.39, y: 0.41}
+      pivot: {x: 0.355, y: 0.38}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f8a1f8778a2d94030a1418cb6f0a2969
-      internalID: 2137132405
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage_Godlike_57
-      rect:
-        serializedVersion: 2
-        x: 82
-        y: 0
-        width: 41
-        height: 32
-      alignment: 9
-      pivot: {x: 0.39, y: 0.41}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 660cc0745866b43f1ba6b23986377d25
-      internalID: 1280374638
+      spriteID: 4d61dfbab37974b7a898a9b421747925
+      internalID: 759138359
       vertices: []
       indices: 
       edges: []
@@ -1402,7 +1050,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: f1d28fc9738394da4bde0d3a1fef8b4b
+    spriteID: 0841f2722e0c745a3b9c888b09d6bd47
     internalID: 0
     vertices: []
     indices: 
@@ -1412,64 +1060,48 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Mage_Godlike_0: 514637833
-      Mage_Godlike_1: 1128013785
-      Mage_Godlike_10: -1859388981
-      Mage_Godlike_11: 1922871314
-      Mage_Godlike_12: 60390090
-      Mage_Godlike_13: -1625012342
-      Mage_Godlike_14: 1947004544
-      Mage_Godlike_15: 1049979979
-      Mage_Godlike_16: 2101101855
-      Mage_Godlike_17: 1908957829
-      Mage_Godlike_18: -440965688
-      Mage_Godlike_19: -523980929
-      Mage_Godlike_2: -2034263480
-      Mage_Godlike_20: -537087109
-      Mage_Godlike_21: 610312159
-      Mage_Godlike_22: -2096207541
-      Mage_Godlike_23: 192877233
-      Mage_Godlike_24: -1950756723
-      Mage_Godlike_25: 355846270
-      Mage_Godlike_26: 1197383692
-      Mage_Godlike_27: 1549478859
-      Mage_Godlike_28: 1148833647
-      Mage_Godlike_29: 529042523
-      Mage_Godlike_3: -616409475
-      Mage_Godlike_30: 1152470156
-      Mage_Godlike_31: 1231940048
-      Mage_Godlike_32: -1516425560
-      Mage_Godlike_33: 471704352
-      Mage_Godlike_34: -647943498
-      Mage_Godlike_35: 1108811317
-      Mage_Godlike_36: -976666816
-      Mage_Godlike_37: -424271567
-      Mage_Godlike_38: -1570659780
-      Mage_Godlike_39: 496907281
-      Mage_Godlike_4: -683497274
-      Mage_Godlike_40: 250986186
-      Mage_Godlike_41: -2091867290
-      Mage_Godlike_42: -1515318453
-      Mage_Godlike_43: 191761200
-      Mage_Godlike_44: -70059420
-      Mage_Godlike_45: -288285568
-      Mage_Godlike_46: -499384648
-      Mage_Godlike_47: 89638180
-      Mage_Godlike_48: 1092875581
-      Mage_Godlike_49: 2058472678
-      Mage_Godlike_5: 1376089235
-      Mage_Godlike_50: -1601442090
-      Mage_Godlike_51: -1470105580
-      Mage_Godlike_52: 1882528746
-      Mage_Godlike_53: 980426556
-      Mage_Godlike_54: -188665465
-      Mage_Godlike_55: -1732601986
-      Mage_Godlike_56: 2137132405
-      Mage_Godlike_57: 1280374638
-      Mage_Godlike_6: 56406700
-      Mage_Godlike_7: -2046788176
-      Mage_Godlike_8: -237908913
-      Mage_Godlike_9: 1462075919
+      Warrior_Elite_0: -910963177
+      Warrior_Elite_1: 631183640
+      Warrior_Elite_10: 2035455724
+      Warrior_Elite_11: -200086878
+      Warrior_Elite_12: 596463280
+      Warrior_Elite_13: -1616384971
+      Warrior_Elite_14: 1266448973
+      Warrior_Elite_15: 1419928871
+      Warrior_Elite_16: 544906397
+      Warrior_Elite_17: 1857421645
+      Warrior_Elite_18: -436556652
+      Warrior_Elite_19: -113289868
+      Warrior_Elite_2: 1548607911
+      Warrior_Elite_20: -238197273
+      Warrior_Elite_21: -1646969676
+      Warrior_Elite_22: 1373882204
+      Warrior_Elite_23: 500065315
+      Warrior_Elite_24: -1146328533
+      Warrior_Elite_25: -1905112728
+      Warrior_Elite_26: -1408937534
+      Warrior_Elite_27: 1661576107
+      Warrior_Elite_28: -2125364277
+      Warrior_Elite_29: -194224769
+      Warrior_Elite_3: -524270135
+      Warrior_Elite_30: 1625252827
+      Warrior_Elite_31: -1962583491
+      Warrior_Elite_32: 855363890
+      Warrior_Elite_33: -1763910008
+      Warrior_Elite_34: -54735556
+      Warrior_Elite_35: 1121175664
+      Warrior_Elite_36: -390995968
+      Warrior_Elite_37: 307433268
+      Warrior_Elite_38: -1099337284
+      Warrior_Elite_39: -1252981913
+      Warrior_Elite_4: -1270796673
+      Warrior_Elite_40: -1894981445
+      Warrior_Elite_41: 759138359
+      Warrior_Elite_5: -788509700
+      Warrior_Elite_6: -1509857447
+      Warrior_Elite_7: 1573082939
+      Warrior_Elite_8: -21795318
+      Warrior_Elite_9: 753315734
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

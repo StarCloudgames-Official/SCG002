@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a46a9f4f96bca4b2f983ff887d9ab56c
+guid: bed8863793cfd4a34887c26516952efc
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,617 +123,881 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Rogue_Advanced_0
+      name: Warrior_Advanced_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.53, y: 0.38}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 789c4a36468b442c4920925a1dcfe050
+      internalID: 947225002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_Advanced_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.53, y: 0.38}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a634225e1827442e69a5ac1f16a5ad08
+      internalID: -893130308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_Advanced_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.53, y: 0.38}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e42bd9559ed14ddd951566ca5f4c923
+      internalID: -1334978795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_Advanced_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.53, y: 0.38}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5faaa3480d9eb4c94b298aac1dddc2aa
+      internalID: -1060211820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_Advanced_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.53, y: 0.38}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47c8552c7199a4cd18b3172692a431b2
+      internalID: 1032340599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_Advanced_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 128
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.53, y: 0.38}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58759686b6a574f0388005221a7669b4
+      internalID: 1846631948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_Advanced_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.53, y: 0.38}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38a6d3f7a18cd4c4eab073eb25bd5489
+      internalID: -1374100967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_Advanced_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 128
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.53, y: 0.38}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc5bbb494fbde494e93640f6df96aef5
+      internalID: 551397091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_Advanced_8
       rect:
         serializedVersion: 2
         x: 0
         y: 96
-        width: 37
+        width: 32
         height: 32
       alignment: 9
-      pivot: {x: 0.46, y: 0.44}
+      pivot: {x: 0.53, y: 0.38}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 31ccf32b5e2dc4d139a26fddd1832de8
-      internalID: -116770504
+      spriteID: 553d53e11bfcb487990ba566ade078eb
+      internalID: 63136383
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rogue_Advanced_1
+      name: Warrior_Advanced_9
       rect:
         serializedVersion: 2
-        x: 37
+        x: 32
         y: 96
-        width: 37
+        width: 32
         height: 32
       alignment: 9
-      pivot: {x: 0.46, y: 0.44}
+      pivot: {x: 0.53, y: 0.38}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da1b5aaa46f584f1eb7aa38ca26b0eee
-      internalID: -1096295775
+      spriteID: 3d6118a7c6c5f4a84a9eae158c38c474
+      internalID: -1969978569
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rogue_Advanced_2
+      name: Warrior_Advanced_10
       rect:
         serializedVersion: 2
-        x: 74
+        x: 64
         y: 96
-        width: 37
+        width: 32
         height: 32
       alignment: 9
-      pivot: {x: 0.46, y: 0.44}
+      pivot: {x: 0.53, y: 0.38}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 40bbb331f858744d68d887c2c5e5bad4
-      internalID: -574182919
+      spriteID: c919254e495694b8fa487dbe1794fcd9
+      internalID: -385782342
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rogue_Advanced_3
+      name: Warrior_Advanced_11
       rect:
         serializedVersion: 2
-        x: 111
+        x: 96
         y: 96
-        width: 37
+        width: 32
         height: 32
       alignment: 9
-      pivot: {x: 0.46, y: 0.44}
+      pivot: {x: 0.53, y: 0.38}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc4fca6967eaa4cd79704f9e07f9cb49
-      internalID: 420041950
+      spriteID: acdc651a664d246f6841478a908b1c5b
+      internalID: -1458596829
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rogue_Advanced_4
+      name: Warrior_Advanced_12
       rect:
         serializedVersion: 2
-        x: 148
+        x: 128
         y: 96
-        width: 37
+        width: 32
         height: 32
       alignment: 9
-      pivot: {x: 0.46, y: 0.44}
+      pivot: {x: 0.53, y: 0.38}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef36fed60a30a4597aab0e7c8e822185
-      internalID: -1956287363
+      spriteID: 510db56ed368147e587cf94f5a865894
+      internalID: 864285632
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rogue_Advanced_5
+      name: Warrior_Advanced_13
       rect:
         serializedVersion: 2
-        x: 185
+        x: 160
         y: 96
-        width: 37
+        width: 32
         height: 32
       alignment: 9
-      pivot: {x: 0.46, y: 0.44}
+      pivot: {x: 0.53, y: 0.38}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 275464e03316948b58faffbe548c20bd
-      internalID: -1510483611
+      spriteID: d01df656e38424b41a85e35263c7cff1
+      internalID: 1684349876
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rogue_Advanced_6
+      name: Warrior_Advanced_14
       rect:
         serializedVersion: 2
-        x: 222
+        x: 192
         y: 96
-        width: 37
+        width: 32
         height: 32
       alignment: 9
-      pivot: {x: 0.46, y: 0.44}
+      pivot: {x: 0.53, y: 0.38}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a039310db64084988a28f3ca15ce4696
-      internalID: 1679030536
+      spriteID: 12bcf7f5386e2445ebf07b9f3a32485d
+      internalID: -1100524309
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rogue_Advanced_7
+      name: Warrior_Advanced_15
       rect:
         serializedVersion: 2
-        x: 259
+        x: 224
         y: 96
-        width: 37
+        width: 32
         height: 32
       alignment: 9
-      pivot: {x: 0.46, y: 0.44}
+      pivot: {x: 0.53, y: 0.38}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b4fbed84dcdf341d4a6bbce30c923cc6
-      internalID: -759775002
+      spriteID: ab29b379399fc4efc88cef9abb2066d5
+      internalID: -1364437034
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rogue_Advanced_8
+      name: Warrior_Advanced_16
       rect:
         serializedVersion: 2
         x: 0
         y: 64
-        width: 37
+        width: 32
         height: 32
       alignment: 9
-      pivot: {x: 0.46, y: 0.44}
+      pivot: {x: 0.53, y: 0.38}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8d81c9c085f5047529c37c0dfe1f4e15
-      internalID: 622137573
+      spriteID: ea5e95e440ba345fdab179f7e608ea8c
+      internalID: -108067915
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rogue_Advanced_9
+      name: Warrior_Advanced_17
       rect:
         serializedVersion: 2
-        x: 37
+        x: 32
         y: 64
-        width: 37
+        width: 32
         height: 32
       alignment: 9
-      pivot: {x: 0.46, y: 0.44}
+      pivot: {x: 0.53, y: 0.38}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b2b5d82e5b324fcbbf9f2e994f14793
-      internalID: -1643132870
+      spriteID: 9635ceb9028504b92bb426686d0cfcbb
+      internalID: -947810767
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rogue_Advanced_10
+      name: Warrior_Advanced_18
       rect:
         serializedVersion: 2
-        x: 74
+        x: 64
         y: 64
-        width: 37
+        width: 32
         height: 32
       alignment: 9
-      pivot: {x: 0.46, y: 0.44}
+      pivot: {x: 0.53, y: 0.38}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e76cfe988a0b8491f83376fd78eec430
-      internalID: -1897464926
+      spriteID: 56746674b5dfe431db5c1c55624f2d5c
+      internalID: -1236573339
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rogue_Advanced_11
+      name: Warrior_Advanced_19
       rect:
         serializedVersion: 2
-        x: 111
+        x: 96
         y: 64
-        width: 37
+        width: 32
         height: 32
       alignment: 9
-      pivot: {x: 0.46, y: 0.44}
+      pivot: {x: 0.53, y: 0.38}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1f3490d8801d7481581939cddd8313fa
-      internalID: 44193913
+      spriteID: 460673c24d617476abeda77d32ebd663
+      internalID: -1892940015
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rogue_Advanced_12
+      name: Warrior_Advanced_20
       rect:
         serializedVersion: 2
-        x: 148
+        x: 128
         y: 64
-        width: 37
+        width: 32
         height: 32
       alignment: 9
-      pivot: {x: 0.46, y: 0.44}
+      pivot: {x: 0.53, y: 0.38}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 133d6c8a7b8b64417995fddd5c4fc261
-      internalID: 943319060
+      spriteID: 64c6a564ef821441bb64be2099e1c762
+      internalID: 2066472598
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rogue_Advanced_13
+      name: Warrior_Advanced_21
       rect:
         serializedVersion: 2
-        x: 185
+        x: 160
         y: 64
-        width: 37
+        width: 32
         height: 32
       alignment: 9
-      pivot: {x: 0.46, y: 0.44}
+      pivot: {x: 0.53, y: 0.38}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 38c014e181dd74e41a1dd9b098d24726
-      internalID: -458942365
+      spriteID: 83226c636aedc498785e7f67a7867a2f
+      internalID: -1315053417
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rogue_Advanced_14
+      name: Warrior_Advanced_22
       rect:
         serializedVersion: 2
-        x: 222
+        x: 192
         y: 64
-        width: 37
+        width: 32
         height: 32
       alignment: 9
-      pivot: {x: 0.46, y: 0.44}
+      pivot: {x: 0.53, y: 0.38}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 02c08a27a55364303aa11f5edd2b734c
-      internalID: 1633883520
+      spriteID: 379a201c527ed484da8062b8e38915a2
+      internalID: 1691586437
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rogue_Advanced_15
+      name: Warrior_Advanced_23
       rect:
         serializedVersion: 2
-        x: 259
+        x: 224
         y: 64
-        width: 37
+        width: 32
         height: 32
       alignment: 9
-      pivot: {x: 0.46, y: 0.44}
+      pivot: {x: 0.53, y: 0.38}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 465a64c1812d6494e9193a9122661905
-      internalID: -1077359048
+      spriteID: 842cd5c576a734ab1a61808b01bab0bc
+      internalID: -1873454550
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rogue_Advanced_16
+      name: Warrior_Advanced_24
       rect:
         serializedVersion: 2
         x: 0
         y: 32
-        width: 37
+        width: 32
         height: 32
       alignment: 9
-      pivot: {x: 0.46, y: 0.44}
+      pivot: {x: 0.53, y: 0.38}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 64bd5c2753b234aa5b50ee76082f3f3c
-      internalID: 1302697026
+      spriteID: f2cb1b8a239dd435286306c1e9622622
+      internalID: 991310605
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rogue_Advanced_17
+      name: Warrior_Advanced_25
       rect:
         serializedVersion: 2
-        x: 37
+        x: 32
         y: 32
-        width: 37
+        width: 32
         height: 32
       alignment: 9
-      pivot: {x: 0.46, y: 0.44}
+      pivot: {x: 0.53, y: 0.38}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3e3726c8d9c244c768ceea328aae5b6b
-      internalID: 1400358380
+      spriteID: 55787f03e442e480b8775d14dfd90188
+      internalID: 667444677
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rogue_Advanced_18
+      name: Warrior_Advanced_26
       rect:
         serializedVersion: 2
-        x: 74
+        x: 64
         y: 32
-        width: 37
+        width: 32
         height: 32
       alignment: 9
-      pivot: {x: 0.46, y: 0.44}
+      pivot: {x: 0.53, y: 0.38}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc75d4dd7947a4705a7aaf071eb14991
-      internalID: -1215345274
+      spriteID: 17ced6cd2e0df4e0aa723c84954032f3
+      internalID: 1470262012
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rogue_Advanced_19
+      name: Warrior_Advanced_27
       rect:
         serializedVersion: 2
-        x: 111
+        x: 96
         y: 32
-        width: 37
+        width: 32
         height: 32
       alignment: 9
-      pivot: {x: 0.46, y: 0.44}
+      pivot: {x: 0.53, y: 0.38}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a36b96f14792046d49d6ef16b67f1404
-      internalID: -783796999
+      spriteID: bbd531169a7db4f2487b4839611c5892
+      internalID: 2046383620
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rogue_Advanced_20
+      name: Warrior_Advanced_28
       rect:
         serializedVersion: 2
-        x: 148
+        x: 128
         y: 32
-        width: 37
+        width: 32
         height: 32
       alignment: 9
-      pivot: {x: 0.46, y: 0.44}
+      pivot: {x: 0.53, y: 0.38}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d039b8854b8f49c6ab351b343b04eee
-      internalID: -2059990712
+      spriteID: 130bf15d69ca14c999bc7acbad72645c
+      internalID: 304132644
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rogue_Advanced_21
+      name: Warrior_Advanced_29
       rect:
         serializedVersion: 2
-        x: 185
+        x: 160
         y: 32
-        width: 37
+        width: 32
         height: 32
       alignment: 9
-      pivot: {x: 0.46, y: 0.44}
+      pivot: {x: 0.53, y: 0.38}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b7bb8e6b9e5c14712b00df14280d1fe2
-      internalID: -1811335554
+      spriteID: 24eecba357901441a8bc90f98f23e64d
+      internalID: -919118291
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rogue_Advanced_22
+      name: Warrior_Advanced_30
       rect:
         serializedVersion: 2
-        x: 222
+        x: 192
         y: 32
-        width: 37
+        width: 32
         height: 32
       alignment: 9
-      pivot: {x: 0.46, y: 0.44}
+      pivot: {x: 0.53, y: 0.38}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 471409c408e754c3d8494f479bf09b45
-      internalID: -1716620804
+      spriteID: b5b6df92e57d74d96aeb901a24c993cb
+      internalID: -390597971
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rogue_Advanced_23
+      name: Warrior_Advanced_31
       rect:
         serializedVersion: 2
-        x: 259
+        x: 224
         y: 32
-        width: 37
+        width: 32
         height: 32
       alignment: 9
-      pivot: {x: 0.46, y: 0.44}
+      pivot: {x: 0.53, y: 0.38}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 24af70a82106c4400b3900ec992d991a
-      internalID: 1132854177
+      spriteID: 489443eecf3814626ad76294afbd21a0
+      internalID: -675798452
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rogue_Advanced_24
+      name: Warrior_Advanced_32
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 37
+        width: 32
         height: 32
       alignment: 9
-      pivot: {x: 0.46, y: 0.44}
+      pivot: {x: 0.53, y: 0.38}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5097260c9e6824d4c9243645c11ccceb
-      internalID: 64249496
+      spriteID: 194c29405a14b4a85955566054c562c8
+      internalID: 1665449196
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rogue_Advanced_25
+      name: Warrior_Advanced_33
       rect:
         serializedVersion: 2
-        x: 37
+        x: 32
         y: 0
-        width: 37
+        width: 32
         height: 32
       alignment: 9
-      pivot: {x: 0.46, y: 0.44}
+      pivot: {x: 0.53, y: 0.38}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 231114a7176b94598b0a7486a3925c4b
-      internalID: -1866840223
+      spriteID: 62007991d077040c48f674b75eabefa0
+      internalID: 912032706
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rogue_Advanced_26
+      name: Warrior_Advanced_34
       rect:
         serializedVersion: 2
-        x: 74
+        x: 64
         y: 0
-        width: 37
+        width: 32
         height: 32
       alignment: 9
-      pivot: {x: 0.46, y: 0.44}
+      pivot: {x: 0.53, y: 0.38}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 14732a2da7c8a4fdf8e1c8ba55c4634c
-      internalID: -1118635743
+      spriteID: ab75e686450ce4002b68fbb5b721f7ad
+      internalID: 1681736663
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rogue_Advanced_27
+      name: Warrior_Advanced_35
       rect:
         serializedVersion: 2
-        x: 111
+        x: 96
         y: 0
-        width: 37
+        width: 32
         height: 32
       alignment: 9
-      pivot: {x: 0.46, y: 0.44}
+      pivot: {x: 0.53, y: 0.38}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f9f044a06ec304ad2bc688649acab1fc
-      internalID: -1371657010
+      spriteID: 0b0493819af0b404e95fb0ba3b36e44a
+      internalID: 1549966316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_Advanced_36
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.53, y: 0.38}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22eebe6dd59e441da92df870f62ab835
+      internalID: 1708052162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_Advanced_37
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.53, y: 0.38}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b230ce5f1001d4dfe95e6f6a46f183f4
+      internalID: 1655162316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_Advanced_38
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.53, y: 0.38}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 375f269099cea40dcb1065c3aeeee857
+      internalID: 767708840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_Advanced_39
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.53, y: 0.38}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acd84d940030048e5b2d74fcadb3ed48
+      internalID: -209042311
       vertices: []
       indices: 
       edges: []
@@ -742,7 +1006,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: c7bc2cff4aa304a7d998e32e07802ff0
+    spriteID: 415d40a5862bf4b73bc39ddfcd8276bd
     internalID: 0
     vertices: []
     indices: 
@@ -752,34 +1016,46 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Rogue_Advanced_0: -116770504
-      Rogue_Advanced_1: -1096295775
-      Rogue_Advanced_10: -1897464926
-      Rogue_Advanced_11: 44193913
-      Rogue_Advanced_12: 943319060
-      Rogue_Advanced_13: -458942365
-      Rogue_Advanced_14: 1633883520
-      Rogue_Advanced_15: -1077359048
-      Rogue_Advanced_16: 1302697026
-      Rogue_Advanced_17: 1400358380
-      Rogue_Advanced_18: -1215345274
-      Rogue_Advanced_19: -783796999
-      Rogue_Advanced_2: -574182919
-      Rogue_Advanced_20: -2059990712
-      Rogue_Advanced_21: -1811335554
-      Rogue_Advanced_22: -1716620804
-      Rogue_Advanced_23: 1132854177
-      Rogue_Advanced_24: 64249496
-      Rogue_Advanced_25: -1866840223
-      Rogue_Advanced_26: -1118635743
-      Rogue_Advanced_27: -1371657010
-      Rogue_Advanced_3: 420041950
-      Rogue_Advanced_4: -1956287363
-      Rogue_Advanced_5: -1510483611
-      Rogue_Advanced_6: 1679030536
-      Rogue_Advanced_7: -759775002
-      Rogue_Advanced_8: 622137573
-      Rogue_Advanced_9: -1643132870
+      Warrior_Advanced_0: 947225002
+      Warrior_Advanced_1: -893130308
+      Warrior_Advanced_10: -385782342
+      Warrior_Advanced_11: -1458596829
+      Warrior_Advanced_12: 864285632
+      Warrior_Advanced_13: 1684349876
+      Warrior_Advanced_14: -1100524309
+      Warrior_Advanced_15: -1364437034
+      Warrior_Advanced_16: -108067915
+      Warrior_Advanced_17: -947810767
+      Warrior_Advanced_18: -1236573339
+      Warrior_Advanced_19: -1892940015
+      Warrior_Advanced_2: -1334978795
+      Warrior_Advanced_20: 2066472598
+      Warrior_Advanced_21: -1315053417
+      Warrior_Advanced_22: 1691586437
+      Warrior_Advanced_23: -1873454550
+      Warrior_Advanced_24: 991310605
+      Warrior_Advanced_25: 667444677
+      Warrior_Advanced_26: 1470262012
+      Warrior_Advanced_27: 2046383620
+      Warrior_Advanced_28: 304132644
+      Warrior_Advanced_29: -919118291
+      Warrior_Advanced_3: -1060211820
+      Warrior_Advanced_30: -390597971
+      Warrior_Advanced_31: -675798452
+      Warrior_Advanced_32: 1665449196
+      Warrior_Advanced_33: 912032706
+      Warrior_Advanced_34: 1681736663
+      Warrior_Advanced_35: 1549966316
+      Warrior_Advanced_36: 1708052162
+      Warrior_Advanced_37: 1655162316
+      Warrior_Advanced_38: 767708840
+      Warrior_Advanced_39: -209042311
+      Warrior_Advanced_4: 1032340599
+      Warrior_Advanced_5: 1846631948
+      Warrior_Advanced_6: -1374100967
+      Warrior_Advanced_7: 551397091
+      Warrior_Advanced_8: 63136383
+      Warrior_Advanced_9: -1969978569
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

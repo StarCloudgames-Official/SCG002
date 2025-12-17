@@ -15,8 +15,23 @@ MonoBehaviour:
   m_GroupName: Animation
   m_GUID: 7b09ccd92f24a4b9484f10d77452479a
   m_SerializeEntries:
+  - m_GUID: 1320884fd419a478092afdeda4f610f1
+    m_Address: Warrior_Legendary_Animator
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 1a9058f0463f548a79389fdf9ea1b77d
     m_Address: Mage_Normal_Animator
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 255c8c4c482714cf08561f91e82a65df
+    m_Address: Warrior_Epic_Animator
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2823236a7153b426381d22c8cd5c8f1b
+    m_Address: Warrior_Normal_Animator
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -50,6 +65,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b49409bf69c2342f4a69a9491016e4ce
+    m_Address: Warrior_Advanced_Animator
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: b8b6f471bab804c21b6e207a50d9c607
     m_Address: Rogue_Legendary_Animator
     m_ReadOnly: 0
@@ -57,6 +77,11 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: bc7e214ead927494f9005c72daefa1a2
     m_Address: Rogue_Normal_Animator
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c551a32a70e6f4b7b90a4dff91e34fd6
+    m_Address: Warrior_Elite_Animator
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -70,8 +95,18 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: db7a7b831deed49c9a4de7ed23693467
+    m_Address: Warrior_Godlike_Animator
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: e90a30f5667974b5bbe0a877c4eb7fb9
     m_Address: Mage_Legendary_Animator
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f4a4609f63e8f4e6db4a5980942badd5
+    m_Address: Warrior_Master_Animator
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
