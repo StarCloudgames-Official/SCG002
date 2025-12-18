@@ -8,7 +8,12 @@ public static class InGameSession
     {
         //TODO : 인게임 들어갈 수 있는지 상태 체크
         
-        newEnterInfo = new InGameEnterInfo();
+        newEnterInfo = new InGameEnterInfo
+        {
+            Stage = 1,
+            Floor = 1 //TODO : have to change to user data
+        };
+
         return true;
     }
 

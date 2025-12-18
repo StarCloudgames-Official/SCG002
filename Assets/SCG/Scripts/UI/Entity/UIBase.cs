@@ -3,12 +3,12 @@ using UnityEngine.AddressableAssets;
 
 public class UIBase : MonoBehaviour, IUI
 {
-    public virtual Awaitable PreOpen() => null;
-    public virtual Awaitable PreClose() => null;
+    public virtual Awaitable PreOpen(object param) => null;
+    public virtual Awaitable PreClose(object param) => null;
 
     public virtual async Awaitable Open(object param = null)
     {
-        var preOpen = PreOpen();
+        var preOpen = PreOpen(param);
         if (preOpen != null)
             await preOpen;
 
@@ -17,7 +17,7 @@ public class UIBase : MonoBehaviour, IUI
 
     public virtual async Awaitable Close(object param = null)
     {
-        var preClose = PreClose();
+        var preClose = PreClose(param);
         if (preClose != null)
             await preClose;
 

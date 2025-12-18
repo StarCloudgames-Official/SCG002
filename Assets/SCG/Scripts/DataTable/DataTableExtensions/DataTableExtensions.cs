@@ -23,3 +23,36 @@ public partial class IAPDataTable
         }
     }
 }
+
+public partial class StageDataTable
+{
+    [MemoryPackIgnore]
+    private IReadOnlyList<MonsterDataTable> monsterDataTables;
+
+    [MemoryPackIgnore]
+    public IReadOnlyList<MonsterDataTable> MonsterDataTables
+    {
+        get
+        {
+            if (monsterDataTables == null)
+            {
+                var manager = DataTableManager.Instance;
+                if (manager != null)
+                    monsterDataTables = manager.GetMonsterDataTables(monsterIds);
+            }
+            
+            return monsterDataTables ?? Array.Empty<MonsterDataTable>();
+        }
+    }
+
+    public bool IsBossStage(int stageIndex)
+    {
+        var currentStageIndex = stageIndex + 1;
+        foreach (var stage in bossStage)
+        {
+            if(stage ==  currentStageIndex)
+                return true;
+        }
+        return false;
+    }
+}

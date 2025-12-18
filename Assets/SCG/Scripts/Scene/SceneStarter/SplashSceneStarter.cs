@@ -21,7 +21,7 @@ public class SplashSceneStarter : MonoBehaviour
         await loadManagerTask;
         await FadeOut();
 
-        SceneController.ChangeScene(SceneController.Scene.Title).Forget();
+        SceneController.ChangeScene(SceneController.Scene.Title, true).Forget();
     }
 
     private async Awaitable LoadManager()

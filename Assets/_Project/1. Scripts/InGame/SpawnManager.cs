@@ -5,7 +5,7 @@ using UnityEngine;
 using static DataTableEnum;
 using Random = UnityEngine.Random;
 
-public class SpawnManager : Singleton<SpawnManager>
+public class SpawnManager
 {
     private Dictionary<ClassType, Dictionary<SpawnType, int>> spawnedClassesCount;
     private Dictionary<SpawnType, float> inGameSpawnChances;
@@ -13,11 +13,9 @@ public class SpawnManager : Singleton<SpawnManager>
     
     private InGameContext inGameContext;
 
-    private const string CharacterPath = "Character";
-
     #region Initialize
 
-    public override async Awaitable Initialize()
+    public async Awaitable Initialize()
     {
         inGameContext = InGameManager.Instance.InGameContext;
         
@@ -87,8 +85,9 @@ public class SpawnManager : Singleton<SpawnManager>
         var spawnType = GetInGameSpawnType();
         var classType = GetInGameSpawnClassType();
         var dataTable = DataTableManager.Instance.GetClassTable(classType, spawnType);
-        
-        var characterBehaviour = await AddressableExtensions.InstantiateAndGetComponent<CharacterBehaviour>(CharacterPath);
+
+        var characterPath = AddressableExtensions.CharacterPath;
+        var characterBehaviour = await AddressableExtensions.InstantiateAndGetComponent<CharacterBehaviour>(characterPath);
         characterBehaviour.Initialize(dataTable).Forget();
         characterBehaviour.SetToGrid(emptyGrid);
         

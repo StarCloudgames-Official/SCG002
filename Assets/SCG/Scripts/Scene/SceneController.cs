@@ -24,14 +24,17 @@ public static class SceneController
         return true;
     }
 
-    public static async Awaitable ChangeScene(Scene scene)
+    public static async Awaitable ChangeScene(Scene scene, bool isDirect = false)
     {
         if (!CanChangeScene()) return;
-        
-        await UIManager.BlockUI();
 
-        await LoadingFade.StartFadeIn();
-        UIManager.CloseAllUI();
+        if (!isDirect)
+        {
+            await UIManager.BlockUI();
+
+            await LoadingFade.StartFadeIn();
+            UIManager.CloseAllUI();
+        }
 
         var previousHandle = currentSceneHandle;
         var previousSceneName = SceneManager.GetActiveScene().name;

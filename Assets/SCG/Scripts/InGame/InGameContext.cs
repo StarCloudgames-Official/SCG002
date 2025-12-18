@@ -5,6 +5,8 @@ public class InGameContext
 {
     public InGameEnterInfo EnterInfo { get; set; }
     public CharacterGridManager CharacterGridManager { get; set; }
+    public StageManager StageManager { get; set; }
+    public SpawnManager SpawnManager { get; set; }
 
     public InGameEvents InGameEvent { get; set; }
 

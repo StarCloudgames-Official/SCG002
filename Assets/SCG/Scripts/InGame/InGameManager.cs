@@ -1,6 +1,5 @@
 using StarCloudgamesLibrary;
 using UnityEngine;
-using UnityEngine.AddressableAssets;
 
 public class InGameManager : Singleton<InGameManager>
 {
@@ -11,17 +10,22 @@ public class InGameManager : Singleton<InGameManager>
     {
         InGameContext = new InGameContext();
         InGameContext.Initialize(InGameSession.CurrentInGameEnterInfo);
+
+        var stageManager = new StageManager();
+        var stageData = DataTableManager.Instance.GetStageDataTable(InGameContext.EnterInfo.Stage, InGameContext.EnterInfo.Floor);
+        stageManager.SetStageData(stageData);
         
-        var characterGridManager = await AddressableExtensions.InstantiateAndGetComponent<CharacterGridManager>("CharacterGridManager");
+        var characterGridManagerPath = AddressableExtensions.CharacterGridManagerPath;
+        var characterGridManager = await AddressableExtensions.InstantiateAndGetComponent<CharacterGridManager>(characterGridManagerPath);
         await characterGridManager.CreateGrid(5, 6);
-        
-        var spawnManager = SpawnManager.Create();
+
+        var spawnManager = new SpawnManager();
         await spawnManager.Initialize();
         
         InGameContext.CharacterGridManager = characterGridManager;
+        InGameContext.StageManager = stageManager;
+        InGameContext.SpawnManager = spawnManager;
 
-        UIInGameMain = await UIManager.OpenUI<UIInGameMain>();
-
-        //set state by enterinfo
+        UIInGameMain = await UIManager.OpenUI<UIInGameMain>(InGameContext);
     }
 }

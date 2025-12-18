@@ -1,6 +1,5 @@
 public class InGameEnterInfo
 {
-    //stage data
-    //booster item
-    //out game stats
+    public int Stage { get; set; }
+    public int Floor { get; set; }
 }
