@@ -623,7 +623,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66f3c608d24aa08448238fa416015af6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  registerType: 2
+  registerType: 3
   registerComponent: {fileID: 1369152518}
 --- !u!114 &1369152520
 MonoBehaviour:

@@ -40,10 +40,15 @@ public class StageManager
 
     public async Awaitable StartStage()
     {
+        await UIManager.BlockUI();
+        
         var currentMonsterData = currentStageData.MonsterDataTables[currentStageIndex];
         var spawnCount = currentStageData.monsterCount[currentStageIndex];
         
         await StartStarter();
+
+        UIManager.RemoveBlocker();
+        
         Debug.Log("Start Stage!");
     }
 
