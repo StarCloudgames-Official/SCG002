@@ -11,4 +11,5 @@ public partial class MonsterDataTable
     public float moveSpeed;
     public string animatorPath;
     public int dropCrystal;
+    public string monsterName;
 }

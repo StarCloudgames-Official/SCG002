@@ -6,6 +6,16 @@ using UnityEngine;
 
 public static class AwaitableExtensions
 {
+    public static async Awaitable WaitUntilClose(this IUI ui)
+    {
+        var targetUI = UIManager.GetUI(ui);
+
+        if (targetUI != null)
+        {
+            await WaitWhileAsync(() => UIManager.IsActivating(targetUI));
+        }
+    }
+
     public static async void Forget(this Awaitable task)
     {
         try

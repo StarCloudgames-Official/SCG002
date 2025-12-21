@@ -12,15 +12,39 @@ public class StageManager
         currentStageData = stageData;
     }
 
+    private async Awaitable StartStarter()
+    {
+        var isBossStage = currentStageData.IsBossStage(currentStageIndex);
+        
+        var starterParam = new StageStarterParam();
+        IStageStarter starter = null;
+        
+        if (isBossStage)
+        {
+            starterParam.BossName = currentStageData.MonsterDataTables[currentStageIndex].monsterName;
+            
+            starter = await UIManager.OpenUI<UIBossWarningPanel>(starterParam);
+        }
+        else
+        {
+            starterParam.StageNumber = currentStageIndex;
+            starterParam.MaxStage = currentStageData.stageCount;
+            
+            starter = await UIManager.OpenUI<UIStageStarter>(starterParam);
+        }
+        
+        starter.StartStarter();
+
+        await ((IUI)starter).WaitUntilClose();
+    }
+
     public async Awaitable StartStage()
     {
         var currentMonsterData = currentStageData.MonsterDataTables[currentStageIndex];
-        var isBossStage = currentStageData.IsBossStage(currentStageIndex);
         var spawnCount = currentStageData.monsterCount[currentStageIndex];
         
-        //TODO : Start Spawn
-        //spawn sequence : 3,2,1 카운트 UI 표시 해주고나서 스폰 시작하기
-        //UIStageStarter 만들어서 보스면 페이드 추가하고 아니면 그냥 카운트 넣고 하면 될듯??
+        await StartStarter();
+        Debug.Log("Start Stage!");
     }
 
     public async Awaitable<bool> StageClear()
