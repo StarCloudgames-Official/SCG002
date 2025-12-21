@@ -1,0 +1,140 @@
+using System;
+using UnityEngine;
+using UnityEngine.AddressableAssets;
+using UnityEngine.Pool;
+using UnityEngine.ResourceManagement.AsyncOperations;
+
+public class SCGObjectPooling<T> : IDisposable where T : Component
+{
+    private readonly ObjectPool<T> pool;
+    private readonly T prefab;
+    private readonly Transform parent;
+    private readonly Action<T> onGet;
+    private readonly Action<T> onRelease;
+    
+    private AsyncOperationHandle<GameObject>? addressableHandle;
+    
+    public int CountActive => pool.CountActive;
+    public int CountInactive => pool.CountInactive;
+    public int CountAll => pool.CountAll;
+
+    public SCGObjectPooling(
+        T prefab, 
+        Transform parent = null, 
+        int defaultCapacity = 10, 
+        int maxSize = 100, 
+        Action<T> onGet = null, 
+        Action<T> onRelease = null, 
+        bool collectionCheck = true)
+    {
+        this.prefab = prefab;
+        this.parent = parent;
+        this.onGet = onGet;
+        this.onRelease = onRelease;
+
+        pool = new ObjectPool<T>(
+            CreatePooledItem,
+            OnGetFromPool,
+            OnReleaseToPool,
+            OnDestroyPooledItem,
+            collectionCheck,
+            defaultCapacity,
+            maxSize
+        );
+    }
+
+    internal void SetAddressableHandle(AsyncOperationHandle<GameObject> handle)
+    {
+        addressableHandle = handle;
+    }
+
+    public static async Awaitable<SCGObjectPooling<T>> CreateAsync(
+        string addressableKey,
+        Transform parent = null,
+        int defaultCapacity = 10,
+        int maxSize = 100,
+        Action<T> onGet = null,
+        Action<T> onRelease = null,
+        bool collectionCheck = true)
+    {
+        var handle = Addressables.LoadAssetAsync<GameObject>(addressableKey);
+        var prefabGameObject = await handle.Task;
+
+        if (prefabGameObject == null)
+        {
+            Debug.LogError($"[SCGObjectPooling] Failed to load addressable: {addressableKey}");
+            return null;
+        }
+
+        if (!prefabGameObject.TryGetComponent<T>(out var prefabComponent))
+        {
+            Debug.LogError($"[SCGObjectPooling] Component {typeof(T).Name} not found on addressable: {addressableKey}");
+            Addressables.Release(handle);
+            return null;
+        }
+
+        var newPool = new SCGObjectPooling<T>(
+            prefabComponent,
+            parent,
+            defaultCapacity,
+            maxSize,
+            onGet,
+            onRelease,
+            collectionCheck
+        );
+        
+        newPool.SetAddressableHandle(handle);
+        
+        return newPool;
+    }
+
+    public T Get() => pool.Get();
+
+    public PooledObject<T> Get(out T instance) => pool.Get(out instance);
+
+    public void Release(T element)
+    {
+        if (element == null) return;
+        pool.Release(element);
+    }
+
+    public void Clear() => pool.Clear();
+
+    public void Dispose()
+    {
+        pool.Clear();
+        
+        if (addressableHandle.HasValue && addressableHandle.Value.IsValid())
+        {
+            Addressables.Release(addressableHandle.Value);
+            addressableHandle = null;
+        }
+    }
+
+    private T CreatePooledItem()
+    {
+        var instance = UnityEngine.Object.Instantiate(prefab, parent);
+        instance.gameObject.SetActive(false);
+        return instance;
+    }
+
+    private void OnGetFromPool(T element)
+    {
+        element.gameObject.SetActive(true);
+        onGet?.Invoke(element);
+    }
+
+    private void OnReleaseToPool(T element)
+    {
+        onRelease?.Invoke(element);
+        element.gameObject.SetActive(false);
+    }
+
+    private void OnDestroyPooledItem(T element)
+    {
+        if (element != null && element.gameObject != null)
+        {
+            UnityEngine.Object.Destroy(element.gameObject);
+        }
+    }
+}

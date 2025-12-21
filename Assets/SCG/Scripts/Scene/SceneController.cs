@@ -72,6 +72,7 @@ public static class SceneController
 
         await Resources.UnloadUnusedAssets();
         GC.Collect();
+        SCGObjectPoolingManager.ReleaseAllPools();
 
         StartSceneStarter(scene);
         
