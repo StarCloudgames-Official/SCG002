@@ -3,13 +3,17 @@ using UnityEngine;
 public class StageManager
 {
     private StageDataTable currentStageData;
+    private MonsterSpawner monsterSpawner;
     
     private int currentStageIndex;
     
-    public void SetStageData(StageDataTable stageData)
+    public async Awaitable Initialize(StageDataTable stageData)
     {
         currentStageIndex = 0;
         currentStageData = stageData;
+        
+        monsterSpawner = new MonsterSpawner();
+        await monsterSpawner.Initialize();
     }
 
     private async Awaitable StartStarter()
@@ -41,15 +45,14 @@ public class StageManager
     public async Awaitable StartStage()
     {
         await UIManager.BlockUI();
+        await StartStarter();
+        UIManager.RemoveBlocker();
         
         var currentMonsterData = currentStageData.MonsterDataTables[currentStageIndex];
         var spawnCount = currentStageData.monsterCount[currentStageIndex];
-        
-        await StartStarter();
+        var spawnDelay = currentStageData.spawnDelay[currentStageIndex];
 
-        UIManager.RemoveBlocker();
-        
-        Debug.Log("Start Stage!");
+        monsterSpawner.StartSpawn(currentMonsterData, spawnCount, spawnDelay).Forget();
     }
 
     public async Awaitable<bool> StageClear()

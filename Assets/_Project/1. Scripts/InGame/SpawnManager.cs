@@ -12,6 +12,7 @@ public class SpawnManager
     private List<ClassType> classTypes;
     
     private InGameContext inGameContext;
+    private SCGObjectPooling<CharacterBehaviour> characterBehaviourPool;
 
     #region Initialize
 
@@ -19,6 +20,13 @@ public class SpawnManager
     {
         inGameContext = InGameManager.Instance.InGameContext;
         
+        InitializeSpawnChances();
+
+        characterBehaviourPool = await SCGObjectPoolingManager.GetOrCreatePoolAsync<CharacterBehaviour>(AddressableExtensions.CharacterPath, 30, InGameManager.Instance.CachedTransform);
+    }
+
+    private void InitializeSpawnChances()
+    {
         spawnedClassesCount = new Dictionary<ClassType, Dictionary<SpawnType, int>>();
         
         var dataTableList = DataTableManager.Instance.GetAllSpawnChanceTables();
@@ -37,8 +45,6 @@ public class SpawnManager
             
             classTypes.Add(classEnum);
         }
-
-        await Awaitable.NextFrameAsync();
     }
 
     #endregion
@@ -86,8 +92,7 @@ public class SpawnManager
         var classType = GetInGameSpawnClassType();
         var dataTable = DataTableManager.Instance.GetClassTable(classType, spawnType);
 
-        var characterPath = AddressableExtensions.CharacterPath;
-        var characterBehaviour = await AddressableExtensions.InstantiateAndGetComponent<CharacterBehaviour>(characterPath);
+        var characterBehaviour = characterBehaviourPool.Get();
         characterBehaviour.Initialize(dataTable).Forget();
         characterBehaviour.SetToGrid(emptyGrid);
         

@@ -13,4 +13,5 @@ public partial class StageDataTable
     public int[] bossStage;
     public int[] monsterIds;
     public int[] monsterCount;
+    public float[] spawnDelay;
 }

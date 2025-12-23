@@ -13,7 +13,7 @@ public class InGameManager : Singleton<InGameManager>
 
         var stageManager = new StageManager();
         var stageData = DataTableManager.Instance.GetStageDataTable(InGameContext.EnterInfo.Stage, InGameContext.EnterInfo.Floor);
-        stageManager.SetStageData(stageData);
+        await stageManager.Initialize(stageData);
         
         var characterGridManagerPath = AddressableExtensions.CharacterGridManagerPath;
         var characterGridManager = await AddressableExtensions.InstantiateAndGetComponent<CharacterGridManager>(characterGridManagerPath);

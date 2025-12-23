@@ -98,6 +98,38 @@ public static class SCGObjectPoolingManager
         return existingPool ?? await CreatePoolAsync(addressableKey, parent, defaultCapacity, maxSize, onGet, onRelease);
     }
 
+    public static async Awaitable<SCGObjectPooling<T>> GetOrCreatePoolAsync<T>(
+        string addressableKey,
+        int preloadCount,
+        Transform parent = null,
+        int defaultCapacity = 10,
+        int maxSize = 100,
+        Action<T> onGet = null,
+        Action<T> onRelease = null) where T : Component
+    {
+        var existingPool = GetPool<T>();
+        if (existingPool != null)
+            return existingPool;
+
+        var newPool = await CreatePoolAsync(addressableKey, parent, defaultCapacity, maxSize, onGet, onRelease);
+
+        if (newPool == null || preloadCount <= 0)
+            return newPool;
+        
+        var preloadList = new List<T>(preloadCount);
+        for (var i = 0; i < preloadCount; i++)
+        {
+            preloadList.Add(newPool.Get());
+        }
+
+        foreach (var obj in preloadList)
+        {
+            newPool.Release(obj);
+        }
+
+        return newPool;
+    }
+
     #endregion
 
     #region 풀에서 오브젝트 가져오기/반환

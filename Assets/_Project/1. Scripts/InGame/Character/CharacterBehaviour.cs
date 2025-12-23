@@ -24,7 +24,6 @@ public class CharacterBehaviour : CachedMonoBehaviour
     private async Awaitable<RuntimeAnimatorController> GetAnimator()
     {
         var path = $"{currentClass.classType}_{currentClass.spawnType}_Animator";
-        var runtimeAnimator = await Addressables.LoadAssetAsync<RuntimeAnimatorController>(path);
-        return runtimeAnimator;
+        return await AddressableExtensions.GetAnimator(path);
     }
 }
