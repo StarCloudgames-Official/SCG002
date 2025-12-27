@@ -9,7 +9,6 @@ public partial class MonsterDataTable
     public int id;
     public float maxHealth;
     public float moveSpeed;
-    public string animatorPath;
     public int dropCrystal;
     public string monsterName;
 }

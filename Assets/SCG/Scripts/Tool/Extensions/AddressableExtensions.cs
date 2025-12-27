@@ -7,6 +7,7 @@ public static class AddressableExtensions
     public const string CharacterPath = "Character";
     public const string CharacterGridManagerPath = "CharacterGridManager";
     public const string MonsterPath = "Monster";
+    public const string MonsterAnimatorPath = "Assets/_Project/Animation/Monster/Animator/{0}.controller";
     
     public static async Awaitable<RuntimeAnimatorController> GetAnimator(string path)
     {

@@ -15,8 +15,33 @@ MonoBehaviour:
   m_GroupName: Animation
   m_GUID: 7b09ccd92f24a4b9484f10d77452479a
   m_SerializeEntries:
+  - m_GUID: 0ae51aab31f5a421d924435346b3a99b
+    m_Address: Assets/_Project/Animation/Monster/Animator/Monster_3_0_3.controller
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0c9063bc59bf74607b9f52b8b15f549b
+    m_Address: Assets/_Project/Animation/Monster/Animator/Monster_1_0_4.controller
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0fa50aeff5fa842879a4dc6751bd7964
+    m_Address: Assets/_Project/Animation/Monster/Animator/Monster_1_0_2.controller
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 1320884fd419a478092afdeda4f610f1
     m_Address: Warrior_Legendary_Animator
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 13ee8872214a04c468ed97820f40101b
+    m_Address: Assets/_Project/Animation/Monster/Animator/Monster_4_1_0.controller
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 159a4c07f324f482c8da7619331b37d3
+    m_Address: Assets/_Project/Animation/Monster/Animator/Monster_3_1_0.controller
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -35,6 +60,26 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2871c1af0b0b4406c908d03ce0638c76
+    m_Address: Assets/_Project/Animation/Monster/Animator/Monster_3_0_4.controller
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 40c88a2d1ca164b16ae6e5558e762a49
+    m_Address: Assets/_Project/Animation/Monster/Animator/Monster_2_1_0.controller
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 456cc74fa85f04851ac72516d9b6eafe
+    m_Address: Assets/_Project/Animation/Monster/Animator/Monster_2_0_4.controller
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 49b0f60ebbf924f44a68b44d2d0cb785
+    m_Address: Assets/_Project/Animation/Monster/Animator/Monster_5_0_0.controller
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 4cc587bd7f5cd4caa990c4ec94dbf418
     m_Address: Mage_Master_Animator
     m_ReadOnly: 0
@@ -45,8 +90,18 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5b21144d791124da29528f5be60e4060
+    m_Address: Assets/_Project/Animation/Monster/Animator/Monster_5_0_3.controller
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 5ec5127dca228444abc944779308cb10
     m_Address: Mage_Godlike_Animator
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 61ba7a2e4fee340e99ea875decbe21fe
+    m_Address: Assets/_Project/Animation/Monster/Animator/Monster_4_0_0.controller
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -60,8 +115,38 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6f452808b930e4e5d9f10000b281b199
+    m_Address: Assets/_Project/Animation/Monster/Animator/Monster_3_0_2.controller
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7b571cd4c71d542d5ae8bdcc0b735f9a
+    m_Address: Assets/_Project/Animation/Monster/Animator/Monster_5_1_0.controller
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 87156a921ab2442b89cfdb5f560aca2a
+    m_Address: Assets/_Project/Animation/Monster/Animator/Monster_2_0_0.controller
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 8ffbd4b0f524647f59c77c9341dcb230
     m_Address: Rogue_Elite_Animator
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 99263ff2de14d4e80a1be79927064fd0
+    m_Address: Assets/_Project/Animation/Monster/Animator/Monster_4_0_3.controller
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a7107b0060061418097ab6c1e838ceb8
+    m_Address: Assets/_Project/Animation/Monster/Animator/Monster_5_0_2.controller
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a78f46b23619d4d9e9ea5aee596f500c
+    m_Address: Assets/_Project/Animation/Monster/Animator/Monster_3_0_1.controller
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -80,6 +165,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bded91484d0854e6f8535418f7ff7f4e
+    m_Address: Assets/_Project/Animation/Monster/Animator/Monster_1_0_3.controller
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: c551a32a70e6f4b7b90a4dff91e34fd6
     m_Address: Warrior_Elite_Animator
     m_ReadOnly: 0
@@ -95,13 +185,68 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c742d3539ad544472bc24ba86b8e68bc
+    m_Address: Assets/_Project/Animation/Monster/Animator/Monster_5_0_1.controller
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ca049da6943c849a6ad259a2a27b8e42
+    m_Address: Assets/_Project/Animation/Monster/Animator/Monster_2_0_2.controller
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: db7a7b831deed49c9a4de7ed23693467
     m_Address: Warrior_Godlike_Animator
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: dc942189db24a429c90f3623667a5c37
+    m_Address: Assets/_Project/Animation/Monster/Animator/Monster_4_0_2.controller
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: dd2ed4befc31b4b4db608fdf2665e01f
+    m_Address: Assets/_Project/Animation/Monster/Animator/Monster_2_0_5.controller
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e0af110a0557347f08a365ada141753f
+    m_Address: Assets/_Project/Animation/Monster/Animator/Monster_3_0_0.controller
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: e90a30f5667974b5bbe0a877c4eb7fb9
     m_Address: Mage_Legendary_Animator
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e938d6f101f034f7ab50226b7c025a45
+    m_Address: Assets/_Project/Animation/Monster/Animator/Monster_1_1_0.controller
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ea43bd2c25cf54ad7a61162f1102224f
+    m_Address: Assets/_Project/Animation/Monster/Animator/Monster_4_0_4.controller
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ec694153ec7ef4ed5a68238f182c0616
+    m_Address: Assets/_Project/Animation/Monster/Animator/Monster_1_0_1.controller
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: eea7a7a41632b47f1a506fdac40a0d1f
+    m_Address: Assets/_Project/Animation/Monster/Animator/Monster_2_0_3.controller
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ef226d3e9cf7a4c91bab0eb28e8fb3b5
+    m_Address: Assets/_Project/Animation/Monster/Animator/Monster_1_0_0.controller
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f15f6e0c7ec9347dfaf1032b6fedf24e
+    m_Address: Assets/_Project/Animation/Monster/Animator/Monster_4_0_1.controller
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -117,6 +262,11 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: f7d6b2d4732924396b9cce09e35b1bf1
     m_Address: Rogue_Advanced_Animator
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fbee299ef1fe245a3b740933c7631bf7
+    m_Address: Assets/_Project/Animation/Monster/Animator/Monster_2_0_1.controller
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
