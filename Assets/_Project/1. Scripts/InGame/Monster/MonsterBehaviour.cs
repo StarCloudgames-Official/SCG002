@@ -17,17 +17,12 @@ public class MonsterBehaviour : CachedMonoBehaviour
     {
         currentData = monsterData;
         
-        //animator.runtimeAnimatorController = await GetAnimator();
+        animator.runtimeAnimatorController = await AddressableExtensions.GetAnimator(currentData.animatorPath);
 
         targetPosition = MonsterPath.GetSpawnPosition(0);
         currentPositionIndex = 0;
 
         StartMovement();
-    }
-
-    private async Awaitable<RuntimeAnimatorController> GetAnimator()
-    {
-        return await AddressableExtensions.GetAnimator(currentData.animatorPath);
     }
 
     private void StartMovement()

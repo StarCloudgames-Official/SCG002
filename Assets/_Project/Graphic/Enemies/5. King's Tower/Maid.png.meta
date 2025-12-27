@@ -6,7 +6,7 @@ TextureImporter:
   serializedVersion: 13
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -34,27 +34,27 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
+    wrapU: 1
+    wrapV: 1
     wrapW: 0
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 50
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -121,12 +121,628 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Maid_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 117
+        width: 62
+        height: 39
+      alignment: 9
+      pivot: {x: 0.51, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09126c40668544655bf3c90f118f442f
+      internalID: 111436062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maid_1
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 117
+        width: 62
+        height: 39
+      alignment: 9
+      pivot: {x: 0.51, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92f34d6dcc37c4e74a57f5639e138aeb
+      internalID: -1970191804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maid_2
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 117
+        width: 62
+        height: 39
+      alignment: 9
+      pivot: {x: 0.51, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b89f9e08604944a719a6baaa6fc8772b
+      internalID: -432680094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maid_3
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 117
+        width: 62
+        height: 39
+      alignment: 9
+      pivot: {x: 0.51, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ac0e4c6e01ab472c902447d994d7868
+      internalID: -1997678202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maid_4
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 117
+        width: 62
+        height: 39
+      alignment: 9
+      pivot: {x: 0.51, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 792a66e4b048c4f0c8b32d223994621e
+      internalID: -751898705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maid_5
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 117
+        width: 62
+        height: 39
+      alignment: 9
+      pivot: {x: 0.51, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7623081174b394a85bbda38a43fab12d
+      internalID: -1887943279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maid_6
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 117
+        width: 62
+        height: 39
+      alignment: 9
+      pivot: {x: 0.51, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 022132bcc6f87441788d10c96c988aab
+      internalID: -1383267751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maid_7
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 117
+        width: 62
+        height: 39
+      alignment: 9
+      pivot: {x: 0.51, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b326c8c9ec03458298385c3ef686934
+      internalID: 318836470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maid_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 78
+        width: 62
+        height: 39
+      alignment: 9
+      pivot: {x: 0.51, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f68ad50f73844b5fafd51400d7a6876
+      internalID: -2094100522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maid_9
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 78
+        width: 62
+        height: 39
+      alignment: 9
+      pivot: {x: 0.51, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82f95d138c4be45cea2df503848c72d6
+      internalID: -198628642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maid_10
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 78
+        width: 62
+        height: 39
+      alignment: 9
+      pivot: {x: 0.51, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60b008da19c544eac8b06c196f15d17a
+      internalID: 1444016293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maid_11
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 78
+        width: 62
+        height: 39
+      alignment: 9
+      pivot: {x: 0.51, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bdcbb7c6f05641ffb3b61746f8f1fc0
+      internalID: -226871705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maid_12
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 78
+        width: 62
+        height: 39
+      alignment: 9
+      pivot: {x: 0.51, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a4c470fd078e46d195dc7e44f135eb9
+      internalID: 1344960356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maid_13
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 78
+        width: 62
+        height: 39
+      alignment: 9
+      pivot: {x: 0.51, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 272947a402a7845afad355b67b105fa9
+      internalID: -476052514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maid_14
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 78
+        width: 62
+        height: 39
+      alignment: 9
+      pivot: {x: 0.51, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dc32d3e1f4234f1e85ff83f45f1ddc4
+      internalID: 528347273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maid_15
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 78
+        width: 62
+        height: 39
+      alignment: 9
+      pivot: {x: 0.51, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d09732cba5334245b181164f94be564
+      internalID: -712347324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maid_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 39
+        width: 62
+        height: 39
+      alignment: 9
+      pivot: {x: 0.51, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1531f3b4853924cfdb2281c0199487fb
+      internalID: 189897373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maid_17
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 39
+        width: 62
+        height: 39
+      alignment: 9
+      pivot: {x: 0.51, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb49e14f439614bd880f17abc7c2323a
+      internalID: -1162449146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maid_18
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 39
+        width: 62
+        height: 39
+      alignment: 9
+      pivot: {x: 0.51, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6331443f4de9b4f15aa720c63b8cb027
+      internalID: -326478296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maid_19
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 39
+        width: 62
+        height: 39
+      alignment: 9
+      pivot: {x: 0.51, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a36d9b41352cc4d309bf7fc13dace777
+      internalID: 136999242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maid_20
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 39
+        width: 62
+        height: 39
+      alignment: 9
+      pivot: {x: 0.51, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bc2bef3bd38d43b48dc0375820e2f60
+      internalID: -1329189649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maid_21
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 39
+        width: 62
+        height: 39
+      alignment: 9
+      pivot: {x: 0.51, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c96f6fad03d2c4e97a0601ae831b50b9
+      internalID: -1554420809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maid_22
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 39
+        width: 62
+        height: 39
+      alignment: 9
+      pivot: {x: 0.51, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 425afa7c309224b7ab7cb71dadde682e
+      internalID: 250478791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maid_23
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 39
+        width: 62
+        height: 39
+      alignment: 9
+      pivot: {x: 0.51, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be1d0dbcf541f4f9b9bae6530c107deb
+      internalID: -335104593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maid_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 62
+        height: 39
+      alignment: 9
+      pivot: {x: 0.51, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39811f1eccd764c63b1e89fd0ba699fd
+      internalID: -465244436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maid_25
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 0
+        width: 62
+        height: 39
+      alignment: 9
+      pivot: {x: 0.51, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffb5b2d3780cd4ffc8024bac98c1f5ab
+      internalID: -1423298751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maid_26
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 0
+        width: 62
+        height: 39
+      alignment: 9
+      pivot: {x: 0.51, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47f978fb969954d81832f716106be10a
+      internalID: -1710177783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maid_27
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 0
+        width: 62
+        height: 39
+      alignment: 9
+      pivot: {x: 0.51, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2d1583622ce24b2bb2e0e1a7aaea934
+      internalID: -882511399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: f7fa6ee22cc6944818324e00852b53e3
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +751,35 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Maid_0: 111436062
+      Maid_1: -1970191804
+      Maid_10: 1444016293
+      Maid_11: -226871705
+      Maid_12: 1344960356
+      Maid_13: -476052514
+      Maid_14: 528347273
+      Maid_15: -712347324
+      Maid_16: 189897373
+      Maid_17: -1162449146
+      Maid_18: -326478296
+      Maid_19: 136999242
+      Maid_2: -432680094
+      Maid_20: -1329189649
+      Maid_21: -1554420809
+      Maid_22: 250478791
+      Maid_23: -335104593
+      Maid_24: -465244436
+      Maid_25: -1423298751
+      Maid_26: -1710177783
+      Maid_27: -882511399
+      Maid_3: -1997678202
+      Maid_4: -751898705
+      Maid_5: -1887943279
+      Maid_6: -1383267751
+      Maid_7: 318836470
+      Maid_8: -2094100522
+      Maid_9: -198628642
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

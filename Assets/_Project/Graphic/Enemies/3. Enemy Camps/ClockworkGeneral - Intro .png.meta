@@ -6,7 +6,7 @@ TextureImporter:
   serializedVersion: 13
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -34,27 +34,27 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
+    wrapU: 1
+    wrapV: 1
     wrapW: 0
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 50
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -121,12 +121,518 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: ClockworkGeneral - Intro _0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 306
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.63, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57fd4367863ed4773b9b9710d4fe5a84
+      internalID: 1171955123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClockworkGeneral - Intro _1
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 306
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.63, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45b968f22cd804cd581bf543f310244b
+      internalID: 1055074160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClockworkGeneral - Intro _2
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 306
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.63, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a1afe63944b447e0a55cb8e5a740095
+      internalID: 1706332417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClockworkGeneral - Intro _3
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 306
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.63, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7ef7c70edd944eacbc651f8552f67c8
+      internalID: 1865909899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClockworkGeneral - Intro _4
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 306
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.63, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc1892df3f8c4487aad43403cf2ee39d
+      internalID: 2017454226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClockworkGeneral - Intro _5
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 306
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.63, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a757d1f36e0df4ab08c6fc6d10574bb3
+      internalID: 730773109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClockworkGeneral - Intro _6
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 306
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.63, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f32c32d3da9c4549b5ad9b28cac4d31
+      internalID: 416755638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClockworkGeneral - Intro _7
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 306
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.63, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2fd2304fd39a41bcae53cae3d967e7f
+      internalID: -1136794177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClockworkGeneral - Intro _8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 153
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.63, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fff49bd3e56074e79a49e2c2b26cd99f
+      internalID: -1535033397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClockworkGeneral - Intro _9
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 153
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.63, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f55cd4531e15740b39ad30cc88823de7
+      internalID: -1317807923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClockworkGeneral - Intro _10
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 153
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.63, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c0c33300851d43648f63eb2df10888f
+      internalID: -667224861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClockworkGeneral - Intro _11
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 153
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.63, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef244cfa73e6f47338e2843264795ddc
+      internalID: 915393344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClockworkGeneral - Intro _12
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 153
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.63, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78cbe7206da6948cfa2eedcede62549c
+      internalID: 1946059427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClockworkGeneral - Intro _13
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 153
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.63, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f10f8ac260d442129b468fc5b3d4f00
+      internalID: -1791861779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClockworkGeneral - Intro _14
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 153
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.63, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b7c68611586e4f5480eaed90f9a1caf
+      internalID: -2099963292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClockworkGeneral - Intro _15
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 153
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.63, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc2ad9164bc934b28855f78e89ba26b2
+      internalID: -718395437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClockworkGeneral - Intro _16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.63, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5cf81d542b274c758a166bf0e39719a
+      internalID: -1025729876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClockworkGeneral - Intro _17
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 0
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.63, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 487e45d1d145845c094f8374919f89ed
+      internalID: -168101288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClockworkGeneral - Intro _18
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 0
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.63, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: beb9f67c42a094604844e049c0925979
+      internalID: -1952165181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClockworkGeneral - Intro _19
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 0
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.63, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 427c357add91649edb8b91a5c958f570
+      internalID: 1680999988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClockworkGeneral - Intro _20
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 0
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.63, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 047f8b249d5e9495daed0fad829ba859
+      internalID: 1977096416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClockworkGeneral - Intro _21
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 0
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.63, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d70df53ddafa44f891c6b95a2051f3b
+      internalID: -345749678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClockworkGeneral - Intro _22
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 0
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.63, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aac280ea6231649bfa5cc667b0016351
+      internalID: 1069022932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: b4db41dd538c54011b3d61c4ca17cc98
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +641,30 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ClockworkGeneral - Intro _0: 1171955123
+      ClockworkGeneral - Intro _1: 1055074160
+      ClockworkGeneral - Intro _10: -667224861
+      ClockworkGeneral - Intro _11: 915393344
+      ClockworkGeneral - Intro _12: 1946059427
+      ClockworkGeneral - Intro _13: -1791861779
+      ClockworkGeneral - Intro _14: -2099963292
+      ClockworkGeneral - Intro _15: -718395437
+      ClockworkGeneral - Intro _16: -1025729876
+      ClockworkGeneral - Intro _17: -168101288
+      ClockworkGeneral - Intro _18: -1952165181
+      ClockworkGeneral - Intro _19: 1680999988
+      ClockworkGeneral - Intro _2: 1706332417
+      ClockworkGeneral - Intro _20: 1977096416
+      ClockworkGeneral - Intro _21: -345749678
+      ClockworkGeneral - Intro _22: 1069022932
+      ClockworkGeneral - Intro _3: 1865909899
+      ClockworkGeneral - Intro _4: 2017454226
+      ClockworkGeneral - Intro _5: 730773109
+      ClockworkGeneral - Intro _6: 416755638
+      ClockworkGeneral - Intro _7: -1136794177
+      ClockworkGeneral - Intro _8: -1535033397
+      ClockworkGeneral - Intro _9: -1317807923
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

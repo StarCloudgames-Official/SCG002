@@ -6,7 +6,7 @@ TextureImporter:
   serializedVersion: 13
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -34,27 +34,27 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
+    wrapU: 1
+    wrapV: 1
     wrapW: 0
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 50
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -121,12 +121,496 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Skeletonely - Intro_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 459
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.57, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a50656ef9ec340b08641f06432710a7
+      internalID: -1790056266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeletonely - Intro_1
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 459
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.57, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad81c8ffaea3b4a71b7a3aebf6ee36ed
+      internalID: -2000534278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeletonely - Intro_2
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 459
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.57, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c92d3277d91d541838c93494ea609fb3
+      internalID: -1349408504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeletonely - Intro_3
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 459
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.57, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bae05a7a1045a498a8011f370424b062
+      internalID: 1290633580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeletonely - Intro_4
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 459
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.57, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a1fab94016714f73a5a81813f6db5b8
+      internalID: -1100287630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeletonely - Intro_5
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 459
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.57, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dc3a5e678a75453b9e5360e7e12ad04
+      internalID: -189017626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeletonely - Intro_6
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 459
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.57, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49c97276f9ee7418c84b334fccc5fa85
+      internalID: -1556179845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeletonely - Intro_7
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 459
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.57, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c333b47474ef482ca178b94afaaab6a
+      internalID: -1793870653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeletonely - Intro_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 306
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.57, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7542c3d5e7ad74a819de77199bb91080
+      internalID: -1885711559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeletonely - Intro_9
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 306
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.57, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30fcde1e2ae0f4272b1be7f69d0ab001
+      internalID: -2132558962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeletonely - Intro_10
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 306
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.57, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afab5da6bc80543e3989a2a00524f3a0
+      internalID: 310390254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeletonely - Intro_11
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 306
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.57, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c882a6454003343c0b2137da07e9e84d
+      internalID: -1529185128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeletonely - Intro_12
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 306
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.57, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e81f7088168224be48e581ea98558994
+      internalID: 1013100714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeletonely - Intro_13
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 153
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.57, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9eff699cbd6c45b6affbdfd0c1e5aef
+      internalID: -846480191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeletonely - Intro_14
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 153
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.57, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9591aa44181e4318b5cff8d2272a22e
+      internalID: 231173161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeletonely - Intro_15
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 153
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.57, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 851c2f492b93348c7a20ed7994662645
+      internalID: 1531955304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeletonely - Intro_16
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 153
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.57, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 769c96a1cd1f64b95b2c9c4d7c7efd96
+      internalID: 468420721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeletonely - Intro_17
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 153
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.57, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92655b427313e427ead2cb13d92a137c
+      internalID: 766711065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeletonely - Intro_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.57, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8311ae57d4224be79b4fdb7c2ef675c
+      internalID: -1291606188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeletonely - Intro_19
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 0
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.57, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22833b815d6fc4f9ca074f6e69a3e794
+      internalID: -93058731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeletonely - Intro_20
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 0
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.57, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87f0537022cd540658512d6055e7167c
+      internalID: 1534841310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeletonely - Intro_21
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 0
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.57, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f6a2b962ec7f43b9bcc7402a8cef659
+      internalID: -1432967423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 8b727198804c84fc8be4f1f06d6c71b0
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +619,29 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Skeletonely - Intro_0: -1790056266
+      Skeletonely - Intro_1: -2000534278
+      Skeletonely - Intro_10: 310390254
+      Skeletonely - Intro_11: -1529185128
+      Skeletonely - Intro_12: 1013100714
+      Skeletonely - Intro_13: -846480191
+      Skeletonely - Intro_14: 231173161
+      Skeletonely - Intro_15: 1531955304
+      Skeletonely - Intro_16: 468420721
+      Skeletonely - Intro_17: 766711065
+      Skeletonely - Intro_18: -1291606188
+      Skeletonely - Intro_19: -93058731
+      Skeletonely - Intro_2: -1349408504
+      Skeletonely - Intro_20: 1534841310
+      Skeletonely - Intro_21: -1432967423
+      Skeletonely - Intro_3: 1290633580
+      Skeletonely - Intro_4: -1100287630
+      Skeletonely - Intro_5: -189017626
+      Skeletonely - Intro_6: -1556179845
+      Skeletonely - Intro_7: -1793870653
+      Skeletonely - Intro_8: -1885711559
+      Skeletonely - Intro_9: -2132558962
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -6,7 +6,7 @@ TextureImporter:
   serializedVersion: 13
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -34,27 +34,27 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
+    wrapU: 1
+    wrapV: 1
     wrapW: 0
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 50
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -121,12 +121,584 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Stone thrower goblin_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 47
+        height: 32
+      alignment: 9
+      pivot: {x: 0.6, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb89f99d88eb849fba061cd4f06f8d33
+      internalID: -386177124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone thrower goblin_1
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 96
+        width: 47
+        height: 32
+      alignment: 9
+      pivot: {x: 0.6, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 492faf05065e344dda5088694046beaf
+      internalID: -138960287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone thrower goblin_2
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 96
+        width: 47
+        height: 32
+      alignment: 9
+      pivot: {x: 0.6, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f49df125688bc4f51a74d926e3207f38
+      internalID: -871483426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone thrower goblin_3
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 96
+        width: 47
+        height: 32
+      alignment: 9
+      pivot: {x: 0.6, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e868b8ec517a4423686fbe2ca8a128af
+      internalID: 196958919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone thrower goblin_4
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 96
+        width: 47
+        height: 32
+      alignment: 9
+      pivot: {x: 0.6, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0928948665a8451b9bf9cb95720aec8
+      internalID: -877169286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone thrower goblin_5
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 96
+        width: 47
+        height: 32
+      alignment: 9
+      pivot: {x: 0.6, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0b9aaef63d1c4239aa4d5eb793617d4
+      internalID: 1170187672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone thrower goblin_6
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 96
+        width: 47
+        height: 32
+      alignment: 9
+      pivot: {x: 0.6, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4ec8bef07a13454e847b45a835f600e
+      internalID: -153780105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone thrower goblin_7
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 96
+        width: 47
+        height: 32
+      alignment: 9
+      pivot: {x: 0.6, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84ed81a001c59491193f3936a4521778
+      internalID: -1922801153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone thrower goblin_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 47
+        height: 32
+      alignment: 9
+      pivot: {x: 0.6, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f5993646ae9744c19d57fb16b1dd892
+      internalID: -562022155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone thrower goblin_9
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 64
+        width: 47
+        height: 32
+      alignment: 9
+      pivot: {x: 0.6, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00e49a7b51a6044afbb9c4302acc57f6
+      internalID: -933183756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone thrower goblin_10
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 64
+        width: 47
+        height: 32
+      alignment: 9
+      pivot: {x: 0.6, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b08ec18e573c44b5bb651d21e597ddff
+      internalID: -568942549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone thrower goblin_11
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 64
+        width: 47
+        height: 32
+      alignment: 9
+      pivot: {x: 0.6, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a0c416cf3c2245859937c21037d1e25
+      internalID: -775450105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone thrower goblin_12
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 64
+        width: 47
+        height: 32
+      alignment: 9
+      pivot: {x: 0.6, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 085934a1103594e9c87dc982845cfbd3
+      internalID: 1938960965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone thrower goblin_13
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 64
+        width: 47
+        height: 32
+      alignment: 9
+      pivot: {x: 0.6, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acf940c6814d144d0bed7fc285c104fe
+      internalID: -1684196894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone thrower goblin_14
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 64
+        width: 47
+        height: 32
+      alignment: 9
+      pivot: {x: 0.6, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b82f17e6f7604beba000a7ab240bd61
+      internalID: -413584633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone thrower goblin_15
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 64
+        width: 47
+        height: 32
+      alignment: 9
+      pivot: {x: 0.6, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c717715ecac142c0b1744e5b78b7cb4
+      internalID: -797827988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone thrower goblin_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 47
+        height: 32
+      alignment: 9
+      pivot: {x: 0.6, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c329f7545acf4497a67701920b6aba4
+      internalID: -578215950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone thrower goblin_17
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 32
+        width: 47
+        height: 32
+      alignment: 9
+      pivot: {x: 0.6, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a5831d9f9b614809a36378485fee5b3
+      internalID: -1315234980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone thrower goblin_18
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 32
+        width: 47
+        height: 32
+      alignment: 9
+      pivot: {x: 0.6, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3435f526fd8a14b87b15cf0372236a6f
+      internalID: 1782259460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone thrower goblin_19
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 32
+        width: 47
+        height: 32
+      alignment: 9
+      pivot: {x: 0.6, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5623a9c9898c245b281d8677928a1726
+      internalID: 530657554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone thrower goblin_20
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 32
+        width: 47
+        height: 32
+      alignment: 9
+      pivot: {x: 0.6, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e2628a5aad464adb8767fb25fa4c169
+      internalID: -1960894656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone thrower goblin_21
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 32
+        width: 47
+        height: 32
+      alignment: 9
+      pivot: {x: 0.6, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 306cc6ae3e5a649ff9e84995ee295d22
+      internalID: 1050102913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone thrower goblin_22
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 32
+        width: 47
+        height: 32
+      alignment: 9
+      pivot: {x: 0.6, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fd1dcce5f30c4fdfb789fad885b1fd1
+      internalID: 107983979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone thrower goblin_23
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 32
+        width: 47
+        height: 32
+      alignment: 9
+      pivot: {x: 0.6, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cc8b12cb7f974c048e455dc25ce41d9
+      internalID: 2062015942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone thrower goblin_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 47
+        height: 32
+      alignment: 9
+      pivot: {x: 0.6, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f1e9a34a1cfd4ffd96654cc53fc0804
+      internalID: 1842547445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone thrower goblin_25
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 0
+        width: 47
+        height: 32
+      alignment: 9
+      pivot: {x: 0.6, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f2d1427232e749d9aff4bb323f3b9db
+      internalID: 1834728101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: fac0ce02f0145425daf1756a143252d8
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +707,33 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Stone thrower goblin_0: -386177124
+      Stone thrower goblin_1: -138960287
+      Stone thrower goblin_10: -568942549
+      Stone thrower goblin_11: -775450105
+      Stone thrower goblin_12: 1938960965
+      Stone thrower goblin_13: -1684196894
+      Stone thrower goblin_14: -413584633
+      Stone thrower goblin_15: -797827988
+      Stone thrower goblin_16: -578215950
+      Stone thrower goblin_17: -1315234980
+      Stone thrower goblin_18: 1782259460
+      Stone thrower goblin_19: 530657554
+      Stone thrower goblin_2: -871483426
+      Stone thrower goblin_20: -1960894656
+      Stone thrower goblin_21: 1050102913
+      Stone thrower goblin_22: 107983979
+      Stone thrower goblin_23: 2062015942
+      Stone thrower goblin_24: 1842547445
+      Stone thrower goblin_25: 1834728101
+      Stone thrower goblin_3: 196958919
+      Stone thrower goblin_4: -877169286
+      Stone thrower goblin_5: 1170187672
+      Stone thrower goblin_6: -153780105
+      Stone thrower goblin_7: -1922801153
+      Stone thrower goblin_8: -562022155
+      Stone thrower goblin_9: -933183756
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

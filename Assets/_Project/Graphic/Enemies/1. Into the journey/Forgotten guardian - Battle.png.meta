@@ -6,7 +6,7 @@ TextureImporter:
   serializedVersion: 13
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -34,27 +34,27 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
+    wrapU: 1
+    wrapV: 1
     wrapW: 0
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 50
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -121,12 +121,914 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Forgotten guardian - Battle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 765
+        width: 166
+        height: 153
+      alignment: 9
+      pivot: {x: 0.6, y: 0.42}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a32509e6904a4f778cf2aee092c79e9
+      internalID: -36234891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forgotten guardian - Battle_1
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 765
+        width: 166
+        height: 153
+      alignment: 9
+      pivot: {x: 0.6, y: 0.42}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c37414c6332e444b95eaf79115cedb1
+      internalID: 1915181302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forgotten guardian - Battle_2
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 765
+        width: 166
+        height: 153
+      alignment: 9
+      pivot: {x: 0.6, y: 0.42}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c39f1a2649f5a4829a204219f826f3b0
+      internalID: -99423534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forgotten guardian - Battle_3
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 765
+        width: 166
+        height: 153
+      alignment: 9
+      pivot: {x: 0.6, y: 0.42}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af416aaef45c74e4d8688ab3752d65a7
+      internalID: -208236909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forgotten guardian - Battle_4
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 765
+        width: 166
+        height: 153
+      alignment: 9
+      pivot: {x: 0.6, y: 0.42}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d8f62ee9ec2c4adc9f165072aaf05c4
+      internalID: 1093023920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forgotten guardian - Battle_5
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 765
+        width: 166
+        height: 153
+      alignment: 9
+      pivot: {x: 0.6, y: 0.42}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c980a4c2a4d945d8babe3814ebc2755
+      internalID: 702523070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forgotten guardian - Battle_6
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 765
+        width: 166
+        height: 153
+      alignment: 9
+      pivot: {x: 0.6, y: 0.42}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8e1a67b112d34e8a93dfcc95bbca3e8
+      internalID: 1505779746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forgotten guardian - Battle_7
+      rect:
+        serializedVersion: 2
+        x: 1162
+        y: 765
+        width: 166
+        height: 153
+      alignment: 9
+      pivot: {x: 0.6, y: 0.42}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 725cc8aab69e146b8ae045295bcc11e9
+      internalID: -1873794899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forgotten guardian - Battle_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 612
+        width: 166
+        height: 153
+      alignment: 9
+      pivot: {x: 0.6, y: 0.42}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 646efe13426c84667aec61aaffd38381
+      internalID: -1322230466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forgotten guardian - Battle_9
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 612
+        width: 166
+        height: 153
+      alignment: 9
+      pivot: {x: 0.6, y: 0.42}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bf5cc1208ef74e3baf9f37276693075
+      internalID: -557557275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forgotten guardian - Battle_10
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 612
+        width: 166
+        height: 153
+      alignment: 9
+      pivot: {x: 0.6, y: 0.42}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e4f9ca25336a4a98ba27cd3ed24e063
+      internalID: 1973212645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forgotten guardian - Battle_11
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 612
+        width: 166
+        height: 153
+      alignment: 9
+      pivot: {x: 0.6, y: 0.42}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dac0a397afe364b20a005d54def17ea1
+      internalID: -953027674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forgotten guardian - Battle_12
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 612
+        width: 166
+        height: 153
+      alignment: 9
+      pivot: {x: 0.6, y: 0.42}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53919e4a59e364c56b476fc8c0d77ced
+      internalID: -560143242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forgotten guardian - Battle_13
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 612
+        width: 166
+        height: 153
+      alignment: 9
+      pivot: {x: 0.6, y: 0.42}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b758939059e146969bc2116ea50a63d
+      internalID: -1628607609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forgotten guardian - Battle_14
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 612
+        width: 166
+        height: 153
+      alignment: 9
+      pivot: {x: 0.6, y: 0.42}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fa93ecd160844753a0d006b8d52f3fb
+      internalID: 1166388629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forgotten guardian - Battle_15
+      rect:
+        serializedVersion: 2
+        x: 1162
+        y: 612
+        width: 166
+        height: 153
+      alignment: 9
+      pivot: {x: 0.6, y: 0.42}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e80a30018321412281f1487ed6b50a7
+      internalID: 300500304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forgotten guardian - Battle_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 459
+        width: 166
+        height: 153
+      alignment: 9
+      pivot: {x: 0.6, y: 0.42}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36ed65715ec584aac82e5da2d0c804dc
+      internalID: -807145741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forgotten guardian - Battle_17
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 459
+        width: 166
+        height: 153
+      alignment: 9
+      pivot: {x: 0.6, y: 0.42}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0517cd026f3c4b058bd26ebc53978c3
+      internalID: 1328226590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forgotten guardian - Battle_18
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 459
+        width: 166
+        height: 153
+      alignment: 9
+      pivot: {x: 0.6, y: 0.42}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c89a69638be3415d941e4be92769469
+      internalID: 1394304200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forgotten guardian - Battle_19
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 459
+        width: 166
+        height: 153
+      alignment: 9
+      pivot: {x: 0.6, y: 0.42}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4638c507ce3524175ac96573160375ba
+      internalID: 2038143992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forgotten guardian - Battle_20
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 459
+        width: 166
+        height: 153
+      alignment: 9
+      pivot: {x: 0.6, y: 0.42}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8813367f8a89427d917a410c0c2bda4
+      internalID: -32378968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forgotten guardian - Battle_21
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 459
+        width: 166
+        height: 153
+      alignment: 9
+      pivot: {x: 0.6, y: 0.42}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 276376b8cdb0343b9a61e19a1738074c
+      internalID: -1442189382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forgotten guardian - Battle_22
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 459
+        width: 166
+        height: 153
+      alignment: 9
+      pivot: {x: 0.6, y: 0.42}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 301a5bd66be9a4c40a3427b8fa1791f3
+      internalID: -1172086794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forgotten guardian - Battle_23
+      rect:
+        serializedVersion: 2
+        x: 1162
+        y: 459
+        width: 166
+        height: 153
+      alignment: 9
+      pivot: {x: 0.6, y: 0.42}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: febc79acc68d04a0f89563ebd44f2870
+      internalID: -449882031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forgotten guardian - Battle_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 306
+        width: 166
+        height: 153
+      alignment: 9
+      pivot: {x: 0.6, y: 0.42}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 114d646e7b633463996a1aaf937f6a62
+      internalID: -2061257338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forgotten guardian - Battle_25
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 306
+        width: 166
+        height: 153
+      alignment: 9
+      pivot: {x: 0.6, y: 0.42}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 067fc86a9935f4037ad733cef7d78377
+      internalID: -216655771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forgotten guardian - Battle_26
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 306
+        width: 166
+        height: 153
+      alignment: 9
+      pivot: {x: 0.6, y: 0.42}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f293929371ad4478bbbb0dbc29ee196
+      internalID: 906841329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forgotten guardian - Battle_27
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 306
+        width: 166
+        height: 153
+      alignment: 9
+      pivot: {x: 0.6, y: 0.42}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 732eb2d44c3e84631878f8fcfe2eea26
+      internalID: -1694200139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forgotten guardian - Battle_28
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 306
+        width: 166
+        height: 153
+      alignment: 9
+      pivot: {x: 0.6, y: 0.42}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f2f3d27f81ad493fad04264c82d8bef
+      internalID: 199793465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forgotten guardian - Battle_29
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 306
+        width: 166
+        height: 153
+      alignment: 9
+      pivot: {x: 0.6, y: 0.42}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bb9aa3c8b9a74bc099a9a0b4c17473d
+      internalID: -2098592417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forgotten guardian - Battle_30
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 306
+        width: 166
+        height: 153
+      alignment: 9
+      pivot: {x: 0.6, y: 0.42}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f82ccec110a5a4c1593d425b1a7af950
+      internalID: -1035333854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forgotten guardian - Battle_31
+      rect:
+        serializedVersion: 2
+        x: 1162
+        y: 306
+        width: 166
+        height: 153
+      alignment: 9
+      pivot: {x: 0.6, y: 0.42}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94bae9422815c4dbfad08647b1f39b32
+      internalID: -255667441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forgotten guardian - Battle_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 153
+        width: 166
+        height: 153
+      alignment: 9
+      pivot: {x: 0.6, y: 0.42}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 316a456b8591b4452ac4044023a36530
+      internalID: -1798016769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forgotten guardian - Battle_33
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 153
+        width: 166
+        height: 153
+      alignment: 9
+      pivot: {x: 0.6, y: 0.42}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdfa341dc82b74af08e6556c68e2b69b
+      internalID: -952034163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forgotten guardian - Battle_34
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 153
+        width: 166
+        height: 153
+      alignment: 9
+      pivot: {x: 0.6, y: 0.42}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a82bb4b33c9142f29530310eab288fc
+      internalID: -403097945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forgotten guardian - Battle_35
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 153
+        width: 166
+        height: 153
+      alignment: 9
+      pivot: {x: 0.6, y: 0.42}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 951d274d445d44b7ebf9de77cbfc5027
+      internalID: 387768555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forgotten guardian - Battle_36
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 153
+        width: 166
+        height: 153
+      alignment: 9
+      pivot: {x: 0.6, y: 0.42}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf36161b404f3443dba38e946e5e85a0
+      internalID: -471137220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forgotten guardian - Battle_37
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 153
+        width: 166
+        height: 153
+      alignment: 9
+      pivot: {x: 0.6, y: 0.42}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ace06187158e477c9330f4f3118b073
+      internalID: -152277143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forgotten guardian - Battle_38
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 153
+        width: 166
+        height: 153
+      alignment: 9
+      pivot: {x: 0.6, y: 0.42}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aeb7f081bcc647c59798cf2d18a034a
+      internalID: -152209107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forgotten guardian - Battle_39
+      rect:
+        serializedVersion: 2
+        x: 1162
+        y: 153
+        width: 166
+        height: 153
+      alignment: 9
+      pivot: {x: 0.6, y: 0.42}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc69679c8a60c46be93569a24dd81393
+      internalID: -532219211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forgotten guardian - Battle_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 166
+        height: 153
+      alignment: 9
+      pivot: {x: 0.6, y: 0.42}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95ce9fb04caa94d1383cd33563bb254a
+      internalID: -1758255040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 02b91ad40f3d644539f77b52ede7a841
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +1037,48 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Forgotten guardian - Battle_0: -36234891
+      Forgotten guardian - Battle_1: 1915181302
+      Forgotten guardian - Battle_10: 1973212645
+      Forgotten guardian - Battle_11: -953027674
+      Forgotten guardian - Battle_12: -560143242
+      Forgotten guardian - Battle_13: -1628607609
+      Forgotten guardian - Battle_14: 1166388629
+      Forgotten guardian - Battle_15: 300500304
+      Forgotten guardian - Battle_16: -807145741
+      Forgotten guardian - Battle_17: 1328226590
+      Forgotten guardian - Battle_18: 1394304200
+      Forgotten guardian - Battle_19: 2038143992
+      Forgotten guardian - Battle_2: -99423534
+      Forgotten guardian - Battle_20: -32378968
+      Forgotten guardian - Battle_21: -1442189382
+      Forgotten guardian - Battle_22: -1172086794
+      Forgotten guardian - Battle_23: -449882031
+      Forgotten guardian - Battle_24: -2061257338
+      Forgotten guardian - Battle_25: -216655771
+      Forgotten guardian - Battle_26: 906841329
+      Forgotten guardian - Battle_27: -1694200139
+      Forgotten guardian - Battle_28: 199793465
+      Forgotten guardian - Battle_29: -2098592417
+      Forgotten guardian - Battle_3: -208236909
+      Forgotten guardian - Battle_30: -1035333854
+      Forgotten guardian - Battle_31: -255667441
+      Forgotten guardian - Battle_32: -1798016769
+      Forgotten guardian - Battle_33: -952034163
+      Forgotten guardian - Battle_34: -403097945
+      Forgotten guardian - Battle_35: 387768555
+      Forgotten guardian - Battle_36: -471137220
+      Forgotten guardian - Battle_37: -152277143
+      Forgotten guardian - Battle_38: -152209107
+      Forgotten guardian - Battle_39: -532219211
+      Forgotten guardian - Battle_4: 1093023920
+      Forgotten guardian - Battle_40: -1758255040
+      Forgotten guardian - Battle_5: 702523070
+      Forgotten guardian - Battle_6: 1505779746
+      Forgotten guardian - Battle_7: -1873794899
+      Forgotten guardian - Battle_8: -1322230466
+      Forgotten guardian - Battle_9: -557557275
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

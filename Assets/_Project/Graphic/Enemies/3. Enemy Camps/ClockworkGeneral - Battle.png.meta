@@ -6,7 +6,7 @@ TextureImporter:
   serializedVersion: 13
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -34,27 +34,27 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
+    wrapU: 1
+    wrapV: 1
     wrapW: 0
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 50
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -121,12 +121,760 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: ClockworkGeneral - Battle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 612
+        width: 148
+        height: 153
+      alignment: 9
+      pivot: {x: 0.63, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f97fad42024bb4c46a6ef6afefe845fc
+      internalID: 683304195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClockworkGeneral - Battle_1
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 612
+        width: 148
+        height: 153
+      alignment: 9
+      pivot: {x: 0.63, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2e4e8ec047614acea86ab6904b1ca30
+      internalID: 1332758121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClockworkGeneral - Battle_2
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 612
+        width: 148
+        height: 153
+      alignment: 9
+      pivot: {x: 0.63, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6a1408aeb3fa40a28ae0bd95a2fd4a8
+      internalID: -1675489571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClockworkGeneral - Battle_3
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 612
+        width: 148
+        height: 153
+      alignment: 9
+      pivot: {x: 0.63, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 825e21636e77c43fd90dd01a8189bd62
+      internalID: -1836551017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClockworkGeneral - Battle_4
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 612
+        width: 148
+        height: 153
+      alignment: 9
+      pivot: {x: 0.63, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6549d5ae63e8e4059af03c4b585ed5cc
+      internalID: -2036410776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClockworkGeneral - Battle_5
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 612
+        width: 148
+        height: 153
+      alignment: 9
+      pivot: {x: 0.63, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49d86796db25d4da5b93504c48061c60
+      internalID: -946652396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClockworkGeneral - Battle_6
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 612
+        width: 148
+        height: 153
+      alignment: 9
+      pivot: {x: 0.63, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e931cea8f285479d9cbd831be18b160
+      internalID: 141771517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClockworkGeneral - Battle_7
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 612
+        width: 148
+        height: 153
+      alignment: 9
+      pivot: {x: 0.63, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58acb1bf1dea144958c1b4bc1edd5ece
+      internalID: 1901548208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClockworkGeneral - Battle_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 459
+        width: 148
+        height: 153
+      alignment: 9
+      pivot: {x: 0.63, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de3df7f610d1e461f9df2123b141f665
+      internalID: -247537520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClockworkGeneral - Battle_9
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 459
+        width: 148
+        height: 153
+      alignment: 9
+      pivot: {x: 0.63, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a9e0591658e04616a9088f14b3ca722
+      internalID: 1889735590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClockworkGeneral - Battle_10
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 459
+        width: 148
+        height: 153
+      alignment: 9
+      pivot: {x: 0.63, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11842cdbe21fb43a094f0bd6ea3441ab
+      internalID: 1072729653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClockworkGeneral - Battle_11
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 459
+        width: 148
+        height: 153
+      alignment: 9
+      pivot: {x: 0.63, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ae2908c7826f42fc8a3f4024b9c6eae
+      internalID: 1421802382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClockworkGeneral - Battle_12
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 459
+        width: 148
+        height: 153
+      alignment: 9
+      pivot: {x: 0.63, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35c89aa9834b6462fafdfd6e75e5e776
+      internalID: -1537095893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClockworkGeneral - Battle_13
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 459
+        width: 148
+        height: 153
+      alignment: 9
+      pivot: {x: 0.63, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 935652d26183444d9a95a9d1186b9e66
+      internalID: -1192410777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClockworkGeneral - Battle_14
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 459
+        width: 148
+        height: 153
+      alignment: 9
+      pivot: {x: 0.63, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8ca99229f00942d2a786e6e7f669c8c
+      internalID: 2107779047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClockworkGeneral - Battle_15
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 459
+        width: 148
+        height: 153
+      alignment: 9
+      pivot: {x: 0.63, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e994e903635345ee8e1b13484f3042f
+      internalID: 1200118537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClockworkGeneral - Battle_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 306
+        width: 148
+        height: 153
+      alignment: 9
+      pivot: {x: 0.63, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2f7e64cb7d0a4c639523bdf305adbfa
+      internalID: 823892369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClockworkGeneral - Battle_17
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 306
+        width: 148
+        height: 153
+      alignment: 9
+      pivot: {x: 0.63, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b2917297a3b649acbc3047300693053
+      internalID: 1118589791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClockworkGeneral - Battle_18
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 306
+        width: 148
+        height: 153
+      alignment: 9
+      pivot: {x: 0.63, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4faefcf436a64eac88f7a11af5bf645
+      internalID: -217622197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClockworkGeneral - Battle_19
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 306
+        width: 148
+        height: 153
+      alignment: 9
+      pivot: {x: 0.63, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccf478d2c1381449cb38b743effd9ed1
+      internalID: -475046606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClockworkGeneral - Battle_20
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 306
+        width: 148
+        height: 153
+      alignment: 9
+      pivot: {x: 0.63, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24cb2cc66a53a42f09ec87b52deab677
+      internalID: 259235710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClockworkGeneral - Battle_21
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 306
+        width: 148
+        height: 153
+      alignment: 9
+      pivot: {x: 0.63, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f77d2b603337467fa4fc2a10357d701
+      internalID: 1456597684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClockworkGeneral - Battle_22
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 306
+        width: 148
+        height: 153
+      alignment: 9
+      pivot: {x: 0.63, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 181f908867372465a9f55cc53a9128e9
+      internalID: -923412030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClockworkGeneral - Battle_23
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 306
+        width: 148
+        height: 153
+      alignment: 9
+      pivot: {x: 0.63, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8288cc3d845849cc9e8a4e11dfe74af
+      internalID: 390759766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClockworkGeneral - Battle_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 153
+        width: 148
+        height: 153
+      alignment: 9
+      pivot: {x: 0.63, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: beeb04c45754e4fcbad9ea8a18a443ce
+      internalID: 1581839012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClockworkGeneral - Battle_25
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 153
+        width: 148
+        height: 153
+      alignment: 9
+      pivot: {x: 0.63, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce5930fccedd64d4984fd664ca10f66a
+      internalID: -301975383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClockworkGeneral - Battle_26
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 153
+        width: 148
+        height: 153
+      alignment: 9
+      pivot: {x: 0.63, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3812b2f498b34e6ea90184eeecd0e5e
+      internalID: -991310918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClockworkGeneral - Battle_27
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 153
+        width: 148
+        height: 153
+      alignment: 9
+      pivot: {x: 0.63, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d715d69fc00354dffb325a8e36f4f4e0
+      internalID: -528443531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClockworkGeneral - Battle_28
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 153
+        width: 148
+        height: 153
+      alignment: 9
+      pivot: {x: 0.63, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13dabde9caa804e7ea67939b7e560dc7
+      internalID: 1415620080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClockworkGeneral - Battle_29
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 153
+        width: 148
+        height: 153
+      alignment: 9
+      pivot: {x: 0.63, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b5467dcb53964e02a6be0aa6f8f478e
+      internalID: 1242897975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClockworkGeneral - Battle_30
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 153
+        width: 148
+        height: 153
+      alignment: 9
+      pivot: {x: 0.63, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a2f83c91b0524a0db0bd3f06cdcc571
+      internalID: 1113590566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClockworkGeneral - Battle_31
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 153
+        width: 148
+        height: 153
+      alignment: 9
+      pivot: {x: 0.63, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebb0fc89205174125b124fdbd3333730
+      internalID: 1153613008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClockworkGeneral - Battle_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 148
+        height: 153
+      alignment: 9
+      pivot: {x: 0.63, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b161c3b23f984c799abf8c42ec25eca
+      internalID: -614178194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClockworkGeneral - Battle_33
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 0
+        width: 148
+        height: 153
+      alignment: 9
+      pivot: {x: 0.63, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffe7caacda6da412f8aa38b81d9de9eb
+      internalID: 320210276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 069c2dbff317f49eeae85fed37389487
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +883,41 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ClockworkGeneral - Battle_0: 683304195
+      ClockworkGeneral - Battle_1: 1332758121
+      ClockworkGeneral - Battle_10: 1072729653
+      ClockworkGeneral - Battle_11: 1421802382
+      ClockworkGeneral - Battle_12: -1537095893
+      ClockworkGeneral - Battle_13: -1192410777
+      ClockworkGeneral - Battle_14: 2107779047
+      ClockworkGeneral - Battle_15: 1200118537
+      ClockworkGeneral - Battle_16: 823892369
+      ClockworkGeneral - Battle_17: 1118589791
+      ClockworkGeneral - Battle_18: -217622197
+      ClockworkGeneral - Battle_19: -475046606
+      ClockworkGeneral - Battle_2: -1675489571
+      ClockworkGeneral - Battle_20: 259235710
+      ClockworkGeneral - Battle_21: 1456597684
+      ClockworkGeneral - Battle_22: -923412030
+      ClockworkGeneral - Battle_23: 390759766
+      ClockworkGeneral - Battle_24: 1581839012
+      ClockworkGeneral - Battle_25: -301975383
+      ClockworkGeneral - Battle_26: -991310918
+      ClockworkGeneral - Battle_27: -528443531
+      ClockworkGeneral - Battle_28: 1415620080
+      ClockworkGeneral - Battle_29: 1242897975
+      ClockworkGeneral - Battle_3: -1836551017
+      ClockworkGeneral - Battle_30: 1113590566
+      ClockworkGeneral - Battle_31: 1153613008
+      ClockworkGeneral - Battle_32: -614178194
+      ClockworkGeneral - Battle_33: 320210276
+      ClockworkGeneral - Battle_4: -2036410776
+      ClockworkGeneral - Battle_5: -946652396
+      ClockworkGeneral - Battle_6: 141771517
+      ClockworkGeneral - Battle_7: 1901548208
+      ClockworkGeneral - Battle_8: -247537520
+      ClockworkGeneral - Battle_9: 1889735590
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

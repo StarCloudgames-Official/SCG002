@@ -6,7 +6,7 @@ TextureImporter:
   serializedVersion: 13
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -34,27 +34,27 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
+    wrapU: 1
+    wrapV: 1
     wrapW: 0
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 50
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -121,12 +121,672 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Spirit of an old Warrior_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 39
+        height: 32
+      alignment: 9
+      pivot: {x: 0.46, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93334563122354fd18e67c45f9a2ff01
+      internalID: -2035417746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spirit of an old Warrior_1
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 96
+        width: 39
+        height: 32
+      alignment: 9
+      pivot: {x: 0.46, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb18973a974804dfb9179382fdf9c623
+      internalID: 1932189559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spirit of an old Warrior_2
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 96
+        width: 39
+        height: 32
+      alignment: 9
+      pivot: {x: 0.46, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e9463eaf3b4b442c8489ae76065e45a
+      internalID: -979437552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spirit of an old Warrior_3
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 96
+        width: 39
+        height: 32
+      alignment: 9
+      pivot: {x: 0.46, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80a44a516226a4751aa0dec7e3476487
+      internalID: 2011486421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spirit of an old Warrior_4
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 96
+        width: 39
+        height: 32
+      alignment: 9
+      pivot: {x: 0.46, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cadfa0e4b4aeb4b68af3a9d37da4ebaa
+      internalID: 1027637520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spirit of an old Warrior_5
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 96
+        width: 39
+        height: 32
+      alignment: 9
+      pivot: {x: 0.46, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af5563cdd27214a51b5e02ae9c4c0970
+      internalID: -467830669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spirit of an old Warrior_6
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 96
+        width: 39
+        height: 32
+      alignment: 9
+      pivot: {x: 0.46, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38bcf67c2b1324f54a949e44e85eb445
+      internalID: -1167290817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spirit of an old Warrior_7
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 96
+        width: 39
+        height: 32
+      alignment: 9
+      pivot: {x: 0.46, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e87886d4cef9849d6a70aa7311bd8635
+      internalID: -1678767307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spirit of an old Warrior_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 39
+        height: 32
+      alignment: 9
+      pivot: {x: 0.46, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d348170e18d54d92983dad43f616be1
+      internalID: -147947303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spirit of an old Warrior_9
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 64
+        width: 39
+        height: 32
+      alignment: 9
+      pivot: {x: 0.46, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e41c129b636574250bdbdf2c8b47572d
+      internalID: -205499896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spirit of an old Warrior_10
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 64
+        width: 39
+        height: 32
+      alignment: 9
+      pivot: {x: 0.46, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdb83794647694b79bcbb5ef34062369
+      internalID: 1720075855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spirit of an old Warrior_11
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 64
+        width: 39
+        height: 32
+      alignment: 9
+      pivot: {x: 0.46, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fc7d39552ece4edb89d236d40442294
+      internalID: 520261449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spirit of an old Warrior_12
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 64
+        width: 39
+        height: 32
+      alignment: 9
+      pivot: {x: 0.46, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a289b26a796114994b298cec72435c16
+      internalID: 680831206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spirit of an old Warrior_13
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 64
+        width: 39
+        height: 32
+      alignment: 9
+      pivot: {x: 0.46, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 491c400ab5bb143daa1fb514c7d43691
+      internalID: 369370073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spirit of an old Warrior_14
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 64
+        width: 39
+        height: 32
+      alignment: 9
+      pivot: {x: 0.46, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 075e03e28799b4e5aaacab8868fa80a7
+      internalID: -1978165476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spirit of an old Warrior_15
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 64
+        width: 39
+        height: 32
+      alignment: 9
+      pivot: {x: 0.46, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5d41c1ba52b9413bbc8ef2d91f7b996
+      internalID: -913226513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spirit of an old Warrior_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 39
+        height: 32
+      alignment: 9
+      pivot: {x: 0.46, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0745fc3c4980f4d8ba97aafa13949c53
+      internalID: 2065263810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spirit of an old Warrior_17
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 32
+        width: 39
+        height: 32
+      alignment: 9
+      pivot: {x: 0.46, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c652a9211bbed46a8bb21ccc898ebdcb
+      internalID: 949241861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spirit of an old Warrior_18
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 32
+        width: 39
+        height: 32
+      alignment: 9
+      pivot: {x: 0.46, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53e69f961c3544232bea619aab16e04e
+      internalID: 1806033696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spirit of an old Warrior_19
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 32
+        width: 39
+        height: 32
+      alignment: 9
+      pivot: {x: 0.46, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f203267aef8924e549942a7c4b9892e2
+      internalID: -1498520643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spirit of an old Warrior_20
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 32
+        width: 39
+        height: 32
+      alignment: 9
+      pivot: {x: 0.46, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3ac9486cb7e640b295a8515c1055050
+      internalID: -885059354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spirit of an old Warrior_21
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 32
+        width: 39
+        height: 32
+      alignment: 9
+      pivot: {x: 0.46, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e055802b0ca14935a36ed903930877f
+      internalID: 2144768758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spirit of an old Warrior_22
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 32
+        width: 39
+        height: 32
+      alignment: 9
+      pivot: {x: 0.46, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13fef0be82d8c4e6fbcb9c9dc5228de5
+      internalID: 863000650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spirit of an old Warrior_23
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 32
+        width: 39
+        height: 32
+      alignment: 9
+      pivot: {x: 0.46, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dddc0641125a4dfba6a52853d3f2218
+      internalID: 729444656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spirit of an old Warrior_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 39
+        height: 32
+      alignment: 9
+      pivot: {x: 0.46, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43c15517341aa419da09ab70a278ce29
+      internalID: -1343001420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spirit of an old Warrior_25
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 0
+        width: 39
+        height: 32
+      alignment: 9
+      pivot: {x: 0.46, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55e6f0e304d7a409c846a70327eb925c
+      internalID: -1210485777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spirit of an old Warrior_26
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 0
+        width: 39
+        height: 32
+      alignment: 9
+      pivot: {x: 0.46, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3a8279727b6f4b94b476995aee10302
+      internalID: -1882030189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spirit of an old Warrior_27
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 0
+        width: 39
+        height: 32
+      alignment: 9
+      pivot: {x: 0.46, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e6eb8b87228c43c68b6ac9bc1851740
+      internalID: -40449691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spirit of an old Warrior_28
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 0
+        width: 39
+        height: 32
+      alignment: 9
+      pivot: {x: 0.46, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6de39ddf0894540c3a43bcb774ba55df
+      internalID: -1565229338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spirit of an old Warrior_29
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 0
+        width: 39
+        height: 32
+      alignment: 9
+      pivot: {x: 0.46, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 217803529a6984d60a435d59fb16832f
+      internalID: 1988240548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: ad7f605f4295146fabf92f3b6f8fb5b7
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +795,37 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Spirit of an old Warrior_0: -2035417746
+      Spirit of an old Warrior_1: 1932189559
+      Spirit of an old Warrior_10: 1720075855
+      Spirit of an old Warrior_11: 520261449
+      Spirit of an old Warrior_12: 680831206
+      Spirit of an old Warrior_13: 369370073
+      Spirit of an old Warrior_14: -1978165476
+      Spirit of an old Warrior_15: -913226513
+      Spirit of an old Warrior_16: 2065263810
+      Spirit of an old Warrior_17: 949241861
+      Spirit of an old Warrior_18: 1806033696
+      Spirit of an old Warrior_19: -1498520643
+      Spirit of an old Warrior_2: -979437552
+      Spirit of an old Warrior_20: -885059354
+      Spirit of an old Warrior_21: 2144768758
+      Spirit of an old Warrior_22: 863000650
+      Spirit of an old Warrior_23: 729444656
+      Spirit of an old Warrior_24: -1343001420
+      Spirit of an old Warrior_25: -1210485777
+      Spirit of an old Warrior_26: -1882030189
+      Spirit of an old Warrior_27: -40449691
+      Spirit of an old Warrior_28: -1565229338
+      Spirit of an old Warrior_29: 1988240548
+      Spirit of an old Warrior_3: 2011486421
+      Spirit of an old Warrior_4: 1027637520
+      Spirit of an old Warrior_5: -467830669
+      Spirit of an old Warrior_6: -1167290817
+      Spirit of an old Warrior_7: -1678767307
+      Spirit of an old Warrior_8: -147947303
+      Spirit of an old Warrior_9: -205499896
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

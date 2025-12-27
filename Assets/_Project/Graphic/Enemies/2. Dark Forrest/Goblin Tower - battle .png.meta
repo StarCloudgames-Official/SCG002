@@ -6,7 +6,7 @@ TextureImporter:
   serializedVersion: 13
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -34,27 +34,27 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
+    wrapU: 1
+    wrapV: 1
     wrapW: 0
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 50
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -121,12 +121,1244 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Goblin Tower - battle _0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 918
+        width: 199
+        height: 153
+      alignment: 9
+      pivot: {x: 0.72, y: 0.31}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3e1ba52508354f7a8927deed8675be6
+      internalID: 487946340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Tower - battle _1
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 918
+        width: 199
+        height: 153
+      alignment: 9
+      pivot: {x: 0.72, y: 0.31}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60f13e16cf00249f39692aa0d0bd8a90
+      internalID: 293523528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Tower - battle _2
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 918
+        width: 199
+        height: 153
+      alignment: 9
+      pivot: {x: 0.72, y: 0.31}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cada0e3c76c7d459eac1d54b1d3fdc97
+      internalID: -490627540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Tower - battle _3
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 918
+        width: 199
+        height: 153
+      alignment: 9
+      pivot: {x: 0.72, y: 0.31}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df09c5d07896b40c096aff66724c75e2
+      internalID: 50816761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Tower - battle _4
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 918
+        width: 199
+        height: 153
+      alignment: 9
+      pivot: {x: 0.72, y: 0.31}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 381d18ad887644ec4864c1fbbd01ef1e
+      internalID: 1036253920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Tower - battle _5
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 918
+        width: 199
+        height: 153
+      alignment: 9
+      pivot: {x: 0.72, y: 0.31}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8af7594a9c8a845f7b3dce44fd12db0a
+      internalID: 967962861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Tower - battle _6
+      rect:
+        serializedVersion: 2
+        x: 1194
+        y: 918
+        width: 199
+        height: 153
+      alignment: 9
+      pivot: {x: 0.72, y: 0.31}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec5cab48dbee34efdb161eb775faa05d
+      internalID: -92618083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Tower - battle _7
+      rect:
+        serializedVersion: 2
+        x: 1393
+        y: 918
+        width: 199
+        height: 153
+      alignment: 9
+      pivot: {x: 0.72, y: 0.31}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65c03f9841cdd42619990e3b84874b74
+      internalID: 968020735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Tower - battle _8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 765
+        width: 199
+        height: 153
+      alignment: 9
+      pivot: {x: 0.72, y: 0.31}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67e639e2aa16047f0af424a8fd7ada2d
+      internalID: 1611412043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Tower - battle _9
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 765
+        width: 199
+        height: 153
+      alignment: 9
+      pivot: {x: 0.72, y: 0.31}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e91a9bec39fe4e569540b80fc0e45b7
+      internalID: 1670721795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Tower - battle _10
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 765
+        width: 199
+        height: 153
+      alignment: 9
+      pivot: {x: 0.72, y: 0.31}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2abb6af6874147d18048b852d47377a
+      internalID: 1532335730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Tower - battle _11
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 765
+        width: 199
+        height: 153
+      alignment: 9
+      pivot: {x: 0.72, y: 0.31}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fefd5cec39d84a608cc299d67d171be
+      internalID: 1112120533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Tower - battle _12
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 765
+        width: 199
+        height: 153
+      alignment: 9
+      pivot: {x: 0.72, y: 0.31}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ca62ee4439de447ab4ceb7b93998ba1
+      internalID: 2091922986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Tower - battle _13
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 765
+        width: 199
+        height: 153
+      alignment: 9
+      pivot: {x: 0.72, y: 0.31}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 370ea1d22863942a39346330f087f704
+      internalID: -1751900715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Tower - battle _14
+      rect:
+        serializedVersion: 2
+        x: 1194
+        y: 765
+        width: 199
+        height: 153
+      alignment: 9
+      pivot: {x: 0.72, y: 0.31}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0dc6f571f25048b182dcca816c92e17
+      internalID: 1699125978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Tower - battle _15
+      rect:
+        serializedVersion: 2
+        x: 1393
+        y: 765
+        width: 199
+        height: 153
+      alignment: 9
+      pivot: {x: 0.72, y: 0.31}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb24bb6f538e24b4ab501e32dccf11af
+      internalID: -1100265058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Tower - battle _16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 612
+        width: 199
+        height: 153
+      alignment: 9
+      pivot: {x: 0.72, y: 0.31}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68a84fee5ac3b430f9fa24401c9a2a30
+      internalID: -87485583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Tower - battle _17
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 612
+        width: 199
+        height: 153
+      alignment: 9
+      pivot: {x: 0.72, y: 0.31}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0862c68707c4248afbd6776f26f93b3a
+      internalID: -277293663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Tower - battle _18
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 612
+        width: 199
+        height: 153
+      alignment: 9
+      pivot: {x: 0.72, y: 0.31}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd872ecd7e1464fa3a29edf2ac76074e
+      internalID: 1040339729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Tower - battle _19
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 612
+        width: 199
+        height: 153
+      alignment: 9
+      pivot: {x: 0.72, y: 0.31}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80cc490557a994088b5181cb7d369b15
+      internalID: -867923942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Tower - battle _20
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 612
+        width: 199
+        height: 153
+      alignment: 9
+      pivot: {x: 0.72, y: 0.31}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 495f92c0b8a364aca9e0096860a57cdc
+      internalID: 623121283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Tower - battle _21
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 612
+        width: 199
+        height: 153
+      alignment: 9
+      pivot: {x: 0.72, y: 0.31}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ed6bebba28594c2da69a750e06c071a
+      internalID: -1993504824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Tower - battle _22
+      rect:
+        serializedVersion: 2
+        x: 1194
+        y: 612
+        width: 199
+        height: 153
+      alignment: 9
+      pivot: {x: 0.72, y: 0.31}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 526c2ad8b19e949b4b3aff502e7efb5b
+      internalID: 1878775852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Tower - battle _23
+      rect:
+        serializedVersion: 2
+        x: 1393
+        y: 612
+        width: 199
+        height: 153
+      alignment: 9
+      pivot: {x: 0.72, y: 0.31}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bc5791c6f270431ea4baaab585b345c
+      internalID: -762435584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Tower - battle _24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 459
+        width: 199
+        height: 153
+      alignment: 9
+      pivot: {x: 0.72, y: 0.31}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd2a9fe464d68467da9529c05e78e291
+      internalID: 1777589222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Tower - battle _25
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 459
+        width: 199
+        height: 153
+      alignment: 9
+      pivot: {x: 0.72, y: 0.31}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27076129e100f400db7c4c0205aaca17
+      internalID: 699725045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Tower - battle _26
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 459
+        width: 199
+        height: 153
+      alignment: 9
+      pivot: {x: 0.72, y: 0.31}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9090921d35bec4ccfb928d97742e3121
+      internalID: 1980028250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Tower - battle _27
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 459
+        width: 199
+        height: 153
+      alignment: 9
+      pivot: {x: 0.72, y: 0.31}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5536cdee455fc4bef89c095fe150b765
+      internalID: 1059136104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Tower - battle _28
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 459
+        width: 199
+        height: 153
+      alignment: 9
+      pivot: {x: 0.72, y: 0.31}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bfb017da8f444443a74833ef749bc1b
+      internalID: 981068115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Tower - battle _29
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 459
+        width: 199
+        height: 153
+      alignment: 9
+      pivot: {x: 0.72, y: 0.31}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aef21f05a5338493ca494b07f14122eb
+      internalID: 14561659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Tower - battle _30
+      rect:
+        serializedVersion: 2
+        x: 1194
+        y: 459
+        width: 199
+        height: 153
+      alignment: 9
+      pivot: {x: 0.72, y: 0.31}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 767a725604b7146b98fa8a910d66f77a
+      internalID: -1924942354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Tower - battle _31
+      rect:
+        serializedVersion: 2
+        x: 1393
+        y: 459
+        width: 199
+        height: 153
+      alignment: 9
+      pivot: {x: 0.72, y: 0.31}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c8c0de6fffe7465fb13df134a0ced42
+      internalID: -1199879234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Tower - battle _32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 306
+        width: 199
+        height: 153
+      alignment: 9
+      pivot: {x: 0.72, y: 0.31}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc3aa951d47634df0a2e14bdf8f23de8
+      internalID: -130562691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Tower - battle _33
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 306
+        width: 199
+        height: 153
+      alignment: 9
+      pivot: {x: 0.72, y: 0.31}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f90beab456c5444f83e8eb100775b37
+      internalID: -1665048566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Tower - battle _34
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 306
+        width: 199
+        height: 153
+      alignment: 9
+      pivot: {x: 0.72, y: 0.31}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 618c078023aaa47e7bc124653e973383
+      internalID: 802969196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Tower - battle _35
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 306
+        width: 199
+        height: 153
+      alignment: 9
+      pivot: {x: 0.72, y: 0.31}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e27dbb1115c048b7a39fca68129ebca
+      internalID: 1115179210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Tower - battle _36
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 306
+        width: 199
+        height: 153
+      alignment: 9
+      pivot: {x: 0.72, y: 0.31}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97c9305408cd5434b9d161e2144acb0d
+      internalID: 1888223475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Tower - battle _37
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 306
+        width: 199
+        height: 153
+      alignment: 9
+      pivot: {x: 0.72, y: 0.31}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3844157ac23b54b6abdc9f446b1daccb
+      internalID: 2002036999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Tower - battle _38
+      rect:
+        serializedVersion: 2
+        x: 1194
+        y: 306
+        width: 199
+        height: 153
+      alignment: 9
+      pivot: {x: 0.72, y: 0.31}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5510aed421bf845a495168301f833e89
+      internalID: -1647028186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Tower - battle _39
+      rect:
+        serializedVersion: 2
+        x: 1393
+        y: 306
+        width: 199
+        height: 153
+      alignment: 9
+      pivot: {x: 0.72, y: 0.31}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc3d8f8c514064204b0c54947dda1ddd
+      internalID: 2082969039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Tower - battle _40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 153
+        width: 199
+        height: 153
+      alignment: 9
+      pivot: {x: 0.72, y: 0.31}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19544759cab614819879f41cf34e0e73
+      internalID: -750526181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Tower - battle _41
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 153
+        width: 199
+        height: 153
+      alignment: 9
+      pivot: {x: 0.72, y: 0.31}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd0b6f087b419492fbd3095fab8fbf01
+      internalID: 938993521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Tower - battle _42
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 153
+        width: 199
+        height: 153
+      alignment: 9
+      pivot: {x: 0.72, y: 0.31}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77f9b45a203dd4864814ea4ac16b094b
+      internalID: -931075935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Tower - battle _43
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 153
+        width: 199
+        height: 153
+      alignment: 9
+      pivot: {x: 0.72, y: 0.31}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ddbd3b39ca3a48618f371e33a87a7ed
+      internalID: -1899659366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Tower - battle _44
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 153
+        width: 199
+        height: 153
+      alignment: 9
+      pivot: {x: 0.72, y: 0.31}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2325a6195bdb44f13be38fe356bfc07a
+      internalID: 1667334757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Tower - battle _45
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 153
+        width: 199
+        height: 153
+      alignment: 9
+      pivot: {x: 0.72, y: 0.31}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bfc015daf49042068cce522b9761ecb
+      internalID: 1107497903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Tower - battle _46
+      rect:
+        serializedVersion: 2
+        x: 1194
+        y: 153
+        width: 199
+        height: 153
+      alignment: 9
+      pivot: {x: 0.72, y: 0.31}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c77388548656e4c67959e7f2f70509b9
+      internalID: 1456246680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Tower - battle _47
+      rect:
+        serializedVersion: 2
+        x: 1393
+        y: 153
+        width: 199
+        height: 153
+      alignment: 9
+      pivot: {x: 0.72, y: 0.31}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39d7dbc0d73f84ad7b10b0e4c9d04f4d
+      internalID: -1311072979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Tower - battle _48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 199
+        height: 153
+      alignment: 9
+      pivot: {x: 0.72, y: 0.31}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a17de92bba0a49fa8dd15948c1d7afe
+      internalID: 584235863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Tower - battle _49
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 0
+        width: 199
+        height: 153
+      alignment: 9
+      pivot: {x: 0.72, y: 0.31}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb3efc194fd164dd3bf564d03a4609b0
+      internalID: -2023720913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Tower - battle _50
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 0
+        width: 199
+        height: 153
+      alignment: 9
+      pivot: {x: 0.72, y: 0.31}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a7946749018c439a884cd395061f670
+      internalID: 1348385375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Tower - battle _51
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 0
+        width: 199
+        height: 153
+      alignment: 9
+      pivot: {x: 0.72, y: 0.31}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1198091d59fa24d558a2394cd439b2fc
+      internalID: 1668631300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Tower - battle _52
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 0
+        width: 199
+        height: 153
+      alignment: 9
+      pivot: {x: 0.72, y: 0.31}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1da00bf42955846628e0cc53c710a203
+      internalID: 397965233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Tower - battle _53
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 0
+        width: 199
+        height: 153
+      alignment: 9
+      pivot: {x: 0.72, y: 0.31}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aebdab1c316b24b2896b2fb6def51f8e
+      internalID: 35119244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Tower - battle _54
+      rect:
+        serializedVersion: 2
+        x: 1194
+        y: 0
+        width: 199
+        height: 153
+      alignment: 9
+      pivot: {x: 0.72, y: 0.31}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3969b199def24f34b6fde2859c1e266
+      internalID: -1782430841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goblin Tower - battle _55
+      rect:
+        serializedVersion: 2
+        x: 1393
+        y: 0
+        width: 199
+        height: 153
+      alignment: 9
+      pivot: {x: 0.72, y: 0.31}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82fcf8d44e54b4cdaa559c3e438eb14d
+      internalID: -1233518230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 71e930d33a1e940b184fc4631af408b7
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +1367,63 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Goblin Tower - battle _0: 487946340
+      Goblin Tower - battle _1: 293523528
+      Goblin Tower - battle _10: 1532335730
+      Goblin Tower - battle _11: 1112120533
+      Goblin Tower - battle _12: 2091922986
+      Goblin Tower - battle _13: -1751900715
+      Goblin Tower - battle _14: 1699125978
+      Goblin Tower - battle _15: -1100265058
+      Goblin Tower - battle _16: -87485583
+      Goblin Tower - battle _17: -277293663
+      Goblin Tower - battle _18: 1040339729
+      Goblin Tower - battle _19: -867923942
+      Goblin Tower - battle _2: -490627540
+      Goblin Tower - battle _20: 623121283
+      Goblin Tower - battle _21: -1993504824
+      Goblin Tower - battle _22: 1878775852
+      Goblin Tower - battle _23: -762435584
+      Goblin Tower - battle _24: 1777589222
+      Goblin Tower - battle _25: 699725045
+      Goblin Tower - battle _26: 1980028250
+      Goblin Tower - battle _27: 1059136104
+      Goblin Tower - battle _28: 981068115
+      Goblin Tower - battle _29: 14561659
+      Goblin Tower - battle _3: 50816761
+      Goblin Tower - battle _30: -1924942354
+      Goblin Tower - battle _31: -1199879234
+      Goblin Tower - battle _32: -130562691
+      Goblin Tower - battle _33: -1665048566
+      Goblin Tower - battle _34: 802969196
+      Goblin Tower - battle _35: 1115179210
+      Goblin Tower - battle _36: 1888223475
+      Goblin Tower - battle _37: 2002036999
+      Goblin Tower - battle _38: -1647028186
+      Goblin Tower - battle _39: 2082969039
+      Goblin Tower - battle _4: 1036253920
+      Goblin Tower - battle _40: -750526181
+      Goblin Tower - battle _41: 938993521
+      Goblin Tower - battle _42: -931075935
+      Goblin Tower - battle _43: -1899659366
+      Goblin Tower - battle _44: 1667334757
+      Goblin Tower - battle _45: 1107497903
+      Goblin Tower - battle _46: 1456246680
+      Goblin Tower - battle _47: -1311072979
+      Goblin Tower - battle _48: 584235863
+      Goblin Tower - battle _49: -2023720913
+      Goblin Tower - battle _5: 967962861
+      Goblin Tower - battle _50: 1348385375
+      Goblin Tower - battle _51: 1668631300
+      Goblin Tower - battle _52: 397965233
+      Goblin Tower - battle _53: 35119244
+      Goblin Tower - battle _54: -1782430841
+      Goblin Tower - battle _55: -1233518230
+      Goblin Tower - battle _6: -92618083
+      Goblin Tower - battle _7: 968020735
+      Goblin Tower - battle _8: 1611412043
+      Goblin Tower - battle _9: 1670721795
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

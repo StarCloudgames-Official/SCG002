@@ -6,7 +6,7 @@ TextureImporter:
   serializedVersion: 13
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -34,27 +34,27 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
+    wrapU: 1
+    wrapV: 1
     wrapW: 0
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 50
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -121,12 +121,562 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Blow pipe goblin_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 43
+        height: 32
+      alignment: 9
+      pivot: {x: 0.6, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f63bd83aa97648aea5f01c9da6cddce
+      internalID: 1374498000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blow pipe goblin_1
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 96
+        width: 43
+        height: 32
+      alignment: 9
+      pivot: {x: 0.6, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95fae800379ac4e99b35fa24c0c5639a
+      internalID: -1764077801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blow pipe goblin_2
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 96
+        width: 43
+        height: 32
+      alignment: 9
+      pivot: {x: 0.6, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b18e74354b5d7442a916045d452b4852
+      internalID: -1378984155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blow pipe goblin_3
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 96
+        width: 43
+        height: 32
+      alignment: 9
+      pivot: {x: 0.6, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94c34d4481fb54c3eb357861a22338ec
+      internalID: -1475893599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blow pipe goblin_4
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 96
+        width: 43
+        height: 32
+      alignment: 9
+      pivot: {x: 0.6, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7764e00a887634a33b0e0480b2118fd2
+      internalID: -888984273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blow pipe goblin_5
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 96
+        width: 43
+        height: 32
+      alignment: 9
+      pivot: {x: 0.6, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c1a11a112d144de18e305c7b1b6fe53
+      internalID: -823645507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blow pipe goblin_6
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 96
+        width: 43
+        height: 32
+      alignment: 9
+      pivot: {x: 0.6, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58d316d9f598b4559ad1a6da4a9895af
+      internalID: 1285669959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blow pipe goblin_7
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 96
+        width: 43
+        height: 32
+      alignment: 9
+      pivot: {x: 0.6, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49622c72b3aa84379b02287e1b0ea742
+      internalID: -981352525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blow pipe goblin_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 43
+        height: 32
+      alignment: 9
+      pivot: {x: 0.6, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08667a4b6d45049008c15d4d50635499
+      internalID: -974320829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blow pipe goblin_9
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 64
+        width: 43
+        height: 32
+      alignment: 9
+      pivot: {x: 0.6, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 957c2db4cd3304e93a2926d5977577da
+      internalID: 1866224023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blow pipe goblin_10
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 64
+        width: 43
+        height: 32
+      alignment: 9
+      pivot: {x: 0.6, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad9988c31888d42c9bdc767931a5a6ad
+      internalID: 340372965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blow pipe goblin_11
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 64
+        width: 43
+        height: 32
+      alignment: 9
+      pivot: {x: 0.6, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24213d45831d44daf960975e3b6f7de3
+      internalID: 631906322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blow pipe goblin_12
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 64
+        width: 43
+        height: 32
+      alignment: 9
+      pivot: {x: 0.6, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4ac920aa1f614f2a90314d96ea0f5e3
+      internalID: -805249336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blow pipe goblin_13
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 64
+        width: 43
+        height: 32
+      alignment: 9
+      pivot: {x: 0.6, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 411181a1de2354d028bdf983ba2fde24
+      internalID: -173149248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blow pipe goblin_14
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 64
+        width: 43
+        height: 32
+      alignment: 9
+      pivot: {x: 0.6, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb4bcce797120406e9b29d4695ec348f
+      internalID: -364687115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blow pipe goblin_15
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 64
+        width: 43
+        height: 32
+      alignment: 9
+      pivot: {x: 0.6, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0800e7db444e742d894144100e27730e
+      internalID: -465538404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blow pipe goblin_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 43
+        height: 32
+      alignment: 9
+      pivot: {x: 0.6, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 695e4a87f81ef44bba124709cd333e99
+      internalID: -325134430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blow pipe goblin_17
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 32
+        width: 43
+        height: 32
+      alignment: 9
+      pivot: {x: 0.6, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9c6b174505ca4f21891e5557b0bfe73
+      internalID: -976657756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blow pipe goblin_18
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 32
+        width: 43
+        height: 32
+      alignment: 9
+      pivot: {x: 0.6, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9643b46d2108e49b9af5e110ddec63ea
+      internalID: 1279756375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blow pipe goblin_19
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 32
+        width: 43
+        height: 32
+      alignment: 9
+      pivot: {x: 0.6, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 048b64e9373fc43f9b7015f254e72120
+      internalID: 967197587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blow pipe goblin_20
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 32
+        width: 43
+        height: 32
+      alignment: 9
+      pivot: {x: 0.6, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 419b914ef2766457abdf611e1a12d1c1
+      internalID: -1647516368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blow pipe goblin_21
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 32
+        width: 43
+        height: 32
+      alignment: 9
+      pivot: {x: 0.6, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc88d0c2c589947ef85d27a13ad257b0
+      internalID: 1984747909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blow pipe goblin_22
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 32
+        width: 43
+        height: 32
+      alignment: 9
+      pivot: {x: 0.6, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab2f23d0bb53c4925a448a323a4f7289
+      internalID: -18974093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blow pipe goblin_23
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 32
+        width: 43
+        height: 32
+      alignment: 9
+      pivot: {x: 0.6, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9563ca20931c47c1ad783400f22c5dc
+      internalID: 1072070009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blow pipe goblin_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 43
+        height: 32
+      alignment: 9
+      pivot: {x: 0.6, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfde5698dd1904919a3bc6cab49cc69c
+      internalID: 1079031855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 58dee4b0f312840bbbfe0a58e0cee21f
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +685,32 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Blow pipe goblin_0: 1374498000
+      Blow pipe goblin_1: -1764077801
+      Blow pipe goblin_10: 340372965
+      Blow pipe goblin_11: 631906322
+      Blow pipe goblin_12: -805249336
+      Blow pipe goblin_13: -173149248
+      Blow pipe goblin_14: -364687115
+      Blow pipe goblin_15: -465538404
+      Blow pipe goblin_16: -325134430
+      Blow pipe goblin_17: -976657756
+      Blow pipe goblin_18: 1279756375
+      Blow pipe goblin_19: 967197587
+      Blow pipe goblin_2: -1378984155
+      Blow pipe goblin_20: -1647516368
+      Blow pipe goblin_21: 1984747909
+      Blow pipe goblin_22: -18974093
+      Blow pipe goblin_23: 1072070009
+      Blow pipe goblin_24: 1079031855
+      Blow pipe goblin_3: -1475893599
+      Blow pipe goblin_4: -888984273
+      Blow pipe goblin_5: -823645507
+      Blow pipe goblin_6: 1285669959
+      Blow pipe goblin_7: -981352525
+      Blow pipe goblin_8: -974320829
+      Blow pipe goblin_9: 1866224023
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

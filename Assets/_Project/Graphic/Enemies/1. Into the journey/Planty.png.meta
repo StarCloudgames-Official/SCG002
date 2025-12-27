@@ -6,7 +6,7 @@ TextureImporter:
   serializedVersion: 13
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -34,27 +34,27 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
+    wrapU: 1
+    wrapV: 1
     wrapW: 0
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 50
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -121,12 +121,408 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Planty_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 70
+        width: 67
+        height: 35
+      alignment: 9
+      pivot: {x: 0.66, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f632846f4903f44e2aa9c33b0e4258bc
+      internalID: -1794048459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planty_1
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 70
+        width: 67
+        height: 35
+      alignment: 9
+      pivot: {x: 0.66, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 820556095d85f45cfb4199775e5cf0aa
+      internalID: -749261653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planty_2
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 70
+        width: 67
+        height: 35
+      alignment: 9
+      pivot: {x: 0.66, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4216b4dac2e8e4ce99151e653719e0ed
+      internalID: -825865730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planty_3
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 70
+        width: 67
+        height: 35
+      alignment: 9
+      pivot: {x: 0.66, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b7de7fe928a74af5970f8527206d36a
+      internalID: -312841852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planty_4
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 70
+        width: 67
+        height: 35
+      alignment: 9
+      pivot: {x: 0.66, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4299c9581ee2e4a65abf44ecec8e99e8
+      internalID: 275884106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planty_5
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 70
+        width: 67
+        height: 35
+      alignment: 9
+      pivot: {x: 0.66, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98cfad911ebec48ac878d759111dbc32
+      internalID: -1512082823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planty_6
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 70
+        width: 67
+        height: 35
+      alignment: 9
+      pivot: {x: 0.66, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 604426181b08349648b2938a1c9a8e5c
+      internalID: 1358572490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planty_7
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 70
+        width: 67
+        height: 35
+      alignment: 9
+      pivot: {x: 0.66, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dba0387fa103d44948c7f747cd825562
+      internalID: 810730907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planty_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 35
+        width: 67
+        height: 35
+      alignment: 9
+      pivot: {x: 0.66, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b949473207c94a1b82ab692c5ac308b
+      internalID: -795315540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planty_9
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 35
+        width: 67
+        height: 35
+      alignment: 9
+      pivot: {x: 0.66, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85a4f71f68c2546cf944a2bf003e945e
+      internalID: 1067217317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planty_10
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 35
+        width: 67
+        height: 35
+      alignment: 9
+      pivot: {x: 0.66, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63722db4d22d14163aa43d411993e7fa
+      internalID: 1964145365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planty_11
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 35
+        width: 67
+        height: 35
+      alignment: 9
+      pivot: {x: 0.66, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 205c288661f054ccda0260c6a6de5452
+      internalID: -1315785321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planty_12
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 35
+        width: 67
+        height: 35
+      alignment: 9
+      pivot: {x: 0.66, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 935460973cdb3451d9a8e698179f5cee
+      internalID: 145126054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planty_13
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 35
+        width: 67
+        height: 35
+      alignment: 9
+      pivot: {x: 0.66, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6af66a33f41b84250a344dbca43836f9
+      internalID: -827443485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planty_14
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 35
+        width: 67
+        height: 35
+      alignment: 9
+      pivot: {x: 0.66, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7828508489ed64844b19f58984064e19
+      internalID: -2108203649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planty_15
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 35
+        width: 67
+        height: 35
+      alignment: 9
+      pivot: {x: 0.66, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9932e24a20354b4096d03238ff4c2cc
+      internalID: -1745186027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planty_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 67
+        height: 35
+      alignment: 9
+      pivot: {x: 0.66, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 053c4bc9e5d59428485c031e44d5c7ee
+      internalID: 1668158094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planty_17
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 0
+        width: 67
+        height: 35
+      alignment: 9
+      pivot: {x: 0.66, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f8a27595108e43aa8f58ea28dd1b633
+      internalID: 1562953821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 960e5ec578b294376889f208a226f09f
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +531,25 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Planty_0: -1794048459
+      Planty_1: -749261653
+      Planty_10: 1964145365
+      Planty_11: -1315785321
+      Planty_12: 145126054
+      Planty_13: -827443485
+      Planty_14: -2108203649
+      Planty_15: -1745186027
+      Planty_16: 1668158094
+      Planty_17: 1562953821
+      Planty_2: -825865730
+      Planty_3: -312841852
+      Planty_4: 275884106
+      Planty_5: -1512082823
+      Planty_6: 1358572490
+      Planty_7: 810730907
+      Planty_8: -795315540
+      Planty_9: 1067217317
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

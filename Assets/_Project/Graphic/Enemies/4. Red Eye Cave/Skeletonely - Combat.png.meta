@@ -6,7 +6,7 @@ TextureImporter:
   serializedVersion: 13
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -34,27 +34,27 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
+    wrapU: 1
+    wrapV: 1
     wrapW: 0
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 50
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -121,12 +121,848 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Skeletonely - Combat_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 765
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.57, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afaff9aedbbf4494f9957e6a398d9284
+      internalID: -70270529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeletonely - Combat_1
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 765
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.57, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01314469b6dd949cf847f8ddd4435f35
+      internalID: -459778819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeletonely - Combat_2
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 765
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.57, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ed948968aefd42fbafbad91770bccf2
+      internalID: -1502979883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeletonely - Combat_3
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 765
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.57, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 229f051abe6d748d2ac93e7322334b07
+      internalID: 117816977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeletonely - Combat_4
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 765
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.57, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dafa0c693698b4a91abdeb4780fea8f0
+      internalID: -358580177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeletonely - Combat_5
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 765
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.57, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e89609e332eeb441c86b6472f8a60289
+      internalID: -564476042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeletonely - Combat_6
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 765
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.57, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13e753b8ad08f4692b8396fbb450cccc
+      internalID: -764362242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeletonely - Combat_7
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 765
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.57, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58b3efca884cc49d38befb2f355e20a6
+      internalID: 437292013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeletonely - Combat_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 612
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.57, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 009e56fc4adfd4cf2b32c21b9a44d8a5
+      internalID: -2112880377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeletonely - Combat_9
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 612
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.57, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30cb875ae439d4968816ffe754844537
+      internalID: 280747004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeletonely - Combat_10
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 612
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.57, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 558de8bac0ca144a8bba6a40b94e9ab3
+      internalID: 1083279126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeletonely - Combat_11
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 612
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.57, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0715129ca3c344a46bbb5e67dd0b48ba
+      internalID: 1818528505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeletonely - Combat_12
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 612
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.57, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61b3d4577aee44dc7b17ecbe9b093469
+      internalID: 959946643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeletonely - Combat_13
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 612
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.57, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 033a755563c054826a3679c8fa7fa026
+      internalID: -1359184985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeletonely - Combat_14
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 612
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.57, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d83b1aa3cd20b455eaf053ea2ddf6780
+      internalID: 598408449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeletonely - Combat_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 459
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.57, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccdd0006674214b829bea1e291142b06
+      internalID: -1971093271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeletonely - Combat_16
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 459
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.57, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f0edb7256096415184c1bdaf3c974e5
+      internalID: 1384084473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeletonely - Combat_17
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 459
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.57, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b0afc4fab2054a5581be3ba15ebe6aa
+      internalID: -793247273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeletonely - Combat_18
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 459
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.57, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5284f77a61b3a42bd98e7662ae2d77d2
+      internalID: 1824132852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeletonely - Combat_19
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 459
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.57, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 430e647c54e5747da9849e518377c9ab
+      internalID: -1080304205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeletonely - Combat_20
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 459
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.57, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11a6fe8effcee43e7b6d821462ef1249
+      internalID: 812428687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeletonely - Combat_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 306
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.57, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cad3b5dfba04f44a3aa1792756dd903c
+      internalID: 1233494285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeletonely - Combat_22
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 306
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.57, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dc9db49c03ab4d5ca8d14de7a634ae6
+      internalID: -169031793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeletonely - Combat_23
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 306
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.57, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dc65b33fb89f4fe1bc372f06667b261
+      internalID: -1935972451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeletonely - Combat_24
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 306
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.57, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a05811285915a4fe0a83b98c51b5570c
+      internalID: 481731098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeletonely - Combat_25
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 306
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.57, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25e57fffe44594f8d8cb0115f8f9269f
+      internalID: 377683658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeletonely - Combat_26
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 306
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.57, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d1e7017b6bd74b4f99bfa64f6deffc5
+      internalID: 1031002108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeletonely - Combat_27
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 306
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.57, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf252d8dc1cdc43f0877d24c3f9b5a5d
+      internalID: -204972184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeletonely - Combat_28
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 306
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.57, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4beef896fbc62405aa2189fee51ebe3a
+      internalID: -894222417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeletonely - Combat_29
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 153
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.57, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 774360210b7464799bc46951e978064d
+      internalID: 1115534992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeletonely - Combat_30
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 153
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.57, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07b234b43b9ab4f1f83f6c195a5615c9
+      internalID: -519116371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeletonely - Combat_31
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 153
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.57, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6742d4c9540b74560aca31b422231116
+      internalID: -1603537807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeletonely - Combat_32
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 153
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.57, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0f3a8afd3f19400c8c91a0fe0d19ce9
+      internalID: -9298883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeletonely - Combat_33
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 153
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.57, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a65c5009d5184e84acb5d516d4a60db
+      internalID: 1883749851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeletonely - Combat_34
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 153
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.57, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d98481642ae7c4db393f2e79140a15ff
+      internalID: 326290909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeletonely - Combat_35
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 153
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.57, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09a30594d5b7e4620b5db102bc49a526
+      internalID: 1929437326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeletonely - Combat_36
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 153
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.57, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebc09eeb15cad4b0d9b432dce89690f6
+      internalID: 1642186512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeletonely - Combat_37
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 180
+        height: 153
+      alignment: 9
+      pivot: {x: 0.57, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0810fc3c668a943489d4d5ed9a8f8cdf
+      internalID: -957574889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: a1a47a098122647e6b8cb4e2a3112722
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +971,45 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Skeletonely - Combat_0: -70270529
+      Skeletonely - Combat_1: -459778819
+      Skeletonely - Combat_10: 1083279126
+      Skeletonely - Combat_11: 1818528505
+      Skeletonely - Combat_12: 959946643
+      Skeletonely - Combat_13: -1359184985
+      Skeletonely - Combat_14: 598408449
+      Skeletonely - Combat_15: -1971093271
+      Skeletonely - Combat_16: 1384084473
+      Skeletonely - Combat_17: -793247273
+      Skeletonely - Combat_18: 1824132852
+      Skeletonely - Combat_19: -1080304205
+      Skeletonely - Combat_2: -1502979883
+      Skeletonely - Combat_20: 812428687
+      Skeletonely - Combat_21: 1233494285
+      Skeletonely - Combat_22: -169031793
+      Skeletonely - Combat_23: -1935972451
+      Skeletonely - Combat_24: 481731098
+      Skeletonely - Combat_25: 377683658
+      Skeletonely - Combat_26: 1031002108
+      Skeletonely - Combat_27: -204972184
+      Skeletonely - Combat_28: -894222417
+      Skeletonely - Combat_29: 1115534992
+      Skeletonely - Combat_3: 117816977
+      Skeletonely - Combat_30: -519116371
+      Skeletonely - Combat_31: -1603537807
+      Skeletonely - Combat_32: -9298883
+      Skeletonely - Combat_33: 1883749851
+      Skeletonely - Combat_34: 326290909
+      Skeletonely - Combat_35: 1929437326
+      Skeletonely - Combat_36: 1642186512
+      Skeletonely - Combat_37: -957574889
+      Skeletonely - Combat_4: -358580177
+      Skeletonely - Combat_5: -564476042
+      Skeletonely - Combat_6: -764362242
+      Skeletonely - Combat_7: 437292013
+      Skeletonely - Combat_8: -2112880377
+      Skeletonely - Combat_9: 280747004
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
