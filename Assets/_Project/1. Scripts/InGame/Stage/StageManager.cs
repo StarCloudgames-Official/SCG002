@@ -3,8 +3,9 @@ using UnityEngine;
 public class StageManager
 {
     private StageDataTable currentStageData;
-    private MonsterSpawner monsterSpawner;
-    
+
+    public MonsterSpawner MonsterSpawner { get; private set; }
+
     private int currentStageIndex;
     
     public async Awaitable Initialize(StageDataTable stageData)
@@ -12,8 +13,8 @@ public class StageManager
         currentStageIndex = 0;
         currentStageData = stageData;
         
-        monsterSpawner = new MonsterSpawner();
-        await monsterSpawner.Initialize();
+        MonsterSpawner = new MonsterSpawner();
+        await MonsterSpawner.Initialize();
     }
 
     private async Awaitable StartStarter()
@@ -52,7 +53,7 @@ public class StageManager
         var spawnCount = currentStageData.monsterCount[currentStageIndex];
         var spawnDelay = currentStageData.spawnDelay[currentStageIndex];
 
-        monsterSpawner.StartSpawn(currentMonsterData, spawnCount, spawnDelay).Forget();
+        MonsterSpawner.StartSpawn(currentMonsterData, spawnCount, spawnDelay).Forget();
     }
 
     public async Awaitable<bool> StageClear()

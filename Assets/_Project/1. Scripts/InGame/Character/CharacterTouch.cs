@@ -21,7 +21,8 @@ public class CharacterTouch : TouchableObject
     {
         //TODO : 스탯매니저에서 공격범위 증가 뭐시기 받아와야됨
         var attackRange = characterBehaviour.CurrentClass.attackRange;
-        attackRangeTransform.localScale = Vector3.one * attackRange;
+        // attackRange는 반지름이므로 스프라이트 지름은 2배로 설정
+        attackRangeTransform.localScale = Vector3.one * attackRange * 2f;
         attackRangeTransform.gameObject.SetActive(true);
     }
 
@@ -32,6 +33,8 @@ public class CharacterTouch : TouchableObject
 
     public override void OnPointerDown(PointerEventData eventData)
     {
+        characterBehaviour.CanInteract = false;
+        
         ShowAttackRange();
     }
 
@@ -39,6 +42,8 @@ public class CharacterTouch : TouchableObject
     {
         base.OnPointerUp(eventData);
         DisableAttackRange();
+        
+        characterBehaviour.CanInteract = true;
     }
 
     public override void OnDragEnd(PointerEventData eventData)

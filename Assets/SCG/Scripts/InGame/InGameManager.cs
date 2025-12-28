@@ -26,6 +26,8 @@ public class InGameManager : Singleton<InGameManager>
         InGameContext.StageManager = stageManager;
         InGameContext.SpawnManager = spawnManager;
 
+        await SCGObjectPoolingManager.CreatePoolAsync<Projectile>("Projectile", CachedTransform, 50);
+
         UIInGameMain = await UIManager.OpenUI<UIInGameMain>(InGameContext);
     }
 }

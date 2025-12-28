@@ -15,6 +15,11 @@ MonoBehaviour:
   m_GroupName: Prefab
   m_GUID: 285a48319b353174289d52592194791d
   m_SerializeEntries:
+  - m_GUID: 4511eb97fa8fa4c02a94c7ca83324b30
+    m_Address: Projectile
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 8c7d66a07cbd8eb42a5b16ca50f2ea18
     m_Address: Assets/_Project/Prefab
     m_ReadOnly: 0

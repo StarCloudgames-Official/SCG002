@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.Pool;
@@ -11,8 +12,9 @@ public class SCGObjectPooling<T> : IDisposable where T : Component
     private readonly Transform parent;
     private readonly Action<T> onGet;
     private readonly Action<T> onRelease;
-    
+
     private AsyncOperationHandle<GameObject>? addressableHandle;
+    private readonly HashSet<T> activeObjects = new HashSet<T>();
     
     public int CountActive => pool.CountActive;
     public int CountInactive => pool.CountInactive;
@@ -98,12 +100,17 @@ public class SCGObjectPooling<T> : IDisposable where T : Component
         pool.Release(element);
     }
 
-    public void Clear() => pool.Clear();
+    public void Clear()
+    {
+        activeObjects.Clear();
+        pool.Clear();
+    }
 
     public void Dispose()
     {
+        activeObjects.Clear();
         pool.Clear();
-        
+
         if (addressableHandle.HasValue && addressableHandle.Value.IsValid())
         {
             Addressables.Release(addressableHandle.Value);
@@ -120,21 +127,34 @@ public class SCGObjectPooling<T> : IDisposable where T : Component
 
     private void OnGetFromPool(T element)
     {
+        activeObjects.Add(element);
         element.gameObject.SetActive(true);
         onGet?.Invoke(element);
     }
 
     private void OnReleaseToPool(T element)
     {
+        activeObjects.Remove(element);
         onRelease?.Invoke(element);
         element.gameObject.SetActive(false);
     }
 
     private void OnDestroyPooledItem(T element)
     {
+        activeObjects.Remove(element);
         if (element != null && element.gameObject != null)
         {
             UnityEngine.Object.Destroy(element.gameObject);
         }
+    }
+
+    public List<T> GetAllActive()
+    {
+        var result = ListPool<T>.Get();
+        foreach (var obj in activeObjects)
+        {
+            result.Add(obj);
+        }
+        return result;
     }
 }
