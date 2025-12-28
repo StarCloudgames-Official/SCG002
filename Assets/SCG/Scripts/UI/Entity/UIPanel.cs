@@ -3,5 +3,7 @@ using UnityEngine.AddressableAssets;
 
 public class UIPanel : UIBase
 {
-    public override void OnBackSpace() { }
+    public override void OnBackSpace()
+    {
+    }
 }

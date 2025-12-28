@@ -8,7 +8,8 @@ public static class ObjectRegister
         None,
         UIPanel,
         UIPopup,
-        UIOverPopup
+        UIOverPopup,
+        MainCamera
     }
 
     private static readonly Dictionary<RegisterType, object> registeredObjects = new();

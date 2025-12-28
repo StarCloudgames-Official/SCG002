@@ -26,6 +26,7 @@ public static partial class DataTableEnum
         BaseAttackSpeed = 2,
         BaseCriticalRatio = 3,
         BaseCriticalDamage = 4,
+        AttackRange = 5,
     }
 
     public enum ClassType

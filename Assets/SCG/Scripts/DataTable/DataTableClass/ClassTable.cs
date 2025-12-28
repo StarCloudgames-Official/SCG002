@@ -11,6 +11,7 @@ public partial class ClassTable
     public DataTableEnum.SpawnType spawnType;
     public float attackDamage;
     public float attackSpeed;
+    public float attackRange;
     public float criticalChance;
     public float criticalDamage;
     public string particleName;
