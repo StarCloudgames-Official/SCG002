@@ -13,6 +13,7 @@ public partial class ClassTable
     public float attackSpeed;
     public float attackRange;
     public int attackMonsterCount;
+    public float projectileSpeed;
     public float criticalChance;
     public float criticalDamage;
     public string particleName;

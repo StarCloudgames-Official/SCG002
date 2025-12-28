@@ -60,7 +60,7 @@ public class CharacterAttack : CachedMonoBehaviour
             var newProjectile = SCGObjectPoolingManager.Get<Projectile>();
             newProjectile.transform.position = CachedTransform.position;
 
-            newProjectile.StartFlight(monster.CachedTransform, 5, () =>
+            newProjectile.StartFlight(monster.CachedTransform, data.projectileSpeed, () =>
             {
 
             });
