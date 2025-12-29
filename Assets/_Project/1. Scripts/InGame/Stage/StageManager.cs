@@ -4,13 +4,21 @@ using UnityEngine;
 public class StageManager
 {
     public StageDataTable CurrentStageData { get; private set; }
-
     public MonsterSpawner MonsterSpawner { get; private set; }
 
     public event Action<int, int> OnKillCountChanged;
-    public event Action<DateTime> OnTimerChanged;
+    public event Action<int> OnTimerChanged;
+    public event Action<int> OnStageChanged;
 
-    public int CurrentStageIndex { get; private set; }
+    public int CurrentStageIndex
+    {
+        get => currentStageIndex;
+        private set
+        {
+            currentStageIndex = value;
+            OnStageChanged?.Invoke(currentStageIndex);
+        }
+    }
 
     public int CurrentKillCount
     {
@@ -22,8 +30,10 @@ public class StageManager
         }
     }
 
+    private int currentStageIndex;
     private int currentKillCount;
     private bool isTimerRunning;
+    private int lastDisplaySeconds;
 
     public async Awaitable Initialize(StageDataTable stageData)
     {
@@ -92,32 +102,46 @@ public class StageManager
     {
         isTimerRunning = true;
 
-        var timerSeconds = CurrentStageData.stageTimer[CurrentStageIndex];
-        var remainingTime = TimeSpan.FromSeconds(timerSeconds);
+        var remainingSeconds = CurrentStageData.stageTimer[CurrentStageIndex];
+        lastDisplaySeconds = -1;
 
-        while (isTimerRunning && remainingTime.TotalSeconds > 0)
+        while (isTimerRunning && remainingSeconds > 0)
         {
-            var dateTime = new DateTime().AddSeconds(remainingTime.TotalSeconds);
-            OnTimerChanged?.Invoke(dateTime);
+            var currentDisplaySeconds = Mathf.CeilToInt(remainingSeconds);
+
+            if (currentDisplaySeconds != lastDisplaySeconds)
+            {
+                OnTimerChanged?.Invoke(currentDisplaySeconds);
+                lastDisplaySeconds = currentDisplaySeconds;
+            }
 
             await Awaitable.NextFrameAsync();
-            remainingTime -= TimeSpan.FromSeconds(Time.deltaTime);
+            remainingSeconds -= Time.deltaTime;
         }
 
         // Timer finished
-        if (isTimerRunning)
+        if (isTimerRunning && lastDisplaySeconds != 0)
         {
-            var dateTime = new DateTime();
-            OnTimerChanged?.Invoke(dateTime);
+            OnTimerChanged?.Invoke(0);
+            lastDisplaySeconds = 0;
         }
+        
+        if (isTimerRunning)
+            StageFailed();
     }
 
-    public void StopTimer()
+    private void StopTimer()
     {
         isTimerRunning = false;
     }
 
-    public async Awaitable<bool> StageClear()
+    private void StageFailed()
+    {
+        StopTimer();
+        //TODO : Show Stage Failed Popup
+    }
+
+    private async Awaitable<bool> StageClear()
     {
         StopTimer();
 
@@ -126,7 +150,7 @@ public class StageManager
 
         if (isCleared)
         {
-            //TODO : Stage Clear Popup
+            //TODO : Show Stage Clear Popup
         }
         else
         {

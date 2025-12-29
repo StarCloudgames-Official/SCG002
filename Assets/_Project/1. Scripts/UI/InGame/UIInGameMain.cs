@@ -1,5 +1,6 @@
 using System;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class UIInGameMain : UIPanel
@@ -11,19 +12,9 @@ public class UIInGameMain : UIPanel
     private bool canSpawn = true;
     private InGameContext inGameContext;
 
-    private Action<int, int> onKillCountChanged;
-    private Action<DateTime> onTimerChanged;
-
     public override async Awaitable PreOpen(object param)
     {
         inGameContext = param as InGameContext;
-
-        //TODO : killCountSlider랑 timerText, stageText 다 StageManager에 이벤트로 연결해서 세팅하면 됨
-        killCountSlider.SetValueImmediate(0, inGameContext.StageManager.CurrentStageData.monsterCount[inGameContext.StageManager.CurrentStageIndex]);
-
-        var timerSeconds = inGameContext.StageManager.CurrentStageData.stageTimer[inGameContext.StageManager.CurrentStageIndex];
-        var dateTime = new DateTime().AddSeconds(timerSeconds);
-        timerText.text = dateTime.DateTimeToStringToMMSS();
 
         InitializeAndRegisterEvents();
 
@@ -42,24 +33,41 @@ public class UIInGameMain : UIPanel
 
     private void InitializeAndRegisterEvents()
     {
-        onKillCountChanged = (current, max) =>
-        {
-            killCountSlider.AnimateTo(current, max, 0.05f, true).Forget();
-        };
+        var stageManager = inGameContext.StageManager;
+        var stageData = stageManager.CurrentStageData;
+        var currentIndex = stageManager.CurrentStageIndex;
+        var timerSeconds = Mathf.CeilToInt(stageData.stageTimer[currentIndex]);
 
-        onTimerChanged = (dateTime) =>
-        {
-            timerText.text = dateTime.DateTimeToStringToMMSS();
-        };
+        UpdateKillCountSlider(0, stageData.monsterCount[currentIndex]);
+        UpdateTimerText(timerSeconds);
+        UpdateStageText(currentIndex);
 
-        inGameContext.StageManager.OnKillCountChanged += onKillCountChanged;
-        inGameContext.StageManager.OnTimerChanged += onTimerChanged;
+        inGameContext.StageManager.OnKillCountChanged += UpdateKillCountSlider;
+        inGameContext.StageManager.OnTimerChanged += UpdateTimerText;
+        inGameContext.StageManager.OnStageChanged += UpdateStageText;
     }
 
     private void UnregisterEvents()
     {
-        inGameContext.StageManager.OnKillCountChanged -= onKillCountChanged;
-        inGameContext.StageManager.OnTimerChanged -= onTimerChanged;
+        inGameContext.StageManager.OnKillCountChanged -= UpdateKillCountSlider;
+        inGameContext.StageManager.OnTimerChanged -= UpdateTimerText;
+        inGameContext.StageManager.OnStageChanged -= UpdateStageText;
+    }
+
+    private void UpdateStageText(int stageIndex)
+    {
+        stageText.text = $"STAGE {stageIndex + 1}";
+    }
+
+    private void UpdateKillCountSlider(int current, int max)
+    {
+        killCountSlider.AnimateTo(current, max, 0.05f, true).Forget();
+    }
+
+    private void UpdateTimerText(int remainingSeconds)
+    {
+        var dateTime = new DateTime().AddSeconds(remainingSeconds);
+        timerText.text = dateTime.DateTimeToStringToMMSS();
     }
 
     public void OnClickSpawn()
