@@ -863,10 +863,10 @@ RectTransform:
   m_Father: {fileID: 3006368665193765078}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 8.900085, y: -1.3250008}
-  m_SizeDelta: {x: -56.7998, y: -32.4751}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 37.299973, y: -1.2702637}
+  m_SizeDelta: {x: 441.508, y: -32.4297}
+  m_Pivot: {x: 0, y: 0.5}
 --- !u!222 &3006368664428518651
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1133,6 +1133,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd6f7000cb965407aab993f723627bff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  killCountSlider: {fileID: 404653232422888975}
+  timerText: {fileID: 3006368664511995380}
+  stageText: {fileID: 0}
 --- !u!1 &3006368664691606557
 GameObject:
   m_ObjectHideFlags: 0
@@ -1338,7 +1341,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fill: {fileID: 3006368664428518649}
-  valueText: {fileID: 0}
+  valueText: {fileID: 3676585884528982698}
   isPercentage: 0
   onValueChanged:
     m_PersistentCalls:

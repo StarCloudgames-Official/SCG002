@@ -13,6 +13,8 @@ public class MonsterBehaviour : CachedMonoBehaviour
     private MonsterMovement monsterMovement;
     private MonsterHealth monsterHealth;
     
+    private InGameContext inGameContext;
+    
     private static readonly int death = Animator.StringToHash("Death");
     public bool IsDead => monsterHealth.IsDead();
 
@@ -29,6 +31,7 @@ public class MonsterBehaviour : CachedMonoBehaviour
 
     private void InitializeComponents()
     {
+        inGameContext ??= InGameManager.Instance.InGameContext;
         monsterMovement ??= GetComponent<MonsterMovement>();
         monsterHealth ??= GetComponent<MonsterHealth>();
         
@@ -48,6 +51,8 @@ public class MonsterBehaviour : CachedMonoBehaviour
 
         if (isDead)
         {
+            inGameContext.StageManager.IncreaseKillCount();
+            
             monsterMovement.StopMovement();
             animator.SetTrigger(death);
             await animator.WaitCurrentStateCompleteAsync();
