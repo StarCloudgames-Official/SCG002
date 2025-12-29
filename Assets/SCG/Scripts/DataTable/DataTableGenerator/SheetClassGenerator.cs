@@ -54,6 +54,7 @@ public static class SheetClassGenerator
             case "double": return "double";
             case "bool": return "bool";
             case "string": return "string";
+            case "DateTime": return "DateTime";
             case "int[]": return "int[]";
             case "long[]": return "long[]";
             case "float[]": return "float[]";

@@ -17,7 +17,7 @@ public class UIStageStarter : UIPanel, IStageStarter
     public override async Awaitable PreOpen(object param)
     {
         var stageParam = param as StageStarterParam;
-        stageText.text = $"STAGE {stageParam.StageNumber} / {stageParam.MaxStage}";
+        stageText.text = $"STAGE {stageParam.StageNumber + 1} / {stageParam.MaxStage}";
     }
 
     public void StartStarter()

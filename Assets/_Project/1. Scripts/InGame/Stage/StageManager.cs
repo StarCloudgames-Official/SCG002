@@ -16,7 +16,7 @@ public class StageManager
         MonsterSpawner = new MonsterSpawner();
         await MonsterSpawner.Initialize();
     }
-
+    
     private async Awaitable StartStarter()
     {
         var isBossStage = currentStageData.IsBossStage(currentStageIndex);

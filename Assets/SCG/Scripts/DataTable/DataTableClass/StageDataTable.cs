@@ -14,4 +14,5 @@ public partial class StageDataTable
     public int[] monsterIds;
     public int[] monsterCount;
     public float[] spawnDelay;
+    public float[] stageTimer;
 }
