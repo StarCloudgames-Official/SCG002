@@ -59,6 +59,13 @@ public class ObjectSlider : CachedMonoBehaviour
 
         while (elapsed < duration)
         {
+            if (!gameObject.activeInHierarchy)
+            {
+                amount = targetAmount;
+                UpdateSlider();
+                return;
+            }
+
             elapsed += Time.deltaTime;
             float t = elapsed / duration;
             amount = Mathf.Lerp(startAmount, targetAmount, t);

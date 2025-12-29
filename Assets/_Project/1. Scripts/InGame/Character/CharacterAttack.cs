@@ -54,6 +54,9 @@ public class CharacterAttack : CachedMonoBehaviour
         currentAttackDelay = data.attackSpeed;
 
         FlipToMonster(monsters[0]);
+        
+        //TODO : statmanager에서 데미지 받아오기
+        var damage = data.attackDamage;
 
         foreach (var monster in monsters)
         {
@@ -62,7 +65,10 @@ public class CharacterAttack : CachedMonoBehaviour
 
             newProjectile.StartFlight(monster.CachedTransform, data.projectileSpeed, () =>
             {
-
+                if(monster.IsDead)
+                    return;
+                
+                monster.GetDamage(damage).Forget();
             });
         }
 

@@ -12,23 +12,27 @@ public class MonsterBehaviour : CachedMonoBehaviour
     private MonsterDataTable currentData;
     private MonsterMovement monsterMovement;
     private MonsterHealth monsterHealth;
+    
+    private static readonly int death = Animator.StringToHash("Death");
+    public bool IsDead => monsterHealth.IsDead();
 
     public async Awaitable Initialize(MonsterDataTable monsterData)
     {
         currentData = monsterData;
         
         animator.runtimeAnimatorController = await GetAnimatorController();
-
+        
         InitializeComponents();
+
         monsterMovement.StartMovement();
     }
 
     private void InitializeComponents()
     {
-        monsterMovement = GetComponent<MonsterMovement>();
-        monsterMovement.Initialize(currentData, animator, spriteRenderer);
+        monsterMovement ??= GetComponent<MonsterMovement>();
+        monsterHealth ??= GetComponent<MonsterHealth>();
         
-        monsterHealth = GetComponent<MonsterHealth>();
+        monsterMovement.Initialize(currentData, animator, spriteRenderer);
         monsterHealth.Initialize(currentData);
     }
 
@@ -38,8 +42,18 @@ public class MonsterBehaviour : CachedMonoBehaviour
         return await AddressableExtensions.GetAnimator(path);
     }
     
-    public void GetDamage(float damage)
+    public async Awaitable GetDamage(float damage)
     {
-        
+        var isDead = monsterHealth.GetDamage(damage);
+
+        if (isDead)
+        {
+            monsterMovement.StopMovement();
+            animator.SetTrigger(death);
+            await animator.WaitCurrentStateCompleteAsync();
+            await Awaitable.WaitForSecondsAsync(0.1f);
+            
+            SCGObjectPoolingManager.Release(this); 
+        }
     }
 }

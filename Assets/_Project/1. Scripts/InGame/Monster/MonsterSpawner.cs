@@ -35,6 +35,9 @@ public class MonsterSpawner
 
         foreach (var monster in allActivating)
         {
+            if(monster.IsDead)
+                continue;
+            
             var offset = monster.transform.position - targetPosition;
             var sqrDistance = offset.sqrMagnitude;
             if (sqrDistance <= rangeSqr)

@@ -24,9 +24,8 @@ public class Projectile : CachedMonoBehaviour
         if (!target || !target.gameObject.activeSelf)
         {
             isFlying = false;
-            var callback = onArrived;
-            onArrived = null;
-            callback?.Invoke();
+            SCGObjectPoolingManager.Release(this);
+            
             return;
         }
 
