@@ -8,6 +8,7 @@ public class UIInGameMain : UIPanel
     [SerializeField] private ExtensionSlider killCountSlider;
     [SerializeField] private TMP_Text timerText;
     [SerializeField] private TMP_Text stageText;
+    [SerializeField] private TMP_Text inGameCrystalCountText;
 
     private bool canSpawn = true;
     private InGameContext inGameContext;
@@ -45,10 +46,12 @@ public class UIInGameMain : UIPanel
         UpdateKillCountSlider(0, stageData.monsterCount[currentIndex]);
         UpdateTimerText(timerSeconds);
         UpdateStageText(currentIndex);
+        UpdateCrystalText(inGameContext.InGameCrystal);
 
         inGameContext.StageManager.OnKillCountChanged += UpdateKillCountSlider;
         inGameContext.StageManager.OnTimerChanged += UpdateTimerText;
         inGameContext.StageManager.OnStageChanged += UpdateStageText;
+        inGameContext.InGameEvent.OnCrystalChange += UpdateCrystalText;
     }
 
     private void UnregisterEvents()
@@ -56,11 +59,17 @@ public class UIInGameMain : UIPanel
         inGameContext.StageManager.OnKillCountChanged -= UpdateKillCountSlider;
         inGameContext.StageManager.OnTimerChanged -= UpdateTimerText;
         inGameContext.StageManager.OnStageChanged -= UpdateStageText;
+        inGameContext.InGameEvent.OnCrystalChange -= UpdateCrystalText;
     }
 
     private void UpdateStageText(int stageIndex)
     {
         stageText.text = $"STAGE {stageIndex + 1}";
+    }
+
+    private void UpdateCrystalText(int crystal)
+    {
+        inGameCrystalCountText.text = crystal.ToString();
     }
 
     private void UpdateKillCountSlider(int current, int max)

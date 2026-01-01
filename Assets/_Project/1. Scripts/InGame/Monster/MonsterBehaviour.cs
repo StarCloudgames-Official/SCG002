@@ -52,7 +52,8 @@ public class MonsterBehaviour : CachedMonoBehaviour
         if (isDead)
         {
             inGameContext.StageManager.IncreaseKillCount();
-            
+            inGameContext.InGameCrystal += currentData.dropCrystal;
+
             monsterMovement.StopMovement();
             animator.SetTrigger(death);
             await animator.WaitCurrentStateCompleteAsync();
