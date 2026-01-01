@@ -1,6 +1,6 @@
 using System;
+using DG.Tweening;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class UIInGameMain : UIPanel
@@ -11,6 +11,8 @@ public class UIInGameMain : UIPanel
 
     private bool canSpawn = true;
     private InGameContext inGameContext;
+    private Sequence timerWarningSequence;
+    private int previousRemainingSeconds = -1;
 
     public override async Awaitable PreOpen(object param)
     {
@@ -27,6 +29,8 @@ public class UIInGameMain : UIPanel
         {
             UnregisterEvents();
         }
+
+        StopTimerWarning();
 
         base.Close().Forget();
     }
@@ -68,6 +72,39 @@ public class UIInGameMain : UIPanel
     {
         var dateTime = new DateTime().AddSeconds(remainingSeconds);
         timerText.text = dateTime.DateTimeToStringToMMSS();
+
+        // 11초 -> 10초로 변할 때만 시작
+        if (previousRemainingSeconds > 10 && remainingSeconds <= 10)
+        {
+            StartTimerWarning();
+        }
+        // 10초 -> 11초로 변할 때 중지 (타이머 리셋 상황 대비)
+        else if (previousRemainingSeconds <= 10 && remainingSeconds > 10)
+        {
+            StopTimerWarning();
+        }
+
+        previousRemainingSeconds = remainingSeconds;
+    }
+
+    private void StartTimerWarning()
+    {
+        timerWarningSequence?.Kill();
+
+        timerWarningSequence = DOTween.Sequence()
+            .Append(timerText.DOColor(Color.red, 0.5f))
+            .Join(timerText.transform.DOScale(1.2f, 0.5f))
+            .Append(timerText.DOColor(Color.white, 0.5f))
+            .Join(timerText.transform.DOScale(1f, 0.5f))
+            .SetLoops(-1)
+            .SetLink(gameObject);
+    }
+
+    private void StopTimerWarning()
+    {
+        timerWarningSequence?.Kill();
+        timerText.color = Color.white;
+        timerText.transform.localScale = Vector3.one;
     }
 
     public void OnClickSpawn()
@@ -85,6 +122,11 @@ public class UIInGameMain : UIPanel
 
     public void OnClickSell()
     {
-        
+
+    }
+
+    private void OnDestroy()
+    {
+        timerWarningSequence?.Kill();
     }
 }
