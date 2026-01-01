@@ -11,12 +11,21 @@ public class ObjectSlider : CachedMonoBehaviour
     [SerializeField] private float amount;
 
     private Transform fillTransform;
+    private float sliderOriginalWidth;
+    private float sliderOriginalHeight;
+    private float fillOriginalWidth;
+    private float fillOriginalHeight;
 
     private void Awake()
     {
         fillTransform = fillSpriteRenderer.transform;
-        
+        sliderOriginalWidth = sliderSpriteRenderer.sprite.bounds.size.x;
+        sliderOriginalHeight = sliderSpriteRenderer.sprite.bounds.size.y;
+        fillOriginalWidth = fillSpriteRenderer.sprite.bounds.size.x;
+        fillOriginalHeight = fillSpriteRenderer.sprite.bounds.size.y;
+
         SetLayer();
+        UpdateSlider();
     }
 
     private void SetLayer()
@@ -33,20 +42,20 @@ public class ObjectSlider : CachedMonoBehaviour
 
     private void UpdateSlider()
     {
+        amount = Mathf.Clamp01(amount);
+
         if (isHorizontal)
         {
             fillTransform.localScale = new Vector3(amount, 1f, 1f);
 
-            float sliderWidth = sliderSpriteRenderer.bounds.size.x;
-            float offset = (amount - 1f) * sliderWidth / 2f;
+            float offset = -sliderOriginalWidth / 2f + (fillOriginalWidth * amount) / 2f;
             fillTransform.localPosition = new Vector3(offset, 0f, 0f);
         }
         else
         {
             fillTransform.localScale = new Vector3(1f, amount, 1f);
 
-            float sliderHeight = sliderSpriteRenderer.bounds.size.y;
-            float offset = (amount - 1f) * sliderHeight / 2f;
+            float offset = -sliderOriginalHeight / 2f + (fillOriginalHeight * amount) / 2f;
             fillTransform.localPosition = new Vector3(0f, offset, 0f);
         }
     }
