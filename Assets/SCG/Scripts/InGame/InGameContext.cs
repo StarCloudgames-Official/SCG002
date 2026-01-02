@@ -25,6 +25,18 @@ public class InGameContext
     {
         EnterInfo = enterInfo;
         InGameEvent = new InGameEvents();
+
+        inGameCrystal = ConstantDataGetter.StartInGameSpawnCrystal;
+    }
+
+    public bool CanUseInGameCrystal(int amount)
+    {
+        return InGameCrystal >= amount;
+    }
+
+    public void UseInGameCrystal(int amount)
+    {
+        InGameCrystal -= amount;
     }
 
     #region InGameEvent
@@ -33,6 +45,7 @@ public class InGameContext
     {
         public event Action<DataTableEnum.ClassType, DataTableEnum.SpawnType> OnSpawn;
         public event Action<int> OnCrystalChange;
+        public event Action<int> OnSpawnCountChanged;
 
         public void PublishCrystalChange(int crystal)
         {
@@ -42,6 +55,11 @@ public class InGameContext
         public void PublishSpawn(DataTableEnum.ClassType classType, DataTableEnum.SpawnType spawnType)
         {
             OnSpawn?.Invoke(classType, spawnType);
+        }
+
+        public void PublishSpawnCountChanged(int count)
+        {
+            OnSpawnCountChanged?.Invoke(count);
         }
     }
 

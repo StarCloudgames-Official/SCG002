@@ -11,10 +11,10 @@ public class DatabaseManager : Singleton<DatabaseManager>
     protected override void Awake()
     {
         base.Awake();
-        RegisterContainersByReflection();
+        RegisterContainersByReflection().Forget();
     }
 
-    private void RegisterContainersByReflection()
+    private async Awaitable RegisterContainersByReflection()
     {
         containers = new Dictionary<Type, DatabaseContainerBase>();
 
@@ -28,7 +28,7 @@ public class DatabaseManager : Singleton<DatabaseManager>
             if (type.GetCustomAttribute<AttributeExtensions.AutoRegisterDatabaseContainerAttribute>() == null) continue;
             if (Activator.CreateInstance(type) is not DatabaseContainerBase instance) continue;
 
-            instance.LoadLocalData();
+            await instance.LoadLocalData();
             instance.Initialize();
 
             containers.Add(type, instance);

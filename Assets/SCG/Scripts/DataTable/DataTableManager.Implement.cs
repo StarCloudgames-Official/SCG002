@@ -38,6 +38,18 @@ public partial class DataTableManager
         return targetGroups;
     }
 
+    public ConstantDataTable GetConstantDataTable(string constantName)
+    {
+        var allData = GetTable<ConstantDataTable>();
+        foreach (var data in allData)
+        {
+            if(data.name.Equals(constantName))
+                return data;
+        }
+        
+        return null;
+    }
+
     public IReadOnlyList<SpawnChanceTable> GetAllSpawnChanceTables()
     {
         return GetTable<SpawnChanceTable>();

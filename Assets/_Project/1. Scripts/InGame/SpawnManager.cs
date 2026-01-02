@@ -13,12 +13,17 @@ public class SpawnManager
     
     private InGameContext inGameContext;
     private SCGObjectPooling<CharacterBehaviour> characterBehaviourPool;
+    
+    private int spawnCrystalPrice;
+    private UserAssetDatabaseContainer userAssetDatabaseContainer;
 
     #region Initialize
 
     public async Awaitable Initialize()
     {
         inGameContext = InGameManager.Instance.InGameContext;
+        spawnCrystalPrice = ConstantDataGetter.SpawnCrystalPrice;
+        userAssetDatabaseContainer = DatabaseManager.Instance.GetContainer<UserAssetDatabaseContainer>();
         
         InitializeSpawnChances();
 
@@ -77,9 +82,12 @@ public class SpawnManager
 
     #region Spawn
 
-    public async Awaitable TrySpawnCharacter(Action onEnd)
+    public void TrySpawnCharacter(Action onEnd)
     {
-        //TODO : Check asset(gold) or something
+        if(!inGameContext.CanUseInGameCrystal(spawnCrystalPrice))
+            return;
+        
+        inGameContext.UseInGameCrystal(spawnCrystalPrice);
         
         var emptyGrid = inGameContext.CharacterGridManager.GetRandomEmptyGrid();
         if (!emptyGrid)
@@ -100,6 +108,7 @@ public class SpawnManager
         
         IncreaseSpawnCount(classType, spawnType);
         InGameManager.Instance.InGameContext.InGameEvent.PublishSpawn(classType, spawnType);
+        InGameManager.Instance.InGameContext.InGameEvent.PublishSpawnCountChanged(GetTotalSpawnCount());
         
         Debug.Log($"{spawnType} {classType} Spawned");
     }
@@ -107,6 +116,21 @@ public class SpawnManager
     #endregion
 
     #region Extension
+
+    public int GetTotalSpawnCount()
+    {
+        var totalCount = 0;
+
+        foreach (var classPair in spawnedClassesCount)
+        {
+            foreach (var spawnPair in classPair.Value)
+            {
+                totalCount += spawnPair.Value;
+            }
+        }
+
+        return totalCount;
+    }
 
     private void IncreaseSpawnCount(ClassType classType, SpawnType spawnType)
     {

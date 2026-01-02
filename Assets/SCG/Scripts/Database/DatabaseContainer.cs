@@ -4,7 +4,7 @@ using GUPS.AntiCheat.Protected.Storage.Prefs;
 using MemoryPack;
 using UnityEngine;
 
-public abstract class DatabaseContainer<T> : DatabaseContainerBase
+public abstract class DatabaseContainer<T> : DatabaseContainerBase where T : new()
 {
     protected T Data;
 
@@ -14,7 +14,11 @@ public abstract class DatabaseContainer<T> : DatabaseContainerBase
 
     public override async Awaitable LoadLocalData()
     {
-        if (!ProtectedPlayerPrefs.HasKey(PreferenceKey)) return;
+        if (!ProtectedPlayerPrefs.HasKey(PreferenceKey))
+        {
+            Data = new T();
+            return;
+        }
 
         var savedData = ProtectedPlayerPrefs.GetString(PreferenceKey);
         var base64 = Convert.FromBase64String(savedData);

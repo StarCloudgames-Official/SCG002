@@ -15,6 +15,8 @@ public class CharacterGridManager : CachedMonoBehaviour
     private float gridHeight;
     private float offsetX;
     private float offsetY;
+    
+    public int TotalGridCount => spawnedCharacterGrids.Count;
 
     public async Awaitable CreateGrid(int x, int y)
     {

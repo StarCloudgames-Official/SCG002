@@ -9,15 +9,20 @@ public class UIInGameMain : UIPanel
     [SerializeField] private TMP_Text timerText;
     [SerializeField] private TMP_Text stageText;
     [SerializeField] private TMP_Text inGameCrystalCountText;
+    [SerializeField] private TMP_Text spawnCountText;
+    [SerializeField] private TMP_Text spawnPriceText;
 
     private bool canSpawn = true;
     private InGameContext inGameContext;
     private Sequence timerWarningSequence;
     private int previousRemainingSeconds = -1;
+    private int maxSpawnCount = -1;
 
     public override async Awaitable PreOpen(object param)
     {
         inGameContext = param as InGameContext;
+
+        spawnPriceText.text = ConstantDataGetter.SpawnCrystalPrice.ToString();
 
         InitializeAndRegisterEvents();
 
@@ -47,11 +52,13 @@ public class UIInGameMain : UIPanel
         UpdateTimerText(timerSeconds);
         UpdateStageText(currentIndex);
         UpdateCrystalText(inGameContext.InGameCrystal);
+        UpdateSpawnCountText(0);
 
         inGameContext.StageManager.OnKillCountChanged += UpdateKillCountSlider;
         inGameContext.StageManager.OnTimerChanged += UpdateTimerText;
         inGameContext.StageManager.OnStageChanged += UpdateStageText;
         inGameContext.InGameEvent.OnCrystalChange += UpdateCrystalText;
+        inGameContext.InGameEvent.OnSpawnCountChanged += UpdateSpawnCountText;
     }
 
     private void UnregisterEvents()
@@ -60,6 +67,15 @@ public class UIInGameMain : UIPanel
         inGameContext.StageManager.OnTimerChanged -= UpdateTimerText;
         inGameContext.StageManager.OnStageChanged -= UpdateStageText;
         inGameContext.InGameEvent.OnCrystalChange -= UpdateCrystalText;
+        inGameContext.InGameEvent.OnSpawnCountChanged -= UpdateSpawnCountText;
+    }
+
+    private void UpdateSpawnCountText(int currentCount)
+    {
+        if (maxSpawnCount == -1)
+            maxSpawnCount = inGameContext.CharacterGridManager.TotalGridCount;
+
+        spawnCountText.text = $"{currentCount}/{maxSpawnCount}";
     }
 
     private void UpdateStageText(int stageIndex)
@@ -121,7 +137,7 @@ public class UIInGameMain : UIPanel
         if (!canSpawn)
             return;
 
-        inGameContext.SpawnManager.TrySpawnCharacter(() => canSpawn = true).Forget();
+        inGameContext.SpawnManager.TrySpawnCharacter(() => canSpawn = true);
     }
 
     public void OnClickEnhance()
