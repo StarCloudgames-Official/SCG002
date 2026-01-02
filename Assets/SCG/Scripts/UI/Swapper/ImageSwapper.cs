@@ -7,6 +7,9 @@ public class ImageSwapper : SwapperBase<Image>
     
     public override void Swap(ISwapper.SwapType swapType)
     {
+        if(targetImage == null)
+            targetImage = GetComponent<Image>();
+        
         if (!swapDictionary.TryGetValue(swapType, out var swapImage)) return;
         targetImage.sprite = swapImage.sprite;
     }
