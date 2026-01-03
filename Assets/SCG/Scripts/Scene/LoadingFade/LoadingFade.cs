@@ -3,7 +3,7 @@ using UnityEngine.AddressableAssets;
 
 public static class LoadingFade
 {
-    private const string LoadingFadeCanvasPath = "Assets/_Project/Prefab/UI/LoadingFadeCanvas.prefab";
+    private const string LoadingFadeCanvasPath = "Assets/_Project/Prefab/UI/Common/LoadingFadeCanvas.prefab";
 
     private static LoadingFadeCanvas LoadingFadeCanvas;
     

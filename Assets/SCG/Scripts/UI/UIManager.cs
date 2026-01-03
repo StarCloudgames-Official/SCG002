@@ -85,7 +85,11 @@ public static class UIManager
         
         var parentCanvas = ResolveParent(typeof(T));
 
-        var ui = await AddressableExtensions.InstantiateAndGetComponent<T>($"Assets/_Project/Prefab/UI/{typeof(T).Name}.prefab");
+        var addressableKey = UIAddressableKeys.Get<T>();
+        if (string.IsNullOrEmpty(addressableKey))
+            throw new System.Exception($"[UIManager] Addressable key not found for {typeof(T).Name}. Run SCG/Tools/Generate/Generate UI Addressable Keys.");
+
+        var ui = await AddressableExtensions.InstantiateAndGetComponent<T>(addressableKey);
         ui.transform.SetParent(parentCanvas);
         
         if (ui == null) throw new MissingComponentException($"{typeof(T).Name} component not found on prefab.");
