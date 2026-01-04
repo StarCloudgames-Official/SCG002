@@ -101,6 +101,7 @@ public class ExtensionButton : CachedMonoBehaviour, IPointerDownHandler, IPointe
         isPressed = false;
         clickInvokedThisPress = false;
         StopRepeatRoutine();
+        transform.localScale = Vector3.one;
         scaleTween?.Kill();
     }
 

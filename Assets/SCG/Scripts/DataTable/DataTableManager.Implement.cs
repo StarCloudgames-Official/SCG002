@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using NUnit.Framework.Constraints;
 
 public partial class DataTableManager
 {
@@ -119,5 +120,17 @@ public partial class DataTableManager
                 return data;
         }
         return null;
+    }
+
+    public int GetSellPrice(DataTableEnum.SpawnType spawnType)
+    {
+        var allData = GetTable<CharacterSellDataTable>();
+        foreach (var data in allData)
+        {
+            if (data.spawnType == spawnType)
+                return data.sellPrice;
+        }
+        
+        return 0;
     }
 }

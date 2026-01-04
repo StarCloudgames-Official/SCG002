@@ -11,6 +11,7 @@ public class UIInGameMain : UIPanel
     [SerializeField] private TMP_Text inGameCrystalCountText;
     [SerializeField] private TMP_Text spawnCountText;
     [SerializeField] private TMP_Text spawnPriceText;
+    [SerializeField] private UICharacterSellPopup characterSellPopup;
 
     private bool canSpawn = true;
     private InGameContext inGameContext;
@@ -147,7 +148,13 @@ public class UIInGameMain : UIPanel
 
     public void OnClickSell()
     {
+        SetSellPopup().Forget();
+    }
 
+    private async Awaitable SetSellPopup()
+    {
+        await characterSellPopup.Set();
+        characterSellPopup.gameObject.SetActive(true);
     }
 
     private void OnDestroy()

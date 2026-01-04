@@ -16,5 +16,6 @@ public partial class ClassTable
     public float projectileSpeed;
     public float criticalChance;
     public float criticalDamage;
+    public string portraitName;
     public string particleName;
 }

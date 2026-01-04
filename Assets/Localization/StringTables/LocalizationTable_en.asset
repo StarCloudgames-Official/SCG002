@@ -26,6 +26,34 @@ MonoBehaviour:
     m_Localized: Template
     m_Metadata:
       m_Items: []
+  - m_Id: 17653169357053952
+    m_Localized: Normal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17653169365442560
+    m_Localized: Advanced
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17653169365442561
+    m_Localized: Elite
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17653169365442562
+    m_Localized: Master
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17653169365442563
+    m_Localized: Epic
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17653169365442564
+    m_Localized: Legendary
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17653169365442565
+    m_Localized: Godlike
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

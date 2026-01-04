@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using StarCloudgamesLibrary;
 using UnityEngine;
+using UnityEngine.Pool;
 using static DataTableEnum;
 using Random = UnityEngine.Random;
 
@@ -117,6 +118,14 @@ public class SpawnManager
 
     #region Extension
 
+    public int GetSpawnedCount(ClassType classType, SpawnType spawnType)
+    {
+        if (!spawnedClassesCount.TryGetValue(classType, out var bySpawnType))
+            return 0;
+        
+        return bySpawnType.GetValueOrDefault(spawnType, 0);
+    }
+
     public int GetTotalSpawnCount()
     {
         var totalCount = 0;
@@ -144,6 +153,50 @@ public class SpawnManager
             bySpawnType[spawnType] = current + 1;
         else
             bySpawnType[spawnType] = 1;
+    }
+
+    private void DecreaseSpawnCount(ClassType classType, SpawnType spawnType)
+    {
+        if (!spawnedClassesCount.TryGetValue(classType, out var bySpawnType))
+            return;
+
+        if (!bySpawnType.TryGetValue(spawnType, out var current))
+            return;
+
+        bySpawnType[spawnType] = Mathf.Max(0, current - 1);
+    }
+
+    #endregion
+
+    #region Sell
+
+    public bool SellCharacter(ClassType classType, SpawnType spawnType)
+    {
+        var activeCharacters = characterBehaviourPool.GetAllActive();
+        CharacterBehaviour targetCharacter = null;
+
+        foreach (var character in activeCharacters)
+        {
+            if (character.CurrentClass.classType == classType &&
+                character.CurrentClass.spawnType == spawnType)
+            {
+                targetCharacter = character;
+                break;
+            }
+        }
+
+        ListPool<CharacterBehaviour>.Release(activeCharacters);
+
+        if (targetCharacter == null)
+            return false;
+
+        targetCharacter.CurrentGrid.Clear();
+        characterBehaviourPool.Release(targetCharacter);
+
+        DecreaseSpawnCount(classType, spawnType);
+        InGameManager.Instance.InGameContext.InGameEvent.PublishSpawnCountChanged(GetTotalSpawnCount());
+
+        return true;
     }
 
     #endregion
