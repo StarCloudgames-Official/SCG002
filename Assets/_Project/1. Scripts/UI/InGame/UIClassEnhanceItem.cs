@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UIClassEnhanceItem : MonoBehaviour
 {
@@ -7,6 +8,7 @@ public class UIClassEnhanceItem : MonoBehaviour
     [SerializeField] private TMP_Text priceText;
     [SerializeField] private TMP_Text levelText;
     [SerializeField] private TMP_Text classText;
+    [SerializeField] private Image classPortrait;
     
     private DataTableEnum.ClassType classType;
     private InGameContext inGameContext;
@@ -25,6 +27,13 @@ public class UIClassEnhanceItem : MonoBehaviour
         priceText.text = price == null ? "MAX" : price.Value.ToString();
         classText.text = LocalizationManager.Get(classType.ToString());
         currentCountText.text = currentCount.ToString();
+        
+        classPortrait.SetSprite(AtlasType.CharacterPortrait, GetPortraitName());
+    }
+
+    private string GetPortraitName()
+    {
+        return DataTableManager.Instance.GetClassTable(classType, DataTableEnum.SpawnType.Normal).portraitName;
     }
 
     public void OnClickEnhance()

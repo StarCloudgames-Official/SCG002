@@ -2,5 +2,5 @@
 public enum AtlasType
 {
     None = 0,
-    Test = 1,
+    CharacterPortrait = 1,
 }

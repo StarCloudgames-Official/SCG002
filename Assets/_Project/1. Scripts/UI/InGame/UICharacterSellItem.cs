@@ -28,7 +28,7 @@ public class UICharacterSellItem : MonoBehaviour
 
         if (!string.IsNullOrEmpty(currentClass.portraitName))
         {
-            portraitImage.SetSprite(AtlasType.None, currentClass.portraitName);
+            portraitImage.SetSprite(AtlasType.CharacterPortrait, currentClass.portraitName);
         }
 
         currentCountText.text = CurrentCount.ToString();

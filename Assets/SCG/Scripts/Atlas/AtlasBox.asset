@@ -18,6 +18,46 @@ MonoBehaviour:
   - type: 1
     sprites:
       m_Keys:
-      - CompanySplash
+      - Mage_Advanced
+      - Mage_Elite
+      - Mage_Epic
+      - Mage_Godlike
+      - Mage_Legendary
+      - Mage_Master
+      - Mage_Normal
+      - Rogue_Advanced
+      - Rogue_Elite
+      - Rogue_Epic
+      - Rogue_Godlike
+      - Rogue_Legendary
+      - Rogue_Master
+      - Rogue_Normal
+      - Warrior_Advanced
+      - Warrior_Elite
+      - Warrior_Epic
+      - Warrior_Godlike
+      - Warrior_Legendary
+      - Warrior_Master
+      - Warrior_Normal
       m_Values:
-      - {fileID: 21300000, guid: 11fcd34723562994181269cdb4d1d911, type: 3}
+      - {fileID: 21300000, guid: 4b813173997fe4fe2a39814df2ac21a9, type: 3}
+      - {fileID: 21300000, guid: 800e9e28a701d49ea9508816678a223d, type: 3}
+      - {fileID: 21300000, guid: 2faecbf3b580d46669484199dd77157b, type: 3}
+      - {fileID: 21300000, guid: ca2b3583117c84872ba25c7cf0e94c9f, type: 3}
+      - {fileID: 21300000, guid: 00537fecda1d94e98aa3adc9f62ed9f1, type: 3}
+      - {fileID: 21300000, guid: baccef71e7a5a49e790b116fad2c3870, type: 3}
+      - {fileID: 21300000, guid: 6a93cefad2c934a95be77ba70d087c6c, type: 3}
+      - {fileID: 21300000, guid: b7992d1c8a2a44225bb577798401b84a, type: 3}
+      - {fileID: 21300000, guid: c66413123c4e94b7e9a9512c9bf6a687, type: 3}
+      - {fileID: 21300000, guid: 28549a4e8f25e4f04868945095c6399b, type: 3}
+      - {fileID: 21300000, guid: 91691dd554b404906af4e7728aed5f97, type: 3}
+      - {fileID: 21300000, guid: 5bb74e690d4e940c19ce2284c7fc7f29, type: 3}
+      - {fileID: 21300000, guid: 561ebcb5c970b43d58a9889dffedc1c0, type: 3}
+      - {fileID: 21300000, guid: b1c1e18f522d24622a75ca43bde4970c, type: 3}
+      - {fileID: 21300000, guid: 4e638fe88e38e49fc9ea6c49d0c29eac, type: 3}
+      - {fileID: 21300000, guid: 4a6251da032d24ed4b1c231674eadbd7, type: 3}
+      - {fileID: 21300000, guid: 7180d3c1f1137429e92a45c438a411cf, type: 3}
+      - {fileID: 21300000, guid: 3af6e907c80044dbe83afb6129daab1a, type: 3}
+      - {fileID: 21300000, guid: ce0dabc9617e3431cb4e9b07cc92d942, type: 3}
+      - {fileID: 21300000, guid: c64b32611b55e4cbea80ec9f3db11460, type: 3}
+      - {fileID: 21300000, guid: 2fe68ae7f7f0f435597f6c8fd91b0879, type: 3}
