@@ -95,8 +95,8 @@ public class CharacterAttack : CachedMonoBehaviour
             {
                 if(monster.IsDead)
                     return;
-                
-                monster.GetDamage(damage).Forget();
+
+                monster.GetDamage(damage);
             });
         }
 

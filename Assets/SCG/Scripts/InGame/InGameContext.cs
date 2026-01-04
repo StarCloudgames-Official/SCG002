@@ -10,6 +10,18 @@ public class InGameContext
     public SpawnManager SpawnManager { get; set; }
     public InGameEvents InGameEvent { get; set; }
 
+    private int luckyPoint;
+
+    public int LuckyPoint
+    {
+        get => luckyPoint;
+        set
+        {
+            luckyPoint = value;
+            InGameEvent.PublishLuckyPointChange(luckyPoint);
+        }
+    }
+
     private int inGameCrystal;
 
     public int InGameCrystal
@@ -31,6 +43,7 @@ public class InGameContext
         InGameEvent = new InGameEvents();
 
         inGameCrystal = ConstantDataGetter.StartInGameSpawnCrystal;
+        luckyPoint = 0;
 
         InitializeClassEnhancements();
     }
@@ -57,6 +70,16 @@ public class InGameContext
         InGameCrystal -= amount;
     }
 
+    public bool CanUseLuckyPoint(int amount)
+    {
+        return LuckyPoint >= amount;
+    }
+
+    public void UseLuckyPoint(int amount)
+    {
+        LuckyPoint -= amount;
+    }
+
     public int GetClassEnhanceLevel(DataTableEnum.ClassType classType)
     {
         return classEnhancements.GetValueOrDefault(classType, 0);
@@ -81,12 +104,18 @@ public class InGameContext
     {
         public event Action<DataTableEnum.ClassType, DataTableEnum.SpawnType> OnSpawn;
         public event Action<int> OnCrystalChange;
+        public event Action<int> OnLuckyPointChange;
         public event Action<int> OnSpawnCountChanged;
         public event Action<DataTableEnum.ClassType, int> OnClassEnhancementChange;
 
         public void PublishCrystalChange(int crystal)
         {
             OnCrystalChange?.Invoke(crystal);
+        }
+
+        public void PublishLuckyPointChange(int luckyPoint)
+        {
+            OnLuckyPointChange?.Invoke(luckyPoint);
         }
 
         public void PublishSpawn(DataTableEnum.ClassType classType, DataTableEnum.SpawnType spawnType)

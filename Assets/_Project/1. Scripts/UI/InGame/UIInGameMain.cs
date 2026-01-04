@@ -9,6 +9,7 @@ public class UIInGameMain : UIPanel
     [SerializeField] private TMP_Text timerText;
     [SerializeField] private TMP_Text stageText;
     [SerializeField] private TMP_Text inGameCrystalCountText;
+    [SerializeField] private TMP_Text luckyPointText;
     [SerializeField] private TMP_Text spawnCountText;
     [SerializeField] private TMP_Text spawnPriceText;
     [SerializeField] private UICharacterSellPopup characterSellPopup;
@@ -54,12 +55,14 @@ public class UIInGameMain : UIPanel
         UpdateTimerText(timerSeconds);
         UpdateStageText(currentIndex);
         UpdateCrystalText(inGameContext.InGameCrystal);
+        UpdateLuckyPointText(inGameContext.LuckyPoint);
         UpdateSpawnCountText(0);
 
         inGameContext.StageManager.OnKillCountChanged += UpdateKillCountSlider;
         inGameContext.StageManager.OnTimerChanged += UpdateTimerText;
         inGameContext.StageManager.OnStageChanged += UpdateStageText;
         inGameContext.InGameEvent.OnCrystalChange += UpdateCrystalText;
+        inGameContext.InGameEvent.OnLuckyPointChange += UpdateLuckyPointText;
         inGameContext.InGameEvent.OnSpawnCountChanged += UpdateSpawnCountText;
     }
 
@@ -69,6 +72,7 @@ public class UIInGameMain : UIPanel
         inGameContext.StageManager.OnTimerChanged -= UpdateTimerText;
         inGameContext.StageManager.OnStageChanged -= UpdateStageText;
         inGameContext.InGameEvent.OnCrystalChange -= UpdateCrystalText;
+        inGameContext.InGameEvent.OnLuckyPointChange -= UpdateLuckyPointText;
         inGameContext.InGameEvent.OnSpawnCountChanged -= UpdateSpawnCountText;
     }
 
@@ -88,6 +92,11 @@ public class UIInGameMain : UIPanel
     private void UpdateCrystalText(int crystal)
     {
         inGameCrystalCountText.text = crystal.ToString();
+    }
+
+    private void UpdateLuckyPointText(int luckyPoint)
+    {
+        luckyPointText.text = luckyPoint.ToString();
     }
 
     private void UpdateKillCountSlider(int current, int max)

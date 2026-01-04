@@ -29,4 +29,5 @@ public static class ConstantDataGetter
 
     public static int SpawnCrystalPrice => GetInt("SpawnCrystalPrice");
     public static int StartInGameSpawnCrystal => GetInt("StartInGameCrystal");
+    public static float LuckyPointDropChance => GetFloat("LuckyPointDropChance");
 }

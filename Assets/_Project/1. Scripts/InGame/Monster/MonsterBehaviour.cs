@@ -45,21 +45,32 @@ public class MonsterBehaviour : CachedMonoBehaviour
         return await AddressableExtensions.GetAnimator(path);
     }
     
-    public async Awaitable GetDamage(float damage)
+    public void GetDamage(float damage)
     {
         var isDead = monsterHealth.GetDamage(damage);
 
         if (isDead)
         {
-            inGameContext.StageManager.IncreaseKillCount();
-            inGameContext.InGameCrystal += currentData.dropCrystal;
-
-            monsterMovement.StopMovement();
-            animator.SetTrigger(death);
-            await animator.WaitCurrentStateCompleteAsync();
-            await Awaitable.WaitForSecondsAsync(0.1f);
-            
-            SCGObjectPoolingManager.Release(this); 
+            Dead().Forget();
         }
+    }
+
+    private async Awaitable Dead()
+    {
+        inGameContext.StageManager.IncreaseKillCount();
+        inGameContext.InGameCrystal += currentData.dropCrystal;
+
+        var dropChance = Random.value;
+        if (dropChance <= ConstantDataGetter.LuckyPointDropChance)
+        {
+            inGameContext.LuckyPoint += 1;
+        }
+
+        monsterMovement.StopMovement();
+        animator.SetTrigger(death);
+        await animator.WaitCurrentStateCompleteAsync();
+        await Awaitable.WaitForSecondsAsync(0.1f);
+            
+        SCGObjectPoolingManager.Release(this); 
     }
 }
