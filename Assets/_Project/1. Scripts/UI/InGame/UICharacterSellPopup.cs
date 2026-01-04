@@ -14,10 +14,10 @@ public class UICharacterSellPopup : MonoBehaviour
             sellItems[i].Set(classType, targetSpawnType);
         }
 
+        var selectedTapIndex = (int)classType - 1;
         for (var i = 0; i < tapSwappers.Length; i++)
         {
-            var targetSpawnType = (int)classType - 1;
-            tapSwappers[i].Swap(i != targetSpawnType ? ISwapper.SwapType.SwapType0 : ISwapper.SwapType.SwapType1);
+            tapSwappers[i].Swap(i == selectedTapIndex ? ISwapper.SwapType.SwapType1 : ISwapper.SwapType.SwapType0);
         }
 
         await Awaitable.NextFrameAsync();
