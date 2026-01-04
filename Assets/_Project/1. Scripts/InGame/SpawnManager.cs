@@ -110,13 +110,25 @@ public class SpawnManager
         IncreaseSpawnCount(classType, spawnType);
         InGameManager.Instance.InGameContext.InGameEvent.PublishSpawn(classType, spawnType);
         InGameManager.Instance.InGameContext.InGameEvent.PublishSpawnCountChanged(GetTotalSpawnCount());
-        
-        Debug.Log($"{spawnType} {classType} Spawned");
     }
 
     #endregion
 
     #region Extension
+
+    public int GetSpawnedCount(ClassType classType)
+    {
+        if (!spawnedClassesCount.TryGetValue(classType, out var bySpawnType))
+            return 0;
+
+        var result = 0;
+        foreach (var classPair in bySpawnType)
+        {
+            result += classPair.Value;
+        }
+        
+        return result;
+    }
 
     public int GetSpawnedCount(ClassType classType, SpawnType spawnType)
     {

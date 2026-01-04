@@ -12,6 +12,7 @@ public class UIInGameMain : UIPanel
     [SerializeField] private TMP_Text spawnCountText;
     [SerializeField] private TMP_Text spawnPriceText;
     [SerializeField] private UICharacterSellPopup characterSellPopup;
+    [SerializeField] private UIClassEnhancePopup classEnhancePopup;
 
     private bool canSpawn = true;
     private InGameContext inGameContext;
@@ -143,7 +144,13 @@ public class UIInGameMain : UIPanel
 
     public void OnClickEnhance()
     {
-        
+        SetEnhancePopup().Forget();
+    }
+
+    private async Awaitable SetEnhancePopup()
+    {
+        await classEnhancePopup.Set();
+        classEnhancePopup.gameObject.SetActive(true);
     }
 
     public void OnClickSell()

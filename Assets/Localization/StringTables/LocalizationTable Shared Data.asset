@@ -51,6 +51,18 @@ MonoBehaviour:
     m_Key: Godlike
     m_Metadata:
       m_Items: []
+  - m_Id: 17697474163499008
+    m_Key: Warrior
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17697474171887616
+    m_Key: Mage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17697474171887617
+    m_Key: Rogue
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

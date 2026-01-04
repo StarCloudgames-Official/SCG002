@@ -54,6 +54,18 @@ MonoBehaviour:
     m_Localized: Godlike
     m_Metadata:
       m_Items: []
+  - m_Id: 17697474163499008
+    m_Localized: Warrior
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17697474171887616
+    m_Localized: Mage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17697474171887617
+    m_Localized: Rogue
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

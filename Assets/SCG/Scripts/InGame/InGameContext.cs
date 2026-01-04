@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class InGameContext
@@ -21,12 +22,29 @@ public class InGameContext
         }
     }
 
+    private Dictionary<DataTableEnum.ClassType, int> classEnhancements;
+    public Dictionary<DataTableEnum.ClassType, int> ClassEnhancements => classEnhancements;
+
     public void Initialize(InGameEnterInfo enterInfo)
     {
         EnterInfo = enterInfo;
         InGameEvent = new InGameEvents();
 
         inGameCrystal = ConstantDataGetter.StartInGameSpawnCrystal;
+
+        InitializeClassEnhancements();
+    }
+
+    private void InitializeClassEnhancements()
+    {
+        classEnhancements = new Dictionary<DataTableEnum.ClassType, int>();
+        foreach (DataTableEnum.ClassType classType in Enum.GetValues(typeof(DataTableEnum.ClassType)))
+        {
+            if (classType == DataTableEnum.ClassType.None)
+                continue;
+
+            classEnhancements[classType] = 0;
+        }
     }
 
     public bool CanUseInGameCrystal(int amount)
@@ -39,6 +57,24 @@ public class InGameContext
         InGameCrystal -= amount;
     }
 
+    public int GetClassEnhanceLevel(DataTableEnum.ClassType classType)
+    {
+        return classEnhancements.GetValueOrDefault(classType, 0);
+    }
+
+    public void EnhanceClass(DataTableEnum.ClassType classType)
+    {
+        if (!classEnhancements.TryGetValue(classType, out var level))
+            return;
+        
+        var nextLevel = level + 1;
+        if(DataTableManager.Instance.GetClassEnhanceRatio(nextLevel) == null)
+            return;
+
+        classEnhancements[classType] = nextLevel;
+        InGameEvent.PublishClassEnhancementChange(classType, nextLevel);
+    }
+
     #region InGameEvent
 
     public class InGameEvents
@@ -46,6 +82,7 @@ public class InGameContext
         public event Action<DataTableEnum.ClassType, DataTableEnum.SpawnType> OnSpawn;
         public event Action<int> OnCrystalChange;
         public event Action<int> OnSpawnCountChanged;
+        public event Action<DataTableEnum.ClassType, int> OnClassEnhancementChange;
 
         public void PublishCrystalChange(int crystal)
         {
@@ -60,6 +97,11 @@ public class InGameContext
         public void PublishSpawnCountChanged(int count)
         {
             OnSpawnCountChanged?.Invoke(count);
+        }
+
+        public void PublishClassEnhancementChange(DataTableEnum.ClassType classType, int level)
+        {
+            OnClassEnhancementChange?.Invoke(classType, level);
         }
     }
 

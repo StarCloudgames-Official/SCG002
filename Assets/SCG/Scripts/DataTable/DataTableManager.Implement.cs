@@ -133,4 +133,28 @@ public partial class DataTableManager
         
         return 0;
     }
+
+    public int? GetClassEnhancePrice(int level)
+    {
+        var allData = GetTable<ClassEnhanceDataTable>();
+        foreach (var data in allData)
+        {
+            if (data.level == level)
+                return data.enhancePrice;
+        }
+        
+        return null;
+    }
+
+    public float? GetClassEnhanceRatio(int level)
+    {
+        var allData = GetTable<ClassEnhanceDataTable>();
+        foreach (var data in allData)
+        {
+            if (data.level == level)
+                return data.damageRatio;
+        }
+        
+        return null;
+    }
 }
