@@ -157,4 +157,9 @@ public partial class DataTableManager
         
         return null;
     }
+
+    public IReadOnlyList<LuckyDataTable> GetAllLuckyDataTables()
+    {
+        return GetTable<LuckyDataTable>();
+    }
 }

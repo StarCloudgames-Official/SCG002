@@ -14,8 +14,8 @@ public class UIInGameMain : UIPanel
     [SerializeField] private TMP_Text spawnPriceText;
     [SerializeField] private UICharacterSellPopup characterSellPopup;
     [SerializeField] private UIClassEnhancePopup classEnhancePopup;
+    [SerializeField] private UILuckyPopup luckyPopup;
 
-    private bool canSpawn = true;
     private InGameContext inGameContext;
     private Sequence timerWarningSequence;
     private int previousRemainingSeconds = -1;
@@ -145,10 +145,7 @@ public class UIInGameMain : UIPanel
 
     public void OnClickSpawn()
     {
-        if (!canSpawn)
-            return;
-
-        inGameContext.SpawnManager.TrySpawnCharacter(() => canSpawn = true);
+        inGameContext.SpawnManager.TrySpawnCharacter();
     }
 
     public void OnClickEnhance()
@@ -171,6 +168,17 @@ public class UIInGameMain : UIPanel
     {
         await characterSellPopup.Set();
         characterSellPopup.gameObject.SetActive(true);
+    }
+
+    public void OnClickLucky()
+    {
+        SetLuckyPopup().Forget();
+    }
+
+    private async Awaitable SetLuckyPopup()
+    {
+        await luckyPopup.Set();
+        luckyPopup.gameObject.SetActive(true);
     }
 
     private void OnDestroy()

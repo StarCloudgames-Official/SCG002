@@ -16,7 +16,6 @@ public class SpawnManager
     private SCGObjectPooling<CharacterBehaviour> characterBehaviourPool;
     
     private int spawnCrystalPrice;
-    private UserAssetDatabaseContainer userAssetDatabaseContainer;
 
     #region Initialize
 
@@ -24,7 +23,6 @@ public class SpawnManager
     {
         inGameContext = InGameManager.Instance.InGameContext;
         spawnCrystalPrice = ConstantDataGetter.SpawnCrystalPrice;
-        userAssetDatabaseContainer = DatabaseManager.Instance.GetContainer<UserAssetDatabaseContainer>();
         
         InitializeSpawnChances();
 
@@ -74,7 +72,7 @@ public class SpawnManager
         return SpawnType.Normal;
     }
 
-    private ClassType GetInGameSpawnClassType()
+    public ClassType GetRandomClassType()
     {
         return classTypes[Random.Range(0, classTypes.Count)];
     }
@@ -83,33 +81,37 @@ public class SpawnManager
 
     #region Spawn
 
-    public void TrySpawnCharacter(Action onEnd)
+    public bool CanSpawnCharacter()
     {
-        if(!inGameContext.CanUseInGameCrystal(spawnCrystalPrice))
-            return;
-        
-        inGameContext.UseInGameCrystal(spawnCrystalPrice);
-        
-        var emptyGrid = inGameContext.CharacterGridManager.GetRandomEmptyGrid();
-        if (!emptyGrid)
-        {
-            onEnd?.Invoke();
-            return;
-        }
+        return inGameContext.CharacterGridManager.GetRandomEmptyGrid() != null;
+    }
 
-        var spawnType = GetInGameSpawnType();
-        var classType = GetInGameSpawnClassType();
+    public void SpawnCharacter(ClassType classType, SpawnType spawnType)
+    {
+        var emptyGrid = inGameContext.CharacterGridManager.GetRandomEmptyGrid();
         var dataTable = DataTableManager.Instance.GetClassTable(classType, spawnType);
 
         var characterBehaviour = characterBehaviourPool.Get();
         characterBehaviour.Initialize(dataTable).Forget();
         characterBehaviour.SetToGrid(emptyGrid);
-        
-        onEnd?.Invoke();
-        
+
         IncreaseSpawnCount(classType, spawnType);
         InGameManager.Instance.InGameContext.InGameEvent.PublishSpawn(classType, spawnType);
         InGameManager.Instance.InGameContext.InGameEvent.PublishSpawnCountChanged(GetTotalSpawnCount());
+    }
+
+    public void TrySpawnCharacter()
+    {
+        if(!inGameContext.CanUseInGameCrystal(spawnCrystalPrice))
+            return;
+        if(!CanSpawnCharacter())
+            return;
+
+        inGameContext.UseInGameCrystal(spawnCrystalPrice);
+
+        var spawnType = GetInGameSpawnType();
+        var classType = GetRandomClassType();
+        SpawnCharacter(classType, spawnType);
     }
 
     #endregion
