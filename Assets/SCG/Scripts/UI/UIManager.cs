@@ -129,6 +129,6 @@ public static class UIManager
     {
         if(spawnedUIList.Count <= 0) return;
 
-        CloseUI(spawnedUIList[^1]);
+        spawnedUIList[^1].OnBackSpace();
     }
 }

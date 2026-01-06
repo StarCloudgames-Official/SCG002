@@ -85,6 +85,20 @@ public class SpawnManager
     {
         return inGameContext.CharacterGridManager.GetRandomEmptyGrid() != null;
     }
+    
+    public void TrySpawnCharacterByCrystal()
+    {
+        if(!inGameContext.CanUseInGameCrystal(spawnCrystalPrice))
+            return;
+        if(!CanSpawnCharacter())
+            return;
+
+        inGameContext.UseInGameCrystal(spawnCrystalPrice);
+
+        var spawnType = GetInGameSpawnType();
+        var classType = GetRandomClassType();
+        SpawnCharacter(classType, spawnType);
+    }
 
     public void SpawnCharacter(ClassType classType, SpawnType spawnType)
     {
@@ -98,20 +112,6 @@ public class SpawnManager
         IncreaseSpawnCount(classType, spawnType);
         InGameManager.Instance.InGameContext.InGameEvent.PublishSpawn(classType, spawnType);
         InGameManager.Instance.InGameContext.InGameEvent.PublishSpawnCountChanged(GetTotalSpawnCount());
-    }
-
-    public void TrySpawnCharacter()
-    {
-        if(!inGameContext.CanUseInGameCrystal(spawnCrystalPrice))
-            return;
-        if(!CanSpawnCharacter())
-            return;
-
-        inGameContext.UseInGameCrystal(spawnCrystalPrice);
-
-        var spawnType = GetInGameSpawnType();
-        var classType = GetRandomClassType();
-        SpawnCharacter(classType, spawnType);
     }
 
     #endregion

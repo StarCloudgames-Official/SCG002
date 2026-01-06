@@ -1,17 +1,18 @@
-using System;
 using UnityEngine;
 
 public class Projectile : CachedMonoBehaviour
 {
     private Transform target;
-    private Action onArrived;
+    private MonsterBehaviour targetMonster;
+    private float damage;
     private float speed;
     private bool isFlying;
 
-    public void StartFlight(Transform target, float speed, Action onArrived)
+    public void StartFlight(MonsterBehaviour monster, float speed, float damage)
     {
-        this.target = target;
-        this.onArrived = onArrived;
+        targetMonster = monster;
+        target = monster.CachedTransform;
+        this.damage = damage;
         this.speed = speed;
         isFlying = true;
     }
@@ -21,11 +22,13 @@ public class Projectile : CachedMonoBehaviour
         if (!isFlying)
             return;
 
-        if (!target || !target.gameObject.activeSelf)
+        if (target == null || !target.gameObject.activeSelf)
         {
             isFlying = false;
+            target = null;
+            targetMonster = null;
             SCGObjectPoolingManager.Release(this);
-            
+
             return;
         }
 
@@ -45,10 +48,11 @@ public class Projectile : CachedMonoBehaviour
             CachedTransform.position = target.position;
             isFlying = false;
 
-            var callback = onArrived;
-            onArrived = null;
-            callback?.Invoke();
+            if (targetMonster != null && !targetMonster.IsDead)
+                targetMonster.GetDamage(damage);
 
+            target = null;
+            targetMonster = null;
             SCGObjectPoolingManager.Release(this);
         }
         else

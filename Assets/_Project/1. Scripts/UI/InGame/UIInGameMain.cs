@@ -1,4 +1,5 @@
 using System;
+using Cysharp.Text;
 using DG.Tweening;
 using TMPro;
 using UnityEngine;
@@ -21,11 +22,32 @@ public class UIInGameMain : UIPanel
     private int previousRemainingSeconds = -1;
     private int maxSpawnCount = -1;
 
+    public override void OnBackSpace()
+    {
+        if (luckyPopup.gameObject.activeSelf)
+        {
+            luckyPopup.gameObject.SetActive(false);
+            return;
+        }
+
+        if (classEnhancePopup.gameObject.activeSelf)
+        {
+            classEnhancePopup.gameObject.SetActive(false);
+            return;
+        }
+
+        if (characterSellPopup.gameObject.activeSelf)
+        {
+            characterSellPopup.gameObject.SetActive(false);
+            return;
+        }
+    }
+
     public override async Awaitable PreOpen(object param)
     {
         inGameContext = param as InGameContext;
 
-        spawnPriceText.text = ConstantDataGetter.SpawnCrystalPrice.ToString();
+        spawnPriceText.text = ZString.Concat(ConstantDataGetter.SpawnCrystalPrice);
 
         InitializeAndRegisterEvents();
 
@@ -81,22 +103,22 @@ public class UIInGameMain : UIPanel
         if (maxSpawnCount == -1)
             maxSpawnCount = inGameContext.CharacterGridManager.TotalGridCount;
 
-        spawnCountText.text = $"{currentCount}/{maxSpawnCount}";
+        spawnCountText.text = ZString.Format("{0}/{1}", currentCount, maxSpawnCount);
     }
 
     private void UpdateStageText(int stageIndex)
     {
-        stageText.text = $"STAGE {stageIndex + 1}";
+        stageText.text = ZString.Format("STAGE {0}", stageIndex + 1);
     }
 
     private void UpdateCrystalText(int crystal)
     {
-        inGameCrystalCountText.text = crystal.ToString();
+        inGameCrystalCountText.text = ZString.Concat(crystal);
     }
 
     private void UpdateLuckyPointText(int luckyPoint)
     {
-        luckyPointText.text = luckyPoint.ToString();
+        luckyPointText.text = ZString.Concat(luckyPoint);
     }
 
     private void UpdateKillCountSlider(int current, int max)
@@ -145,7 +167,7 @@ public class UIInGameMain : UIPanel
 
     public void OnClickSpawn()
     {
-        inGameContext.SpawnManager.TrySpawnCharacter();
+        inGameContext.SpawnManager.TrySpawnCharacterByCrystal();
     }
 
     public void OnClickEnhance()

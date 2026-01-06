@@ -1,3 +1,4 @@
+using Cysharp.Text;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -23,10 +24,10 @@ public class UIClassEnhanceItem : MonoBehaviour
         var currentCount = inGameContext.SpawnManager.GetSpawnedCount(classType);
         var price = DataTableManager.Instance.GetClassEnhancePrice(currentLevel);
         
-        levelText.text = $"Lv. {currentLevel}";
-        priceText.text = price == null ? "MAX" : price.Value.ToString();
+        levelText.text = ZString.Format("Lv. {0}", currentLevel);
+        priceText.text = price == null ? "MAX" : ZString.Concat(price.Value);
         classText.text = LocalizationManager.Get(classType.ToString());
-        currentCountText.text = currentCount.ToString();
+        currentCountText.text = ZString.Concat(currentCount);
         
         classPortrait.SetSprite(AtlasType.CharacterPortrait, GetPortraitName());
     }

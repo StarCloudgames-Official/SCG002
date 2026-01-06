@@ -1,3 +1,4 @@
+using Cysharp.Text;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -31,8 +32,8 @@ public class UICharacterSellItem : MonoBehaviour
             portraitImage.SetSprite(AtlasType.CharacterPortrait, currentClass.portraitName);
         }
 
-        currentCountText.text = CurrentCount.ToString();
-        sellPriceText.text = sellPrice.ToString();
+        currentCountText.text = ZString.Concat(CurrentCount);
+        sellPriceText.text = ZString.Concat(sellPrice);
         spawnTypeText.text = spawnTypeLocalizedString;
     }
 
@@ -41,7 +42,7 @@ public class UICharacterSellItem : MonoBehaviour
         if (!inGameContext.SpawnManager.SellCharacter(currentClass.classType, currentClass.spawnType))
             return;
 
-        currentCountText.text = CurrentCount.ToString();
+        currentCountText.text = ZString.Concat(CurrentCount);
         inGameContext.InGameCrystal += sellPrice;
     }
 }

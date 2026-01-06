@@ -90,14 +90,7 @@ public class CharacterAttack : CachedMonoBehaviour
         {
             var newProjectile = SCGObjectPoolingManager.Get<Projectile>();
             newProjectile.transform.position = CachedTransform.position;
-
-            newProjectile.StartFlight(monster.CachedTransform, data.projectileSpeed, () =>
-            {
-                if(monster.IsDead)
-                    return;
-
-                monster.GetDamage(damage);
-            });
+            newProjectile.StartFlight(monster, data.projectileSpeed, damage);
         }
 
         ListPool<MonsterBehaviour>.Release(monsters);

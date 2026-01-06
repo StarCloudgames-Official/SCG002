@@ -1,3 +1,4 @@
+using Cysharp.Text;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -18,8 +19,8 @@ public class UILuckyItem : MonoBehaviour
         inGameContext = InGameManager.Instance.InGameContext;
 
         var spawnTypeString = LocalizationManager.Get(data.spawnType.ToString());
-        var chanceString = $"{data.spawnChance * 100.0f:F0}%";
-        var priceString = data.pricePoint.ToString();
+        var chanceString = ZString.Format("{0:F0}%", data.spawnChance * 100.0f);
+        var priceString = ZString.Concat(data.pricePoint);
         
         spawnTypeText.text = spawnTypeString;
         chanceText.text = chanceString;
