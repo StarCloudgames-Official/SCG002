@@ -1,10 +1,11 @@
+using Cysharp.Threading.Tasks;
 using UnityEngine;
 
 public class UIClassEnhancePopup : MonoBehaviour
 {
     [SerializeField] private UIClassEnhanceItem[] enhanceItems;
 
-    public async Awaitable Set()
+    public async UniTask Set()
     {
         var inGameContext = InGameManager.Instance.InGameContext;
 
@@ -18,6 +19,6 @@ public class UIClassEnhancePopup : MonoBehaviour
             i++;
         }
 
-        await Awaitable.NextFrameAsync();
+        await UniTask.NextFrame();
     }
 }

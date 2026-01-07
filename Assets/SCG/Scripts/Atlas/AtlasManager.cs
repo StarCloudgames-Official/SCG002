@@ -1,4 +1,4 @@
-﻿using Cysharp.Threading.Tasks;
+using Cysharp.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.UI;
@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public static class AtlasManager
 {
     private static AtlasBox AtlasBox;
-    
+
     private const string AddressableKey = "AtlasBox";
 
     public static void SetSprite(this Image targetImage, AtlasType atlasType, string spriteName)
@@ -16,7 +16,7 @@ public static class AtlasManager
         targetImage.sprite = sprite;
     }
 
-    public static async Awaitable Initialize()
+    public static async UniTask Initialize()
     {
         var handle = Addressables.LoadAssetAsync<AtlasBox>(AddressableKey);
         AtlasBox = await handle;

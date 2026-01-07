@@ -1,7 +1,7 @@
 using System;
+using Cysharp.Threading.Tasks;
 using StarCloudgamesLibrary;
 using UnityEngine;
-
 using UnityEngine.InputSystem;
 
 public class ApplicationManager : Singleton<ApplicationManager>
@@ -21,18 +21,19 @@ public class ApplicationManager : Singleton<ApplicationManager>
 
     #region Unity Lifecycle
 
-    public override async Awaitable Initialize()
+    public override async UniTask Initialize()
     {
         QualitySettings.vSyncCount = 0;
         Application.targetFrameRate = TargetFps;
         Screen.sleepTimeout = SleepTimeout.NeverSleep;
+        await UniTask.CompletedTask;
     }
 
     private void Update()
     {
         if (IsQuitting)
             return;
-        
+
         CheckBackSpace();
     }
 

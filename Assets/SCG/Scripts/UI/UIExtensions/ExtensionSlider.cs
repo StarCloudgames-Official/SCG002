@@ -1,5 +1,5 @@
-﻿using System;
 using Cysharp.Text;
+using Cysharp.Threading.Tasks;
 using DG.Tweening;
 using TMPro;
 using UnityEngine;
@@ -48,7 +48,7 @@ public class ExtensionSlider : CachedMonoBehaviour
         onValueChanged?.Invoke(normalized);
     }
 
-    public async Awaitable AnimateTo(float targetCurrent, float max, float duration, bool isInt = false)
+    public async UniTask AnimateTo(float targetCurrent, float max, float duration, bool isInt = false)
     {
         duration = Mathf.Max(0.0001f, duration);
 
@@ -74,7 +74,7 @@ public class ExtensionSlider : CachedMonoBehaviour
             onValueChanged?.Invoke(normalized);
         }, endCurrent, duration);
 
-        while (fillTween.IsActive() && fillTween.IsPlaying() && token == animateToken) await Awaitable.NextFrameAsync();
+        while (fillTween.IsActive() && fillTween.IsPlaying() && token == animateToken) await UniTask.NextFrame();
 
         if (token != animateToken) return;
 

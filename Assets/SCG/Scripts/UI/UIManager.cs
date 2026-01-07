@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Cysharp.Threading.Tasks;
 using UnityEngine.AddressableAssets;
 using UnityEngine;
 
@@ -7,7 +8,7 @@ public static class UIManager
     private static List<IUI> spawnedUIList = new();
     private static int blockerCount = 0;
 
-    public static async Awaitable BlockUI()
+    public static async UniTask BlockUI()
     {
         blockerCount++;
         if (blockerCount == 1)
@@ -27,16 +28,16 @@ public static class UIManager
         blockerCount--;
         if (blockerCount > 0)
             return;
-        
+
         blockerCount = 0;
-        
+
         if (TryGetSpawnedUI<UIBlocker>(out var blocker))
         {
             blocker.Close().Forget();
         }
     }
 
-    public static async Awaitable<T> OpenUI<T>(object param = null) where T : Component, IUI
+    public static async UniTask<T> OpenUI<T>(object param = null) where T : Component, IUI
     {
         var ui = await GetUI<T>();
         ui.Open(param).Forget();
@@ -62,14 +63,14 @@ public static class UIManager
     {
         if (spawnedUIList.Contains(ui))
             return spawnedUIList[spawnedUIList.IndexOf(ui)];
-        
+
         return null;
     }
 
     public static void CloseAllUI()
     {
         RemoveAllBlocker();
-        
+
         var list = new List<IUI>(spawnedUIList);
         foreach(var ui in list) ui.Close().Forget();
     }
@@ -79,10 +80,10 @@ public static class UIManager
         return spawnedUIList.Contains(ui);
     }
 
-    public static async Awaitable<T> GetUI<T>() where T : Component, IUI
+    public static async UniTask<T> GetUI<T>() where T : Component, IUI
     {
-        if(TryGetSpawnedUI<T>(out var spawnedUI)) return spawnedUI; 
-        
+        if(TryGetSpawnedUI<T>(out var spawnedUI)) return spawnedUI;
+
         var parentCanvas = ResolveParent(typeof(T));
 
         var addressableKey = UIAddressableKeys.Get<T>();
@@ -91,7 +92,7 @@ public static class UIManager
 
         var ui = await AddressableExtensions.InstantiateAndGetComponent<T>(addressableKey);
         ui.transform.SetParent(parentCanvas);
-        
+
         if (ui == null) throw new MissingComponentException($"{typeof(T).Name} component not found on prefab.");
 
         spawnedUIList.Add(ui);
@@ -108,11 +109,11 @@ public static class UIManager
                 return true;
             }
         }
-        
+
         ui = null;
         return false;
     }
-    
+
     private static Transform ResolveParent(System.Type uiComponent)
     {
         if (typeof(UIPanel).IsAssignableFrom(uiComponent) && ObjectRegister.TryGet<RectTransform>(ObjectRegister.RegisterType.UIPanel, out var panelObj))

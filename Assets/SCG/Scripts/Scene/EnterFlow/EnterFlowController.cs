@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-using UnityEngine;
+using Cysharp.Threading.Tasks;
 
 public class EnterFlowController
 {
@@ -9,8 +9,8 @@ public class EnterFlowController
     {
         enterFlows.Add(enterFlow);
     }
-    
-    public async Awaitable RunFlow()
+
+    public async UniTask RunFlow()
     {
         foreach (var enterFlow in enterFlows)
         {

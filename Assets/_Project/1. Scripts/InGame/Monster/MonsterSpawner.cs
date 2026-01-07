@@ -1,7 +1,6 @@
-using SCG;
-using System;
-using System.Collections;
 using System.Collections.Generic;
+using Cysharp.Threading.Tasks;
+using SCG;
 using UnityEngine;
 using UnityEngine.Pool;
 
@@ -9,20 +8,20 @@ public class MonsterSpawner
 {
     private SCGObjectPooling<MonsterBehaviour> monsterPool;
 
-    public async Awaitable Initialize()
+    public async UniTask Initialize()
     {
         monsterPool = await SCGObjectPoolingManager.GetOrCreatePoolAsync<MonsterBehaviour>(AddressableExtensions.MonsterPath, 30, InGameManager.Instance.CachedTransform);
     }
 
-    public async Awaitable StartSpawn(MonsterDataTable monsterData, int targetSpawnCount, float spawnDelay)
+    public async UniTask StartSpawn(MonsterDataTable monsterData, int targetSpawnCount, float spawnDelay)
     {
         for (var spawnedCount = 0; spawnedCount < targetSpawnCount; spawnedCount++)
         {
             var newMonster = monsterPool.Get();
             newMonster.transform.position = MonsterPath.SpawnPosition;
-            
+
             await newMonster.Initialize(monsterData);
-            await Awaitable.WaitForSecondsAsync(spawnDelay);
+            await UniTask.Delay((int)(spawnDelay * 1000));
         }
     }
 
@@ -37,7 +36,7 @@ public class MonsterSpawner
         {
             if(monster.IsDead)
                 continue;
-            
+
             var offset = monster.transform.position - targetPosition;
             var sqrDistance = offset.sqrMagnitude;
             if (sqrDistance <= rangeSqr)

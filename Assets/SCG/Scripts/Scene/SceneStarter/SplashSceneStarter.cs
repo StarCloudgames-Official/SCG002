@@ -1,20 +1,19 @@
-using System;
-using System.Collections.Generic;
+using Cysharp.Threading.Tasks;
+using DG.Tweening;
 using UnityEngine;
 using UnityEngine.UI;
-using DG.Tweening;
 
 // 스플래시 씬은 시작 씬이기 때문에 Mono로 씬에 넣어두기
 public class SplashSceneStarter : MonoBehaviour
 {
     [SerializeField] private Image companyLogo;
-    
+
     private void Awake()
     {
         Load().Forget();
     }
 
-    private async Awaitable Load()
+    private async UniTask Load()
     {
         var loadManagerTask = LoadManager();
         await FadeIn();
@@ -24,32 +23,29 @@ public class SplashSceneStarter : MonoBehaviour
         SceneController.ChangeScene(SceneController.Scene.Title, true).Forget();
     }
 
-    private async Awaitable LoadManager()
+    private async UniTask LoadManager()
     {
         LocalizationManager.Initialize();
         ApplicationManager.Create(true);
         DatabaseManager.Create(true);
         SoundManager.Create(true);
-        
-        var awaitList = new List<Awaitable>
-        {
+
+        await UniTask.WhenAll(
             AtlasManager.Initialize(),
             SoundManager.Instance.Initialize(),
             ApplicationManager.Instance.Initialize()
-        };
-
-        await awaitList.WhenAll();
+        );
     }
 
-    private async Awaitable FadeIn()
+    private async UniTask FadeIn()
     {
         if (companyLogo == null) return;
-        await companyLogo.DOFade(1f, 1f).ToAwaitable();
+        await companyLogo.DOFade(1f, 1f).ToUniTask();
     }
 
-    private async Awaitable FadeOut()
+    private async UniTask FadeOut()
     {
         if (companyLogo == null) return;
-        await companyLogo.DOFade(0f, 0.8f).ToAwaitable();
+        await companyLogo.DOFade(0f, 0.8f).ToUniTask();
     }
 }

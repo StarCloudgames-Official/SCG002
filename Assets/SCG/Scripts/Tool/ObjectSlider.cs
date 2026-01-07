@@ -1,4 +1,4 @@
-using System;
+using Cysharp.Threading.Tasks;
 using UnityEngine;
 
 public class ObjectSlider : CachedMonoBehaviour
@@ -60,7 +60,7 @@ public class ObjectSlider : CachedMonoBehaviour
         }
     }
 
-    public async Awaitable SetValueAsync(float targetAmount, float duration = 0.3f)
+    public async UniTask SetValueAsync(float targetAmount, float duration = 0.3f)
     {
         targetAmount = Mathf.Clamp01(targetAmount);
         float startAmount = amount;
@@ -79,7 +79,7 @@ public class ObjectSlider : CachedMonoBehaviour
             float t = elapsed / duration;
             amount = Mathf.Lerp(startAmount, targetAmount, t);
             UpdateSlider();
-            await Awaitable.NextFrameAsync();
+            await UniTask.NextFrame();
         }
 
         amount = targetAmount;

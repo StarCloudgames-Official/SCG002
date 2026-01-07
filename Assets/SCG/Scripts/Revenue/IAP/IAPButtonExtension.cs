@@ -1,3 +1,4 @@
+using Cysharp.Threading.Tasks;
 using StarCloudgamesLibrary;
 using TMPro;
 using UnityEngine;
@@ -9,7 +10,7 @@ public class IAPButtonExtension : MonoBehaviour
     [SerializeField] private TextMeshProUGUI priceText;
 
     private ExtensionButton extensionButton;
-    
+
     private void Awake()
     {
         InitializeButton();
@@ -39,24 +40,24 @@ public class IAPButtonExtension : MonoBehaviour
     {
         var metaData = IAPManager.Instance.GetProductMetadataByIapId(iapId);
         if (metaData == null) return;
-        
+
         priceText.text = metaData.localizedPriceString;
     }
 
     private void InitializeButton()
     {
         extensionButton = GetComponent<ExtensionButton>();
-        extensionButton.AddOnClickListener(OnClickPurchase); 
+        extensionButton.AddOnClickListener(OnClickPurchase);
     }
 
     public async void OnClickPurchase()
     {
         var uiLoadingOverPopup = await UIManager.OpenUI<UILoadingOverPopup>();
-        
+
         IAPManager.Instance.Purchase(iapId, (purchaseSuccess, failReason) =>
         {
             uiLoadingOverPopup.Close().Forget();
-            
+
             if (purchaseSuccess)
             {
                 PurchaseSuccess().Forget();
@@ -68,11 +69,11 @@ public class IAPButtonExtension : MonoBehaviour
         });
     }
 
-    private async Awaitable PurchaseSuccess()
+    private async UniTask PurchaseSuccess()
     {
         var uiIAPPurchaseSuccessPopup = await UIManager.OpenUI<UIIAPPurchaseSuccessPopup>();
-        await AwaitableExtensions.WhileAlive(uiIAPPurchaseSuccessPopup);
-        
+        await UniTaskExtensions.WhileAlive(uiIAPPurchaseSuccessPopup);
+
         var rewards = DataTableManager.Instance.GetIAPDataTable(iapId).RewardGroupData;
         DatabaseManager.Instance.AddRewardGroups(rewards);
         //TODO : 연출?

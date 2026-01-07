@@ -1,6 +1,6 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
-using System.Linq;
+using Cysharp.Threading.Tasks;
 using MemoryPack;
 using StarCloudgamesLibrary;
 using UnityEngine;
@@ -10,18 +10,18 @@ public partial class DataTableManager : Singleton<DataTableManager>
     private DataTableFile db;
     private readonly Dictionary<Type, object> cache = new();
     private readonly Dictionary<string, byte[]> tableMap = new();
-    
-    public override async Awaitable Initialize()
+
+    public override async UniTask Initialize()
     {
         await Load();
     }
 
-    private async Awaitable Load()
+    private async UniTask Load()
     {
         var request = Resources.LoadAsync<TextAsset>("DataTable");
 
         while (!request.isDone)
-            await Awaitable.NextFrameAsync();
+            await UniTask.NextFrame();
 
         var dataTable = request.asset as TextAsset;
 
@@ -44,7 +44,7 @@ public partial class DataTableManager : Singleton<DataTableManager>
         foreach (var entry in db.Tables)
             tableMap[entry.TableName] = entry.Payload;
 
-        await Awaitable.NextFrameAsync();
+        await UniTask.NextFrame();
     }
 
     protected List<T> GetTable<T>()

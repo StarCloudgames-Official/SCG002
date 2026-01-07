@@ -1,7 +1,5 @@
 using Cysharp.Threading.Tasks;
 using UnityEngine;
-using UnityEngine.AddressableAssets;
-using UnityEngine.EventSystems;
 
 [RequireComponent(typeof(CharacterTouch))]
 [RequireComponent(typeof(CharacterAttack))]
@@ -12,14 +10,14 @@ public class CharacterBehaviour : CachedMonoBehaviour
     public CharacterGrid CurrentGrid { get; set; }
     public ClassTable CurrentClass { get; private set; }
     public bool CanInteract { get; set; }
-    
+
     private CharacterTouch characterTouch;
     private CharacterAttack characterAttack;
 
-    public async Awaitable Initialize(ClassTable dataTable)
+    public async UniTask Initialize(ClassTable dataTable)
     {
         CurrentClass = dataTable;
-        
+
         InitializeComponents();
 
         animator.runtimeAnimatorController = await GetAnimator();
@@ -39,12 +37,12 @@ public class CharacterBehaviour : CachedMonoBehaviour
     public void SetToGrid(CharacterGrid characterGrid)
     {
         CurrentGrid = characterGrid;
-        
+
         CachedTransform.position = characterGrid.transform.position;
         characterGrid.SetCharacterBehaviour(this);
     }
 
-    private async Awaitable<RuntimeAnimatorController> GetAnimator()
+    private async UniTask<RuntimeAnimatorController> GetAnimator()
     {
         var path = $"{CurrentClass.classType}_{CurrentClass.spawnType}_Animator";
         return await AddressableExtensions.GetAnimator(path);

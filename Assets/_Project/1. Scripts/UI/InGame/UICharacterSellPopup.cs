@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+using Cysharp.Threading.Tasks;
 using UnityEngine;
 
 public class UICharacterSellPopup : MonoBehaviour
@@ -6,7 +6,7 @@ public class UICharacterSellPopup : MonoBehaviour
     [SerializeField] private UICharacterSellItem[] sellItems;
     [SerializeField] private ListSwapper[] tapSwappers;
 
-    public async Awaitable Set(DataTableEnum.ClassType classType = DataTableEnum.ClassType.Warrior)
+    public async UniTask Set(DataTableEnum.ClassType classType = DataTableEnum.ClassType.Warrior)
     {
         for (var i = 0; i < sellItems.Length; i++)
         {
@@ -20,7 +20,7 @@ public class UICharacterSellPopup : MonoBehaviour
             tapSwappers[i].Swap(i == selectedTapIndex ? ISwapper.SwapType.SwapType1 : ISwapper.SwapType.SwapType0);
         }
 
-        await Awaitable.NextFrameAsync();
+        await UniTask.NextFrame();
     }
 
     public void OnClickTap(int classType)

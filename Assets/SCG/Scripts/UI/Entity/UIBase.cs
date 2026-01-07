@@ -1,26 +1,21 @@
+using Cysharp.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 
 public class UIBase : MonoBehaviour, IUI
 {
-    public virtual Awaitable PreOpen(object param) => null;
-    public virtual Awaitable PreClose(object param) => null;
+    public virtual UniTask PreOpen(object param) => UniTask.CompletedTask;
+    public virtual UniTask PreClose(object param) => UniTask.CompletedTask;
 
-    public virtual async Awaitable Open(object param = null)
+    public virtual async UniTask Open(object param = null)
     {
-        var preOpen = PreOpen(param);
-        if (preOpen != null)
-            await preOpen;
-
+        await PreOpen(param);
         gameObject.SetActive(true);
     }
 
-    public virtual async Awaitable Close(object param = null)
+    public virtual async UniTask Close(object param = null)
     {
-        var preClose = PreClose(param);
-        if (preClose != null)
-            await preClose;
-
+        await PreClose(param);
         UIManager.RemoveUI(this);
         Addressables.ReleaseInstance(gameObject);
     }

@@ -1,6 +1,6 @@
-﻿using UnityEngine;
+using Cysharp.Threading.Tasks;
 
 public abstract class SceneStarter
 {
-    public abstract Awaitable StartScene();
+    public abstract UniTask StartScene();
 }

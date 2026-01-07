@@ -1,13 +1,12 @@
-using System;
+using Cysharp.Threading.Tasks;
 using StarCloudgamesLibrary;
-using UnityEngine;
 
 public class InGameManager : Singleton<InGameManager>
 {
     public InGameContext InGameContext { get; private set; }
     public UIInGameMain UIInGameMain { get; private set; }
 
-    public override async Awaitable Initialize()
+    public override async UniTask Initialize()
     {
         InGameContext = new InGameContext();
         InGameContext.Initialize(InGameSession.CurrentInGameEnterInfo);
@@ -15,14 +14,14 @@ public class InGameManager : Singleton<InGameManager>
         var stageManager = new StageManager();
         var stageData = DataTableManager.Instance.GetStageDataTable(InGameContext.EnterInfo.Stage, InGameContext.EnterInfo.Floor);
         await stageManager.Initialize(stageData);
-        
+
         var characterGridManagerPath = AddressableExtensions.CharacterGridManagerPath;
         var characterGridManager = await AddressableExtensions.InstantiateAndGetComponent<CharacterGridManager>(characterGridManagerPath);
         await characterGridManager.CreateGrid(5, 6);
 
         var spawnManager = new SpawnManager();
         await spawnManager.Initialize();
-        
+
         InGameContext.CharacterGridManager = characterGridManager;
         InGameContext.StageManager = stageManager;
         InGameContext.SpawnManager = spawnManager;

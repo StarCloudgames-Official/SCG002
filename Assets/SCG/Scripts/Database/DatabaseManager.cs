@@ -1,6 +1,7 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Reflection;
+using Cysharp.Threading.Tasks;
 using StarCloudgamesLibrary;
 using UnityEngine;
 
@@ -14,7 +15,7 @@ public class DatabaseManager : Singleton<DatabaseManager>
         RegisterContainersByReflection().Forget();
     }
 
-    private async Awaitable RegisterContainersByReflection()
+    private async UniTask RegisterContainersByReflection()
     {
         containers = new Dictionary<Type, DatabaseContainerBase>();
 
@@ -41,16 +42,16 @@ public class DatabaseManager : Singleton<DatabaseManager>
         return null;
     }
 
-    public async Awaitable LocalInitialize()
+    public async UniTask LocalInitialize()
     {
-        var containerAwaitableList = new List<Awaitable>();
-        
+        var containerTaskList = new List<UniTask>();
+
         foreach (var container in containers.Values)
         {
-            containerAwaitableList.Add(container.LoadLocalData());
+            containerTaskList.Add(container.LoadLocalData());
         }
 
-        await containerAwaitableList.WhenAll();
+        await UniTask.WhenAll(containerTaskList);
 
         foreach (var container in containers.Values)
         {

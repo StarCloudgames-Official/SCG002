@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using Cysharp.Threading.Tasks;
 
 public abstract class DatabaseContainerBase
 {
@@ -7,5 +7,5 @@ public abstract class DatabaseContainerBase
     protected void SetDirty(bool isDirty) => IsDirty = isDirty;
     public abstract void Initialize();
     public abstract void SaveToLocal();
-    public abstract Awaitable LoadLocalData();
+    public abstract UniTask LoadLocalData();
 }

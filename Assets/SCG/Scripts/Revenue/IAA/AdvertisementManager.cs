@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using Cysharp.Threading.Tasks;
 using Unity.Services.LevelPlay;
 using UnityEngine;
 
@@ -45,7 +46,7 @@ namespace StarCloudgamesLibrary
                 Debug.LogWarning("AdvertisementManager: ShowRewardedAd failed - Not Initialized");
                 return;
             }
-            
+
             if(rewardedAd != null && rewardedAd.IsAdReady())
             {
                 if(bannerAd != null)
@@ -90,12 +91,12 @@ namespace StarCloudgamesLibrary
             rewardedAd.LoadAd();
         }
 
-        void RewardedOnAdLoadedEvent(LevelPlayAdInfo adInfo) 
-        { 
+        void RewardedOnAdLoadedEvent(LevelPlayAdInfo adInfo)
+        {
             Debug.Log("AdvertisementManager: Rewarded Ad Loaded Successfully");
         }
-        void RewardedOnAdLoadFailedEvent(LevelPlayAdError error) 
-        { 
+        void RewardedOnAdLoadFailedEvent(LevelPlayAdError error)
+        {
             Debug.LogWarning($"AdvertisementManager: Rewarded Ad Failed to Load - {error.ErrorMessage}");
         }
         void RewardedOnAdClickedEvent(LevelPlayAdInfo adInfo) { }
@@ -123,18 +124,18 @@ namespace StarCloudgamesLibrary
                 Debug.LogWarning("AdvertisementManager: ShowInterstitial failed - Not Initialized");
                 return;
             }
-            
-            if (interstitialAd == null || !interstitialAd.IsAdReady()) 
+
+            if (interstitialAd == null || !interstitialAd.IsAdReady())
             {
                 Debug.LogWarning("AdvertisementManager: ShowInterstitial failed - Ad Not Ready or Null");
                 return;
             }
-            
+
             if(bannerAd != null)
             {
                 HideBannerAd();
             }
-            
+
             interstitialAd.ShowAd();
         }
 
@@ -156,12 +157,12 @@ namespace StarCloudgamesLibrary
             LoadInterstitialAd();
         }
 
-        private void InterstitialOnAdLoadedEvent(LevelPlayAdInfo adInfo) 
-        { 
+        private void InterstitialOnAdLoadedEvent(LevelPlayAdInfo adInfo)
+        {
             Debug.Log("AdvertisementManager: Interstitial Ad Loaded Successfully");
         }
-        private void InterstitialOnAdLoadFailedEvent(LevelPlayAdError error) 
-        { 
+        private void InterstitialOnAdLoadFailedEvent(LevelPlayAdError error)
+        {
             Debug.LogWarning($"AdvertisementManager: Interstitial Ad Failed to Load - {error.ErrorMessage}");
         }
         private void InterstitialOnAdDisplayedEvent(LevelPlayAdInfo adInfo) { }
@@ -232,19 +233,19 @@ namespace StarCloudgamesLibrary
 
         public bool Initialized() => initialized;
 
-        public override async Awaitable Initialize()
+        public override async UniTask Initialize()
         {
             LevelPlay.OnInitSuccess += LevelPlayInitializeCompleted;
             LevelPlay.OnInitFailed += LevelPlayInitializeFailed;
 
             LevelPlay.Init(appKey);
-            await AwaitableExtensions.WaitUntilAsync(() => initialized);
+            await UniTask.WaitUntil(() => initialized);
         }
 
         private void LevelPlayInitializeCompleted(LevelPlayConfiguration configuration)
         {
             Debug.Log("AdvertisementManager: LevelPlay SDK Initialized Successfully");
-            
+
             InitializeRewardedAd();
             InitializeInterstitialAd();
             InitializeBannerAd();

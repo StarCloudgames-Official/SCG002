@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Cysharp.Threading.Tasks;
 using UnityEngine;
 
 public static class SCGObjectPoolingManager
@@ -52,7 +53,7 @@ public static class SCGObjectPoolingManager
 
     #region Addressable 기반 비동기 풀 생성
 
-    public static async Awaitable<SCGObjectPooling<T>> CreatePoolAsync<T>(
+    public static async UniTask<SCGObjectPooling<T>> CreatePoolAsync<T>(
         string addressableKey,
         Transform parent = null,
         int defaultCapacity = 10,
@@ -66,11 +67,11 @@ public static class SCGObjectPoolingManager
             return existingPool as SCGObjectPooling<T>;
 
         var newPool = await SCGObjectPooling<T>.CreateAsync(
-            addressableKey, 
-            parent, 
-            defaultCapacity, 
-            maxSize, 
-            onGet, 
+            addressableKey,
+            parent,
+            defaultCapacity,
+            maxSize,
+            onGet,
             onRelease
         );
 
@@ -86,7 +87,7 @@ public static class SCGObjectPoolingManager
         return newPool;
     }
 
-    public static async Awaitable<SCGObjectPooling<T>> GetOrCreatePoolAsync<T>(
+    public static async UniTask<SCGObjectPooling<T>> GetOrCreatePoolAsync<T>(
         string addressableKey,
         Transform parent = null,
         int defaultCapacity = 10,
@@ -98,7 +99,7 @@ public static class SCGObjectPoolingManager
         return existingPool ?? await CreatePoolAsync(addressableKey, parent, defaultCapacity, maxSize, onGet, onRelease);
     }
 
-    public static async Awaitable<SCGObjectPooling<T>> GetOrCreatePoolAsync<T>(
+    public static async UniTask<SCGObjectPooling<T>> GetOrCreatePoolAsync<T>(
         string addressableKey,
         int preloadCount,
         Transform parent = null,
@@ -115,7 +116,7 @@ public static class SCGObjectPoolingManager
 
         if (newPool == null || preloadCount <= 0)
             return newPool;
-        
+
         var preloadList = new List<T>(preloadCount);
         for (var i = 0; i < preloadCount; i++)
         {
@@ -149,7 +150,7 @@ public static class SCGObjectPoolingManager
     public static void ReleasePool<T>() where T : Component
     {
         var type = typeof(T);
-        
+
         if (disposablePools.TryGetValue(type, out var disposable))
         {
             disposable.Dispose();

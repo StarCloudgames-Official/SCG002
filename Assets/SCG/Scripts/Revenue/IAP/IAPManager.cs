@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
+using Cysharp.Threading.Tasks;
 using Unity.Services.Core;
 using UnityEngine;
 using UnityEngine.Purchasing;
@@ -33,7 +34,7 @@ namespace StarCloudgamesLibrary
 
         #region Initialize & Lifecycle
 
-        public override async Awaitable Initialize()
+        public override async UniTask Initialize()
         {
             await EnsureInitializedAsync();
         }
@@ -42,7 +43,7 @@ namespace StarCloudgamesLibrary
         /// 어디서 호출해도 한 번만 초기화되도록 보장.
         /// Purchase에서도 이걸 호출해서 자동 초기화 진행.
         /// </summary>
-        private async Awaitable EnsureInitializedAsync()
+        private async UniTask EnsureInitializedAsync()
         {
             if (initialized)
                 return;
@@ -50,7 +51,7 @@ namespace StarCloudgamesLibrary
             // 이미 누군가 초기화 진행 중이면 그게 끝날 때까지 기다림
             if (initializing)
             {
-                await AwaitableExtensions.WaitUntilAsync(() => initialized || !initializing);
+                await UniTask.WaitUntil(() => initialized || !initializing);
                 return;
             }
 
@@ -65,7 +66,7 @@ namespace StarCloudgamesLibrary
                 {
                     allIapTables = dataTableManager.GetAllIAPDataTables();
                     if (allIapTables == null)
-                        await Awaitable.NextFrameAsync();
+                        await UniTask.NextFrame();
                 }
 
 #if UNITY_EDITOR
@@ -161,7 +162,7 @@ namespace StarCloudgamesLibrary
                 storeController.FetchProducts(productDefinitions);
 
                 // OnPurchasesFetched / OnPurchasesFetchFailed / OnProductsFetchFailed 에서 initialized=true 세팅
-                await AwaitableExtensions.WaitUntilAsync(() => initialized);
+                await UniTask.WaitUntil(() => initialized);
             }
             finally
             {
@@ -194,7 +195,7 @@ namespace StarCloudgamesLibrary
             PurchaseInternal(iapId, onComplete).Forget();
         }
 
-        private async Awaitable PurchaseInternal(int iapId, Action<bool, string> onComplete)
+        private async UniTask PurchaseInternal(int iapId, Action<bool, string> onComplete)
         {
             // 여기서 자동 초기화
             await EnsureInitializedAsync();
@@ -299,7 +300,7 @@ namespace StarCloudgamesLibrary
         #endregion
 
         #region StoreController Events
-        
+
         private void OnPurchaseConfirmed(Order order)
         {
             // 필요하면 로그만

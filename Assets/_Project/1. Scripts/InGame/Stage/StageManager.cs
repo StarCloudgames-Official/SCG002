@@ -1,4 +1,5 @@
 using System;
+using Cysharp.Threading.Tasks;
 using UnityEngine;
 
 public class StageManager
@@ -35,11 +36,11 @@ public class StageManager
     private bool isTimerRunning;
     private int lastDisplaySeconds;
 
-    public async Awaitable Initialize(StageDataTable stageData)
+    public async UniTask Initialize(StageDataTable stageData)
     {
         CurrentStageIndex = 0;
         CurrentStageData = stageData;
-        
+
         MonsterSpawner = new MonsterSpawner();
         await MonsterSpawner.Initialize();
     }
@@ -47,42 +48,42 @@ public class StageManager
     public void IncreaseKillCount()
     {
         CurrentKillCount++;
-        
+
         var monsterCount = CurrentStageData.monsterCount[CurrentStageIndex];
-        
+
         if (CurrentKillCount >= monsterCount)
         {
             StageClear().Forget();
         }
     }
 
-    private async Awaitable StartStarter()
+    private async UniTask StartStarter()
     {
         var isBossStage = CurrentStageData.IsBossStage(CurrentStageIndex);
-        
+
         var starterParam = new StageStarterParam();
         IStageStarter starter = null;
-        
+
         if (isBossStage)
         {
             starterParam.BossName = CurrentStageData.MonsterDataTables[CurrentStageIndex].monsterName;
-            
+
             starter = await UIManager.OpenUI<UIBossWarningPanel>(starterParam);
         }
         else
         {
             starterParam.StageNumber = CurrentStageIndex;
             starterParam.MaxStage = CurrentStageData.stageCount;
-            
+
             starter = await UIManager.OpenUI<UIStageStarter>(starterParam);
         }
-        
+
         starter.StartStarter();
 
         await ((IUI)starter).WaitUntilClose();
     }
 
-    public async Awaitable StartStage()
+    public async UniTask StartStage()
     {
         CurrentKillCount = 0;
 
@@ -98,7 +99,7 @@ public class StageManager
         StartTimer().Forget();
     }
 
-    private async Awaitable StartTimer()
+    private async UniTask StartTimer()
     {
         isTimerRunning = true;
 
@@ -115,7 +116,7 @@ public class StageManager
                 lastDisplaySeconds = currentDisplaySeconds;
             }
 
-            await Awaitable.NextFrameAsync();
+            await UniTask.NextFrame();
             remainingSeconds -= Time.deltaTime;
         }
 
@@ -125,7 +126,7 @@ public class StageManager
             OnTimerChanged?.Invoke(0);
             lastDisplaySeconds = 0;
         }
-        
+
         if (isTimerRunning)
             StageFailed();
     }
@@ -141,7 +142,7 @@ public class StageManager
         //TODO : Show Stage Failed Popup
     }
 
-    private async Awaitable<bool> StageClear()
+    private async UniTask<bool> StageClear()
     {
         StopTimer();
 
@@ -155,7 +156,7 @@ public class StageManager
         else
         {
             //TODO await selection popup open and closed
-            await Awaitable.WaitForSecondsAsync(2.0f);
+            await UniTask.Delay(2000);
             StartStage().Forget();
         }
 

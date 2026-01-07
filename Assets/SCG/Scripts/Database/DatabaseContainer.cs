@@ -1,5 +1,6 @@
 using System;
 using System.Threading.Tasks;
+using Cysharp.Threading.Tasks;
 using GUPS.AntiCheat.Protected.Storage.Prefs;
 using MemoryPack;
 using UnityEngine;
@@ -12,7 +13,7 @@ public abstract class DatabaseContainer<T> : DatabaseContainerBase where T : new
     {
     }
 
-    public override async Awaitable LoadLocalData()
+    public override async UniTask LoadLocalData()
     {
         if (!ProtectedPlayerPrefs.HasKey(PreferenceKey))
         {
@@ -29,7 +30,7 @@ public abstract class DatabaseContainer<T> : DatabaseContainerBase where T : new
     public override void SaveToLocal()
     {
         SetDirty(false);
-        
+
         var serializedData = MemoryPackSerializer.Serialize(Data);
         var base64String = Convert.ToBase64String(serializedData);
         ProtectedPlayerPrefs.SetString(PreferenceKey, base64String);

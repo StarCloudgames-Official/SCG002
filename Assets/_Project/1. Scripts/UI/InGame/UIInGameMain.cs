@@ -1,5 +1,6 @@
 using System;
 using Cysharp.Text;
+using Cysharp.Threading.Tasks;
 using DG.Tweening;
 using TMPro;
 using UnityEngine;
@@ -43,7 +44,7 @@ public class UIInGameMain : UIPanel
         }
     }
 
-    public override async Awaitable PreOpen(object param)
+    public override async UniTask PreOpen(object param)
     {
         inGameContext = param as InGameContext;
 
@@ -51,10 +52,10 @@ public class UIInGameMain : UIPanel
 
         InitializeAndRegisterEvents();
 
-        await Awaitable.NextFrameAsync();
+        await UniTask.NextFrame();
     }
 
-    public override async Awaitable Close(object param = null)
+    public override UniTask Close(object param = null)
     {
         if (inGameContext?.StageManager != null)
         {
@@ -64,6 +65,7 @@ public class UIInGameMain : UIPanel
         StopTimerWarning();
 
         base.Close().Forget();
+        return UniTask.CompletedTask;
     }
 
     private void InitializeAndRegisterEvents()
@@ -175,7 +177,7 @@ public class UIInGameMain : UIPanel
         SetEnhancePopup().Forget();
     }
 
-    private async Awaitable SetEnhancePopup()
+    private async UniTask SetEnhancePopup()
     {
         await classEnhancePopup.Set();
         classEnhancePopup.gameObject.SetActive(true);
@@ -186,7 +188,7 @@ public class UIInGameMain : UIPanel
         SetSellPopup().Forget();
     }
 
-    private async Awaitable SetSellPopup()
+    private async UniTask SetSellPopup()
     {
         await characterSellPopup.Set();
         characterSellPopup.gameObject.SetActive(true);
@@ -197,7 +199,7 @@ public class UIInGameMain : UIPanel
         SetLuckyPopup().Forget();
     }
 
-    private async Awaitable SetLuckyPopup()
+    private async UniTask SetLuckyPopup()
     {
         await luckyPopup.Set();
         luckyPopup.gameObject.SetActive(true);

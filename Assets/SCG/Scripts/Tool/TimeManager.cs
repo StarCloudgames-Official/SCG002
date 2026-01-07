@@ -1,5 +1,6 @@
 using System;
 using System.Globalization;
+using Cysharp.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.Networking;
 
@@ -9,23 +10,22 @@ public static class TimeManager
 
     private static DateTime? serverTime;
     private static float lastSyncRealtimeSinceStartup;
-    
+
     private static bool initialized;
-    private static bool isSynced;
-    
+
     public static DateTime UtcNow => GetCurrentUtcTime();
     public static DateTime TodayMidnightUtc => UtcNow.Date;
     public static DateTime TomorrowMidnightUtc => UtcNow.Date.AddDays(1);
     
     #region Initialize
 
-    public static async Awaitable Initialize()
+    public static async UniTask Initialize()
     {
         if (initialized) return;
         initialized = true;
-        
+
         await Sync();
-        
+
         ApplicationManager.Instance.AddPauseListener(OnApplicationPause);
     }
 
@@ -33,32 +33,31 @@ public static class TimeManager
 
     #region Sync
 
-    public static async Awaitable<bool> Sync()
+    public static async UniTask<bool> Sync()
     {
         var time = await FetchTimeFromGoogle();
-        
+
         if (time.HasValue)
         {
             serverTime = time.Value;
             lastSyncRealtimeSinceStartup = Time.realtimeSinceStartup;
-            isSynced = true;
             Debug.Log($"[TimeManager] Synced: {serverTime.Value:yyyy-MM-dd HH:mm:ss} UTC");
             return true;
         }
-        
+
         Debug.LogWarning("[TimeManager] Failed to sync server time");
         return false;
     }
 
-    private static async Awaitable<DateTime?> FetchTimeFromGoogle()
+    private static async UniTask<DateTime?> FetchTimeFromGoogle()
     {
         try
         {
             using var request = UnityWebRequest.Head(GoogleUrl);
             request.timeout = 10;
-            
+
             await request.SendWebRequest();
-            
+
             if (request.result == UnityWebRequest.Result.Success)
             {
                 var dateHeader = request.GetResponseHeader("Date");
@@ -68,7 +67,7 @@ public static class TimeManager
                     {
                         return parsed.ToUniversalTime();
                     }
-                    
+
                     if (DateTime.TryParse(dateHeader, CultureInfo.InvariantCulture, DateTimeStyles.AssumeUniversal, out var parsed2))
                     {
                         return parsed2.ToUniversalTime();
@@ -84,7 +83,7 @@ public static class TimeManager
         {
             Debug.LogWarning($"[TimeManager] Exception: {e.Message}");
         }
-        
+
         return null;
     }
 
@@ -98,7 +97,7 @@ public static class TimeManager
         {
             return DateTime.UtcNow;
         }
-        
+
         var elapsed = Time.realtimeSinceStartup - lastSyncRealtimeSinceStartup;
         return serverTime.Value.AddSeconds(elapsed);
     }

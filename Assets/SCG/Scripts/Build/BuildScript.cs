@@ -1,5 +1,8 @@
 #if UNITY_EDITOR
 
+// Deprecated API 경고 무시 (BuildTargetGroup 관련)
+#pragma warning disable CS0618
+
 using System;
 using System.IO;
 using System.Linq;

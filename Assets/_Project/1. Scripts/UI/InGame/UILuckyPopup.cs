@@ -1,10 +1,11 @@
+using Cysharp.Threading.Tasks;
 using UnityEngine;
 
 public class UILuckyPopup : MonoBehaviour
 {
     [SerializeField] private UILuckyItem[] luckyItems;
 
-    public async Awaitable Set()
+    public async UniTask Set()
     {
         var allData = DataTableManager.Instance.GetAllLuckyDataTables();
         for (var i = 0; i < allData.Count; i++)
@@ -17,6 +18,6 @@ public class UILuckyPopup : MonoBehaviour
             luckyItems[i].Set(allData[i]);
         }
 
-        await Awaitable.NextFrameAsync();
+        await UniTask.NextFrame();
     }
 }

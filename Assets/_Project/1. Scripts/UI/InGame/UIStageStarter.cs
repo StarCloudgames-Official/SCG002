@@ -1,4 +1,5 @@
 using System.Collections;
+using Cysharp.Threading.Tasks;
 using DG.Tweening;
 using TMPro;
 using UnityEngine;
@@ -7,17 +8,18 @@ public class UIStageStarter : UIPanel, IStageStarter
 {
     [SerializeField] private RectTransform stagePanel;
     [SerializeField] private TMP_Text stageText;
-    
+
     private const float EnterDuration = 0.5f;
     private const float WaitDuration = 1f;
     private const float ExitDuration = 0.5f;
 
     private Sequence sequence;
 
-    public override async Awaitable PreOpen(object param)
+    public override UniTask PreOpen(object param)
     {
         var stageParam = param as StageStarterParam;
         stageText.text = $"STAGE {stageParam.StageNumber + 1} / {stageParam.MaxStage}";
+        return UniTask.CompletedTask;
     }
 
     public void StartStarter()
@@ -26,10 +28,10 @@ public class UIStageStarter : UIPanel, IStageStarter
         var halfPanel = stagePanel.rect.width * 0.5f;
         var leftX = -(halfScreen + halfPanel);
         var rightX = halfScreen + halfPanel;
-        
+
         stagePanel.gameObject.SetActive(true);
         stagePanel.anchoredPosition = new Vector2(leftX, stagePanel.anchoredPosition.y);
-        
+
         sequence?.Kill();
         sequence = DOTween.Sequence()
             .Append(stagePanel.DOAnchorPosX(0, EnterDuration).SetEase(Ease.OutQuad))

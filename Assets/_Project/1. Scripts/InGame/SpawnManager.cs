@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Cysharp.Threading.Tasks;
 using StarCloudgamesLibrary;
 using UnityEngine;
 using UnityEngine.Pool;
@@ -11,19 +12,19 @@ public class SpawnManager
     private Dictionary<ClassType, Dictionary<SpawnType, int>> spawnedClassesCount;
     private Dictionary<SpawnType, float> inGameSpawnChances;
     private List<ClassType> classTypes;
-    
+
     private InGameContext inGameContext;
     private SCGObjectPooling<CharacterBehaviour> characterBehaviourPool;
-    
+
     private int spawnCrystalPrice;
 
     #region Initialize
 
-    public async Awaitable Initialize()
+    public async UniTask Initialize()
     {
         inGameContext = InGameManager.Instance.InGameContext;
         spawnCrystalPrice = ConstantDataGetter.SpawnCrystalPrice;
-        
+
         InitializeSpawnChances();
 
         characterBehaviourPool = await SCGObjectPoolingManager.GetOrCreatePoolAsync<CharacterBehaviour>(AddressableExtensions.CharacterPath, 30, InGameManager.Instance.CachedTransform);
@@ -32,21 +33,21 @@ public class SpawnManager
     private void InitializeSpawnChances()
     {
         spawnedClassesCount = new Dictionary<ClassType, Dictionary<SpawnType, int>>();
-        
+
         var dataTableList = DataTableManager.Instance.GetAllSpawnChanceTables();
-        
+
         inGameSpawnChances = new Dictionary<SpawnType, float>();
         foreach (var dataTable in dataTableList)
         {
             inGameSpawnChances[dataTable.spawnType] = dataTable.drawChance;
         }
-        
+
         classTypes = new List<ClassType>();
         foreach (ClassType classEnum in Enum.GetValues(typeof(ClassType)))
         {
             if(classEnum == ClassType.None)
                 continue;
-            
+
             classTypes.Add(classEnum);
         }
     }
@@ -65,7 +66,7 @@ public class SpawnManager
             cumulativeChance += dataTable.Value;
             if (!(chance <= cumulativeChance))
                 continue;
-            
+
             return dataTable.Key;
         }
 
@@ -85,7 +86,7 @@ public class SpawnManager
     {
         return inGameContext.CharacterGridManager.GetRandomEmptyGrid() != null;
     }
-    
+
     public void TrySpawnCharacterByCrystal()
     {
         if(!inGameContext.CanUseInGameCrystal(spawnCrystalPrice))
@@ -128,7 +129,7 @@ public class SpawnManager
         {
             result += classPair.Value;
         }
-        
+
         return result;
     }
 
@@ -136,7 +137,7 @@ public class SpawnManager
     {
         if (!spawnedClassesCount.TryGetValue(classType, out var bySpawnType))
             return 0;
-        
+
         return bySpawnType.GetValueOrDefault(spawnType, 0);
     }
 

@@ -1,4 +1,5 @@
 using System;
+using Cysharp.Threading.Tasks;
 using Firebase.RemoteConfig;
 using UnityEngine;
 
@@ -10,15 +11,22 @@ public static class VersionChecker
 
     public static bool IsUpdateRequired { get; private set; }
 
-    public static async Awaitable<bool> CheckVersion()
+    public static UniTask<bool> CheckVersion()
     {
-        if (initialized) return !IsUpdateRequired;
+        if (initialized) return UniTask.FromResult(!IsUpdateRequired);
 
 #if UNITY_EDITOR
         Debug.Log("[VersionChecker] Skipped in Editor");
         initialized = true;
-        return true;
+        return UniTask.FromResult(true);
 #else
+        return CheckVersionInternal();
+#endif
+    }
+
+#if !UNITY_EDITOR
+    private static async UniTask<bool> CheckVersionInternal()
+    {
         try
         {
             var remoteConfig = FirebaseRemoteConfig.DefaultInstance;
@@ -33,7 +41,7 @@ public static class VersionChecker
 
             var remoteVersion = remoteConfig.GetValue(KeyAppVersion).StringValue;
             var currentVersion = Application.version;
-            
+
             IsUpdateRequired = remoteVersion != currentVersion;
 
             initialized = true;
@@ -47,8 +55,8 @@ public static class VersionChecker
             Debug.LogError($"[VersionChecker] Failed: {e.Message}");
             return true;
         }
-#endif
     }
+#endif
 
     public static void OpenStore()
     {
@@ -62,7 +70,7 @@ public static class VersionChecker
     public static void HandleUpdateRequired()
     {
         if (!IsUpdateRequired) return;
-        
+
         Debug.Log("[VersionChecker] Update required, opening store...");
         OpenStore();
     }

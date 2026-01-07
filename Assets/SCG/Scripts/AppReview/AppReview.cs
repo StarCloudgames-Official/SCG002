@@ -1,3 +1,4 @@
+using Cysharp.Threading.Tasks;
 using UnityEngine;
 #if UNITY_ANDROID
 using Google.Play.Review;
@@ -28,7 +29,7 @@ public static class AppReview
     }
     #endregion
 
-    public static async Awaitable Open()
+    public static async UniTask Open()
     {
         if (!IsAlreadyReview)
         {
@@ -45,14 +46,14 @@ public static class AppReview
         }
     }
 
-    private static async Awaitable RequestGooglePlayStoreReview()
+    private static async UniTask RequestGooglePlayStoreReview()
     {
 #if UNITY_ANDROID
         ReviewManager reviewManager = new ReviewManager();
         var requestFlowOperation = reviewManager.RequestReviewFlow();
         while (!requestFlowOperation.IsDone)
         {
-            await Awaitable.NextFrameAsync();
+            await UniTask.NextFrame();
         }
 
         if (requestFlowOperation.Error != ReviewErrorCode.NoError)
@@ -65,7 +66,7 @@ public static class AppReview
         var launchFlowOperation = reviewManager.LaunchReviewFlow(playReviewInfo);
         while (!launchFlowOperation.IsDone)
         {
-            await Awaitable.NextFrameAsync();
+            await UniTask.NextFrame();
         }
 
         playReviewInfo = null;

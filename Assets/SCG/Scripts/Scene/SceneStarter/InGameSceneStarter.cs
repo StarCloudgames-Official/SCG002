@@ -1,8 +1,9 @@
-﻿using UnityEngine;
+using Cysharp.Threading.Tasks;
+using UnityEngine;
 
 public class InGameSceneStarter : SceneStarter
 {
-    public override async Awaitable StartScene()
+    public override async UniTask StartScene()
     {
         Debug.Log("Starting InGameSceneStarter");
 

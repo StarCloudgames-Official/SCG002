@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Cysharp.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.Pool;
@@ -15,18 +16,18 @@ public class SCGObjectPooling<T> : IDisposable where T : Component
 
     private AsyncOperationHandle<GameObject>? addressableHandle;
     private readonly HashSet<T> activeObjects = new HashSet<T>();
-    
+
     public int CountActive => pool.CountActive;
     public int CountInactive => pool.CountInactive;
     public int CountAll => pool.CountAll;
 
     public SCGObjectPooling(
-        T prefab, 
-        Transform parent = null, 
-        int defaultCapacity = 10, 
-        int maxSize = 100, 
-        Action<T> onGet = null, 
-        Action<T> onRelease = null, 
+        T prefab,
+        Transform parent = null,
+        int defaultCapacity = 10,
+        int maxSize = 100,
+        Action<T> onGet = null,
+        Action<T> onRelease = null,
         bool collectionCheck = true)
     {
         this.prefab = prefab;
@@ -50,7 +51,7 @@ public class SCGObjectPooling<T> : IDisposable where T : Component
         addressableHandle = handle;
     }
 
-    public static async Awaitable<SCGObjectPooling<T>> CreateAsync(
+    public static async UniTask<SCGObjectPooling<T>> CreateAsync(
         string addressableKey,
         Transform parent = null,
         int defaultCapacity = 10,
@@ -84,9 +85,9 @@ public class SCGObjectPooling<T> : IDisposable where T : Component
             onRelease,
             collectionCheck
         );
-        
+
         newPool.SetAddressableHandle(handle);
-        
+
         return newPool;
     }
 

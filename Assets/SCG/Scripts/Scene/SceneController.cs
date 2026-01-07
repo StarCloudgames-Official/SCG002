@@ -1,4 +1,5 @@
 using System;
+using Cysharp.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
@@ -13,7 +14,7 @@ public static class SceneController
         Lobby,
         InGame
     }
-    
+
     private static bool IsChangingScene = false;
     private static AsyncOperationHandle<SceneInstance>? currentSceneHandle;
 
@@ -24,7 +25,7 @@ public static class SceneController
         return true;
     }
 
-    public static async Awaitable ChangeScene(Scene scene, bool isDirect = false)
+    public static async UniTask ChangeScene(Scene scene, bool isDirect = false)
     {
         if (!CanChangeScene()) return;
 
@@ -75,18 +76,18 @@ public static class SceneController
         SCGObjectPoolingManager.ReleaseAllPools();
 
         StartSceneStarter(scene);
-        
+
         IsChangingScene = false;
     }
 
-    private static async Awaitable UnloadPreviousScene(AsyncOperationHandle<SceneInstance>? previousHandle, string previousSceneName)
+    private static async UniTask UnloadPreviousScene(AsyncOperationHandle<SceneInstance>? previousHandle, string previousSceneName)
     {
         if (previousHandle.HasValue && previousHandle.Value.IsValid())
         {
             var unloadHandle = Addressables.UnloadSceneAsync(previousHandle.Value);
             while (!unloadHandle.IsDone)
             {
-                await Awaitable.NextFrameAsync();
+                await UniTask.NextFrame();
             }
         }
         else if (!string.IsNullOrEmpty(previousSceneName))
@@ -96,13 +97,13 @@ public static class SceneController
             {
                 while (!unload.isDone)
                 {
-                    await Awaitable.NextFrameAsync();
+                    await UniTask.NextFrame();
                 }
             }
         }
     }
 
-    private static async Awaitable UnloadTemporaryScene(UnityEngine.SceneManagement.Scene temporaryScene)
+    private static async UniTask UnloadTemporaryScene(UnityEngine.SceneManagement.Scene temporaryScene)
     {
         if (!temporaryScene.IsValid() || !temporaryScene.isLoaded) return;
 
@@ -111,7 +112,7 @@ public static class SceneController
 
         while (!unload.isDone)
         {
-            await Awaitable.NextFrameAsync();
+            await UniTask.NextFrame();
         }
     }
 
@@ -123,7 +124,7 @@ public static class SceneController
             Debug.LogError($"Can't find scene starter type");
             return;
         }
-        
+
         var starter = Activator.CreateInstance(starterType) as SceneStarter;
         starter?.StartScene().Forget();
     }

@@ -1,9 +1,10 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
+using Cysharp.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.Pool;
-using StarCloudgamesLibrary; // 네 Singleton<T> 정의된 네임스페이스
+using StarCloudgamesLibrary;
 
 public class SoundManager : Singleton<SoundManager>
 {
@@ -28,7 +29,7 @@ public class SoundManager : Singleton<SoundManager>
 
     #region Initialize
 
-    public override async Awaitable Initialize()
+    public override async UniTask Initialize()
     {
         var handle = Addressables.LoadAssetAsync<SoundBox>(DefaultSoundBoxKey);
         var box = await handle.Task;

@@ -1,5 +1,5 @@
-using System.Collections;
 using Cysharp.Text;
+using Cysharp.Threading.Tasks;
 using UnityEngine;
 
 [RequireComponent(typeof(MonsterMovement))]
@@ -12,18 +12,18 @@ public class MonsterBehaviour : CachedMonoBehaviour
     private MonsterDataTable currentData;
     private MonsterMovement monsterMovement;
     private MonsterHealth monsterHealth;
-    
+
     private InGameContext inGameContext;
-    
+
     private static readonly int death = Animator.StringToHash("Death");
     public bool IsDead => monsterHealth.IsDead();
 
-    public async Awaitable Initialize(MonsterDataTable monsterData)
+    public async UniTask Initialize(MonsterDataTable monsterData)
     {
         currentData = monsterData;
-        
+
         animator.runtimeAnimatorController = await GetAnimatorController();
-        
+
         InitializeComponents();
 
         monsterMovement.StartMovement();
@@ -34,17 +34,17 @@ public class MonsterBehaviour : CachedMonoBehaviour
         inGameContext ??= InGameManager.Instance.InGameContext;
         monsterMovement ??= GetComponent<MonsterMovement>();
         monsterHealth ??= GetComponent<MonsterHealth>();
-        
+
         monsterMovement.Initialize(currentData, animator, spriteRenderer);
         monsterHealth.Initialize(currentData);
     }
 
-    private async Awaitable<RuntimeAnimatorController> GetAnimatorController()
+    private async UniTask<RuntimeAnimatorController> GetAnimatorController()
     {
         var path = ZString.Format(AddressableExtensions.MonsterAnimatorPath, currentData.monsterName);
         return await AddressableExtensions.GetAnimator(path);
     }
-    
+
     public void GetDamage(float damage)
     {
         var isDead = monsterHealth.GetDamage(damage);
@@ -55,7 +55,7 @@ public class MonsterBehaviour : CachedMonoBehaviour
         }
     }
 
-    private async Awaitable Dead()
+    private async UniTask Dead()
     {
         inGameContext.StageManager.IncreaseKillCount();
         inGameContext.InGameCrystal += currentData.dropCrystal;
@@ -69,8 +69,8 @@ public class MonsterBehaviour : CachedMonoBehaviour
         monsterMovement.StopMovement();
         animator.SetTrigger(death);
         await animator.WaitCurrentStateCompleteAsync();
-        await Awaitable.WaitForSecondsAsync(0.1f);
-            
-        SCGObjectPoolingManager.Release(this); 
+        await UniTask.Delay(100);
+
+        SCGObjectPoolingManager.Release(this);
     }
 }

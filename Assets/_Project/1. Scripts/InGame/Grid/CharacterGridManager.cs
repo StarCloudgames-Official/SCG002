@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-using NUnit.Framework;
+using Cysharp.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.Pool;
@@ -15,10 +15,10 @@ public class CharacterGridManager : CachedMonoBehaviour
     private float gridHeight;
     private float offsetX;
     private float offsetY;
-    
+
     public int TotalGridCount => spawnedCharacterGrids.Count;
 
-    public async Awaitable CreateGrid(int x, int y)
+    public async UniTask CreateGrid(int x, int y)
     {
         gridCountX = x;
         gridCountY = y;
@@ -73,26 +73,26 @@ public class CharacterGridManager : CachedMonoBehaviour
             if(characterBehaviour.IsEmpty)
                 return characterBehaviour;
         }
-        
+
         return null;
     }
 
     public CharacterGrid GetRandomEmptyGrid()
     {
         var emptyGrids = ListPool<CharacterGrid>.Get();
-        
+
         foreach (var grid in spawnedCharacterGrids)
         {
             if (grid.IsEmpty)
                 emptyGrids.Add(grid);
         }
-        
+
         if (emptyGrids.Count == 0)
         {
             ListPool<CharacterGrid>.Release(emptyGrids);
             return null;
         }
-        
+
         var result = emptyGrids[Random.Range(0, emptyGrids.Count)];
         ListPool<CharacterGrid>.Release(emptyGrids);
         return result;

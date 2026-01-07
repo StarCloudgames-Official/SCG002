@@ -1,3 +1,4 @@
+using Cysharp.Threading.Tasks;
 using UnityEngine;
 
 #if UNITY_ANDROID
@@ -16,7 +17,7 @@ public static class PushAlert
     private static bool initialized = false;
     public static bool IsInitialized => initialized;
 
-    public static async Awaitable Initialize()
+    public static async UniTask Initialize()
     {
         if (initialized) return;
 
@@ -25,13 +26,13 @@ public static class PushAlert
         if (!Permission.HasUserAuthorizedPermission("android.permission.POST_NOTIFICATIONS"))
         {
             Permission.RequestUserPermission("android.permission.POST_NOTIFICATIONS");
-            
+
             // Wait for permission dialog to be dismissed
-            await Awaitable.WaitForSecondsAsync(0.5f);
-            while (!Permission.HasUserAuthorizedPermission("android.permission.POST_NOTIFICATIONS") 
+            await UniTask.Delay(500);
+            while (!Permission.HasUserAuthorizedPermission("android.permission.POST_NOTIFICATIONS")
                    && IsPermissionDialogOpen())
             {
-                await Awaitable.NextFrameAsync();
+                await UniTask.NextFrame();
             }
         }
 
@@ -48,10 +49,10 @@ public static class PushAlert
         // iOS requires authorization request
         var authorizationOption = AuthorizationOption.Alert | AuthorizationOption.Sound | AuthorizationOption.Badge;
         using var req = new AuthorizationRequest(authorizationOption, true);
-        
+
         while (!req.IsFinished)
         {
-            await Awaitable.NextFrameAsync();
+            await UniTask.NextFrame();
         }
 
         iOSNotificationCenter.RemoveAllDeliveredNotifications();

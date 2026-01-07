@@ -1,17 +1,17 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
+using Cysharp.Threading.Tasks;
 using Firebase;
 using Firebase.Analytics;
 using Firebase.Crashlytics;
-using Firebase.Extensions;
 using UnityEngine;
 
 public static class AppEvent
 {
     private static bool initialized;
-    
+
     #region Initialize
 
-    public static async Awaitable Initialize()
+    public static async UniTask Initialize()
     {
         if (initialized)
             return;
@@ -39,9 +39,9 @@ public static class AppEvent
             Debug.LogError($"[AppEvent] Firebase dependency error: {dependencyTask.Result}");
         }
     }
-    
+
     #endregion
-    
+
     #region Log
 
     public static void LogEvent(string eventName)
@@ -88,9 +88,9 @@ public static class AppEvent
         Debug.Log($"[Analytics] {eventName} | {parameters.Count} params");
 #endif
     }
-    
+
     #endregion
-    
+
     #region Crashlytics
 
     public static void SetUser(string userId)
@@ -116,6 +116,6 @@ public static class AppEvent
         Debug.LogWarning("[Crash Test] Editor에서는 크래시 안 됨");
 #endif
     }
-    
+
     #endregion
 }

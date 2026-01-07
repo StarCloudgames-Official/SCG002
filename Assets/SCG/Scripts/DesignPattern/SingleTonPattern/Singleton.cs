@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+using Cysharp.Threading.Tasks;
 using UnityEngine;
 
 namespace StarCloudgamesLibrary
@@ -20,7 +19,7 @@ namespace StarCloudgamesLibrary
 			if(dontDestroy) DontDestroyOnLoad(newSingleton);
 			return newComponent;
 		}
-		
+
 		protected virtual void Awake()
 		{
 			if (Instance != null && Instance != this)
@@ -32,6 +31,6 @@ namespace StarCloudgamesLibrary
 			Instance = this as T;
 		}
 
-		public virtual Awaitable Initialize() => null;
+		public virtual UniTask Initialize() => UniTask.CompletedTask;
 	}
 }
