@@ -22,7 +22,10 @@ public class BuildConfigAOS : ScriptableObject
     public bool useAppBundle = true;
     
     [Header("Define Symbols")]
-    public string[] scriptingDefineSymbols;
+    [Tooltip("프로젝트 세팅에 추가할 심볼")]
+    public string[] addDefineSymbols;
+    [Tooltip("프로젝트 세팅에서 제거할 심볼")]
+    public string[] removeDefineSymbols;
 
     [Header("Output")]
     public string outputDirectory = "Builds/AOS";

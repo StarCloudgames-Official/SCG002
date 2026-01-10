@@ -829,7 +829,7 @@ PlayerSettings:
   webGLCloseOnQuit: 0
   webWasm2023: 0
   scriptingDefineSymbols:
-    Android: LEVELPLAY_DEPENDENCIES_INSTALLED;DOTWEEN
+    Android: LEVELPLAY_DEPENDENCIES_INSTALLED;DOTWEEN;ENABLE_LOG
     EmbeddedLinux: DOTWEEN
     GameCoreScarlett: DOTWEEN
     GameCoreXboxOne: DOTWEEN

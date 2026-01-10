@@ -4,6 +4,7 @@
 #pragma warning disable CS0618
 
 using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using UnityEditor;
@@ -142,16 +143,16 @@ public static class BuildScript
         EditorUserBuildSettings.buildAppBundle = config.useAppBundle;
 
         // Define Symbols
-        if (config.scriptingDefineSymbols != null && config.scriptingDefineSymbols.Length > 0)
-        {
-            var defines = string.Join(";", config.scriptingDefineSymbols);
-            PlayerSettings.SetScriptingDefineSymbolsForGroup(BuildTargetGroup.Android, defines);
-        }
+        var defines = ApplyDefineSymbols(
+            BuildTargetGroup.Android,
+            config.addDefineSymbols,
+            config.removeDefineSymbols);
 
         Debug.Log($"BuildScript: PlayerSettings(AOS) 적용 완료. " +
                   $"Id={PlayerSettings.GetApplicationIdentifier(BuildTargetGroup.Android)}, " +
                   $"Ver={PlayerSettings.bundleVersion} ({PlayerSettings.Android.bundleVersionCode}), " +
-                  $"AAB={EditorUserBuildSettings.buildAppBundle}");
+                  $"AAB={EditorUserBuildSettings.buildAppBundle}, " +
+                  $"Defines={defines}");
     }
 
     // ===========================
@@ -303,17 +304,17 @@ public static class BuildScript
         }
 
         // Define Symbols
-        if (config.scriptingDefineSymbols != null && config.scriptingDefineSymbols.Length > 0)
-        {
-            var defines = string.Join(";", config.scriptingDefineSymbols);
-            PlayerSettings.SetScriptingDefineSymbolsForGroup(BuildTargetGroup.iOS, defines);
-        }
+        var defines = ApplyDefineSymbols(
+            BuildTargetGroup.iOS,
+            config.addDefineSymbols,
+            config.removeDefineSymbols);
 
         Debug.Log($"BuildScript: PlayerSettings(iOS) 적용 완료. " +
                   $"Id={PlayerSettings.GetApplicationIdentifier(BuildTargetGroup.iOS)}, " +
                   $"Ver={PlayerSettings.bundleVersion} ({PlayerSettings.iOS.buildNumber}), " +
                   $"Target iOS={PlayerSettings.iOS.targetOSVersionString}, " +
-                  $"TeamID={PlayerSettings.iOS.appleDeveloperTeamID}, AutoSign={PlayerSettings.iOS.appleEnableAutomaticSigning}");
+                  $"TeamID={PlayerSettings.iOS.appleDeveloperTeamID}, AutoSign={PlayerSettings.iOS.appleEnableAutomaticSigning}, " +
+                  $"Defines={defines}");
     }
 
     // ===========================
@@ -330,6 +331,38 @@ public static class BuildScript
     {
         if (Application.isBatchMode)
             EditorApplication.Exit(0);
+    }
+
+    private static string ApplyDefineSymbols(BuildTargetGroup targetGroup, string[] addSymbols, string[] removeSymbols)
+    {
+        // 기존 프로젝트 세팅에서 심볼 가져오기
+        var existing = PlayerSettings.GetScriptingDefineSymbolsForGroup(targetGroup);
+        var symbols = new HashSet<string>(
+            existing.Split(new[] { ';' }, System.StringSplitOptions.RemoveEmptyEntries));
+
+        // 추가
+        if (addSymbols != null)
+        {
+            foreach (var s in addSymbols)
+            {
+                if (!string.IsNullOrEmpty(s))
+                    symbols.Add(s);
+            }
+        }
+
+        // 제거
+        if (removeSymbols != null)
+        {
+            foreach (var s in removeSymbols)
+            {
+                if (!string.IsNullOrEmpty(s))
+                    symbols.Remove(s);
+            }
+        }
+
+        var result = string.Join(";", symbols);
+        PlayerSettings.SetScriptingDefineSymbolsForGroup(targetGroup, result);
+        return result;
     }
 }
 

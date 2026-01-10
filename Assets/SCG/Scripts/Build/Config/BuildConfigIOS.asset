@@ -20,5 +20,7 @@ MonoBehaviour:
   buildNumber: 22
   autoBuildNumberUp: 1
   targetIOSVersion: 14.0
-  scriptingDefineSymbols: []
+  addDefineSymbols: []
+  removeDefineSymbols:
+  - ENABLE_LOG
   outputDirectory: Builds/IOS

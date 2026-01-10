@@ -21,5 +21,7 @@ MonoBehaviour:
   versionCode: 28
   autoVersionCodeUp: 1
   useAppBundle: 1
-  scriptingDefineSymbols: []
+  addDefineSymbols: []
+  removeDefineSymbols:
+  - ENABLE_LOG
   outputDirectory: Builds/AOS
