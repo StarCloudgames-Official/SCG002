@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1033293572302384582}
   - component: {fileID: 1033293572302384583}
   m_Layer: 0
-  m_Name: StageText
+  m_Name: WaveText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -371,7 +371,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1033293574183984677}
   m_Layer: 0
-  m_Name: StagePanel
+  m_Name: WavePanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -489,7 +489,7 @@ GameObject:
   - component: {fileID: 4557656714022518763}
   - component: {fileID: 6777682417479156632}
   m_Layer: 0
-  m_Name: UIStageStarter
+  m_Name: UIWaveStarter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -567,11 +567,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 752391311ff0f49ccb96589706038bc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stagePanel: {fileID: 1033293574183984677}
-  stageText: {fileID: 1033293572302384583}
-  enterDuration: 1
-  waitDuration: 1
-  exitDuration: 1
+  wavePanel: {fileID: 1033293574183984677}
+  waveText: {fileID: 1033293572302384583}
 --- !u!1 &7066871523465175084
 GameObject:
   m_ObjectHideFlags: 0

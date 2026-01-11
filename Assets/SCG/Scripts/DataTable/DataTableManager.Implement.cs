@@ -69,12 +69,12 @@ public partial class DataTableManager
         return null;
     }
 
-    public StageDataTable GetStageDataTable(int stage, int floor)
+    public StageDataTable GetStageDataTable(int stage, DataTableEnum.Difficulty difficulty)
     {
         var allData = GetTable<StageDataTable>();
         foreach (var data in allData)
         {
-            if(data.stage == stage && data.floor == floor)
+            if(data.stage == stage && data.difficulty == difficulty)
                 return data;
         }
         return null;

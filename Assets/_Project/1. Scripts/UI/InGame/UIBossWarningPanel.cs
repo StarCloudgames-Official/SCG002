@@ -5,7 +5,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UIBossWarningPanel : UIPanel, IStageStarter
+public class UIBossWarningPanel : UIPanel, IWaveStarter
 {
     [SerializeField] private Image glowImage;
     [SerializeField] private RectTransform warningText;
@@ -24,7 +24,7 @@ public class UIBossWarningPanel : UIPanel, IStageStarter
 
     public override UniTask PreOpen(object param)
     {
-        var stageParam = param as StageStarterParam;
+        var stageParam = param as WaveStarterParam;
         bossNameText.text = stageParam.BossName;
         
         return UniTask.CompletedTask;

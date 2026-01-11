@@ -1,5 +1,5 @@
 public class InGameEnterInfo
 {
     public int Stage { get; set; }
-    public int Floor { get; set; }
+    public DataTableEnum.Difficulty Difficulty { get; set; }
 }

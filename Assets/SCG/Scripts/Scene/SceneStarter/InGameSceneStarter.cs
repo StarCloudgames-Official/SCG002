@@ -11,6 +11,6 @@ public class InGameSceneStarter : SceneStarter
         await inGameManager.Initialize();
 
         await LoadingFade.StartFadeOut();
-        inGameManager.InGameContext.StageManager.StartStage().Forget();
+        inGameManager.InGameContext.StageManager.StartWave().Forget();
     }
 }

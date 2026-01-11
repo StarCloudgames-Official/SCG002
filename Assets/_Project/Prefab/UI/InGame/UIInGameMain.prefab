@@ -160,7 +160,7 @@ GameObject:
   m_Component:
   - component: {fileID: 519335905986678170}
   m_Layer: 0
-  m_Name: StageInformation
+  m_Name: WaveInformation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -882,7 +882,7 @@ GameObject:
   - component: {fileID: 8264410719351702142}
   - component: {fileID: 2107684541526382924}
   m_Layer: 0
-  m_Name: StageInformation
+  m_Name: Wave
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1816,7 +1816,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   killCountSlider: {fileID: 404653232422888975}
   timerText: {fileID: 3006368664511995380}
-  stageText: {fileID: 2140165110509753617}
+  waveText: {fileID: 2140165110509753617}
   inGameCrystalCountText: {fileID: 3297884501393792302}
   luckyPointText: {fileID: 1911768872132394787}
   spawnCountText: {fileID: 2058979400822079366}
@@ -2305,7 +2305,7 @@ GameObject:
   - component: {fileID: 5108755116419730865}
   - component: {fileID: 2140165110509753617}
   m_Layer: 0
-  m_Name: StageText
+  m_Name: WaveText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2358,7 +2358,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: STAGE 1
+  m_text: WAVE 1
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6f9d253c918824659b9426046aca78cc, type: 2}
   m_sharedMaterial: {fileID: -8394420552937558723, guid: 6f9d253c918824659b9426046aca78cc, type: 2}

@@ -1,15 +1,15 @@
 using System.Collections;
 using UnityEngine;
 
-public interface IStageStarter
+public interface IWaveStarter
 {
     public void StartStarter();
     public IEnumerator StartStarterCoroutine();
 }
 
-public class StageStarterParam
+public class WaveStarterParam
 {
-    public int StageNumber { get; set; }
+    public int WaveNumber { get; set; }
     public string BossName { get; set; }
-    public int MaxStage { get; set; }
+    public int MaxWave { get; set; }
 }

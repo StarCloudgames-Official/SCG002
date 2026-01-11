@@ -11,7 +11,7 @@ public static class InGameSession
         newEnterInfo = new InGameEnterInfo
         {
             Stage = 1,
-            Floor = 1 //TODO : have to change to user data
+            Difficulty = DataTableEnum.Difficulty.Easy//TODO : have to change to user data
         };
 
         return true;

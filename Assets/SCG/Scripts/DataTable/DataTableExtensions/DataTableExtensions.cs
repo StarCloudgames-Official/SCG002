@@ -48,7 +48,7 @@ public partial class StageDataTable
     public bool IsBossStage(int stageIndex)
     {
         var currentStageIndex = stageIndex + 1;
-        foreach (var stage in bossStage)
+        foreach (var stage in bossWave)
         {
             if(stage ==  currentStageIndex)
                 return true;

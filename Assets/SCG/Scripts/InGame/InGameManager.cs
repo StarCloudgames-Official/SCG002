@@ -12,7 +12,7 @@ public class InGameManager : Singleton<InGameManager>
         InGameContext.Initialize(InGameSession.CurrentInGameEnterInfo);
 
         var stageManager = new StageManager();
-        var stageData = DataTableManager.Instance.GetStageDataTable(InGameContext.EnterInfo.Stage, InGameContext.EnterInfo.Floor);
+        var stageData = DataTableManager.Instance.GetStageDataTable(InGameContext.EnterInfo.Stage, InGameContext.EnterInfo.Difficulty);
         await stageManager.Initialize(stageData);
 
         var characterGridManagerPath = AddressableExtensions.CharacterGridManagerPath;

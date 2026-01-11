@@ -9,15 +9,15 @@ public class StageManager
 
     public event Action<int, int> OnKillCountChanged;
     public event Action<int> OnTimerChanged;
-    public event Action<int> OnStageChanged;
+    public event Action<int> OnWaveChanged;
 
-    public int CurrentStageIndex
+    public int CurrentWaveIndex
     {
-        get => currentStageIndex;
+        get => currentWaveIndex;
         private set
         {
-            currentStageIndex = value;
-            OnStageChanged?.Invoke(currentStageIndex);
+            currentWaveIndex = value;
+            OnWaveChanged?.Invoke(currentWaveIndex);
         }
     }
 
@@ -27,18 +27,18 @@ public class StageManager
         set
         {
             currentKillCount = value;
-            OnKillCountChanged?.Invoke(currentKillCount, CurrentStageData.monsterCount[CurrentStageIndex]);
+            OnKillCountChanged?.Invoke(currentKillCount, CurrentStageData.monsterCount[CurrentWaveIndex]);
         }
     }
 
-    private int currentStageIndex;
+    private int currentWaveIndex;
     private int currentKillCount;
     private bool isTimerRunning;
     private int lastDisplaySeconds;
 
     public async UniTask Initialize(StageDataTable stageData)
     {
-        CurrentStageIndex = 0;
+        CurrentWaveIndex = 0;
         CurrentStageData = stageData;
 
         MonsterSpawner = new MonsterSpawner();
@@ -49,33 +49,33 @@ public class StageManager
     {
         CurrentKillCount++;
 
-        var monsterCount = CurrentStageData.monsterCount[CurrentStageIndex];
+        var monsterCount = CurrentStageData.monsterCount[CurrentWaveIndex];
 
         if (CurrentKillCount >= monsterCount)
         {
-            StageClear().Forget();
+            WaveClear().Forget();
         }
     }
 
     private async UniTask StartStarter()
     {
-        var isBossStage = CurrentStageData.IsBossStage(CurrentStageIndex);
+        var isBossStage = CurrentStageData.IsBossStage(CurrentWaveIndex);
 
-        var starterParam = new StageStarterParam();
-        IStageStarter starter = null;
+        var starterParam = new WaveStarterParam();
+        IWaveStarter starter = null;
 
         if (isBossStage)
         {
-            starterParam.BossName = CurrentStageData.MonsterDataTables[CurrentStageIndex].monsterName;
+            starterParam.BossName = CurrentStageData.MonsterDataTables[CurrentWaveIndex].monsterName;
 
             starter = await UIManager.OpenUI<UIBossWarningPanel>(starterParam);
         }
         else
         {
-            starterParam.StageNumber = CurrentStageIndex;
-            starterParam.MaxStage = CurrentStageData.stageCount;
+            starterParam.WaveNumber = CurrentWaveIndex;
+            starterParam.MaxWave = CurrentStageData.waveCount;
 
-            starter = await UIManager.OpenUI<UIStageStarter>(starterParam);
+            starter = await UIManager.OpenUI<UIWaveStarter>(starterParam);
         }
 
         starter.StartStarter();
@@ -83,7 +83,7 @@ public class StageManager
         await ((IUI)starter).WaitUntilClose();
     }
 
-    public async UniTask StartStage()
+    public async UniTask StartWave()
     {
         CurrentKillCount = 0;
 
@@ -91,9 +91,9 @@ public class StageManager
         await StartStarter();
         UIManager.RemoveBlocker();
 
-        var currentMonsterData = CurrentStageData.MonsterDataTables[CurrentStageIndex];
-        var spawnCount = CurrentStageData.monsterCount[CurrentStageIndex];
-        var spawnDelay = CurrentStageData.spawnDelay[CurrentStageIndex];
+        var currentMonsterData = CurrentStageData.MonsterDataTables[CurrentWaveIndex];
+        var spawnCount = CurrentStageData.monsterCount[CurrentWaveIndex];
+        var spawnDelay = CurrentStageData.spawnDelay[CurrentWaveIndex];
 
         MonsterSpawner.StartSpawn(currentMonsterData, spawnCount, spawnDelay).Forget();
         StartTimer().Forget();
@@ -103,7 +103,7 @@ public class StageManager
     {
         isTimerRunning = true;
 
-        var remainingSeconds = CurrentStageData.stageTimer[CurrentStageIndex];
+        var remainingSeconds = CurrentStageData.waveTimer[CurrentWaveIndex];
         lastDisplaySeconds = -1;
 
         while (isTimerRunning && remainingSeconds > 0)
@@ -142,12 +142,12 @@ public class StageManager
         //TODO : Show Stage Failed Popup
     }
 
-    private async UniTask<bool> StageClear()
+    private async UniTask<bool> WaveClear()
     {
         StopTimer();
 
-        CurrentStageIndex++;
-        var isCleared = CurrentStageIndex >= CurrentStageData.stageCount;
+        CurrentWaveIndex++;
+        var isCleared = CurrentWaveIndex >= CurrentStageData.waveCount;
 
         if (isCleared)
         {
@@ -157,7 +157,7 @@ public class StageManager
         {
             //TODO await selection popup open and closed
             await UniTask.Delay(2000);
-            StartStage().Forget();
+            StartWave().Forget();
         }
 
         return isCleared;

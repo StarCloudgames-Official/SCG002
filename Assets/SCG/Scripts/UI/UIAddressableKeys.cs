@@ -13,8 +13,8 @@ public static class UIAddressableKeys
         { "UIInGameMain", "Assets/_Project/Prefab/UI/InGame/UIInGameMain.prefab" },
         { "UILoadingOverPopup", "Assets/_Project/Prefab/UI/Common/UILoadingOverPopup.prefab" },
         { "UILobbyMain", "Assets/_Project/Prefab/UI/Lobby/UILobbyMain.prefab" },
-        { "UIStageStarter", "Assets/_Project/Prefab/UI/InGame/UIStageStarter.prefab" },
         { "UITitle", "Assets/_Project/Prefab/UI/UITitle.prefab" },
+        { "UIWaveStarter", "Assets/_Project/Prefab/UI/InGame/UIWaveStarter.prefab" },
     };
 
     public static string Get<T>() => Keys.TryGetValue(typeof(T).Name, out var key) ? key : null;

@@ -4,12 +4,13 @@ using Cysharp.Threading.Tasks;
 using DG.Tweening;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class UIInGameMain : UIPanel
 {
     [SerializeField] private ExtensionSlider killCountSlider;
     [SerializeField] private TMP_Text timerText;
-    [SerializeField] private TMP_Text stageText;
+    [SerializeField] private TMP_Text waveText;
     [SerializeField] private TMP_Text inGameCrystalCountText;
     [SerializeField] private TMP_Text luckyPointText;
     [SerializeField] private TMP_Text spawnCountText;
@@ -72,19 +73,19 @@ public class UIInGameMain : UIPanel
     {
         var stageManager = inGameContext.StageManager;
         var stageData = stageManager.CurrentStageData;
-        var currentIndex = stageManager.CurrentStageIndex;
-        var timerSeconds = Mathf.CeilToInt(stageData.stageTimer[currentIndex]);
+        var currentIndex = stageManager.CurrentWaveIndex;
+        var timerSeconds = Mathf.CeilToInt(stageData.waveTimer[currentIndex]);
 
         UpdateKillCountSlider(0, stageData.monsterCount[currentIndex]);
         UpdateTimerText(timerSeconds);
-        UpdateStageText(currentIndex);
+        UpdateWaveText(currentIndex);
         UpdateCrystalText(inGameContext.InGameCrystal);
         UpdateLuckyPointText(inGameContext.LuckyPoint);
         UpdateSpawnCountText(0);
 
         inGameContext.StageManager.OnKillCountChanged += UpdateKillCountSlider;
         inGameContext.StageManager.OnTimerChanged += UpdateTimerText;
-        inGameContext.StageManager.OnStageChanged += UpdateStageText;
+        inGameContext.StageManager.OnWaveChanged += UpdateWaveText;
         inGameContext.InGameEvent.OnCrystalChange += UpdateCrystalText;
         inGameContext.InGameEvent.OnLuckyPointChange += UpdateLuckyPointText;
         inGameContext.InGameEvent.OnSpawnCountChanged += UpdateSpawnCountText;
@@ -94,7 +95,7 @@ public class UIInGameMain : UIPanel
     {
         inGameContext.StageManager.OnKillCountChanged -= UpdateKillCountSlider;
         inGameContext.StageManager.OnTimerChanged -= UpdateTimerText;
-        inGameContext.StageManager.OnStageChanged -= UpdateStageText;
+        inGameContext.StageManager.OnWaveChanged -= UpdateWaveText;
         inGameContext.InGameEvent.OnCrystalChange -= UpdateCrystalText;
         inGameContext.InGameEvent.OnLuckyPointChange -= UpdateLuckyPointText;
         inGameContext.InGameEvent.OnSpawnCountChanged -= UpdateSpawnCountText;
@@ -108,9 +109,9 @@ public class UIInGameMain : UIPanel
         spawnCountText.text = ZString.Format("{0}/{1}", currentCount, maxSpawnCount);
     }
 
-    private void UpdateStageText(int stageIndex)
+    private void UpdateWaveText(int waveIndex)
     {
-        stageText.text = ZString.Format("STAGE {0}", stageIndex + 1);
+        waveText.text = ZString.Format("WAVE {0}", waveIndex + 1);
     }
 
     private void UpdateCrystalText(int crystal)
