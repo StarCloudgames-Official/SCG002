@@ -132,10 +132,10 @@ public class ExtensionSlider : CachedMonoBehaviour
 
     private string FormatNumber(float value, bool isInt = false)
     {
-        if (isInt) return ((int)value).ToString();
-        return Mathf.Approximately(value % 1f, 0f) ? ((int)value).ToString() : value.ToString("0.##");
+        if (isInt) return ZString.Concat((int)value);
+        return Mathf.Approximately(value % 1f, 0f) ? ZString.Concat((int)value) : ZString.Format("{0:0.##}", value);
     }
-
+    
     private void KillTween()
     {
         if (fillTween == null) return;

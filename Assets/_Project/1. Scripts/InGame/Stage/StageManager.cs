@@ -45,6 +45,13 @@ public class StageManager
         await MonsterSpawner.Initialize();
     }
 
+    public void Dispose()
+    {
+        OnKillCountChanged = null;
+        OnTimerChanged = null;
+        OnWaveChanged = null;
+    }
+
     public void IncreaseKillCount()
     {
         CurrentKillCount++;

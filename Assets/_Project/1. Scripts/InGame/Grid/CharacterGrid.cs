@@ -6,9 +6,27 @@ public class CharacterGrid : CachedMonoBehaviour
 
     public CharacterBehaviour CurrentBehaviour { get; private set; }
 
-    public float GetXSize => spriteRenderer.bounds.size.x;
-    public float GetYSize => spriteRenderer.bounds.size.y;
+    public float GetXSize
+    {
+        get
+        {
+            if (!isSizeCached) CacheSize();
+            return cachedXSize;
+        }
+    }
+    public float GetYSize
+    {
+        get
+        {
+            if (!isSizeCached) CacheSize();
+            return cachedYSize;
+        }
+    }
     public bool IsEmpty => CurrentBehaviour == null;
+        
+    private float cachedXSize;
+    private float cachedYSize;
+    private bool isSizeCached;
 
     public void SetCharacterBehaviour(CharacterBehaviour behaviour)
     {
@@ -18,5 +36,12 @@ public class CharacterGrid : CachedMonoBehaviour
     public void Clear()
     {
         CurrentBehaviour = null;
+    }
+
+    private void CacheSize()
+    {
+        cachedXSize = spriteRenderer.bounds.size.x;
+        cachedYSize = spriteRenderer.bounds.size.y;
+        isSizeCached = true;
     }
 }

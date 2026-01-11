@@ -1,9 +1,9 @@
 using System.Collections;
+using Cysharp.Text;
 using Cysharp.Threading.Tasks;
 using DG.Tweening;
 using TMPro;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 public class UIWaveStarter : UIPanel, IWaveStarter
 {
@@ -19,7 +19,7 @@ public class UIWaveStarter : UIPanel, IWaveStarter
     public override UniTask PreOpen(object param)
     {
         var waveParam = param as WaveStarterParam;
-        waveText.text = $"WAVE {waveParam.WaveNumber + 1} / {waveParam.MaxWave}";
+        waveText.text = ZString.Format("WAVE {0} / {1}", waveParam.WaveNumber + 1, waveParam.MaxWave);
         return UniTask.CompletedTask;
     }
 

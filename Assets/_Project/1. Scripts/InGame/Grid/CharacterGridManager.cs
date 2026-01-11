@@ -3,10 +3,13 @@ using Cysharp.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.Pool;
+using UnityEngine.ResourceManagement.AsyncOperations;
 
 public class CharacterGridManager : CachedMonoBehaviour
 {
     [SerializeField] private AssetReferenceGameObject characterGridPrefab;
+
+    private AsyncOperationHandle<GameObject>? gridPrefabHandle;
 
     private List<CharacterGrid> spawnedCharacterGrids;
     private int gridCountX;
@@ -47,6 +50,8 @@ public class CharacterGridManager : CachedMonoBehaviour
                 spawnedCharacterGrids.Add(grid);
             }
         }
+        
+        Addressables.Release(handle);
     }
 
     public CharacterGrid GetCharacterGrid(int x, int y)

@@ -43,7 +43,7 @@ public class MonsterMovement : CachedMonoBehaviour
     {
         while (CachedGameObject.activeSelf)
         {
-            var distance = Vector3.Distance(CachedTransform.position, targetPosition);
+            var distance = (CachedTransform.position - targetPosition).sqrMagnitude;
 
             if (distance > ArrivalThreshold)
             {

@@ -6,7 +6,7 @@ using UnityEngine.AddressableAssets;
 using UnityEngine.Pool;
 using UnityEngine.ResourceManagement.AsyncOperations;
 
-public class SCGObjectPooling<T> : IDisposable where T : Component
+public class SCGObjectPooling<T> : IClearable where T : Component
 {
     private readonly ObjectPool<T> pool;
     private readonly T prefab;

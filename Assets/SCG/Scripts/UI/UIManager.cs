@@ -46,33 +46,38 @@ public static class UIManager
 
     public static void RemoveUI(IUI ui)
     {
-        if(spawnedUIList.Contains(ui))
-            spawnedUIList.Remove(ui);
+        if(IsExistUI(ui, out var index))
+            spawnedUIList.RemoveAt(index);
     }
 
     public static void CloseUI(IUI ui)
     {
-        if (spawnedUIList.Contains(ui))
-        {
-            var targetUI = GetUI(ui);
-            targetUI.Close().Forget();
-        }
+        if (!IsExistUI(ui, out var index))
+            return;
+        
+        var targetUI = GetUI(ui);
+        targetUI.Close().Forget();
+    }
+
+    private static bool IsExistUI(IUI ui, out int index)
+    {
+        index = spawnedUIList.IndexOf(ui);
+        return index >= 0;
     }
 
     public static IUI GetUI(IUI ui)
     {
-        if (spawnedUIList.Contains(ui))
-            return spawnedUIList[spawnedUIList.IndexOf(ui)];
-
-        return null;
+        return !IsExistUI(ui, out var index) ? null : spawnedUIList[index];
     }
 
     public static void CloseAllUI()
     {
         RemoveAllBlocker();
 
-        var list = new List<IUI>(spawnedUIList);
-        foreach(var ui in list) ui.Close().Forget();
+        for (var i = spawnedUIList.Count - 1; i >= 0; i--)
+        {
+            spawnedUIList[i].Close().Forget();
+        }
     }
 
     public static bool IsActivating(IUI ui)

@@ -6,7 +6,7 @@ using UnityEngine;
 public static class SCGObjectPoolingManager
 {
     private static readonly Dictionary<Type, object> pools = new();
-    private static readonly Dictionary<Type, IDisposable> disposablePools = new();
+    private static readonly Dictionary<Type, IClearable> clearablePools = new();
 
     public static SCGObjectPooling<T> GetPool<T>() where T : Component
     {
@@ -33,7 +33,7 @@ public static class SCGObjectPoolingManager
         var newPool = new SCGObjectPooling<T>(prefab, parent, defaultCapacity, maxSize, onGet, onRelease);
 
         pools[type] = newPool;
-        disposablePools[type] = newPool;
+        clearablePools[type] = newPool;
 
         return newPool;
     }
@@ -82,7 +82,7 @@ public static class SCGObjectPoolingManager
         }
 
         pools[type] = newPool;
-        disposablePools[type] = newPool;
+        clearablePools[type] = newPool;
 
         return newPool;
     }
@@ -151,10 +151,10 @@ public static class SCGObjectPoolingManager
     {
         var type = typeof(T);
 
-        if (disposablePools.TryGetValue(type, out var disposable))
+        if (clearablePools.TryGetValue(type, out var disposable))
         {
             disposable.Dispose();
-            disposablePools.Remove(type);
+            clearablePools.Remove(type);
         }
 
         pools.Remove(type);
@@ -162,24 +162,20 @@ public static class SCGObjectPoolingManager
 
     public static void ReleaseAllPools()
     {
-        foreach (var disposable in disposablePools.Values)
+        foreach (var disposable in clearablePools.Values)
         {
             disposable.Dispose();
         }
 
         pools.Clear();
-        disposablePools.Clear();
+        clearablePools.Clear();
     }
 
     public static void ClearAllInactivePools()
     {
-        foreach (var pool in pools.Values)
+        foreach (var pool in clearablePools.Values)
         {
-            if (pool is IDisposable disposablePool)
-            {
-                var poolType = pool.GetType();
-                poolType.GetMethod("Clear")?.Invoke(pool, null);
-            }
+            pool.Clear();
         }
     }
 

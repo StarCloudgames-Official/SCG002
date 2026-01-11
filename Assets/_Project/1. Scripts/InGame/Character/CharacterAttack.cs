@@ -19,7 +19,7 @@ public class CharacterAttack : CachedMonoBehaviour
     
     public void Initialize(CharacterBehaviour characterBehaviour, Animator animator)
     {
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        spriteRenderer ??= GetComponent<SpriteRenderer>();
         
         this.characterBehaviour = characterBehaviour;
         this.animator = animator;

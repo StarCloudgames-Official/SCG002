@@ -27,10 +27,10 @@ public class CharacterBehaviour : CachedMonoBehaviour
 
     private void InitializeComponents()
     {
-        characterTouch = GetComponent<CharacterTouch>();
+        characterTouch ??= GetComponent<CharacterTouch>();
         characterTouch.Initialize(this);
 
-        characterAttack = GetComponent<CharacterAttack>();
+        characterAttack ??= GetComponent<CharacterAttack>();
         characterAttack.Initialize(this, animator);
     }
 
