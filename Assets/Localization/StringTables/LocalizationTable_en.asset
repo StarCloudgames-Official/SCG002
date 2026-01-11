@@ -66,6 +66,14 @@ MonoBehaviour:
     m_Localized: Rogue
     m_Metadata:
       m_Items: []
+  - m_Id: 20281296331726848
+    m_Localized: Easy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20281296340115456
+    m_Localized: Hard
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

@@ -15,6 +15,7 @@ public class UIInGameMain : UIPanel
     [SerializeField] private TMP_Text luckyPointText;
     [SerializeField] private TMP_Text spawnCountText;
     [SerializeField] private TMP_Text spawnPriceText;
+    [SerializeField] private UIDifficultyText difficultyText;
     [SerializeField] private UICharacterSellPopup characterSellPopup;
     [SerializeField] private UIClassEnhancePopup classEnhancePopup;
     [SerializeField] private UILuckyPopup luckyPopup;
@@ -50,6 +51,7 @@ public class UIInGameMain : UIPanel
         inGameContext = param as InGameContext;
 
         spawnPriceText.text = ZString.Concat(ConstantDataGetter.SpawnCrystalPrice);
+        difficultyText.SetText(inGameContext.EnterInfo.Difficulty);
 
         InitializeAndRegisterEvents();
 

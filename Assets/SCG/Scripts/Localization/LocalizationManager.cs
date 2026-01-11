@@ -64,6 +64,7 @@ public static class LocalizationManager
         if (locales == null) return;
 
         var target = MapSystemLanguageToCode(Application.systemLanguage);
+        target = "en"; //TODO : 한국어 폰트 가져오면 없애야됨
         Locale selected = null;
 
         foreach (var locale in locales.Locales)
