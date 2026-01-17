@@ -10,6 +10,8 @@ public static class UIAddressableKeys
         { "UIBlocker", "Assets/_Project/Prefab/UI/Common/UIBlocker.prefab" },
         { "UIBossWarningPanel", "Assets/_Project/Prefab/UI/InGame/UIBossWarningPanel.prefab" },
         { "UIIAPPurchaseSuccessPopup", "Assets/_Project/Prefab/UI/Common/UIIAPPurchaseSuccessPopup.prefab" },
+        { "UIInGameClearPopup", "Assets/_Project/Prefab/UI/InGame/UIInGameClearPopup.prefab" },
+        { "UIInGameFailedPopup", "Assets/_Project/Prefab/UI/InGame/UIInGameFailedPopup.prefab" },
         { "UIInGameMain", "Assets/_Project/Prefab/UI/InGame/UIInGameMain.prefab" },
         { "UILoadingOverPopup", "Assets/_Project/Prefab/UI/Common/UILoadingOverPopup.prefab" },
         { "UILobbyMain", "Assets/_Project/Prefab/UI/Lobby/UILobbyMain.prefab" },

@@ -77,4 +77,18 @@ public class DatabaseManager : Singleton<DatabaseManager>
             //TODO : Craete AssetDatabase and add assets
         }
     }
+
+    public void AddReward(RewardData rewardData)
+    {
+        var assetContainer = GetContainer<UserAssetDatabaseContainer>();
+        assetContainer.IncreaseAsset(rewardData.AssetType, rewardData.Amount);
+    }
+
+    public void AddRewardList(List<RewardData> rewardDatas)
+    {
+        foreach (var rewardData in rewardDatas)
+        {
+            AddReward(rewardData);
+        }
+    }
 }

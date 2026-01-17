@@ -22,4 +22,14 @@ public static class InGameSession
         CurrentInGameEnterInfo = newEnterInfo;
         SceneController.ChangeScene(SceneController.Scene.InGame).Forget();
     }
+
+    public static void LeaveInGame()
+    {
+        var context = InGameManager.Instance.InGameContext;
+        context.StageManager?.Dispose();
+        context.InGameEvent?.Clear();
+
+        CurrentInGameEnterInfo = null;
+        SceneController.ChangeScene(SceneController.Scene.Lobby).Forget();
+    }
 }

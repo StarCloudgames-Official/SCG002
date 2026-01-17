@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using GoogleMobileAds.Api;
 using NUnit.Framework.Constraints;
 
 public partial class DataTableManager
@@ -37,6 +38,18 @@ public partial class DataTableManager
         }
         
         return targetGroups;
+    }
+
+    public List<RewardData> GetRewardDataByRewardGroupId(int rewardGroupId)
+    {
+        var rewardGroupDatas = GetTargetRewardGroupRewards(rewardGroupId);
+        var rewardDatas = new List<RewardData>();
+        foreach (var rewardData in rewardGroupDatas)
+        {
+            var newRewardData = new RewardData(rewardData.rewardAssetType, rewardData.rewardAmount);
+            rewardDatas.Add(newRewardData);
+        }
+        return rewardDatas;
     }
 
     public ConstantDataTable GetConstantDataTable(string constantName)

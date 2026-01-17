@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using Cysharp.Threading.Tasks;
 using UnityEngine;
 
@@ -6,6 +7,8 @@ public class StageManager
 {
     public StageDataTable CurrentStageData { get; private set; }
     public MonsterSpawner MonsterSpawner { get; private set; }
+    
+    private InGameContext inGameContext;
 
     public event Action<int, int> OnKillCountChanged;
     public event Action<int> OnTimerChanged;
@@ -38,6 +41,8 @@ public class StageManager
 
     public async UniTask Initialize(StageDataTable stageData)
     {
+        inGameContext = InGameManager.Instance.InGameContext;
+        
         CurrentWaveIndex = 0;
         CurrentStageData = stageData;
 
@@ -115,6 +120,13 @@ public class StageManager
 
         while (isTimerRunning && remainingSeconds > 0)
         {
+            await UniTask.NextFrame();
+
+            if (inGameContext.IsGameStopped)
+                continue;
+
+            remainingSeconds -= Time.deltaTime;
+
             var currentDisplaySeconds = Mathf.CeilToInt(remainingSeconds);
 
             if (currentDisplaySeconds != lastDisplaySeconds)
@@ -122,9 +134,6 @@ public class StageManager
                 OnTimerChanged?.Invoke(currentDisplaySeconds);
                 lastDisplaySeconds = currentDisplaySeconds;
             }
-
-            await UniTask.NextFrame();
-            remainingSeconds -= Time.deltaTime;
         }
 
         // Timer finished
@@ -143,10 +152,51 @@ public class StageManager
         isTimerRunning = false;
     }
 
+    public void Revive()
+    {
+        inGameContext.IsGameStopped = false;
+        inGameContext.Revived = true;
+        
+        StartTimer().Forget();
+    }
+
     private void StageFailed()
     {
+        inGameContext.IsGameStopped = true;
+        
         StopTimer();
-        //TODO : Show Stage Failed Popup
+        UIManager.OpenUI<UIInGameFailedPopup>(GetRewardData(false)).Forget();
+    }
+
+    private void StageCleared()
+    {
+        inGameContext.IsGameStopped = true;
+        
+        StopTimer();
+        UIManager.OpenUI<UIInGameClearPopup>(GetRewardData(true)).Forget();
+    }
+
+    private List<RewardData> GetRewardData(bool isStageCleared)
+    {
+        if(currentWaveIndex <= 0)
+            return new List<RewardData>();
+        
+        var rewardDatas = new List<RewardData>();
+        
+        for (var i = 0; i < currentWaveIndex; i++)
+        {
+            var targetGold = CurrentStageData.waveClearGold[i];
+            var newRewardData = new RewardData(DataTableEnum.AssetType.Gold, targetGold);
+            rewardDatas.Add(newRewardData);
+        }
+
+        if (!isStageCleared)
+            return rewardDatas.UnionRewardDatas();
+        
+        var clearRewardList = DataTableManager.Instance.GetRewardDataByRewardGroupId(CurrentStageData.stageClearRewardGroupId);
+        rewardDatas.AddRange(clearRewardList);
+
+        return rewardDatas.UnionRewardDatas();
     }
 
     private async UniTask<bool> WaveClear()
@@ -158,7 +208,7 @@ public class StageManager
 
         if (isCleared)
         {
-            //TODO : Show Stage Clear Popup
+            StageCleared();
         }
         else
         {

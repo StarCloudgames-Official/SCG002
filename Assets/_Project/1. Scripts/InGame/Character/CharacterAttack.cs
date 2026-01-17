@@ -104,6 +104,9 @@ public class CharacterAttack : CachedMonoBehaviour
 
     private bool CanAttack()
     {
+        if(inGameContext.IsGameStopped)
+            return false;
+        
         if (currentAttackDelay > 0.0f)
         {
             //TODO : 스탯매니저에서 공격속도받아와야됨

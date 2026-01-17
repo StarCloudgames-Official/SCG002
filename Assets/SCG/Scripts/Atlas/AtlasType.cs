@@ -3,4 +3,5 @@ public enum AtlasType
 {
     None = 0,
     CharacterPortrait = 1,
+    UI_Main = 2,
 }

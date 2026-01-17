@@ -16,6 +16,12 @@ public static class UniTaskExtensions
         }
     }
 
+    public static async UniTask WaitAfterPlay(this Animator animator, string key)
+    {
+        animator.Play(key);
+        await animator.WaitCurrentStateCompleteAsync();
+    }
+
     public static async UniTask WaitCurrentStateCompleteAsync(this Animator animator, int layer = 0)
     {
         await UniTask.NextFrame();

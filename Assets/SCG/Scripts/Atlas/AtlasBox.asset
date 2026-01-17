@@ -61,3 +61,9 @@ MonoBehaviour:
       - {fileID: 21300000, guid: ce0dabc9617e3431cb4e9b07cc92d942, type: 3}
       - {fileID: 21300000, guid: c64b32611b55e4cbea80ec9f3db11460, type: 3}
       - {fileID: 21300000, guid: 2fe68ae7f7f0f435597f6c8fd91b0879, type: 3}
+  - type: 2
+    sprites:
+      m_Keys:
+      - Gold
+      m_Values:
+      - {fileID: 21300000, guid: 1616195ed22ca472d8a3c0a51f22aaef, type: 3}

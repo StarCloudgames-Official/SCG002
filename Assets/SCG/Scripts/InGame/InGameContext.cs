@@ -4,11 +4,21 @@ using UnityEngine;
 
 public class InGameContext
 {
+    #region Class Properties
+
     public InGameEnterInfo EnterInfo { get; set; }
     public CharacterGridManager CharacterGridManager { get; set; }
     public StageManager StageManager { get; set; }
     public SpawnManager SpawnManager { get; set; }
     public InGameEvents InGameEvent { get; set; }
+
+    #endregion
+    
+    #region Value Properties
+    
+    public bool IsGameStopped { get; set; }
+    
+    public bool Revived { get; set; }
 
     private int luckyPoint;
 
@@ -36,7 +46,11 @@ public class InGameContext
 
     private Dictionary<DataTableEnum.ClassType, int> classEnhancements;
     public Dictionary<DataTableEnum.ClassType, int> ClassEnhancements => classEnhancements;
-
+    
+    #endregion
+    
+    #region Initialize
+    
     public void Initialize(InGameEnterInfo enterInfo)
     {
         EnterInfo = enterInfo;
@@ -44,6 +58,7 @@ public class InGameContext
 
         inGameCrystal = ConstantDataGetter.StartInGameSpawnCrystal;
         luckyPoint = 0;
+        IsGameStopped = false;
 
         InitializeClassEnhancements();
     }
@@ -59,6 +74,8 @@ public class InGameContext
             classEnhancements[classType] = 0;
         }
     }
+    
+    #endregion
 
     public bool CanUseInGameCrystal(int amount)
     {
@@ -131,6 +148,15 @@ public class InGameContext
         public void PublishClassEnhancementChange(DataTableEnum.ClassType classType, int level)
         {
             OnClassEnhancementChange?.Invoke(classType, level);
+        }
+
+        public void Clear()
+        {
+            OnSpawn = null;
+            OnCrystalChange = null;
+            OnLuckyPointChange = null;
+            OnSpawnCountChanged = null;
+            OnClassEnhancementChange = null;
         }
     }
 

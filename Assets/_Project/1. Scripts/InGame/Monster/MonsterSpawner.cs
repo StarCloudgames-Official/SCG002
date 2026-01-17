@@ -6,10 +6,12 @@ using UnityEngine.Pool;
 
 public class MonsterSpawner
 {
+    private InGameContext inGameContext;
     private SCGObjectPooling<MonsterBehaviour> monsterPool;
 
     public async UniTask Initialize()
     {
+        inGameContext = InGameManager.Instance.InGameContext;
         monsterPool = await SCGObjectPoolingManager.GetOrCreatePoolAsync<MonsterBehaviour>(AddressableExtensions.MonsterPath, 30, InGameManager.Instance.CachedTransform);
     }
 
@@ -17,6 +19,8 @@ public class MonsterSpawner
     {
         for (var spawnedCount = 0; spawnedCount < targetSpawnCount; spawnedCount++)
         {
+            await UniTask.WaitWhile(() => inGameContext.IsGameStopped);
+
             var newMonster = monsterPool.Get();
             newMonster.transform.position = MonsterPath.SpawnPosition;
 

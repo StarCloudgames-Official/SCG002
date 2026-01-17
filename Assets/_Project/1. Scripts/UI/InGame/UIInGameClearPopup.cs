@@ -1,0 +1,46 @@
+using System.Collections.Generic;
+using Cysharp.Threading.Tasks;
+using DG.Tweening;
+using UnityEngine;
+
+public class UIInGameClearPopup : UIOverPopup
+{
+    [SerializeField] private UIRewardItemContainer rewardItemContainer;
+    [SerializeField] private GameObject lobbyButton;
+
+    private List<RewardData> rewardDatas;
+    private InGameContext inGameContext;
+
+    public override UniTask PreOpen(object param)
+    {
+        inGameContext = InGameManager.Instance.InGameContext;
+        
+        lobbyButton.transform.localScale = Vector3.zero;
+        
+        return UniTask.CompletedTask;
+    }
+
+    public override async UniTask Open(object param)
+    {
+        await base.Open(param);
+        
+        rewardDatas = param as List<RewardData>;
+        await rewardItemContainer.SetUpContainer(rewardDatas);
+        await ButtonProduce();
+    }
+
+    private async UniTask ButtonProduce()
+    {
+        await lobbyButton.transform.DOScale(Vector3.one, 0.5f).SetEase(Ease.OutBack).ToUniTask();
+    }
+
+    public void OnClickToLobbyButton()
+    {
+        DatabaseManager.Instance.AddRewardList(rewardDatas);
+        InGameSession.LeaveInGame();
+    }
+    
+    public override void OnBackSpace()
+    {
+    }
+}
