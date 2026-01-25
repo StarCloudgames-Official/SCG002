@@ -581,7 +581,6 @@ GameObject:
   - component: {fileID: -3789531471641014650}
   - component: {fileID: 7044942343536402561}
   - component: {fileID: 5713652287681401636}
-  - component: {fileID: 2648476731140777800}
   - component: {fileID: -3362134918364329221}
   m_Layer: 0
   m_Name: UIInGameClearPopup
@@ -589,7 +588,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1625544441790030140
 RectTransform:
   m_ObjectHideFlags: 0
@@ -676,18 +675,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!225 &2648476731140777800
-CanvasGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1625544441790030139}
-  m_Enabled: 1
-  m_Alpha: 0
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
-  m_IgnoreParentGroups: 0
 --- !u!114 &-3362134918364329221
 MonoBehaviour:
   m_ObjectHideFlags: 0

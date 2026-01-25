@@ -21,4 +21,10 @@ public static class AddressableExtensions
         var handle = await Addressables.InstantiateAsync(path).Task;
         return handle.GetComponent<T>();
     }
+    
+    public static async UniTask<T> InstantiateAndGetComponent<T>(string path, Transform parent)
+    {
+        var handle = await Addressables.InstantiateAsync(path, parent).Task;
+        return handle.GetComponent<T>();
+    }
 }

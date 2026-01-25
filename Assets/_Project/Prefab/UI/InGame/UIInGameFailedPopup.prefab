@@ -1302,7 +1302,6 @@ GameObject:
   - component: {fileID: 5800876289499028857}
   - component: {fileID: 6469040119958421603}
   - component: {fileID: 8540341986915563318}
-  - component: {fileID: 2180822070892800281}
   - component: {fileID: 247995478196250834}
   m_Layer: 0
   m_Name: UIInGameFailedPopup
@@ -1310,7 +1309,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6954674785476872075
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1397,18 +1396,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!225 &2180822070892800281
-CanvasGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6954674785476872074}
-  m_Enabled: 1
-  m_Alpha: 0
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
-  m_IgnoreParentGroups: 0
 --- !u!114 &247995478196250834
 MonoBehaviour:
   m_ObjectHideFlags: 0

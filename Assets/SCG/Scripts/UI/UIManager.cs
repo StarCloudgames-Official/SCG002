@@ -95,8 +95,7 @@ public static class UIManager
         if (string.IsNullOrEmpty(addressableKey))
             throw new System.Exception($"[UIManager] Addressable key not found for {typeof(T).Name}. Run SCG/Tools/Generate/Generate UI Addressable Keys.");
 
-        var ui = await AddressableExtensions.InstantiateAndGetComponent<T>(addressableKey);
-        ui.transform.SetParent(parentCanvas);
+        var ui = await AddressableExtensions.InstantiateAndGetComponent<T>(addressableKey, parentCanvas);
 
         if (ui == null) throw new MissingComponentException($"{typeof(T).Name} component not found on prefab.");
 
