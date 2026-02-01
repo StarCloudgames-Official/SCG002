@@ -51,7 +51,7 @@ namespace StarCloudgamesLibrary
             // 이미 누군가 초기화 진행 중이면 그게 끝날 때까지 기다림
             if (initializing)
             {
-                await UniTask.WaitUntil(() => initialized || !initializing);
+                await UniTask.WaitUntil(this, (self) => self.initialized || !self.initializing);
                 return;
             }
 
@@ -162,7 +162,7 @@ namespace StarCloudgamesLibrary
                 storeController.FetchProducts(productDefinitions);
 
                 // OnPurchasesFetched / OnPurchasesFetchFailed / OnProductsFetchFailed 에서 initialized=true 세팅
-                await UniTask.WaitUntil(() => initialized);
+                await UniTask.WaitUntil(this, (self) => self.initialized);
             }
             finally
             {

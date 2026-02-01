@@ -239,7 +239,7 @@ namespace StarCloudgamesLibrary
             LevelPlay.OnInitFailed += LevelPlayInitializeFailed;
 
             LevelPlay.Init(appKey);
-            await UniTask.WaitUntil(() => initialized);
+            await UniTask.WaitUntil(this, (self) => self.initialized);
         }
 
         private void LevelPlayInitializeCompleted(LevelPlayConfiguration configuration)

@@ -19,7 +19,7 @@ public class MonsterSpawner
     {
         for (var spawnedCount = 0; spawnedCount < targetSpawnCount; spawnedCount++)
         {
-            await UniTask.WaitWhile(() => inGameContext.IsGameStopped);
+            await UniTask.WaitWhile(this, (self) => self.inGameContext.IsGameStopped);
 
             var newMonster = monsterPool.Get();
             newMonster.transform.position = MonsterPath.SpawnPosition;

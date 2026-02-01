@@ -33,6 +33,7 @@ public class CharacterAttack : CachedMonoBehaviour
         var currentEnhanceLevel = inGameContext.GetClassEnhanceLevel(data.classType);
         CalculateEnhanceDamage(data.classType, currentEnhanceLevel);
         
+        inGameContext.InGameEvent.OnClassEnhancementChange -= CalculateEnhanceDamage;
         inGameContext.InGameEvent.OnClassEnhancementChange += CalculateEnhanceDamage;
     }
 
