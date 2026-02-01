@@ -133,8 +133,9 @@ public class UIInGameMain : UIPanel
 
     private void UpdateTimerText(int remainingSeconds)
     {
-        var dateTime = new DateTime().AddSeconds(remainingSeconds);
-        timerText.text = dateTime.DateTimeToStringToMMSS();
+        var minutes = remainingSeconds / 60;
+        var seconds = remainingSeconds % 60;
+        timerText.text = ZString.Format("{0:00}:{1:00}", minutes, seconds);
 
         // 11초 -> 10초로 변할 때만 시작
         if (previousRemainingSeconds > 10 && remainingSeconds <= 10)

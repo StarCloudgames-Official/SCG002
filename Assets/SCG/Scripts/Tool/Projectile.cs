@@ -33,14 +33,8 @@ public class Projectile : CachedMonoBehaviour
         }
 
         var offset = target.position - CachedTransform.position;
-        var direction = offset.normalized;
-        var moveDistance = speed * Time.deltaTime;
-
-        var angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-        CachedTransform.rotation = Quaternion.Euler(0, 0, angle);
-
-        // sqrt 연산 최적화: SqrMagnitude 사용
         var sqrDistanceToTarget = offset.sqrMagnitude;
+        var moveDistance = speed * Time.deltaTime;
         var sqrMoveDistance = moveDistance * moveDistance;
 
         if (sqrMoveDistance >= sqrDistanceToTarget)
@@ -57,7 +51,12 @@ public class Projectile : CachedMonoBehaviour
         }
         else
         {
-            // 이동
+            var distance = Mathf.Sqrt(sqrDistanceToTarget);
+            var direction = offset / distance;
+
+            var angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+            CachedTransform.rotation = Quaternion.Euler(0, 0, angle);
+
             CachedTransform.position += direction * moveDistance;
         }
     }

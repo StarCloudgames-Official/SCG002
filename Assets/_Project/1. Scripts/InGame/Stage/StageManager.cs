@@ -2,9 +2,12 @@ using System;
 using System.Collections.Generic;
 using Cysharp.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.Pool;
 
 public class StageManager
 {
+    private static readonly List<RewardData> EmptyRewardList = new();
+    
     public StageDataTable CurrentStageData { get; private set; }
     public MonsterSpawner MonsterSpawner { get; private set; }
     
@@ -179,7 +182,7 @@ public class StageManager
     private List<RewardData> GetRewardData(bool isStageCleared)
     {
         if(currentWaveIndex <= 0)
-            return new List<RewardData>();
+            return EmptyRewardList;
         
         var rewardDatas = new List<RewardData>();
         

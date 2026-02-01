@@ -1,3 +1,4 @@
+using Cysharp.Text;
 using Cysharp.Threading.Tasks;
 using UnityEngine;
 
@@ -44,7 +45,7 @@ public class CharacterBehaviour : CachedMonoBehaviour
 
     private async UniTask<RuntimeAnimatorController> GetAnimator()
     {
-        var path = $"{CurrentClass.classType}_{CurrentClass.spawnType}_Animator";
+        var path = ZString.Format("{0}_{1}_Animator", CurrentClass.classType, CurrentClass.spawnType);
         return await AddressableExtensions.GetAnimator(path);
     }
 }

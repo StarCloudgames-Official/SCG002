@@ -26,13 +26,11 @@ public static class Debug
         UnityEngine.Debug.LogWarning(message, context);
     }
 
-    [Conditional("ENABLE_LOG")]
     public static void LogError(object message)
     {
         UnityEngine.Debug.LogError(message);
     }
 
-    [Conditional("ENABLE_LOG")]
     public static void LogError(object message, UnityEngine.Object context)
     {
         UnityEngine.Debug.LogError(message, context);
@@ -50,19 +48,16 @@ public static class Debug
         UnityEngine.Debug.LogWarningFormat(format, args);
     }
 
-    [Conditional("ENABLE_LOG")]
     public static void LogErrorFormat(string format, params object[] args)
     {
         UnityEngine.Debug.LogErrorFormat(format, args);
     }
 
-    [Conditional("ENABLE_LOG")]
     public static void LogException(System.Exception exception)
     {
         UnityEngine.Debug.LogException(exception);
     }
 
-    [Conditional("ENABLE_LOG")]
     public static void LogException(System.Exception exception, UnityEngine.Object context)
     {
         UnityEngine.Debug.LogException(exception, context);

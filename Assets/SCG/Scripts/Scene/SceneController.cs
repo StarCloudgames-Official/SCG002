@@ -118,14 +118,20 @@ public static class SceneController
 
     private static void StartSceneStarter(Scene scene)
     {
-        var starterType = Type.GetType($"{scene.ToString()}SceneStarter");
-        if (starterType == null)
+        var starter = scene switch
         {
-            Debug.LogError($"Can't find scene starter type");
+            Scene.Title => new TitleSceneStarter(),
+            Scene.Lobby => new LobbySceneStarter(),
+            Scene.InGame => new InGameSceneStarter(),
+            _ => (SceneStarter)null
+        };
+
+        if (starter == null)
+        {
+            Debug.LogError($"Can't find scene starter for {scene}");
             return;
         }
 
-        var starter = Activator.CreateInstance(starterType) as SceneStarter;
-        starter?.StartScene().Forget();
+        starter.StartScene().Forget();
     }
 }

@@ -9,6 +9,8 @@ using Random = UnityEngine.Random;
 
 public class SpawnManager
 {
+    private static readonly ClassType[] CachedClassTypes = (ClassType[])Enum.GetValues(typeof(ClassType));
+    
     private Dictionary<ClassType, Dictionary<SpawnType, int>> spawnedClassesCount;
     private Dictionary<SpawnType, float> inGameSpawnChances;
     private List<ClassType> classTypes;
@@ -43,7 +45,7 @@ public class SpawnManager
         }
 
         classTypes = new List<ClassType>();
-        foreach (ClassType classEnum in Enum.GetValues(typeof(ClassType)))
+        foreach (var classEnum in CachedClassTypes)
         {
             if(classEnum == ClassType.None)
                 continue;
