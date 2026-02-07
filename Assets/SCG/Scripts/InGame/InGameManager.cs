@@ -1,3 +1,4 @@
+using Cysharp.Text;
 using Cysharp.Threading.Tasks;
 using StarCloudgamesLibrary;
 
@@ -21,6 +22,9 @@ public class InGameManager : Singleton<InGameManager>
 
         var spawnManager = new SpawnManager();
         await spawnManager.Initialize();
+
+        var mapAddressableKey = ZString.Format(AddressableExtensions.MapPrefabPath, stageData.map_prefab_addressable_key);
+        await AddressableExtensions.InstantiateTracked(mapAddressableKey);
 
         InGameContext.CharacterGridManager = characterGridManager;
         InGameContext.StageManager = stageManager;

@@ -1,4 +1,5 @@
 using System;
+using Cysharp.Text;
 using Cysharp.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
@@ -32,52 +33,55 @@ public static class SceneController
         if (!isDirect)
         {
             await UIManager.BlockUI();
-
             await LoadingFade.StartFadeIn();
             UIManager.CloseAllUI();
         }
 
         var previousHandle = currentSceneHandle;
         var previousSceneName = SceneManager.GetActiveScene().name;
+        
+        var temporaryScene = CreateTemporaryScene();
 
-        var temporaryScene = SceneManager.CreateScene("SceneController_Temporary");
-        SceneManager.SetActiveScene(temporaryScene);
-
+        CleanUpScene();
         await UnloadPreviousScene(previousHandle, previousSceneName);
-        currentSceneHandle = null;
-
-        var loadHandle = Addressables.LoadSceneAsync(scene.ToString(), LoadSceneMode.Additive);
-        currentSceneHandle = loadHandle;
-
-        SceneInstance newScene;
-        try
-        {
-            newScene = await loadHandle.Task;
-        }
-        catch (Exception e)
-        {
-            Debug.LogError($"SceneController: failed to load scene {scene}: {e}");
-            IsChangingScene = false;
+        if (!await LoadTargetScene(ZString.Concat(scene)))
             return;
-        }
 
-        if (loadHandle.Status != AsyncOperationStatus.Succeeded)
-        {
-            Debug.LogError($"SceneController: scene load handle failed for {scene}");
-            IsChangingScene = false;
-            return;
-        }
-
-        SceneManager.SetActiveScene(newScene.Scene);
+        SceneManager.SetActiveScene(currentSceneHandle.Value.Result.Scene);
         await UnloadTemporaryScene(temporaryScene);
 
         await Resources.UnloadUnusedAssets();
         GC.Collect();
-        SCGObjectPoolingManager.ReleaseAllPools();
 
         StartSceneStarter(scene);
 
         IsChangingScene = false;
+    }
+
+    private static async UniTask<bool> LoadTargetScene(string sceneName)
+    {
+        var loadTargetSceneHandle = Addressables.LoadSceneAsync(sceneName, LoadSceneMode.Additive);
+        currentSceneHandle = loadTargetSceneHandle;
+
+        try
+        {
+            await loadTargetSceneHandle.Task;
+        }
+        catch (Exception e)
+        {
+            Debug.LogError($"SceneController: failed to load scene {sceneName}: {e}");
+            IsChangingScene = false;
+            return false;
+        }
+
+        if (loadTargetSceneHandle.Status != AsyncOperationStatus.Succeeded)
+        {
+            Debug.LogError($"SceneController: scene load handle failed for {sceneName}");
+            IsChangingScene = false;
+            return false;
+        }
+
+        return true;
     }
 
     private static async UniTask UnloadPreviousScene(AsyncOperationHandle<SceneInstance>? previousHandle, string previousSceneName)
@@ -103,6 +107,13 @@ public static class SceneController
         }
     }
 
+    private static UnityEngine.SceneManagement.Scene CreateTemporaryScene()
+    {
+        var temporaryScene = SceneManager.CreateScene("SceneController_Temporary");
+        SceneManager.SetActiveScene(temporaryScene);
+        return temporaryScene;
+    }
+
     private static async UniTask UnloadTemporaryScene(UnityEngine.SceneManagement.Scene temporaryScene)
     {
         if (!temporaryScene.IsValid() || !temporaryScene.isLoaded) return;
@@ -114,6 +125,12 @@ public static class SceneController
         {
             await UniTask.NextFrame();
         }
+    }
+
+    private static void CleanUpScene()
+    {
+        AddressableExtensions.ReleaseAllInstances();
+        SCGObjectPoolingManager.ReleaseAllPools();
     }
 
     private static void StartSceneStarter(Scene scene)

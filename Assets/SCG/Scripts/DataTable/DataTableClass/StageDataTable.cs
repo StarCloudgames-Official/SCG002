@@ -9,6 +9,7 @@ public partial class StageDataTable
     public int id;
     public int stage;
     public DataTableEnum.Difficulty difficulty;
+    public string map_prefab_addressable_key;
     public int waveCount;
     public int[] bossWave;
     public int[] monsterIds;

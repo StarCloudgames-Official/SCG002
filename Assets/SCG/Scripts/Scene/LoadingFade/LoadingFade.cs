@@ -10,7 +10,7 @@ public static class LoadingFade
     public static async UniTask StartFadeIn()
     {
         if (LoadingFadeCanvas) return;
-        LoadingFadeCanvas = await AddressableExtensions.InstantiateAndGetComponent<LoadingFadeCanvas>(LoadingFadeCanvasPath);
+        LoadingFadeCanvas = await AddressableExtensions.InstantiateAndGetComponent<LoadingFadeCanvas>(LoadingFadeCanvasPath, false);
         await LoadingFadeCanvas.StartFadeIn();
     }
 
