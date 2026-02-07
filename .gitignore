@@ -66,3 +66,4 @@ SCG001.sln
 # ---- Sensitive ----
 GoogleOAuthConfig.asset
 *.keystore
+Assets/SCG/Scripts/Tool/GoogleSpreadsheetTool/GoogleOAuthConfig.asset.meta
