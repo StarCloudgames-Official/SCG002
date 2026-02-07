@@ -4,8 +4,6 @@ using UnityEngine;
 [CustomEditor(typeof(GoogleOAuthConfig))]
 public class GoogleOAuthConfigEditor : Editor
 {
-    private string authCode = string.Empty;
-
     public override void OnInspectorGUI()
     {
         DrawDefaultInspector();
@@ -15,19 +13,10 @@ public class GoogleOAuthConfigEditor : Editor
         GUILayout.Space(8);
         EditorGUILayout.LabelField("OAuth", EditorStyles.boldLabel);
 
-        if (GUILayout.Button("Open Google Consent Page"))
+        if (GUILayout.Button("Authorize (Open Browser)"))
         {
-            GoogleSheetsClient.OpenAuthLink(cfg);
+            Authorize(cfg);
         }
-
-        authCode = EditorGUILayout.TextField("Auth Code", authCode);
-
-        EditorGUI.BeginDisabledGroup(string.IsNullOrEmpty(authCode));
-        if (GUILayout.Button("Request Tokens"))
-        {
-            RequestTokens(cfg, authCode);
-        }
-        EditorGUI.EndDisabledGroup();
 
         if (GUILayout.Button("Refresh Access Token"))
         {
@@ -41,10 +30,10 @@ public class GoogleOAuthConfigEditor : Editor
         }
     }
 
-    private async void RequestTokens(GoogleOAuthConfig cfg, string code)
+    private async void Authorize(GoogleOAuthConfig cfg)
     {
-        var ok = await GoogleSheetsClient.RequestTokens(cfg, code);
-        if (ok) Debug.Log("[GoogleSheets] Token request OK");
+        var ok = await GoogleSheetsClient.AuthorizeWithListener(cfg);
+        if (ok) Debug.Log("[GoogleSheets] Authorization complete!");
     }
 
     private async void RefreshAccessToken(GoogleOAuthConfig cfg)
@@ -75,4 +64,3 @@ public class GoogleOAuthConfigEditor : Editor
         }
     }
 }
-

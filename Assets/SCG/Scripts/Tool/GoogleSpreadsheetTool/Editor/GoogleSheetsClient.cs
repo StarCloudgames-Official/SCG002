@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
+using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using UnityEditor;
@@ -16,25 +17,95 @@ public static class GoogleSheetsClient
 {
     private const string Scope = "https://www.googleapis.com/auth/spreadsheets.readonly";
     private const string RedirectUri = "http://127.0.0.1:3000";
+    private const string ListenerPrefix = "http://127.0.0.1:3000/";
 
-    public static void OpenAuthLink(GoogleOAuthConfig config)
+    /// <summary>
+    /// Opens the Google consent page AND starts a local HTTP listener to
+    /// automatically capture the auth code and exchange it for tokens.
+    /// </summary>
+    public static async Task<bool> AuthorizeWithListener(GoogleOAuthConfig config)
     {
         if (config == null)
         {
             Debug.LogError("[GoogleSheets] Config is null.");
-            return;
+            return false;
         }
 
-        string url =
-            "https://accounts.google.com/o/oauth2/v2/auth" +
-            "?client_id=" + config.clientId +
-            "&redirect_uri=" + RedirectUri +
-            "&response_type=code" +
-            "&scope=" + Scope +
-            "&access_type=offline" +
-            "&prompt=consent";
+        HttpListener listener = null;
+        try
+        {
+            listener = new HttpListener();
+            listener.Prefixes.Add(ListenerPrefix);
+            listener.Start();
+            Debug.Log("[GoogleSheets] Local listener started on " + RedirectUri);
 
-        Application.OpenURL(url);
+            // Open the consent page in the browser
+            string authUrl =
+                "https://accounts.google.com/o/oauth2/v2/auth" +
+                "?client_id=" + config.clientId +
+                "&redirect_uri=" + RedirectUri +
+                "&response_type=code" +
+                "&scope=" + Scope +
+                "&access_type=offline" +
+                "&prompt=consent";
+
+            Application.OpenURL(authUrl);
+
+            // Wait for Google to redirect back
+            var context = await listener.GetContextAsync();
+            string code = context.Request.QueryString["code"];
+            string error = context.Request.QueryString["error"];
+
+            // Send a response page to the browser
+            string responseHtml;
+            if (!string.IsNullOrEmpty(error))
+            {
+                responseHtml = "<html><body><h2>Authorization failed</h2><p>" + error + "</p><p>You can close this tab.</p></body></html>";
+                var buffer = Encoding.UTF8.GetBytes(responseHtml);
+                context.Response.ContentType = "text/html; charset=utf-8";
+                context.Response.ContentLength64 = buffer.Length;
+                await context.Response.OutputStream.WriteAsync(buffer, 0, buffer.Length);
+                context.Response.Close();
+                Debug.LogError("[GoogleSheets] Authorization denied: " + error);
+                return false;
+            }
+
+            if (string.IsNullOrEmpty(code))
+            {
+                responseHtml = "<html><body><h2>No auth code received</h2><p>You can close this tab.</p></body></html>";
+                var buffer = Encoding.UTF8.GetBytes(responseHtml);
+                context.Response.ContentType = "text/html; charset=utf-8";
+                context.Response.ContentLength64 = buffer.Length;
+                await context.Response.OutputStream.WriteAsync(buffer, 0, buffer.Length);
+                context.Response.Close();
+                Debug.LogError("[GoogleSheets] No auth code in redirect.");
+                return false;
+            }
+
+            // Exchange the code for tokens
+            bool ok = await RequestTokens(config, code);
+
+            responseHtml = ok
+                ? "<html><body><h2>Authorization successful!</h2><p>You can close this tab and return to Unity.</p></body></html>"
+                : "<html><body><h2>Token exchange failed</h2><p>Check the Unity console for details.</p></body></html>";
+            var buf = Encoding.UTF8.GetBytes(responseHtml);
+            context.Response.ContentType = "text/html; charset=utf-8";
+            context.Response.ContentLength64 = buf.Length;
+            await context.Response.OutputStream.WriteAsync(buf, 0, buf.Length);
+            context.Response.Close();
+
+            return ok;
+        }
+        catch (Exception e)
+        {
+            Debug.LogError($"[GoogleSheets] AuthorizeWithListener exception: {e}");
+            return false;
+        }
+        finally
+        {
+            listener?.Stop();
+            listener?.Close();
+        }
     }
 
     public static async Task<bool> RequestTokens(GoogleOAuthConfig config, string code)
