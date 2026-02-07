@@ -62,3 +62,7 @@ SCG001-MTL.sln
 .utmp
 SCG001-MTL.sln.DotSettings.user
 SCG001.sln
+
+# ---- Sensitive ----
+GoogleOAuthConfig.asset
+*.keystore
