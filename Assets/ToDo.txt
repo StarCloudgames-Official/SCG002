@@ -1,3 +1,0 @@
-Jenkins
--- IOS 하면 됨. AOS 다 됐음
---- GDPR이랑 ATT 세팅해놔야됨
