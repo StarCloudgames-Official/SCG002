@@ -1,6 +1,6 @@
 using Cysharp.Text;
 using Cysharp.Threading.Tasks;
-using DG.Tweening;
+using LitMotion;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
@@ -14,7 +14,7 @@ public class ExtensionSlider : CachedMonoBehaviour
     [Space]
     public UnityEvent<float> onValueChanged;
 
-    private Tween fillTween;
+    private MotionHandle fillHandle;
     private int animateToken;
     private float originWidth;
 
@@ -62,19 +62,18 @@ public class ExtensionSlider : CachedMonoBehaviour
         var startCurrent = safeMax * Mathf.Clamp01(startNormalized);
         var endCurrent = Mathf.Clamp(targetCurrent, 0f, safeMax);
 
-        fillTween = DOTween.To(() => startCurrent, value =>
-        {
-            startCurrent = value;
+        fillHandle = LMotion.Create(startCurrent, endCurrent, duration)
+            .Bind(this, (value, self) =>
+            {
+                var normalized = safeMax <= 0f ? 0f : value / safeMax;
 
-            var normalized = safeMax <= 0f ? 0f : value / safeMax;
+                self.UpdateFill(normalized);
+                self.UpdateText(normalized, value, safeMax, isInt);
 
-            UpdateFill(normalized);
-            UpdateText(normalized, value, safeMax, isInt);
+                self.onValueChanged?.Invoke(normalized);
+            });
 
-            onValueChanged?.Invoke(normalized);
-        }, endCurrent, duration);
-
-        while (fillTween.IsActive() && fillTween.IsPlaying() && token == animateToken) await UniTask.NextFrame();
+        while (fillHandle.IsActive() && fillHandle.IsPlaying() && token == animateToken) await UniTask.NextFrame();
 
         if (token != animateToken) return;
 
@@ -138,9 +137,7 @@ public class ExtensionSlider : CachedMonoBehaviour
     
     private void KillTween()
     {
-        if (fillTween == null) return;
-        if (fillTween.IsActive()) fillTween.Kill();
-        fillTween = null;
+        fillHandle.TryCancel();
     }
 
     #endregion

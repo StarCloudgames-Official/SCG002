@@ -1,6 +1,7 @@
 using Cysharp.Text;
 using Cysharp.Threading.Tasks;
-using DG.Tweening;
+using LitMotion;
+using LitMotion.Extensions;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -33,6 +34,6 @@ public class UIItemRewardItem : CachedMonoBehaviour
 
     public async UniTask StartProduce()
     {
-        await CachedTransform.DOScale(Vector3.one, 0.3f).SetEase(Ease.OutBack).ToUniTask();
+        await LMotion.Create(Vector3.zero, Vector3.one, 0.3f).WithEase(Ease.OutBack).BindToLocalScale(CachedTransform).ToUniTask();
     }
 }

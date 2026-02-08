@@ -1,5 +1,6 @@
 using Cysharp.Threading.Tasks;
-using DG.Tweening;
+using LitMotion;
+using LitMotion.Extensions;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -40,12 +41,12 @@ public class SplashSceneStarter : MonoBehaviour
     private async UniTask FadeIn()
     {
         if (companyLogo == null) return;
-        await companyLogo.DOFade(1f, 1f).ToUniTask();
+        await LMotion.Create(0f, 1f, 1f).BindToColorA(companyLogo).ToUniTask();
     }
 
     private async UniTask FadeOut()
     {
         if (companyLogo == null) return;
-        await companyLogo.DOFade(0f, 0.8f).ToUniTask();
+        await LMotion.Create(1f, 0f, 0.8f).BindToColorA(companyLogo).ToUniTask();
     }
 }

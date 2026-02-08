@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 using Cysharp.Threading.Tasks;
-using DG.Tweening;
 using UnityEngine;
 
 public static class UniTaskExtensions
@@ -29,25 +28,6 @@ public static class UniTaskExtensions
         while (animator.GetCurrentAnimatorStateInfo(layer).normalizedTime < 1f)
         {
             await UniTask.NextFrame();
-        }
-    }
-
-    public static async UniTask ToUniTask(this Tween tween)
-    {
-        if (tween == null || !tween.active) return;
-
-        var completed = false;
-
-        tween.OnComplete(() => completed = true);
-
-        if (!tween.IsActive() || !tween.IsPlaying())
-            completed = true;
-
-        while (!completed)
-        {
-            await UniTask.NextFrame();
-            if (!tween.IsActive())
-                break;
         }
     }
 

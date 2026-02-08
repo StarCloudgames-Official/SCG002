@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using Cysharp.Threading.Tasks;
-using DG.Tweening;
+using LitMotion;
+using LitMotion.Extensions;
 using UnityEngine;
 
 public class UIInGameClearPopup : UIOverPopup
@@ -31,7 +32,7 @@ public class UIInGameClearPopup : UIOverPopup
 
     private async UniTask ButtonProduce()
     {
-        await lobbyButton.transform.DOScale(Vector3.one, 0.5f).SetEase(Ease.OutBack).ToUniTask();
+        await LMotion.Create(Vector3.zero, Vector3.one, 0.5f).WithEase(Ease.OutBack).BindToLocalScale(lobbyButton.transform).ToUniTask();
     }
 
     public void OnClickToLobbyButton()

@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using Cysharp.Threading.Tasks;
-using DG.Tweening;
+using LitMotion;
+using LitMotion.Extensions;
 using UnityEngine;
 
 public class UIInGameFailedPopup : UIOverPopup
@@ -38,10 +39,10 @@ public class UIInGameFailedPopup : UIOverPopup
 
         if (reviveButton.activeSelf)
         {
-            reviveButton.transform.DOScale(Vector3.one, 0.5f).SetEase(Ease.OutBack);
+            LMotion.Create(Vector3.zero, Vector3.one, 0.5f).WithEase(Ease.OutBack).BindToLocalScale(reviveButton.transform).AddTo(reviveButton);
         }
 
-        await lobbyButton.transform.DOScale(Vector3.one, 0.5f).SetEase(Ease.OutBack).ToUniTask();
+        await LMotion.Create(Vector3.zero, Vector3.one, 0.5f).WithEase(Ease.OutBack).BindToLocalScale(lobbyButton.transform).ToUniTask();
     }
 
     public void OnClickReviveButton()

@@ -1,7 +1,8 @@
 using System;
 using Cysharp.Text;
 using Cysharp.Threading.Tasks;
-using DG.Tweening;
+using LitMotion;
+using LitMotion.Extensions;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Serialization;
@@ -21,7 +22,8 @@ public class UIInGameMain : UIPanel
     [SerializeField] private UILuckyPopup luckyPopup;
 
     private InGameContext inGameContext;
-    private Sequence timerWarningSequence;
+    private MotionHandle timerWarningColorHandle;
+    private MotionHandle timerWarningScaleHandle;
     private int previousRemainingSeconds = -1;
     private int maxSpawnCount = -1;
 
@@ -153,20 +155,23 @@ public class UIInGameMain : UIPanel
 
     private void StartTimerWarning()
     {
-        timerWarningSequence?.Kill();
+        StopTimerWarning();
 
-        timerWarningSequence = DOTween.Sequence()
-            .Append(timerText.DOColor(Color.red, 0.5f))
-            .Join(timerText.transform.DOScale(1.2f, 0.5f))
-            .Append(timerText.DOColor(Color.white, 0.5f))
-            .Join(timerText.transform.DOScale(1f, 0.5f))
-            .SetLoops(-1)
-            .SetLink(gameObject);
+        timerWarningColorHandle = LMotion.Create(Color.white, Color.red, 0.5f)
+            .WithLoops(-1, LoopType.Yoyo)
+            .BindToColor(timerText)
+            .AddTo(gameObject);
+
+        timerWarningScaleHandle = LMotion.Create(Vector3.one, Vector3.one * 1.2f, 0.5f)
+            .WithLoops(-1, LoopType.Yoyo)
+            .BindToLocalScale(timerText.transform)
+            .AddTo(gameObject);
     }
 
     private void StopTimerWarning()
     {
-        timerWarningSequence?.Kill();
+        timerWarningColorHandle.TryCancel();
+        timerWarningScaleHandle.TryCancel();
         timerText.color = Color.white;
         timerText.transform.localScale = Vector3.one;
     }
@@ -211,6 +216,7 @@ public class UIInGameMain : UIPanel
 
     private void OnDestroy()
     {
-        timerWarningSequence?.Kill();
+        timerWarningColorHandle.TryCancel();
+        timerWarningScaleHandle.TryCancel();
     }
 }

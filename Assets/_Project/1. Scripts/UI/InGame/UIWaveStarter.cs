@@ -1,7 +1,8 @@
 using System.Collections;
 using Cysharp.Text;
 using Cysharp.Threading.Tasks;
-using DG.Tweening;
+using LitMotion;
+using LitMotion.Extensions;
 using TMPro;
 using UnityEngine;
 
@@ -14,7 +15,7 @@ public class UIWaveStarter : UIPanel, IWaveStarter
     private const float WaitDuration = 1f;
     private const float ExitDuration = 0.5f;
 
-    private Sequence sequence;
+    private MotionHandle sequenceHandle;
 
     public override UniTask PreOpen(object param)
     {
@@ -33,23 +34,23 @@ public class UIWaveStarter : UIPanel, IWaveStarter
         wavePanel.gameObject.SetActive(true);
         wavePanel.anchoredPosition = new Vector2(leftX, wavePanel.anchoredPosition.y);
 
-        sequence?.Kill();
-        sequence = DOTween.Sequence()
-            .Append(wavePanel.DOAnchorPosX(0, EnterDuration).SetEase(Ease.OutQuad))
+        sequenceHandle.TryCancel();
+        sequenceHandle = LSequence.Create()
+            .Append(LMotion.Create(leftX, 0f, EnterDuration).WithEase(Ease.OutQuad).BindToAnchoredPositionX(wavePanel))
             .AppendInterval(WaitDuration)
-            .Append(wavePanel.DOAnchorPosX(rightX, ExitDuration).SetEase(Ease.InQuad))
-            .OnComplete(() => Close().Forget())
-            .SetLink(gameObject);
+            .Append(LMotion.Create(0f, rightX, ExitDuration).WithEase(Ease.InQuad).BindToAnchoredPositionX(wavePanel))
+            .Run(builder => builder.WithOnComplete(() => Close().Forget()))
+            .AddTo(gameObject);
     }
 
     public IEnumerator StartStarterCoroutine()
     {
         StartStarter();
-        yield return sequence.WaitForCompletion();
+        yield return sequenceHandle.ToYieldInstruction();
     }
 
     private void OnDestroy()
     {
-        sequence?.Kill();
+        sequenceHandle.TryCancel();
     }
 }

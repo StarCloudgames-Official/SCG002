@@ -1,8 +1,9 @@
 using System.Collections;
+using LitMotion;
+using LitMotion.Extensions;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
-using DG.Tweening;
 using Solo.MOST_IN_ONE;
 
 public class ExtensionButton : CachedMonoBehaviour, IPointerDownHandler, IPointerUpHandler, IPointerClickHandler, IPointerExitHandler
@@ -17,11 +18,11 @@ public class ExtensionButton : CachedMonoBehaviour, IPointerDownHandler, IPointe
     [Space]
     public UnityEvent onClick;
 
-    private Tween scaleTween;
+    private MotionHandle scaleHandle;
     private Coroutine repeatCoroutine;
     private bool isPressed;
     private bool clickInvokedThisPress;
-    
+
     private const float PressedScale = 0.9f;
     private const float PressDuration = 0.05f;
     private const float ReleaseDuration = 0.05f;
@@ -102,7 +103,7 @@ public class ExtensionButton : CachedMonoBehaviour, IPointerDownHandler, IPointe
         clickInvokedThisPress = false;
         StopRepeatRoutine();
         transform.localScale = Vector3.one;
-        scaleTween?.Kill();
+        scaleHandle.TryCancel();
     }
 
     #region Interaction
@@ -135,18 +136,18 @@ public class ExtensionButton : CachedMonoBehaviour, IPointerDownHandler, IPointe
 
     private void StartPressScaleTween()
     {
-        scaleTween?.Kill();
-        scaleTween = CachedTransform
-            .DOScale(Vector3.one * PressedScale, PressDuration)
-            .SetEase(PressEase);
+        scaleHandle.TryCancel();
+        scaleHandle = LMotion.Create(CachedTransform.localScale, Vector3.one * PressedScale, PressDuration)
+            .WithEase(PressEase)
+            .BindToLocalScale(CachedTransform);
     }
 
     private void RestoreScale()
     {
-        scaleTween?.Kill();
-        scaleTween = CachedTransform
-            .DOScale(Vector3.one, ReleaseDuration)
-            .SetEase(ReleaseEase);
+        scaleHandle.TryCancel();
+        scaleHandle = LMotion.Create(CachedTransform.localScale, Vector3.one, ReleaseDuration)
+            .WithEase(ReleaseEase)
+            .BindToLocalScale(CachedTransform);
     }
 
     #endregion
