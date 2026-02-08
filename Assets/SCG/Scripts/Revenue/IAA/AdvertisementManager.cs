@@ -3,11 +3,15 @@ using System.Collections;
 using Cysharp.Threading.Tasks;
 using Unity.Services.LevelPlay;
 using UnityEngine;
+using UnityEngine.AddressableAssets;
 
 namespace StarCloudgamesLibrary
 {
     public class AdvertisementManager : Singleton<AdvertisementManager>
     {
+        private const string AdKeyConfigKey = "AdKeyConfig";
+        private AdKeyConfig adKeyConfig;
+
         private bool initialized;
 
         private LevelPlayRewardedAd rewardedAd;
@@ -15,27 +19,6 @@ namespace StarCloudgamesLibrary
         private LevelPlayBannerAd bannerAd;
 
         private Action currentRewardAction;
-
-        #region "Keys"
-
-#if UNITY_ANDROID && !UNITY_EDITOR
-        private readonly string appKey = "REDACTED_APP_KEY";
-        private readonly string interstitialUnitId = "REDACTED_INTERSTITIAL_ID";
-        private readonly string rewardedUnitId = "REDACTED_REWARDED_ID";
-        private readonly string bannerUnitId = "REDACTED_BANNER_ID";
-#elif UNITY_IOS
-        private readonly string appKey = "unexpectedPlatform";
-        private readonly string interstitialUnitId = "unexpectedPlatform";
-        private readonly string rewardedUnitId = "unexpectedPlatform";
-        private readonly string bannerUnitId = "unexpectedPlatform";
-#else
-        private readonly string appKey = "REDACTED_APP_KEY";
-        private readonly string interstitialUnitId = "REDACTED_INTERSTITIAL_ID";
-        private readonly string rewardedUnitId = "REDACTED_REWARDED_ID";
-        private readonly string bannerUnitId = "REDACTED_BANNER_ID";
-#endif
-
-        #endregion
 
         #region "Rewarded Ad"
 
@@ -78,7 +61,7 @@ namespace StarCloudgamesLibrary
 
         private void InitializeRewardedAd()
         {
-            rewardedAd = new LevelPlayRewardedAd(rewardedUnitId);
+            rewardedAd = new LevelPlayRewardedAd(adKeyConfig.Current.rewardedUnitId);
 
             rewardedAd.OnAdLoaded += RewardedOnAdLoadedEvent;
             rewardedAd.OnAdLoadFailed += RewardedOnAdLoadFailedEvent;
@@ -146,7 +129,7 @@ namespace StarCloudgamesLibrary
 
         private void InitializeInterstitialAd()
         {
-            interstitialAd = new LevelPlayInterstitialAd(interstitialUnitId);
+            interstitialAd = new LevelPlayInterstitialAd(adKeyConfig.Current.interstitialUnitId);
             interstitialAd.OnAdLoaded += InterstitialOnAdLoadedEvent;
             interstitialAd.OnAdLoadFailed += InterstitialOnAdLoadFailedEvent;
             interstitialAd.OnAdDisplayed += InterstitialOnAdDisplayedEvent;
@@ -186,7 +169,7 @@ namespace StarCloudgamesLibrary
             var config = new LevelPlayBannerAd.Config.Builder()
                 .SetDisplayOnLoad(false)
                 .Build();
-            bannerAd = new LevelPlayBannerAd(bannerUnitId, config);
+            bannerAd = new LevelPlayBannerAd(adKeyConfig.Current.bannerUnitId, config);
             bannerAd.OnAdLoaded += BannerOnAdLoadedEvent;
             bannerAd.OnAdLoadFailed += BannerOnAdLoadFailedEvent;
             bannerAd.OnAdDisplayed += BannerOnAdDisplayedEvent;
@@ -235,10 +218,19 @@ namespace StarCloudgamesLibrary
 
         public override async UniTask Initialize()
         {
+            var handle = Addressables.LoadAssetAsync<AdKeyConfig>(AdKeyConfigKey);
+            adKeyConfig = await handle.Task;
+
+            if (adKeyConfig == null)
+            {
+                Debug.LogError($"AdvertisementManager: AdKeyConfig not found at Addressables key: {AdKeyConfigKey}");
+                return;
+            }
+
             LevelPlay.OnInitSuccess += LevelPlayInitializeCompleted;
             LevelPlay.OnInitFailed += LevelPlayInitializeFailed;
 
-            LevelPlay.Init(appKey);
+            LevelPlay.Init(adKeyConfig.Current.appKey);
             await UniTask.WaitUntil(this, (self) => self.initialized);
         }
 

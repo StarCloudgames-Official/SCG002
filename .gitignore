@@ -70,3 +70,5 @@ Assets/SCG/Scripts/Tool/GoogleSpreadsheetTool/GoogleOAuthConfig.asset.meta
 google-services.json
 GoogleService-Info.plist
 Assets/StreamingAssets/google-services-desktop.json
+AdKeyConfig.asset
+AdKeyConfig.asset.meta
